@@ -1,0 +1,93 @@
+// prisma/schema.prisma
+// Slim schema — only transactional write data lives here.
+// Match history, player ratings, and stats are handled by DuckDB.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Bets reference players and matches by their Sackmann external IDs (strings),
+// not Postgres FKs — because those records now live in DuckDB.
+model Bet {
+  id            String     @id @default(cuid())
+
+  // References into DuckDB world (no FK constraints — DuckDB owns these)
+  matchExternalId  String   // e.g. "aus_open_2025_qf_001"
+  playerExternalId String   // Sackmann player_id
+  playerName       String   // denormalised for display without a join
+  matchDesc        String   // "Sinner vs Medvedev · AO · QF · Hard"
+
+  betType       BetType    @default(MONEYLINE)
+  signal        Signal
+  modelProb     Float
+  impliedProb   Float
+  edge          Float
+  odds          Float
+  closingOdds   Float?
+  stake         Float
+  toWin         Float?
+
+  status        BetStatus  @default(OPEN)
+  result        BetResult?
+  pnl           Float?
+  clv           Float?
+
+  notes         String?
+  placedAt      DateTime   @default(now())
+  settledAt     DateTime?
+  updatedAt     DateTime   @updatedAt
+
+  @@index([status])
+  @@index([placedAt])
+  @@index([playerExternalId])
+  @@index([matchExternalId])
+}
+
+model Bankroll {
+  id          String   @id @default(cuid())
+  amount      Float
+  note        String?
+  createdAt   DateTime @default(now())
+}
+
+model BankrollSnapshot {
+  id          String   @id @default(cuid())
+  balance     Float
+  snapshotAt  DateTime @default(now())
+
+  @@index([snapshotAt])
+}
+
+enum Signal {
+  BET
+  LEAN
+  PASS
+}
+
+enum BetType {
+  MONEYLINE
+  SPREAD
+  TOTAL_OVER
+  TOTAL_UNDER
+  SET_BETTING
+}
+
+enum BetStatus {
+  OPEN
+  SETTLED
+  VOID
+  CANCELLED
+}
+
+enum BetResult {
+  WIN
+  LOSS
+  PUSH
+  HALF_WIN
+  HALF_LOSS
+}

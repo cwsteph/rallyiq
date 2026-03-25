@@ -1,0 +1,61 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-bg: #0a0e14;
+  --terminal-surface: #0f1520;
+  --terminal-border: #1e2a3a;
+  --terminal-border-hover: #2a3f5a;
+  --terminal-text: #c8d0e0;
+  --terminal-muted: #4a6080;
+  --terminal-dim: #2a3a50;
+  --green: #00e5a0;
+  --green-bg: #0d2a1e;
+  --red: #ff4d6a;
+  --red-bg: #2a0d14;
+  --amber: #ffb84d;
+  --amber-bg: #2a1f00;
+  --blue: #4a9eff;
+  --blue-bg: #0d1f35;
+  --surface-hard: #0d1f35;
+  --surface-clay: #2a1508;
+  --surface-grass: #0a200f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--terminal-border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--terminal-border-hover); }
+
+/* Custom utility classes */
+@layer utilities {
+  .bg-terminal { background-color: var(--terminal-bg); }
+  .bg-surface { background-color: var(--terminal-surface); }
+  .border-terminal { border-color: var(--terminal-border); }
+  .text-terminal { color: var(--terminal-text); }
+  .text-terminal-muted { color: var(--terminal-muted); }
+  .text-terminal-dim { color: var(--terminal-dim); }
+  .text-green { color: var(--green); }
+  .text-red { color: var(--red); }
+  .text-amber { color: var(--amber); }
+  .text-blue { color: var(--blue); }
+  .font-mono { font-family: var(--font-mono), monospace; }
+}

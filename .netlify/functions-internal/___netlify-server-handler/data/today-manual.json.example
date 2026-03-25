@@ -1,0 +1,44 @@
+[
+  {
+    "match_id": "manual_ao26_qf_001",
+    "tournament": "Australian Open",
+    "surface": "Hard",
+    "round": "QF",
+    "best_of": 5,
+    "match_date": "2026-03-23",
+    "scheduled_time": "01:00",
+    "player1_id": "sinner",
+    "player1_name": "J. Sinner",
+    "player2_id": "medvedev",
+    "player2_name": "D. Medvedev",
+    "source": "manual"
+  },
+  {
+    "match_id": "manual_ao26_qf_002",
+    "tournament": "Australian Open",
+    "surface": "Hard",
+    "round": "QF",
+    "best_of": 5,
+    "match_date": "2026-03-23",
+    "scheduled_time": "03:30",
+    "player1_id": "djokovic",
+    "player1_name": "N. Djokovic",
+    "player2_id": "zverev",
+    "player2_name": "A. Zverev",
+    "source": "manual"
+  },
+  {
+    "match_id": "manual_ao26_sf_001",
+    "tournament": "Australian Open",
+    "surface": "Hard",
+    "round": "SF",
+    "best_of": 3,
+    "match_date": "2026-03-23",
+    "scheduled_time": "08:00",
+    "player1_id": "swiatek",
+    "player1_name": "I. Swiatek",
+    "player2_id": "sabalenka",
+    "player2_name": "A. Sabalenka",
+    "source": "manual"
+  }
+]
