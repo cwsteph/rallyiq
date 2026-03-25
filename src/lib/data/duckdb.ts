@@ -55,6 +55,6 @@ export async function getTodayMatch(matchId:string): Promise<any|null> {
   return (await getTodayMatches()).find(m=>m.match_id===matchId) ?? null
 }
 
-export async function getH2H(): Promise<any[]> { return [] }
-export async function getBacktestMatches(): Promise<any[]> { return [] }
-export async function rawQuery<T=any>(): Promise<T[]> { return [] }
+export async function getH2H(p1Id?: string, p2Id?: string): Promise<any[]> { return [] }
+export async function getBacktestMatches(surface?: string, limit?: number): Promise<any[]> { return [] }
+export async function rawQuery<T=any>(sql?: string): Promise<T[]> { return [] }
