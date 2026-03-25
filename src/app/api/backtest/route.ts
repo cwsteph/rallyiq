@@ -15,7 +15,7 @@ export async function GET(req: NextRequest) {
   const limit   = parseInt(searchParams.get('limit') ?? '500')
 
   try {
-    const rows = await getBacktestMatches(surface, limit)
+    const rows = await getBacktestMatches( limit)
 
     const results = rows.map((row: any) => {
       const p1 = {
