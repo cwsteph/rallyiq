@@ -112,20 +112,6 @@
     "source": "espn-atp"
   },
   {
-    "match_id": "espn_173118",
-    "tournament": "Miami Open presented by Itau",
-    "surface": "Hard",
-    "round": "QF",
-    "best_of": 3,
-    "match_date": "2026-03-25",
-    "scheduled_time": "17:10",
-    "player1_id": "202468",
-    "player1_name": "Jessica Pegula",
-    "player2_id": "214981",
-    "player2_name": "Elena Rybakina",
-    "source": "espn-atp"
-  },
-  {
     "match_id": "espn_173131",
     "tournament": "Miami Open presented by Itau",
     "surface": "Hard",
@@ -146,7 +132,7 @@
     "round": "QF",
     "best_of": 3,
     "match_date": "2026-03-25",
-    "scheduled_time": "19:00",
+    "scheduled_time": "19:40",
     "player1_id": "208103",
     "player1_name": "Jiri Lehecka",
     "player2_id": "212021",
