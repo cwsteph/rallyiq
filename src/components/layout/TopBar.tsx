@@ -61,17 +61,17 @@ export function TopBar() {
   return (
     <header className="h-12 flex items-center justify-between px-4 border-b border-terminal-border bg-terminal-surface shrink-0 gap-4">
       <div className="flex items-center gap-4 shrink-0">
-        <h1 className="font-mono font-bold text-base text-white tracking-wide">
+        <h1 className="font-mono font-bold text-lg text-white tracking-wide">
           RALLY<span className="text-blue">IQ</span>
         </h1>
-        <span className="text-terminal-border">|</span>
-        <span className="text-sm text-white font-mono uppercase tracking-widest hidden sm:block">{title}</span>
+        <span className="text-terminal-muted">|</span>
+        <span className="text-sm text-white/90 font-mono uppercase tracking-widest hidden sm:block">{title}</span>
       </div>
 
       <div className="flex items-center gap-3 ml-auto">
         {/* Match count + last updated */}
         {matchCount !== null && (
-          <span className="font-mono text-xs text-white hidden md:flex items-center gap-1.5">
+          <span className="font-mono text-xs text-white/90 hidden md:flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse" />
             {matchCount} matches
             {lastUpdated && <span className="text-terminal-text">· {lastUpdated}</span>}
@@ -104,7 +104,7 @@ export function TopBar() {
           <span className="font-mono text-2xs text-red hidden sm:block">{refreshError}</span>
         )}
 
-        <span className="font-mono text-xs text-white hidden lg:block">{now}</span>
+        <span className="font-mono text-xs text-white/80 hidden lg:block">{now}</span>
       </div>
     </header>
   )
