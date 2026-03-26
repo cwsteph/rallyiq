@@ -65,16 +65,16 @@ export function TopBar() {
           RALLY<span className="text-blue">IQ</span>
         </h1>
         <span className="text-terminal-border">|</span>
-        <span className="text-xs text-terminal-muted font-mono uppercase tracking-widest hidden sm:block">{title}</span>
+        <span className="text-xs text-terminal-text font-mono uppercase tracking-widest hidden sm:block">{title}</span>
       </div>
 
       <div className="flex items-center gap-3 ml-auto">
         {/* Match count + last updated */}
         {matchCount !== null && (
-          <span className="font-mono text-2xs text-terminal-dim hidden md:flex items-center gap-1.5">
+          <span className="font-mono text-xs text-terminal-text hidden md:flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-green animate-pulse" />
             {matchCount} matches
-            {lastUpdated && <span className="text-terminal-border/60">· {lastUpdated}</span>}
+            {lastUpdated && <span className="text-terminal-muted">· {lastUpdated}</span>}
           </span>
         )}
 
@@ -94,7 +94,7 @@ export function TopBar() {
           `}
         >
           <RefreshCw
-            size={11}
+            size={13}
             className={refreshing ? 'animate-spin' : ''}
           />
           <span className="hidden sm:inline">{refreshing ? 'Fetching...' : 'Refresh'}</span>
@@ -104,7 +104,7 @@ export function TopBar() {
           <span className="font-mono text-2xs text-red hidden sm:block">{refreshError}</span>
         )}
 
-        <span className="font-mono text-2xs text-terminal-dim hidden lg:block">{now}</span>
+        <span className="font-mono text-xs text-terminal-muted hidden lg:block">{now}</span>
       </div>
     </header>
   )

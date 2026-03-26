@@ -22,7 +22,7 @@ export function Sidebar() {
     <aside className="w-14 flex flex-col bg-terminal-surface border-r border-terminal-border shrink-0">
       {/* Logo */}
       <div className="h-12 flex items-center justify-center border-b border-terminal-border">
-        <span className="font-mono font-bold text-xs text-green tracking-widest">RQ</span>
+        <span className="font-mono font-bold text-base text-green tracking-widest">RQ</span>
       </div>
 
       {/* Nav */}
@@ -35,11 +35,11 @@ export function Sidebar() {
               href={href}
               title={label}
               className={`
-                w-10 h-10 flex items-center justify-center rounded
+                w-12 h-12 flex items-center justify-center rounded
                 transition-colors duration-150 group relative
                 ${active
                   ? 'bg-green-bg text-green'
-                  : 'text-terminal-dim hover:text-terminal-muted hover:bg-terminal-border'
+                  : 'text-terminal-text hover:text-amber hover:bg-terminal-border/60'
                 }
               `}
             >
@@ -63,7 +63,7 @@ export function Sidebar() {
         <Link
           href="/settings"
           title="Settings"
-          className="w-10 h-10 flex items-center justify-center rounded text-terminal-dim hover:text-terminal-muted hover:bg-terminal-border transition-colors"
+          className="w-12 h-12 flex items-center justify-center rounded text-terminal-muted hover:text-amber hover:bg-terminal-border transition-colors"
         >
           <Settings size={16} />
         </Link>
