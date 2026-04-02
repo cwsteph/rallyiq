@@ -1,7 +1,6 @@
 // prisma/schema.prisma
 // Slim schema — only transactional write data lives here.
 // Match history, player ratings, and stats are handled by DuckDB.
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,17 +10,35 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Today's matches fetched from ESPN — replaces /tmp/today.json
+model TodayMatch {
+  id             String   @id @default(cuid())
+  match_id       String   @unique  // e.g. "espn_12345"
+  tournament     String
+  surface        String
+  round          String
+  best_of        Int
+  match_date     String   // YYYY-MM-DD
+  scheduled_time String?  // HH:MM UTC
+  player1_id     String
+  player1_name   String
+  player2_id     String
+  player2_name   String
+  source         String   // "espn-atp" or "espn-wta"
+  fetchedAt      DateTime @default(now())
+
+  @@index([match_date])
+}
+
 // Bets reference players and matches by their Sackmann external IDs (strings),
 // not Postgres FKs — because those records now live in DuckDB.
 model Bet {
   id            String     @id @default(cuid())
-
   // References into DuckDB world (no FK constraints — DuckDB owns these)
   matchExternalId  String   // e.g. "aus_open_2025_qf_001"
   playerExternalId String   // Sackmann player_id
   playerName       String   // denormalised for display without a join
   matchDesc        String   // "Sinner vs Medvedev · AO · QF · Hard"
-
   betType       BetType    @default(MONEYLINE)
   signal        Signal
   modelProb     Float
@@ -31,12 +48,10 @@ model Bet {
   closingOdds   Float?
   stake         Float
   toWin         Float?
-
   status        BetStatus  @default(OPEN)
   result        BetResult?
   pnl           Float?
   clv           Float?
-
   notes         String?
   placedAt      DateTime   @default(now())
   settledAt     DateTime?
