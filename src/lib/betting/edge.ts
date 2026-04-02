@@ -2,9 +2,9 @@
 import type { Signal, EdgeResult } from '@/types'
 import { toDecimalOdds, toAmericanOdds, decimalToImplied } from '../model/probability'
 
-const MIN_EDGE_BET  = 0.05   // 5% edge to BET
-const MIN_EDGE_LEAN = 0.02   // 2% edge to LEAN
-const MIN_CONFIDENCE = 0.52  // minimum model confidence to act
+const MIN_EDGE_BET  = 0.02   // 2% edge to BET  (was 5%)
+const MIN_EDGE_LEAN = 0.01   // 1% edge to LEAN (was 2%)
+const MIN_CONFIDENCE = 0.51  // 51% minimum model confidence (was 52%)
 
 /**
  * Compute edge and signal for a single side
@@ -15,15 +15,12 @@ export function computeEdge(
 ): EdgeResult {
   const impliedProb = decimalToImplied(marketDecimalOdds)
   const edge = modelProb - impliedProb
-
   let signal: Signal = 'PASS'
   if (modelProb >= MIN_CONFIDENCE) {
     if (edge >= MIN_EDGE_BET) signal = 'BET'
     else if (edge >= MIN_EDGE_LEAN) signal = 'LEAN'
   }
-
   const kellyFraction = kellyStake(modelProb, marketDecimalOdds)
-
   return { modelProb, impliedProb, edge, signal, kellyFraction }
 }
 
