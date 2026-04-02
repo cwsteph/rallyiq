@@ -1,0 +1,38 @@
+name: Rebuild Ratings
+
+on:
+  # Run every Monday at 6am UTC (midnight CST)
+  schedule:
+    - cron: '0 6 * * 1'
+  # Also allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run ratings builder
+        run: node scripts/build-ratings.mjs
+
+      - name: Commit updated ratings.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ratings.json
+          # Only commit if something changed
+          git diff --staged --quiet || git commit -m "Auto-rebuild ratings $(date -u +%Y-%m-%d)"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
