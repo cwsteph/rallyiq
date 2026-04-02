@@ -18,39 +18,70 @@ function get(url: string): Promise<string> {
 }
 
 function slugify(s: string) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '') }
+
 function inferSurface(t: string): string {
   const s = t.toLowerCase()
-  if (['roland garros','french open','monte carlo','madrid','rome','barcelona','hamburg','geneva'].some(k => s.includes(k))) return 'Clay'
-  if (['wimbledon','halle','queens',"queen's",'eastbourne','hertogenbosch','bad homburg'].some(k => s.includes(k))) return 'Grass'
+  if (['roland garros', 'french open', 'monte carlo', 'madrid', 'rome', 'barcelona',
+       'hamburg', 'geneva', 'charleston'].some(k => s.includes(k))) return 'Clay'
+  if (['wimbledon', 'halle', 'queens', "queen's", 'eastbourne', 'hertogenbosch',
+       'bad homburg'].some(k => s.includes(k))) return 'Grass'
   return 'Hard'
 }
-const ROUND_MAP: Record<string,string> = { 'final':'F','semifinal':'SF','quarterfinal':'QF','round of 16':'R16','round of 32':'R32','round of 64':'R64','round of 128':'R128','first round':'R64','second round':'R32','third round':'R16','fourth round':'R16' }
-function normaliseRound(s: string) { return ROUND_MAP[s.toLowerCase()] ?? s.toUpperCase().replace(/\s+/g,'') }
 
-async function fetchESPN(tour: 'atp'|'wta'): Promise<any[]> {
+const ROUND_MAP: Record<string, string> = {
+  'final': 'F', 'semifinal': 'SF', 'quarterfinal': 'QF',
+  'round of 16': 'R16', 'round of 32': 'R32', 'round of 64': 'R64', 'round of 128': 'R128',
+  'first round': 'R64', 'second round': 'R32', 'third round': 'R16', 'fourth round': 'R16'
+}
+function normaliseRound(s: string) { return ROUND_MAP[s.toLowerCase()] ?? s.toUpperCase().replace(/\s+/g, '') }
+
+async function fetchESPN(tour: 'atp' | 'wta'): Promise<any[]> {
   const data = JSON.parse(await get(`https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/scoreboard`))
-  const today = new Date().toISOString().slice(0,10)
+  const today = new Date().toISOString().slice(0, 10)
+  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10)
+  const cutoff = new Date(); cutoff.setDate(cutoff.getDate() + 3)
   const isWTA = tour === 'wta'
   const matches: any[] = []
+
   for (const event of (data.events ?? [])) {
     const tournament = event.name ?? 'Unknown'
     const surface = inferSurface(tournament)
     const isMasters = /masters|1000/i.test(tournament)
+
     for (const grouping of (event.groupings ?? [])) {
       for (const comp of (grouping.competitions ?? [])) {
         const status = comp.status?.type?.name
         if (status !== 'STATUS_SCHEDULED' && status !== 'STATUS_IN_PROGRESS') continue
         if ((comp.type?.text ?? '').toLowerCase().includes('double')) continue
+
         const p1 = comp.competitors?.[0]?.athlete?.displayName ?? comp.competitors?.[0]?.displayName ?? ''
         const p2 = comp.competitors?.[1]?.athlete?.displayName ?? comp.competitors?.[1]?.displayName ?? ''
         if (!p1 || !p2 || p1 === 'TBD' || p2 === 'TBD') continue
+
         const round = normaliseRound(comp.round?.displayName ?? 'R32')
         const bo = isWTA ? 3 : (round === 'F' || round === 'SF') && isMasters ? 5 : 3
-        const matchDate = comp.date ? comp.date.slice(0,10) : today
-        const scheduledTime = comp.date ? new Date(comp.date).toISOString().slice(11,16) : undefined
-        const cutoff = new Date(); cutoff.setDate(cutoff.getDate()+3)
+        const matchDate = comp.date ? comp.date.slice(0, 10) : today
+        const scheduledTime = comp.date ? new Date(comp.date).toISOString().slice(11, 16) : undefined
+
+        // Drop matches older than yesterday (prevents stale tournament data)
+        if (matchDate < yesterday) continue
+        // Drop matches more than 3 days out
         if (new Date(matchDate) > cutoff) continue
-        matches.push({ match_id:`espn_${comp.id}`, tournament, surface, round, best_of:bo, match_date:matchDate, scheduled_time:scheduledTime, player1_id:slugify(p1), player1_name:p1, player2_id:slugify(p2), player2_name:p2, source:`espn-${tour}` })
+
+        matches.push({
+          match_id: `espn_${comp.id}`,
+          tournament,
+          surface,
+          round,
+          best_of: bo,
+          match_date: matchDate,
+          scheduled_time: scheduledTime,
+          player1_id: slugify(p1),
+          player1_name: p1,
+          player2_id: slugify(p2),
+          player2_name: p2,
+          source: `espn-${tour}`
+        })
       }
     }
   }
@@ -60,9 +91,15 @@ async function fetchESPN(tour: 'atp'|'wta'): Promise<any[]> {
 export async function GET() {
   try {
     const exists = fs.existsSync(TODAY_PATH)
-    const matchCount = exists ? JSON.parse(fs.readFileSync(TODAY_PATH,'utf8')).length : 0
-    return NextResponse.json({ ok:true, matchCount, lastUpdated: exists ? fs.statSync(TODAY_PATH).mtime.toISOString() : null })
-  } catch { return NextResponse.json({ ok:false, matchCount:0 }) }
+    const matchCount = exists ? JSON.parse(fs.readFileSync(TODAY_PATH, 'utf8')).length : 0
+    return NextResponse.json({
+      ok: true,
+      matchCount,
+      lastUpdated: exists ? fs.statSync(TODAY_PATH).mtime.toISOString() : null
+    })
+  } catch {
+    return NextResponse.json({ ok: false, matchCount: 0 })
+  }
 }
 
 export async function POST(req: NextRequest) {
@@ -70,20 +107,27 @@ export async function POST(req: NextRequest) {
   if (secret) {
     try {
       const body = await req.json()
-      if (body.secret !== secret) return NextResponse.json({ error:'Unauthorized' }, { status:401 })
-    } catch { return NextResponse.json({ error:'Unauthorized' }, { status:401 }) }
+      if (body.secret !== secret) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    } catch {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
   }
+
   try {
     const [atp, wta] = await Promise.all([fetchESPN('atp'), fetchESPN('wta')])
     const seen = new Set<string>()
-    const matches = [...atp,...wta].filter(m => {
-      const key = [m.player1_name,m.player2_name].map((n:string)=>n.toLowerCase()).sort().join('|')
+    const matches = [...atp, ...wta].filter(m => {
+      const key = [m.player1_name, m.player2_name].map((n: string) => n.toLowerCase()).sort().join('|')
       if (seen.has(key)) return false
       seen.add(key); return true
-    }).sort((a:any,b:any)=>(a.scheduled_time??'99:99').localeCompare(b.scheduled_time??'99:99'))
-    fs.writeFileSync(TODAY_PATH, JSON.stringify(matches,null,2))
-    return NextResponse.json({ ok:true, matchCount:matches.length, refreshedAt:new Date().toISOString() })
-  } catch(e:any) {
-    return NextResponse.json({ ok:false, error:e.message }, { status:500 })
+    }).sort((a: any, b: any) => (a.scheduled_time ?? '99:99').localeCompare(b.scheduled_time ?? '99:99'))
+
+    // Always clear stale /tmp file before writing to prevent warm-container bleed
+    if (fs.existsSync(TODAY_PATH)) fs.unlinkSync(TODAY_PATH)
+    fs.writeFileSync(TODAY_PATH, JSON.stringify(matches, null, 2))
+
+    return NextResponse.json({ ok: true, matchCount: matches.length, refreshedAt: new Date().toISOString() })
+  } catch (e: any) {
+    return NextResponse.json({ ok: false, error: e.message }, { status: 500 })
   }
 }
