@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
-import fs from 'fs'
 import https from 'https'
+import { PrismaClient } from '@prisma/client'
 
-const TODAY_PATH = '/tmp/today.json'
+const prisma = new PrismaClient()
 
 function get(url: string): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -63,9 +63,7 @@ async function fetchESPN(tour: 'atp' | 'wta'): Promise<any[]> {
         const matchDate = comp.date ? comp.date.slice(0, 10) : today
         const scheduledTime = comp.date ? new Date(comp.date).toISOString().slice(11, 16) : undefined
 
-        // Drop matches older than yesterday (prevents stale tournament data)
         if (matchDate < yesterday) continue
-        // Drop matches more than 3 days out
         if (new Date(matchDate) > cutoff) continue
 
         matches.push({
@@ -75,7 +73,7 @@ async function fetchESPN(tour: 'atp' | 'wta'): Promise<any[]> {
           round,
           best_of: bo,
           match_date: matchDate,
-          scheduled_time: scheduledTime,
+          scheduled_time: scheduledTime ?? null,
           player1_id: slugify(p1),
           player1_name: p1,
           player2_id: slugify(p2),
@@ -90,15 +88,15 @@ async function fetchESPN(tour: 'atp' | 'wta'): Promise<any[]> {
 
 export async function GET() {
   try {
-    const exists = fs.existsSync(TODAY_PATH)
-    const matchCount = exists ? JSON.parse(fs.readFileSync(TODAY_PATH, 'utf8')).length : 0
+    const count = await prisma.todayMatch.count()
+    const latest = await prisma.todayMatch.findFirst({ orderBy: { fetchedAt: 'desc' } })
     return NextResponse.json({
       ok: true,
-      matchCount,
-      lastUpdated: exists ? fs.statSync(TODAY_PATH).mtime.toISOString() : null
+      matchCount: count,
+      lastUpdated: latest?.fetchedAt?.toISOString() ?? null
     })
-  } catch {
-    return NextResponse.json({ ok: false, matchCount: 0 })
+  } catch (e: any) {
+    return NextResponse.json({ ok: false, matchCount: 0, error: e.message })
   }
 }
 
@@ -122,9 +120,24 @@ export async function POST(req: NextRequest) {
       seen.add(key); return true
     }).sort((a: any, b: any) => (a.scheduled_time ?? '99:99').localeCompare(b.scheduled_time ?? '99:99'))
 
-    // Always clear stale /tmp file before writing to prevent warm-container bleed
-    if (fs.existsSync(TODAY_PATH)) fs.unlinkSync(TODAY_PATH)
-    fs.writeFileSync(TODAY_PATH, JSON.stringify(matches, null, 2))
+    // Clear all existing rows then insert fresh batch — no stale data possible
+    await prisma.todayMatch.deleteMany()
+    await prisma.todayMatch.createMany({
+      data: matches.map(m => ({
+        match_id:       m.match_id,
+        tournament:     m.tournament,
+        surface:        m.surface,
+        round:          m.round,
+        best_of:        m.best_of,
+        match_date:     m.match_date,
+        scheduled_time: m.scheduled_time ?? null,
+        player1_id:     m.player1_id,
+        player1_name:   m.player1_name,
+        player2_id:     m.player2_id,
+        player2_name:   m.player2_name,
+        source:         m.source,
+      }))
+    })
 
     return NextResponse.json({ ok: true, matchCount: matches.length, refreshedAt: new Date().toISOString() })
   } catch (e: any) {
