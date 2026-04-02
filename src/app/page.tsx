@@ -9,6 +9,8 @@ import { MetricCard, SectionTitle, SurfaceBadge, SignalPill, EdgeBadge, ProbBar,
 import Link from 'next/link'
 import type { Surface, Signal } from '@/types'
 
+export const dynamic = 'force-dynamic'
+
 const oddsProvider = new MockOddsProvider()
 
 async function getDashboardData() {
