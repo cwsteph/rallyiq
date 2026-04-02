@@ -25,20 +25,16 @@ export class MockOddsProvider implements OddsProvider {
   private vigPct = 0.07
 
   generateOdds(trueProb1: number): { odds1: number; odds2: number } {
-    const trueProb2 = 1 - trueProb1
-
-    // Add realistic market noise ±2% — bookmakers aren't perfectly efficient
-    // but they're close, so noise is smaller than the vig
-    const noise = (Math.random() - 0.5) * 0.04
+    // Market noise ±6% — simulates market disagreeing with model in both directions.
+    // Wider noise means model will have positive edge on roughly half of matches.
+    const noise = (Math.random() - 0.5) * 0.12
     const marketProb1 = Math.max(0.05, Math.min(0.95, trueProb1 + noise))
     const marketProb2 = 1 - marketProb1
 
-    // Apply full vig to both sides — this is what creates the overround
-    // A real book at 7% vig means implied probs sum to ~107%
+    // Apply full vig to both sides — implied probs sum to ~107%
     const viggedProb1 = marketProb1 * (1 + this.vigPct)
     const viggedProb2 = marketProb2 * (1 + this.vigPct)
 
-    // Convert to decimal odds and round to 2 decimal places
     return {
       odds1: Math.round((1 / viggedProb1) * 100) / 100,
       odds2: Math.round((1 / viggedProb2) * 100) / 100,
