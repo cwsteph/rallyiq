@@ -1,8 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import { PrismaClient } from '@prisma/client'
+import { MockOddsProvider } from './oddsProvider'
 
 const prisma = new PrismaClient()
+const mock = new MockOddsProvider()
 
 const RATINGS_PATH = path.join(process.cwd(), 'data', 'ratings.json')
 
@@ -24,19 +26,12 @@ function readRatings(): DBRating[] {
   try { return JSON.parse(fs.readFileSync(RATINGS_PATH, 'utf8')) } catch { return [] }
 }
 
-// Build a lookup map that tries multiple match strategies:
-// 1. exact player_id (slugified name)
-// 2. slugified display name (ESPN sometimes abbreviates e.g. "I. Swiatek")
-// 3. last name only fallback
 function buildRatingsMap(ratings: DBRating[]): Map<string, DBRating> {
   const map = new Map<string, DBRating>()
   for (const r of ratings) {
-    // Primary: exact player_id
     map.set(r.player_id, r)
-    // Secondary: slugified full name (in case player_id differs)
     const slug = r.name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')
     if (!map.has(slug)) map.set(slug, r)
-    // Tertiary: last name only (e.g. "swiatek")
     const parts = r.name.trim().split(/\s+/)
     const lastName = parts[parts.length - 1].toLowerCase().replace(/[^a-z0-9]/g, '')
     if (lastName.length > 3 && !map.has(lastName)) map.set(lastName, r)
@@ -45,20 +40,12 @@ function buildRatingsMap(ratings: DBRating[]): Map<string, DBRating> {
 }
 
 function lookupRating(map: Map<string, DBRating>, playerId: string, playerName: string): DBRating | undefined {
-  // 1. Direct player_id match
   if (map.has(playerId)) return map.get(playerId)
-  // 2. Slugified display name
   const slug = playerName.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')
   if (map.has(slug)) return map.get(slug)
-  // 3. Last name of display name
   const parts = playerName.trim().split(/\s+/)
   const lastName = parts[parts.length - 1].toLowerCase().replace(/[^a-z0-9]/g, '')
   if (map.has(lastName)) return map.get(lastName)
-  // 4. First name initial + last name (ESPN sometimes gives "I. Swiatek")
-  if (parts.length >= 2) {
-    const last = parts[parts.length - 1].toLowerCase().replace(/[^a-z0-9]/g, '')
-    if (map.has(last)) return map.get(last)
-  }
   return undefined
 }
 
@@ -77,7 +64,6 @@ export async function getTodayMatches(): Promise<any[]> {
   const ratings = readRatings()
   const map = buildRatingsMap(ratings)
 
-  // Read from Neon DB
   const rows = await prisma.todayMatch.findMany({
     orderBy: { scheduled_time: 'asc' }
   })
@@ -85,6 +71,20 @@ export async function getTodayMatches(): Promise<any[]> {
   return rows.map(m => {
     const r1 = lookupRating(map, m.player1_id, m.player1_name)
     const r2 = lookupRating(map, m.player2_id, m.player2_name)
+
+    // Use stored odds if available, generate mock as fallback
+    // For mock fallback, base on Elo probabilities if we have ratings
+    let odds1 = m.odds1
+    let odds2 = m.odds2
+    if (!odds1 || !odds2) {
+      const eloProb = r1 && r2
+        ? 1 / (1 + Math.pow(10, (r2.elo_overall - r1.elo_overall) / 400))
+        : 0.5
+      const generated = mock.generateOdds(eloProb)
+      odds1 = generated.odds1
+      odds2 = generated.odds2
+    }
+
     return {
       match_id:      m.match_id,
       tournament:    m.tournament,
@@ -98,6 +98,7 @@ export async function getTodayMatches(): Promise<any[]> {
       player2_id:    m.player2_id,
       player2_name:  m.player2_name,
       source:        m.source,
+      odds_source:   m.odds_source ?? 'mock',
       // Player 1 ratings
       p1_elo_overall: r1?.elo_overall ?? 1500,
       p1_elo_hard:    r1?.elo_hard    ?? 1500,
@@ -108,7 +109,8 @@ export async function getTodayMatches(): Promise<any[]> {
       p1_form_score:  r1?.form_score  ?? 0.5,
       p1_form_json:   r1?.form_json   ?? '[]',
       p1_rank:        r1?.current_rank ?? null,
-      p1_matched:     !!r1,  // debug flag — true if rating was found
+      p1_matched:     !!r1,
+      p1_odds:        odds1,
       // Player 2 ratings
       p2_elo_overall: r2?.elo_overall ?? 1500,
       p2_elo_hard:    r2?.elo_hard    ?? 1500,
@@ -119,7 +121,8 @@ export async function getTodayMatches(): Promise<any[]> {
       p2_form_score:  r2?.form_score  ?? 0.5,
       p2_form_json:   r2?.form_json   ?? '[]',
       p2_rank:        r2?.current_rank ?? null,
-      p2_matched:     !!r2,  // debug flag
+      p2_matched:     !!r2,
+      p2_odds:        odds2,
     }
   })
 }

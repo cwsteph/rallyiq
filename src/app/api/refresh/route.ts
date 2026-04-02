@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import https from 'https'
 import { PrismaClient } from '@prisma/client'
+import { fetchRealOdds, lookupRealOdds, MockOddsProvider } from '@/lib/data/oddsProvider'
 
 const prisma = new PrismaClient()
+const mock = new MockOddsProvider()
 
 function get(url: string): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -112,7 +114,12 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const [atp, wta] = await Promise.all([fetchESPN('atp'), fetchESPN('wta')])
+    // Fetch ESPN matches and real odds in parallel
+    const [[atp, wta], realOddsMap] = await Promise.all([
+      Promise.all([fetchESPN('atp'), fetchESPN('wta')]),
+      fetchRealOdds()
+    ])
+
     const seen = new Set<string>()
     const matches = [...atp, ...wta].filter(m => {
       const key = [m.player1_name, m.player2_name].map((n: string) => n.toLowerCase()).sort().join('|')
@@ -120,10 +127,25 @@ export async function POST(req: NextRequest) {
       seen.add(key); return true
     }).sort((a: any, b: any) => (a.scheduled_time ?? '99:99').localeCompare(b.scheduled_time ?? '99:99'))
 
-    // Clear all existing rows then insert fresh batch — no stale data possible
+    // Attach real odds where available, mock odds as fallback
+    const matchesWithOdds = matches.map(m => {
+      const real = lookupRealOdds(realOddsMap, m.player1_name, m.player2_name)
+      const odds = real ?? mock.generateOdds(0.5) // mock fallback uses neutral 50/50 base
+      return {
+        ...m,
+        odds1: odds.odds1,
+        odds2: odds.odds2,
+        odds_source: real ? 'real' : 'mock'
+      }
+    })
+
+    const realCount = matchesWithOdds.filter(m => m.odds_source === 'real').length
+    console.log(`[Refresh] ${matchesWithOdds.length} matches (${realCount} real odds, ${matchesWithOdds.length - realCount} mock)`)
+
+    // Clear and reinsert
     await prisma.todayMatch.deleteMany()
     await prisma.todayMatch.createMany({
-      data: matches.map(m => ({
+      data: matchesWithOdds.map(m => ({
         match_id:       m.match_id,
         tournament:     m.tournament,
         surface:        m.surface,
@@ -139,7 +161,13 @@ export async function POST(req: NextRequest) {
       }))
     })
 
-    return NextResponse.json({ ok: true, matchCount: matches.length, refreshedAt: new Date().toISOString() })
+    return NextResponse.json({
+      ok: true,
+      matchCount: matchesWithOdds.length,
+      realOdds: realCount,
+      mockOdds: matchesWithOdds.length - realCount,
+      refreshedAt: new Date().toISOString()
+    })
   } catch (e: any) {
     return NextResponse.json({ ok: false, error: e.message }, { status: 500 })
   }
