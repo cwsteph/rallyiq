@@ -11,8 +11,7 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
-    "ratings:build": "tsx scripts/build-ratings.ts",
-    "ratings:seed": "tsx scripts/build-ratings.ts --demo",
+    "ratings:build": "node scripts/build-ratings.mjs",
     "fetch:today": "tsx scripts/fetch-today.ts"
   },
   "dependencies": {
