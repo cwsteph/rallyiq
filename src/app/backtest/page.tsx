@@ -1,23 +1,33 @@
-// src/app/backtest/page.tsx
+// src/app/backtest/page.tsx — Backtest results, editorial "The Read" theme.
 'use client'
 import { useState, useEffect } from 'react'
 import {
   LineChart, Line, BarChart, Bar,
   XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Cell,
 } from 'recharts'
-import { MetricCard, SectionTitle, SurfaceBadge, SignalPill } from '@/components/ui'
-import type { Surface, Signal } from '@/types'
+import {
+  Container, Card, SectionLabel, Stat, SignalPill, SurfaceTag,
+  C, BRAND, serif, mono,
+} from '@/components/editorial/ui'
+
+const axisTick = { fontSize: 9, fill: C.faint, fontFamily: "'IBM Plex Mono', monospace" }
 
 const CustomTooltip = ({ active, payload }: any) => {
   if (!active || !payload?.length) return null
+  const v = payload[0]?.value
   return (
-    <div className="bg-terminal-surface border border-terminal-border rounded px-2 py-1.5 font-mono text-xs">
-      <div className="text-terminal-dim">Bet #{payload[0]?.payload?.i}</div>
-      <div className={payload[0]?.value >= 0 ? 'text-green' : 'text-red'}>
-        P&L: {payload[0]?.value >= 0 ? '+' : ''}${payload[0]?.value?.toFixed(2)}
+    <div style={{ ...mono, fontSize: 11, background: C.paper, border: `1px solid ${C.line2}`, borderRadius: 4, padding: '6px 9px' }}>
+      <div style={{ color: C.faint }}>Bet #{payload[0]?.payload?.i}</div>
+      <div style={{ color: v >= 0 ? C.green : C.red, fontWeight: 700 }}>
+        P&amp;L: {v >= 0 ? '+' : ''}${v?.toFixed(2)}
       </div>
     </div>
   )
+}
+
+const selectStyle: React.CSSProperties = {
+  ...mono, fontSize: 11, color: C.body, background: C.paper,
+  border: `1px solid ${C.line2}`, borderRadius: 4, padding: '6px 10px', cursor: 'pointer',
 }
 
 export default function BacktestPage() {
@@ -43,108 +53,122 @@ export default function BacktestPage() {
   const pnlPositive = (summary.totalPnl ?? 0) >= 0
   const roiPositive = (summary.roi ?? 0) >= 0
 
+  const betRows = rows.filter((r: any) => r.signal !== 'PASS')
+
   return (
-    <div>
-      <div className="flex items-center gap-2 mb-4 flex-wrap">
-        <select
-          value={surface}
-          onChange={e => setSurface(e.target.value)}
-          className="bg-terminal-surface border border-terminal-border text-terminal-muted font-mono text-xs px-2 py-1.5 rounded"
-        >
+    <Container>
+      {/* Lede */}
+      <div style={{ marginBottom: 22 }}>
+        <div style={{ ...mono, fontSize: 10, letterSpacing: 2.5, textTransform: 'uppercase', color: C.faint }}>RallyIQ · The Backtest</div>
+        <h1 style={{ ...serif, fontSize: 40, fontWeight: 600, color: C.ink, letterSpacing: -0.6, margin: '4px 0 0' }}>Backtest</h1>
+      </div>
+
+      {/* Controls */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 22, flexWrap: 'wrap' }}>
+        <select value={surface} onChange={e => setSurface(e.target.value)} style={selectStyle}>
           <option value="all">All Surfaces</option>
           <option value="Hard">Hard</option>
           <option value="Clay">Clay</option>
           <option value="Grass">Grass</option>
         </select>
-        <select
-          value={minEdge}
-          onChange={e => setMinEdge(e.target.value)}
-          className="bg-terminal-surface border border-terminal-border text-terminal-muted font-mono text-xs px-2 py-1.5 rounded"
-        >
+        <select value={minEdge} onChange={e => setMinEdge(e.target.value)} style={selectStyle}>
           <option value="0.02">Min edge 2%</option>
           <option value="0.03">Min edge 3%</option>
           <option value="0.05">Min edge 5%</option>
           <option value="0.08">Min edge 8%</option>
         </select>
-        <span className="font-mono text-2xs text-terminal-dim">
-          {loading ? 'Loading...' : `${summary.totalBets ?? 0} qualifying bets`}
+        <span style={{ ...mono, fontSize: 11, color: C.faint, letterSpacing: 0.5 }}>
+          {loading ? 'Loading…' : `${summary.totalBets ?? 0} qualifying bets`}
         </span>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mb-4">
-        <MetricCard label="Total Bets" value={summary.totalBets ?? 0} />
-        <MetricCard
-          label="Win Rate"
-          value={`${(summary.winRate ?? 0).toFixed(1)}%`}
-          sub={`${summary.wins ?? 0}W / ${(summary.totalBets ?? 0) - (summary.wins ?? 0)}L`}
-        />
-        <MetricCard
-          label="Total P&L"
-          value={`${pnlPositive ? '+' : ''}$${(summary.totalPnl ?? 0).toFixed(2)}`}
-          valueClass={pnlPositive ? 'text-green' : 'text-red'}
-        />
-        <MetricCard
-          label="ROI"
-          value={`${roiPositive ? '+' : ''}${(summary.roi ?? 0).toFixed(1)}%`}
-          valueClass={roiPositive ? 'text-green' : 'text-red'}
-          sub="per unit staked"
-        />
-        <MetricCard
-          label="Min Edge Filter"
-          value={`${(parseFloat(minEdge) * 100).toFixed(0)}%`}
-          sub="threshold"
-          valueClass="text-amber"
-        />
+      {/* Headline metrics */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 12, marginBottom: 26 }}>
+        <Card style={{ padding: 18 }}>
+          <Stat label="Total Bets" value={String(summary.totalBets ?? 0)} />
+        </Card>
+        <Card style={{ padding: 18 }}>
+          <Stat
+            label="Win Rate"
+            value={`${(summary.winRate ?? 0).toFixed(1)}%`}
+            sub={`${summary.wins ?? 0}W / ${(summary.totalBets ?? 0) - (summary.wins ?? 0)}L`}
+          />
+        </Card>
+        <Card style={{ padding: 18 }} accentRail={pnlPositive ? C.green : C.red}>
+          <Stat
+            label="Total P&L"
+            value={`${pnlPositive ? '+' : ''}$${(summary.totalPnl ?? 0).toFixed(2)}`}
+            valueColor={pnlPositive ? C.green : C.red}
+          />
+        </Card>
+        <Card style={{ padding: 18 }} accentRail={roiPositive ? C.green : C.red}>
+          <Stat
+            label="ROI"
+            value={`${roiPositive ? '+' : ''}${(summary.roi ?? 0).toFixed(1)}%`}
+            valueColor={roiPositive ? C.green : C.red}
+            sub="per unit staked"
+          />
+        </Card>
+        <Card style={{ padding: 18 }}>
+          <Stat
+            label="Min Edge Filter"
+            value={`${(parseFloat(minEdge) * 100).toFixed(0)}%`}
+            sub="threshold"
+            valueColor={C.gold}
+          />
+        </Card>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-4">
+      {/* Charts */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 26 }}>
         <div>
-          <SectionTitle>Cumulative P&L Curve</SectionTitle>
-          <div className="bg-terminal-surface border border-terminal-border rounded p-3">
+          <SectionLabel>Cumulative P&amp;L Curve</SectionLabel>
+          <Card style={{ padding: 14 }}>
             {curve.length > 0 ? (
               <ResponsiveContainer width="100%" height={160}>
                 <LineChart data={curve}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#1e2a3a" />
+                  <CartesianGrid strokeDasharray="3 3" stroke={C.line} />
                   <XAxis
                     dataKey="i"
-                    tick={{ fontSize: 9, fill: '#3a5060', fontFamily: 'JetBrains Mono' }}
-                    tickLine={false} axisLine={{ stroke: '#1e2a3a' }}
+                    tick={axisTick}
+                    tickLine={false} axisLine={{ stroke: C.line2 }}
                     interval={Math.max(1, Math.floor(curve.length / 5))}
                   />
                   <YAxis
-                    tick={{ fontSize: 9, fill: '#3a5060', fontFamily: 'JetBrains Mono' }}
-                    tickLine={false} axisLine={{ stroke: '#1e2a3a' }}
+                    tick={axisTick}
+                    tickLine={false} axisLine={{ stroke: C.line2 }}
                     tickFormatter={v => `$${v.toFixed(0)}`}
                   />
-                  <Tooltip content={<CustomTooltip />} />
-                  <Line type="monotone" dataKey="pnl" stroke="#00e5a0" strokeWidth={1.5} dot={false} />
+                  <Tooltip content={<CustomTooltip />} cursor={{ stroke: C.line2 }} />
+                  <Line type="monotone" dataKey="pnl" stroke={BRAND} strokeWidth={1.5} dot={false} />
                 </LineChart>
               </ResponsiveContainer>
             ) : (
-              <div className="h-40 flex items-center justify-center font-mono text-xs text-terminal-dim">
-                {loading ? 'Computing...' : 'No completed matches yet — run npm run db:seed'}
+              <div style={{ ...mono, fontSize: 12, color: C.faint, height: 160, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+                {loading ? 'Computing…' : 'No completed matches yet — run npm run db:seed'}
               </div>
             )}
-          </div>
+          </Card>
         </div>
 
         <div>
-          <SectionTitle>ROI by Surface</SectionTitle>
-          <div className="bg-terminal-surface border border-terminal-border rounded p-3">
+          <SectionLabel>ROI by Surface</SectionLabel>
+          <Card style={{ padding: 14 }}>
             <ResponsiveContainer width="100%" height={160}>
               <BarChart data={surfaceStats} barSize={40}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#1e2a3a" vertical={false} />
-                <XAxis dataKey="surface" tick={{ fontSize: 10, fill: '#3a5060', fontFamily: 'JetBrains Mono' }} tickLine={false} axisLine={{ stroke: '#1e2a3a' }} />
-                <YAxis tick={{ fontSize: 9, fill: '#3a5060', fontFamily: 'JetBrains Mono' }} tickLine={false} axisLine={{ stroke: '#1e2a3a' }} tickFormatter={v => `${v}%`} />
+                <CartesianGrid strokeDasharray="3 3" stroke={C.line} vertical={false} />
+                <XAxis dataKey="surface" tick={{ ...axisTick, fontSize: 10 }} tickLine={false} axisLine={{ stroke: C.line2 }} />
+                <YAxis tick={axisTick} tickLine={false} axisLine={{ stroke: C.line2 }} tickFormatter={v => `${v}%`} />
                 <Tooltip
+                  cursor={{ fill: C.bg }}
                   content={({ active, payload }: any) =>
                     active && payload?.length ? (
-                      <div className="bg-terminal-surface border border-terminal-border rounded px-2 py-1.5 font-mono text-xs">
-                        <div className="text-terminal-dim">{payload[0]?.payload?.surface}</div>
-                        <div className={payload[0]?.value >= 0 ? 'text-green' : 'text-red'}>
+                      <div style={{ ...mono, fontSize: 11, background: C.paper, border: `1px solid ${C.line2}`, borderRadius: 4, padding: '6px 9px' }}>
+                        <div style={{ color: C.faint }}>{payload[0]?.payload?.surface}</div>
+                        <div style={{ color: payload[0]?.value >= 0 ? C.green : C.red, fontWeight: 700 }}>
                           ROI: {payload[0]?.value}%
                         </div>
-                        <div className="text-terminal-muted">n={payload[0]?.payload?.n}</div>
+                        <div style={{ color: C.muted }}>n={payload[0]?.payload?.n}</div>
                       </div>
                     ) : null
                   }
@@ -153,88 +177,88 @@ export default function BacktestPage() {
                   {surfaceStats.map((s: any) => (
                     <Cell
                       key={s.surface}
-                      fill={s.roi >= 0 ? '#00e5a030' : '#ff4d6a30'}
-                      stroke={s.roi >= 0 ? '#00e5a0' : '#ff4d6a'}
+                      fill={s.roi >= 0 ? 'rgba(31,138,91,0.18)' : 'rgba(192,57,43,0.18)'}
+                      stroke={s.roi >= 0 ? C.green : C.red}
                       strokeWidth={1}
                     />
                   ))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
-          </div>
+          </Card>
         </div>
       </div>
 
-      <SectionTitle>ROI by Edge Bucket</SectionTitle>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+      {/* Edge buckets */}
+      <SectionLabel>ROI by Edge Bucket</SectionLabel>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 26 }}>
         {edgeBuckets.map((b: any) => (
-          <div key={b.label} className="bg-terminal-surface border border-terminal-border rounded p-3 text-center">
-            <div className="font-mono text-2xs text-terminal-dim uppercase tracking-widest mb-2">{b.label}</div>
-            <div className={`font-mono text-2xl font-bold ${b.roi >= 0 ? 'text-green' : 'text-red'}`}>
+          <Card key={b.label} style={{ padding: 16, textAlign: 'center' }}>
+            <div style={{ ...mono, fontSize: 9, letterSpacing: 1.5, textTransform: 'uppercase', color: C.faint, marginBottom: 8 }}>{b.label}</div>
+            <div style={{ ...serif, fontSize: 28, fontWeight: 600, color: b.roi >= 0 ? C.green : C.red, lineHeight: 1.1 }}>
               {b.roi >= 0 ? '+' : ''}{b.roi}%
             </div>
-            <div className="font-mono text-2xs text-terminal-dim mt-1.5 space-y-0.5">
+            <div style={{ ...mono, fontSize: 10, color: C.muted, marginTop: 8, lineHeight: 1.6 }}>
               <div>n={b.n} · {b.wins}W · {b.winRate}% WR</div>
-              <div className={b.pnl >= 0 ? 'text-green' : 'text-red'}>
-                {b.pnl >= 0 ? '+' : ''}${b.pnl.toFixed(2)} P&L
+              <div style={{ color: b.pnl >= 0 ? C.green : C.red, fontWeight: 600 }}>
+                {b.pnl >= 0 ? '+' : ''}${b.pnl.toFixed(2)} P&amp;L
               </div>
             </div>
-          </div>
+          </Card>
         ))}
       </div>
 
-      <SectionTitle>Bet Log</SectionTitle>
-      <div className="bg-terminal-surface border border-terminal-border rounded overflow-x-auto">
-        <table className="w-full" style={{ minWidth: '700px' }}>
+      {/* Bet log */}
+      <SectionLabel right={<span style={{ ...mono, fontSize: 10, color: C.faint }}>{betRows.length} bets</span>}>Bet Log</SectionLabel>
+      <Card style={{ padding: 0, overflowX: 'auto' }}>
+        <table style={{ width: '100%', minWidth: 700, borderCollapse: 'collapse' }}>
           <thead>
-            <tr className="border-b border-terminal-border">
+            <tr>
               {['Date', 'Match', 'Surf', 'Model%', 'Impl%', 'Edge', 'Signal', 'Odds', 'Result', 'P&L'].map(h => (
-                <th key={h} className="text-left px-3 py-2.5 font-mono text-2xs text-terminal-dim uppercase tracking-widest whitespace-nowrap">
+                <th key={h} style={{ ...mono, fontSize: 9, letterSpacing: 1.5, textTransform: 'uppercase', color: C.faint, textAlign: 'left', padding: '12px 14px', whiteSpace: 'nowrap', borderBottom: `1px solid ${C.line2}` }}>
                   {h}
                 </th>
               ))}
             </tr>
           </thead>
           <tbody>
-            {rows
-              .filter((r: any) => r.signal !== 'PASS')
-              .map((r: any) => (
-                <tr key={r.matchId} className="border-b border-terminal-border/40 hover:bg-terminal-border/20 transition-colors">
-                  <td className="px-3 py-2 font-mono text-xs text-terminal-dim whitespace-nowrap">
-                    {new Date(r.matchDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                  </td>
-                  <td className="px-3 py-2 text-xs text-terminal-text whitespace-nowrap">
-                    {r.p1Name.split(' ').pop()} v {r.p2Name.split(' ').pop()}
-                  </td>
-                  <td className="px-3 py-2">
-                    <SurfaceBadge surface={r.surface as Surface} />
-                  </td>
-                  <td className="px-3 py-2 font-mono text-xs text-green">
-                    {(r.modelProb * 100).toFixed(1)}%
-                  </td>
-                  <td className="px-3 py-2 font-mono text-xs text-terminal-muted">
-                    {(r.impliedProb * 100).toFixed(1)}%
-                  </td>
-                  <td className={`px-3 py-2 font-mono text-xs font-bold ${r.edge >= 0.05 ? 'text-green' : r.edge >= 0.02 ? 'text-amber' : 'text-terminal-dim'}`}>
-                    +{(r.edge * 100).toFixed(1)}%
-                  </td>
-                  <td className="px-3 py-2">
-                    <SignalPill signal={r.signal as Signal} />
-                  </td>
-                  <td className="px-3 py-2 font-mono text-xs text-blue font-bold">
-                    {r.odds.toFixed(2)}
-                  </td>
-                  <td className={`px-3 py-2 font-mono text-xs font-bold ${r.betWon === null ? 'text-terminal-dim' : r.betWon ? 'text-green' : 'text-red'}`}>
-                    {r.betWon === null ? '—' : r.betWon ? 'WIN' : 'LOSS'}
-                  </td>
-                  <td className={`px-3 py-2 font-mono text-xs font-bold ${r.pnl >= 0 ? 'text-green' : 'text-red'}`}>
-                    {r.pnl >= 0 ? '+' : ''}${r.pnl.toFixed(2)}
-                  </td>
-                </tr>
-              ))}
+            {betRows.map((r: any, i: number) => (
+              <tr key={r.matchId} style={{ borderTop: i ? `1px solid ${C.line}` : 'none' }}>
+                <td style={{ ...mono, fontSize: 11, color: C.muted, padding: '10px 14px', whiteSpace: 'nowrap' }}>
+                  {new Date(r.matchDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                </td>
+                <td style={{ ...serif, fontSize: 14, fontWeight: 600, color: C.ink, padding: '10px 14px', whiteSpace: 'nowrap' }}>
+                  {r.p1Name.split(' ').pop()} <span style={{ ...serif, fontStyle: 'italic', color: C.faint, fontSize: 12 }}>v</span> {r.p2Name.split(' ').pop()}
+                </td>
+                <td style={{ padding: '10px 14px' }}>
+                  <SurfaceTag surface={r.surface as string} />
+                </td>
+                <td style={{ ...mono, fontSize: 12, color: C.green, padding: '10px 14px' }}>
+                  {(r.modelProb * 100).toFixed(1)}%
+                </td>
+                <td style={{ ...mono, fontSize: 12, color: C.muted, padding: '10px 14px' }}>
+                  {(r.impliedProb * 100).toFixed(1)}%
+                </td>
+                <td style={{ ...mono, fontSize: 12, fontWeight: 700, color: r.edge >= 0.05 ? C.green : r.edge >= 0.02 ? C.gold : C.faint, padding: '10px 14px' }}>
+                  +{(r.edge * 100).toFixed(1)}%
+                </td>
+                <td style={{ padding: '10px 14px' }}>
+                  <SignalPill signal={r.signal as string} />
+                </td>
+                <td style={{ ...mono, fontSize: 12, fontWeight: 700, color: C.body, padding: '10px 14px' }}>
+                  {r.odds.toFixed(2)}
+                </td>
+                <td style={{ ...mono, fontSize: 12, fontWeight: 700, color: r.betWon === null ? C.faint : r.betWon ? C.green : C.red, padding: '10px 14px' }}>
+                  {r.betWon === null ? '—' : r.betWon ? 'WIN' : 'LOSS'}
+                </td>
+                <td style={{ ...mono, fontSize: 12, fontWeight: 700, color: r.pnl >= 0 ? C.green : C.red, padding: '10px 14px' }}>
+                  {r.pnl >= 0 ? '+' : ''}${r.pnl.toFixed(2)}
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
-      </div>
-    </div>
+      </Card>
+    </Container>
   )
 }

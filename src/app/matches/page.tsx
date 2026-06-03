@@ -1,9 +1,22 @@
-// src/app/matches/page.tsx
+// src/app/matches/page.tsx — All Matches, editorial theme.
 'use client'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { SectionTitle, SurfaceBadge, SignalPill, EdgeBadge, ProbBar } from '@/components/ui'
 import type { Signal, Surface } from '@/types'
+import { Container, Card, SectionLabel, SignalPill, EdgePill, SurfaceTag, ProbSplit, C, mono, serif } from '@/components/editorial/ui'
+import { SURFACE } from '@/lib/editorial/theme'
+
+const selectStyle = {
+  ...mono,
+  fontSize: 11,
+  color: C.body,
+  background: C.paper,
+  border: `1px solid ${C.line2}`,
+  borderRadius: 3,
+  padding: '5px 8px',
+  textTransform: 'uppercase' as const,
+  letterSpacing: 0.5,
+}
 
 export default function MatchesPage() {
   const [matches, setMatches] = useState<any[]>([])
@@ -27,98 +40,91 @@ export default function MatchesPage() {
   matches.forEach(m => { if (m.signal) signalCounts[m.signal as Signal]++ })
 
   return (
-    <div>
+    <Container>
+      {/* Lede */}
+      <div style={{ marginBottom: 22 }}>
+        <div style={{ ...mono, fontSize: 10, letterSpacing: 2.5, textTransform: 'uppercase', color: C.faint }}>RallyIQ · The Full Slate</div>
+        <h1 style={{ ...serif, fontSize: 40, fontWeight: 600, color: C.ink, letterSpacing: -0.6, margin: '4px 0 0' }}>Today&rsquo;s matches</h1>
+      </div>
+
       {/* Filter bar */}
-      <div className="flex items-center gap-2 mb-4 flex-wrap">
-        <select
-          value={surfaceFilter}
-          onChange={e => setSurfaceFilter(e.target.value)}
-          className="bg-terminal-surface border border-terminal-border text-terminal-muted font-mono text-xs px-2 py-1.5 rounded"
-        >
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 24 }}>
+        <select value={surfaceFilter} onChange={e => setSurfaceFilter(e.target.value)} style={selectStyle}>
           <option value="all">All Surfaces</option>
           <option value="Hard">Hard</option>
           <option value="Clay">Clay</option>
           <option value="Grass">Grass</option>
         </select>
-        <select
-          value={signalFilter}
-          onChange={e => setSignalFilter(e.target.value)}
-          className="bg-terminal-surface border border-terminal-border text-terminal-muted font-mono text-xs px-2 py-1.5 rounded"
-        >
+        <select value={signalFilter} onChange={e => setSignalFilter(e.target.value)} style={selectStyle}>
           <option value="all">All Signals</option>
           <option value="BET">BET only</option>
           <option value="LEAN">LEAN only</option>
           <option value="PASS">PASS only</option>
         </select>
-        <div className="flex items-center gap-2 ml-2">
-          <span className="font-mono text-2xs px-2 py-1 rounded bg-green-bg text-green border border-green/20">
-            {signalCounts.BET} BET
-          </span>
-          <span className="font-mono text-2xs px-2 py-1 rounded bg-amber-bg text-amber border border-amber/20">
-            {signalCounts.LEAN} LEAN
-          </span>
-          <span className="font-mono text-2xs text-terminal-dim">{matches.length} total</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginLeft: 6 }}>
+          <span style={{ ...mono, fontSize: 10, fontWeight: 700, letterSpacing: 1, color: C.green }}>{signalCounts.BET} BET</span>
+          <span style={{ ...mono, fontSize: 10, fontWeight: 700, letterSpacing: 1, color: C.gold }}>{signalCounts.LEAN} LEAN</span>
+          <span style={{ ...mono, fontSize: 10, letterSpacing: 1, color: C.faint }}>{matches.length} TOTAL</span>
         </div>
       </div>
 
-      <SectionTitle>Today's Matches</SectionTitle>
+      <SectionLabel>Today&rsquo;s Matches</SectionLabel>
 
       {loading ? (
-        <div className="font-mono text-xs text-terminal-dim text-center py-8">Loading matches...</div>
+        <div style={{ ...mono, fontSize: 12, color: C.faint, textAlign: 'center', padding: '40px 0' }}>Loading matches&hellip;</div>
       ) : matches.length === 0 ? (
-        <div className="font-mono text-xs text-terminal-dim text-center py-8">No matches found</div>
+        <div style={{ ...mono, fontSize: 12, color: C.faint, textAlign: 'center', padding: '40px 0' }}>No matches found</div>
       ) : (
-        <div className="space-y-2">
-          {matches.map(m => (
-            <Link key={m.id} href={`/matches/${m.id}`}>
-              <div className={`
-                bg-terminal-surface border rounded p-3 cursor-pointer transition-colors hover:border-terminal-hover
-                ${m.signal === 'BET' ? 'border-l-2 border-green' : m.signal === 'LEAN' ? 'border-l-2 border-amber' : 'border-terminal-border'}
-              `}>
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="font-mono text-2xs bg-terminal-border/40 text-terminal-dim px-1.5 py-0.5 rounded uppercase tracking-wide">
-                    {m.tournament?.slice(0, 14)}
-                  </span>
-                  <SurfaceBadge surface={m.surface as Surface} />
-                  <span className="font-mono text-2xs text-terminal-dim">{m.round}</span>
-                  <span className="font-mono text-2xs text-terminal-dim">
-                    BO{m.bestOf}
-                  </span>
-                  <span className="ml-auto flex items-center gap-2">
-                    <SignalPill signal={m.signal as Signal} />
-                    <EdgeBadge edge={m.edge1 ?? 0} signal={m.signal as Signal} />
-                  </span>
-                </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          {matches.map(m => {
+            const acc = (SURFACE[m.surface as string] ?? SURFACE.Hard).accent
+            return (
+              <Link key={m.id} href={`/matches/${m.id}`} style={{ textDecoration: 'none' }}>
+                <Card accentRail={m.signal === 'PASS' ? undefined : acc} style={{ padding: 16 }}>
+                  {/* Meta row */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                    <span style={{ ...mono, fontSize: 10, color: C.faint, textTransform: 'uppercase', letterSpacing: 0.5 }}>{m.tournament?.slice(0, 14)}</span>
+                    <SurfaceTag surface={m.surface as Surface} />
+                    <span style={{ ...mono, fontSize: 10, color: C.faint }}>{m.round}</span>
+                    <span style={{ ...mono, fontSize: 10, color: C.faint }}>BO{m.bestOf}</span>
+                    <span style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <EdgePill edge={m.edge1 ?? 0} />
+                      <SignalPill signal={m.signal as Signal} />
+                    </span>
+                  </div>
 
-                <div className="grid grid-cols-[1fr_auto_1fr] gap-2 items-center mb-2">
-                  <div>
-                    <div className="text-sm font-semibold text-terminal-text">{m.player1?.name}</div>
-                    <div className="font-mono text-2xs text-terminal-dim">
-                      Elo {m.player1?.eloOverall?.toFixed(0)} · #{m.player1?.currentRank ?? '—'}
+                  {/* Players */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: 10, alignItems: 'center', marginBottom: 10 }}>
+                    <div>
+                      <div style={{ ...serif, fontSize: 18, fontWeight: 600, color: C.ink }}>{m.player1?.name}</div>
+                      <div style={{ ...mono, fontSize: 10, color: C.faint, marginTop: 2 }}>
+                        Elo {m.player1?.eloOverall?.toFixed(0)} · #{m.player1?.currentRank ?? '—'}
+                      </div>
+                    </div>
+                    <span style={{ ...serif, fontSize: 13, fontStyle: 'italic', color: C.faint }}>vs</span>
+                    <div style={{ textAlign: 'right' }}>
+                      <div style={{ ...serif, fontSize: 18, fontWeight: 600, color: C.ink }}>{m.player2?.name}</div>
+                      <div style={{ ...mono, fontSize: 10, color: C.faint, marginTop: 2 }}>
+                        Elo {m.player2?.eloOverall?.toFixed(0)} · #{m.player2?.currentRank ?? '—'}
+                      </div>
                     </div>
                   </div>
-                  <div className="font-mono text-2xs text-terminal-dim text-center">vs</div>
-                  <div className="text-right">
-                    <div className="text-sm font-semibold text-terminal-text">{m.player2?.name}</div>
-                    <div className="font-mono text-2xs text-terminal-dim">
-                      Elo {m.player2?.eloOverall?.toFixed(0)} · #{m.player2?.currentRank ?? '—'}
-                    </div>
+
+                  <ProbSplit prob1={m.modelProb1 ?? 0.5} name1={m.player1?.name} name2={m.player2?.name} accent={acc} />
+
+                  {/* Model vs market line */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginTop: 12, ...mono, fontSize: 10, color: C.faint }}>
+                    <span>Model <span style={{ color: C.green, fontWeight: 700 }}>{((m.modelProb1 ?? 0.5) * 100).toFixed(1)}%</span></span>
+                    <span>Implied {((m.impliedProb1 ?? 0.5) * 100).toFixed(1)}%</span>
+                    <span>Fair {m.fairOdds1} ({m.fairOddsAmerican1})</span>
+                    <span>Mkt <span style={{ color: acc, fontWeight: 700 }}>{m.marketOdds1}</span></span>
                   </div>
-                </div>
-
-                <ProbBar prob1={m.modelProb1 ?? 0.5} p1Name={m.player1?.name} p2Name={m.player2?.name} />
-
-                <div className="flex items-center gap-4 mt-2 font-mono text-2xs text-terminal-dim">
-                  <span>Model: <span className="text-green">{((m.modelProb1 ?? 0.5) * 100).toFixed(1)}%</span></span>
-                  <span>Implied: {((m.impliedProb1 ?? 0.5) * 100).toFixed(1)}%</span>
-                  <span>Fair: {m.fairOdds1} ({m.fairOddsAmerican1})</span>
-                  <span>Mkt: <span className="text-blue">{m.marketOdds1}</span></span>
-                </div>
-              </div>
-            </Link>
-          ))}
+                </Card>
+              </Link>
+            )
+          })}
         </div>
       )}
-    </div>
+    </Container>
   )
 }

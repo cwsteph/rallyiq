@@ -1,13 +1,14 @@
-// src/app/page.tsx
+// src/app/page.tsx — Dashboard ("Today's Board"), editorial theme.
 import { getTodayMatches } from '@/lib/data/duckdb'
 import { matchRowToPlayers } from '@/lib/data/ratingToPlayer'
 import { computeWinProbability } from '@/lib/model/probability'
 import { computeEdge } from '@/lib/betting/edge'
 import { MockOddsProvider } from '@/lib/data/oddsProvider'
 import { prisma } from '@/lib/db'
-import { MetricCard, SectionTitle, SurfaceBadge, SignalPill, EdgeBadge, ProbBar, StatusDot } from '@/components/ui'
 import Link from 'next/link'
-import type { Surface, Signal } from '@/types'
+import type { Surface } from '@/types'
+import { Container, Card, SectionLabel, Stat, SignalPill, EdgePill, SurfaceTag, ProbSplit, C, mono, serif } from '@/components/editorial/ui'
+import { SURFACE } from '@/lib/editorial/theme'
 
 export const dynamic = 'force-dynamic'
 
@@ -50,79 +51,100 @@ async function getDashboardData() {
 export default async function DashboardPage() {
   const { topEdges, allMatches, bets, betCount, winRate, avgEdge, currentBalance, pnl, roi } = await getDashboardData()
 
+  const metrics = [
+    { label: 'Bankroll', value: `$${currentBalance.toFixed(2)}`, sub: `${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)} (${roi}%)`, color: pnl >= 0 ? C.green : C.red },
+    { label: "Today's Edges", value: String(allMatches.length), sub: `${betCount.BET ?? 0} BET · ${betCount.LEAN ?? 0} LEAN` },
+    { label: 'Win Rate · 30d', value: `${winRate}%`, sub: `${bets.filter((b: any) => b.status === 'SETTLED').length} settled` },
+    { label: 'Avg Edge', value: `+${avgEdge}%`, sub: 'Model vs implied', color: C.gold },
+  ]
+
   return (
-    <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
-        <MetricCard label="Bankroll" value={`$${currentBalance.toFixed(2)}`}
-          sub={`${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)} (${roi}%)`} valueClass="text-green" />
-        <MetricCard label="Today's Edges" value={allMatches.length}
-          sub={`${betCount.BET ?? 0} BET · ${betCount.LEAN ?? 0} LEAN`} />
-        <MetricCard label="Win Rate (30d)" value={`${winRate}%`}
-          sub={`${bets.filter((b: any) => b.status === 'SETTLED').length} settled bets`} />
-        <MetricCard label="Avg Edge" value={`+${avgEdge}%`} sub="Model vs Implied" valueClass="text-amber" />
+    <Container>
+      {/* Lede */}
+      <div style={{ marginBottom: 22 }}>
+        <div style={{ ...mono, fontSize: 10, letterSpacing: 2.5, textTransform: 'uppercase', color: C.faint }}>RallyIQ · The Daily Board</div>
+        <h1 style={{ ...serif, fontSize: 40, fontWeight: 600, color: C.ink, letterSpacing: -0.6, margin: '4px 0 0' }}>Today&rsquo;s edges</h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      {/* Metric row */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 26 }}>
+        {metrics.map(mt => (
+          <Card key={mt.label} style={{ padding: 18 }}>
+            <Stat label={mt.label} value={mt.value} sub={mt.sub} valueColor={mt.color ?? C.ink} />
+          </Card>
+        ))}
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 28 }}>
+        {/* Top edges */}
         <div>
-          <SectionTitle>Today's Top Edges</SectionTitle>
-          <div className="space-y-1.5">
-            {topEdges.map(m => (
-              <Link key={m.match_id} href={`/matches/${m.match_id}`}>
-                <div className={`bg-terminal-surface border rounded p-3 cursor-pointer transition-colors hover:border-terminal-hover
-                  ${m.signal === 'BET' ? 'border-l-2 border-l-green border-green' : m.signal === 'LEAN' ? 'border-l-2 border-l-amber border-amber' : 'border-terminal-border'}`}>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="font-mono text-2xs text-terminal-dim uppercase">{m.tournament.slice(0, 14)}</span>
-                    <SurfaceBadge surface={m.surface as Surface} />
-                    <span className="font-mono text-2xs text-terminal-dim">{m.round}</span>
-                    <span className="ml-auto"><EdgeBadge edge={m.edge} signal={m.signal as Signal} /></span>
-                  </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-sm font-semibold text-terminal-text flex-1">{m.p1.name}</span>
-                    <span className="font-mono text-2xs text-terminal-dim">vs</span>
-                    <span className="text-sm font-semibold text-terminal-text flex-1 text-right">{m.p2.name}</span>
-                  </div>
-                  <ProbBar prob1={m.prob1} p1Name={m.p1.name} p2Name={m.p2.name} />
-                </div>
-              </Link>
-            ))}
+          <SectionLabel>Today&rsquo;s Top Edges</SectionLabel>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {topEdges.map(m => {
+              const acc = (SURFACE[m.surface as string] ?? SURFACE.Hard).accent
+              return (
+                <Link key={m.match_id} href={`/matches/${m.match_id}`} style={{ textDecoration: 'none' }}>
+                  <Card accentRail={m.signal === 'PASS' ? undefined : acc} style={{ padding: 16 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+                      <span style={{ ...mono, fontSize: 10, color: C.faint, textTransform: 'uppercase', letterSpacing: 0.5 }}>{m.tournament.slice(0, 22)}</span>
+                      <SurfaceTag surface={m.surface as string} />
+                      <span style={{ ...mono, fontSize: 10, color: C.faint }}>{m.round}</span>
+                      <span style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <EdgePill edge={m.edge} /><SignalPill signal={m.signal as string} />
+                      </span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                      <span style={{ ...serif, fontSize: 18, fontWeight: 600, color: C.ink, flex: 1 }}>{m.p1.name}</span>
+                      <span style={{ ...serif, fontSize: 13, fontStyle: 'italic', color: C.faint }}>vs</span>
+                      <span style={{ ...serif, fontSize: 18, fontWeight: 600, color: C.ink, flex: 1, textAlign: 'right' }}>{m.p2.name}</span>
+                    </div>
+                    <ProbSplit prob1={m.prob1} accent={acc} />
+                  </Card>
+                </Link>
+              )
+            })}
             {topEdges.length === 0 && (
-              <div className="font-mono text-xs text-terminal-dim text-center py-8">
-                No matches loaded · Hit Refresh to fetch today's schedule
+              <div style={{ ...mono, fontSize: 12, color: C.faint, textAlign: 'center', padding: '32px 0' }}>
+                No matches loaded · hit Refresh to fetch today&rsquo;s schedule
               </div>
             )}
           </div>
-          <Link href="/matches" className="block mt-2 font-mono text-2xs text-terminal-dim hover:text-terminal-muted text-center py-1">
+          <Link href="/matches" style={{ ...mono, fontSize: 10, color: C.muted, textTransform: 'uppercase', letterSpacing: 1, display: 'block', textAlign: 'center', padding: '12px 0', textDecoration: 'none' }}>
             View all {allMatches.length} matches →
           </Link>
         </div>
 
+        {/* Recent bets */}
         <div>
-          <SectionTitle>Recent Bets</SectionTitle>
-          <div className="space-y-1.5">
-            {bets.slice(0, 7).map((b: any) => (
-              <div key={b.id} className="bg-terminal-surface border border-terminal-border rounded p-2.5 flex items-center gap-3">
-                <StatusDot status={(b.result as any) ?? 'OPEN'} />
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm font-semibold text-terminal-text truncate">{b.playerName}</div>
-                  <div className="font-mono text-2xs text-terminal-dim truncate">{b.matchDesc}</div>
-                </div>
-                <div className="text-right shrink-0">
-                  <div className={`font-mono text-xs font-bold ${b.pnl != null ? (b.pnl >= 0 ? 'text-green' : 'text-red') : 'text-amber'}`}>
-                    {b.pnl != null ? `${b.pnl >= 0 ? '+' : ''}$${Math.abs(b.pnl).toFixed(2)}` : `$${b.stake.toFixed(2)}`}
+          <SectionLabel>Recent Bets</SectionLabel>
+          <Card style={{ padding: 4 }}>
+            {bets.slice(0, 8).map((b: any, i: number) => {
+              const dotColor = b.result === 'WIN' ? C.green : b.result === 'LOSS' ? C.red : C.gold
+              return (
+                <div key={b.id} style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '12px 14px', borderTop: i ? `1px solid ${C.line}` : 'none' }}>
+                  <span style={{ width: 7, height: 7, borderRadius: 99, background: dotColor, flexShrink: 0 }} />
+                  <div style={{ minWidth: 0, flex: 1 }}>
+                    <div style={{ ...serif, fontSize: 15, fontWeight: 600, color: C.ink, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.playerName}</div>
+                    <div style={{ ...mono, fontSize: 10, color: C.faint, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{b.matchDesc}</div>
                   </div>
-                  <div className="mt-0.5"><SignalPill signal={b.signal as Signal} /></div>
+                  <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                    <div style={{ ...mono, fontSize: 13, fontWeight: 700, color: b.pnl != null ? (b.pnl >= 0 ? C.green : C.red) : C.gold }}>
+                      {b.pnl != null ? `${b.pnl >= 0 ? '+' : ''}$${Math.abs(b.pnl).toFixed(2)}` : `$${b.stake.toFixed(2)}`}
+                    </div>
+                    <div style={{ marginTop: 3 }}><SignalPill signal={b.signal} /></div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
             {bets.length === 0 && (
-              <div className="font-mono text-xs text-terminal-dim text-center py-8">No bets logged yet</div>
+              <div style={{ ...mono, fontSize: 12, color: C.faint, textAlign: 'center', padding: '32px 0' }}>No bets logged yet</div>
             )}
-          </div>
-          <Link href="/bankroll" className="block mt-2 font-mono text-2xs text-terminal-dim hover:text-terminal-muted text-center py-1">
+          </Card>
+          <Link href="/bankroll" style={{ ...mono, fontSize: 10, color: C.muted, textTransform: 'uppercase', letterSpacing: 1, display: 'block', textAlign: 'center', padding: '12px 0', textDecoration: 'none' }}>
             View bankroll →
           </Link>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

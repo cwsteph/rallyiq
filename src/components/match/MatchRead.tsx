@@ -188,19 +188,6 @@ export default function MatchRead({ model }: { model: ReadModel }) {
 
   return (
     <div style={{ ...sans, background: C.bg, color: C.body, width: '100%', minHeight: '100%' }}>
-      {/* masthead */}
-      <div style={{ borderBottom: `2px solid ${C.ink}`, background: C.paper }}>
-        <div style={{ maxWidth: 1080, margin: '0 auto', padding: '0 28px', height: 56, display: 'flex', alignItems: 'center', gap: 20 }}>
-          <span style={{ ...serif, fontWeight: 700, fontSize: 24, color: C.ink, letterSpacing: -0.5 }}>Rally<span style={{ color: acc }}>IQ</span></span>
-          <div style={{ display: 'flex', gap: 20, marginLeft: 8 }}>
-            {['Dashboard', 'Matches', 'Rankings', 'Bankroll', 'Backtest'].map((n, i) => (
-              <span key={n} style={{ ...mono, fontSize: 11, letterSpacing: 1, textTransform: 'uppercase', color: i === 1 ? C.ink : C.faint, fontWeight: i === 1 ? 700 : 400, borderBottom: i === 1 ? `2px solid ${acc}` : 'none', paddingBottom: 2 }}>{n}</span>
-            ))}
-          </div>
-          <span style={{ ...mono, fontSize: 10, color: C.faint, marginLeft: 'auto' }}>{m.dateLong}</span>
-        </div>
-      </div>
-
       <div style={{ maxWidth: 1080, margin: '0 auto', padding: '28px 28px 44px' }}>
         {/* COVER HERO */}
         <div style={{ position: 'relative', overflow: 'hidden', borderRadius: 6, border: `1px solid ${C.line2}`, background: `linear-gradient(135deg, ${C.paper}, ${C.bg})`, padding: '30px 32px 28px', marginBottom: 14 }}>
