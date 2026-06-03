@@ -2,6 +2,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Masthead } from '@/components/editorial/Masthead'
+import { Tracker } from '@/components/Tracker'
 import { C } from '@/lib/editorial/theme'
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body style={{ background: C.bg, color: C.body, fontFamily: "'DM Sans', system-ui, sans-serif", margin: 0, minHeight: '100vh' }}>
+        <Tracker site="rallyiq" />
         <Masthead />
         <main>{children}</main>
       </body>

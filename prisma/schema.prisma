@@ -60,6 +60,23 @@ model Bet {
   @@index([matchExternalId])
 }
 
+model PageView {
+  id        String   @id @default(cuid())
+  site      String   // rallyiq | paddockiq | dugoutiq | landing
+  path      String
+  ip        String?
+  city      String?
+  region    String?
+  country   String?
+  isp       String?
+  userAgent String?
+  referrer  String?
+  createdAt DateTime @default(now())
+
+  @@index([site])
+  @@index([createdAt])
+}
+
 model Bankroll {
   id        String   @id @default(cuid())
   amount    Float
