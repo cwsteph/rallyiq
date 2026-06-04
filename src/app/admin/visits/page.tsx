@@ -4,7 +4,9 @@ import { Container, Card, SectionLabel, C, mono, serif } from '@/components/edit
 
 export const dynamic = 'force-dynamic'
 
-const ADMIN_KEY = process.env.ADMIN_KEY ?? 'rallyiq2026'
+// Required — no insecure default. Set ADMIN_KEY in the environment (Netlify env var
+// / .env.local). If it's unset, the page stays locked for everyone.
+const ADMIN_KEY = process.env.ADMIN_KEY
 
 const SITE_ACCENT: Record<string, string> = {
   rallyiq: '#d9763f', paddockiq: '#1f8a5b', dugoutiq: '#1f4e79', landing: '#1d1a15',
@@ -19,11 +21,13 @@ function device(ua?: string | null) {
 }
 
 export default async function VisitsPage({ searchParams }: { searchParams: { key?: string } }) {
-  if (searchParams.key !== ADMIN_KEY) {
+  if (!ADMIN_KEY || searchParams.key !== ADMIN_KEY) {
     return (
       <Container>
         <div style={{ ...mono, fontSize: 12, color: C.faint, padding: '48px 0' }}>
-          Unauthorized — append <span style={{ color: C.ink }}>?key=…</span> to view.
+          {!ADMIN_KEY
+            ? 'Locked — set the ADMIN_KEY environment variable to enable this page.'
+            : <>Unauthorized — append <span style={{ color: C.ink }}>?key=…</span> to view.</>}
         </div>
       </Container>
     )
