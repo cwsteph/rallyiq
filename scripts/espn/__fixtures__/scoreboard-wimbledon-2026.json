@@ -1,0 +1,992 @@
+{
+ "events": [
+  {
+   "id": "188-2026",
+   "uid": "s:850~l:851~e:188-2026",
+   "date": "2026-06-22T04:00Z",
+   "endDate": "2026-07-13T03:59Z",
+   "major": true,
+   "name": "Wimbledon",
+   "shortName": "Wimbledon",
+   "season": {
+    "year": 2026,
+    "type": 2
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "177315",
+       "uid": "s:850~l:851~e:188-2026~c:177315",
+       "date": "2026-06-29T10:05Z",
+       "startDate": "2026-06-29T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 3,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "No. 3 Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "(23) Rafael Jodar (ESP) bt Felix Gill (GBR) 6-3 6-3 7-5",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3998",
+         "uid": "s:850~l:851~a:3998",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3,
+           "winner": false
+          },
+          {
+           "value": 3,
+           "winner": false
+          },
+          {
+           "value": 5,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "70f2fd97-5c99-2d13-fdac-e4ace47f9c13",
+          "displayName": "Felix Gill",
+          "shortName": "F. Gill",
+          "fullName": "Felix Gill",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
+           "alt": "Great Britain",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/3998/felix-gill",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "12657",
+         "uid": "s:850~l:851~a:12657",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "curatedRank": {
+          "current": 23
+         },
+         "linescores": [
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 7,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "14a740e2-9290-3b00-84d2-8a65c9754208",
+          "displayName": "Rafael Jodar",
+          "shortName": "R. Jodar",
+          "fullName": "Rafael Jodar",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+           "alt": "Spain",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/12657/rafael-jodar",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "177320",
+       "uid": "s:850~l:851~e:188-2026~c:177320",
+       "date": "2026-06-29T10:05Z",
+       "startDate": "2026-06-29T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "38",
+         "name": "STATUS_RETIRED",
+         "state": "post",
+         "completed": true,
+         "description": "Retired",
+         "detail": "Retired",
+         "shortDetail": "Retired"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 6"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Pablo Carreno Busta (ESP) bt Denis Shapovalov (CAN) 6-3 7-6 (9-7) 0-0 ret",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "1590",
+         "uid": "s:850~l:851~a:1590",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 7,
+           "tiebreak": 9,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "7ba77580-4f3a-73fd-66f7-7354306769dd",
+          "displayName": "Pablo Carreno Busta",
+          "shortName": "P. Carreno Busta",
+          "fullName": "Pablo Carreno Busta",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+           "alt": "Spain",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/1590/pablo-carreno-busta",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "2860",
+         "uid": "s:850~l:851~a:2860",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 3,
+           "winner": false
+          },
+          {
+           "value": 6,
+           "tiebreak": 7,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "2a61af8f-50be-3754-5559-d4fa60f9fb61",
+          "displayName": "Denis Shapovalov",
+          "shortName": "D. Shapovalov",
+          "fullName": "Denis Shapovalov",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+           "alt": "Canada",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/2860/denis-shapovalov",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "179877",
+       "uid": "s:850~l:851~e:188-2026~c:179877",
+       "date": "2026-06-22T10:05Z",
+       "startDate": "2026-06-22T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 17 Roehampton"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Zsombor Piros (HUN) bt Ivan Ivanov (BUL) 6-2 6-2",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "13489",
+         "uid": "s:850~l:851~a:13489",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 2,
+           "winner": false
+          },
+          {
+           "value": 2,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "cd67cd0b-6477-3e61-acc4-588190ee1889",
+          "displayName": "Ivan Ivanov",
+          "shortName": "I. Ivanov",
+          "fullName": "Ivan Ivanov",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/bul.png",
+           "alt": "Bulgaria",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/13489/ivan-ivanov",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "3110",
+         "uid": "s:850~l:851~a:3110",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 6,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "3eff3339-614b-4a5c-0b43-50c8b15d63cf",
+          "displayName": "Zsombor Piros",
+          "shortName": "Z. Piros",
+          "fullName": "Zsombor Piros",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/hun.png",
+           "alt": "Hungary",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/3110/zsombor-piros",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "11",
+        "displayName": "Qualifying 1st Round"
+       },
+       "wasSuspended": false
+      }
+     ]
+    },
+    {
+     "grouping": {
+      "id": "3",
+      "slug": "mens-doubles",
+      "displayName": "Men's Doubles"
+     },
+     "competitions": [
+      {
+       "id": "177439",
+       "uid": "s:850~l:851~e:188-2026~c:177439",
+       "date": "2026-07-01T10:05Z",
+       "startDate": "2026-07-01T10:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "London, Great Britain",
+        "court": "Court 15"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "(9) Hugo Nys (MON) & Edouard Roger-Vasselin (FRA) bt Daniel Evans (GBR) & Henry Searle (GBR) 6-2 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "2688-720",
+         "uid": "s:850~l:851~t:2688-720",
+         "type": "team",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "curatedRank": {
+          "current": 9
+         },
+         "linescores": [
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 6,
+           "winner": true
+          }
+         ],
+         "roster": {
+          "displayName": "Hugo Nys / Edouard Roger-Vasselin",
+          "shortDisplayName": "H. Nys / E. Roger-Vasselin",
+          "athletes": [
+           {
+            "guid": "816eaa03-cb20-f65d-4193-5800e8104c27",
+            "displayName": "Hugo Nys",
+            "shortName": "H. Nys",
+            "fullName": "Hugo Nys",
+            "flag": {
+             "href": "https://a.espncdn.com/i/teamlogos/countries/500/mon.png",
+             "alt": "Monaco",
+             "rel": [
+              "country-flag"
+             ]
+            },
+            "links": [
+             {
+              "language": "en-US",
+              "rel": [
+               "playercard",
+               "desktop",
+               "athlete"
+              ],
+              "href": "https://www.espn.com/tennis/player/_/id/2688/hugo-nys",
+              "text": "Player Card",
+              "shortText": "Player Card",
+              "isExternal": false,
+              "isPremium": false,
+              "isHidden": false
+             }
+            ]
+           },
+           {
+            "guid": "c315510c-1050-24f9-4a2b-458a79f2fdea",
+            "displayName": "Edouard Roger-Vasselin",
+            "shortName": "E. Roger-Vasselin",
+            "fullName": "Edouard Roger-Vasselin",
+            "flag": {
+             "href": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+             "alt": "France",
+             "rel": [
+              "country-flag"
+             ]
+            },
+            "links": [
+             {
+              "language": "en-US",
+              "rel": [
+               "playercard",
+               "desktop",
+               "athlete"
+              ],
+              "href": "https://www.espn.com/tennis/player/_/id/720/edouard-roger-vasselin",
+              "text": "Player Card",
+              "shortText": "Player Card",
+              "isExternal": false,
+              "isPremium": false,
+              "isHidden": false
+             }
+            ]
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "901-14254",
+         "uid": "s:850~l:851~t:901-14254",
+         "type": "team",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 2,
+           "winner": false
+          },
+          {
+           "value": 4,
+           "winner": false
+          }
+         ],
+         "roster": {
+          "displayName": "Daniel Evans / Henry Searle",
+          "shortDisplayName": "D. Evans / H. Searle",
+          "athletes": [
+           {
+            "guid": "6dcf2b92-2f6d-6d5b-8deb-bd296fe4521e",
+            "displayName": "Daniel Evans",
+            "shortName": "D. Evans",
+            "fullName": "Daniel Evans",
+            "flag": {
+             "href": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
+             "alt": "Great Britain",
+             "rel": [
+              "country-flag"
+             ]
+            },
+            "links": [
+             {
+              "language": "en-US",
+              "rel": [
+               "playercard",
+               "desktop",
+               "athlete"
+              ],
+              "href": "https://www.espn.com/tennis/player/_/id/901/daniel-evans",
+              "text": "Player Card",
+              "shortText": "Player Card",
+              "isExternal": false,
+              "isPremium": false,
+              "isHidden": false
+             }
+            ]
+           },
+           {
+            "guid": "184b6ad0-b8e3-3b4b-91c7-34924574b8f6",
+            "displayName": "Henry Searle",
+            "shortName": "H. Searle",
+            "fullName": "Henry Searle",
+            "flag": {
+             "href": "https://a.espncdn.com/i/teamlogos/countries/500/gbr.png",
+             "alt": "Great Britain",
+             "rel": [
+              "country-flag"
+             ]
+            },
+            "links": [
+             {
+              "language": "en-US",
+              "rel": [
+               "playercard",
+               "desktop",
+               "athlete"
+              ],
+              "href": "https://www.espn.com/tennis/player/_/id/14254/henry-searle",
+              "text": "Player Card",
+              "shortText": "Player Card",
+              "isExternal": false,
+              "isPremium": false,
+              "isHidden": false
+             }
+            ]
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 188,
+       "type": {
+        "id": "3",
+        "text": "Men's Doubles",
+        "slug": "mens-doubles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      }
+     ]
+    }
+   ],
+   "status": {
+    "period": 2,
+    "type": {
+     "id": "3",
+     "name": "STATUS_FINAL",
+     "state": "post",
+     "completed": true,
+     "description": "Final",
+     "detail": "Final",
+     "shortDetail": "Final"
+    }
+   },
+   "venue": {
+    "displayName": "London, Great Britain"
+   },
+   "links": [
+    {
+     "language": "en-US",
+     "rel": [
+      "summary",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/scoreboard/tournament/_/eventId/188-2026/competitionType/1",
+     "text": "Summary",
+     "shortText": "Summary",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    },
+    {
+     "language": "en-US",
+     "rel": [
+      "bracket",
+      "desktop",
+      "event"
+     ],
+     "href": "https://www.espn.com/tennis/bracket/_/year/2026/tournamentId/188/type/1",
+     "text": "Bracket",
+     "shortText": "Bracket",
+     "isExternal": false,
+     "isPremium": false,
+     "isHidden": false
+    }
+   ],
+   "previousWinners": [
+    {
+     "displayName": "Jannik Sinner",
+     "shortDisplayName": "J. Sinner",
+     "type": {
+      "id": "1",
+      "text": "Men's Singles",
+      "slug": "mens-singles"
+     },
+     "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/3623.png",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/3623/jannik-sinner",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false,
+       "isHidden": false
+      }
+     ]
+    },
+    {
+     "displayName": "Iga Swiatek",
+     "shortDisplayName": "I. Swiatek",
+     "type": {
+      "id": "2",
+      "text": "Women's Singles",
+      "slug": "womens-singles"
+     },
+     "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/3730.png",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/3730/iga-swiatek",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false,
+       "isHidden": false
+      }
+     ]
+    },
+    {
+     "displayName": "Julian Cash / Lloyd Glasspool",
+     "shortDisplayName": "J. Cash / L. Glasspool",
+     "type": {
+      "id": "3",
+      "text": "Men's Doubles",
+      "slug": "mens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Julian Cash",
+       "shortDisplayName": "J. Cash",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/2420/julian-cash",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      },
+      {
+       "displayName": "Lloyd Glasspool",
+       "shortDisplayName": "L. Glasspool",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/3064/lloyd-glasspool",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "displayName": "Veronika Kudermetova / Elise Mertens",
+     "shortDisplayName": "V. Kudermetova / E. Mertens",
+     "type": {
+      "id": "4",
+      "text": "Women's Doubles",
+      "slug": "womens-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Veronika Kudermetova",
+       "shortDisplayName": "V. Kudermetova",
+       "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/2665.png",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/2665/veronika-kudermetova",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      },
+      {
+       "displayName": "Elise Mertens",
+       "shortDisplayName": "E. Mertens",
+       "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/2221.png",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/2221/elise-mertens",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "displayName": "Sem Verbeek / Katerina Siniakova",
+     "shortDisplayName": "S. Verbeek / K. Siniakova",
+     "type": {
+      "id": "6",
+      "text": "Mixed Doubles",
+      "slug": "mixed-doubles"
+     },
+     "athletes": [
+      {
+       "displayName": "Sem Verbeek",
+       "shortDisplayName": "S. Verbeek",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/3718/sem-verbeek",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      },
+      {
+       "displayName": "Katerina Siniakova",
+       "shortDisplayName": "K. Siniakova",
+       "headshot": "https://a.espncdn.com/i/headshots/tennis/players/full/2248.png",
+       "links": [
+        {
+         "language": "en-US",
+         "rel": [
+          "playercard",
+          "desktop",
+          "athlete"
+         ],
+         "href": "https://www.espn.com/tennis/player/_/id/2248/katerina-siniakova",
+         "text": "Player Card",
+         "shortText": "Player Card",
+         "isExternal": false,
+         "isPremium": false,
+         "isHidden": false
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "calendar": {
+    "type": "day",
+    "timeZone": "America/New_York",
+    "startDate": "2026-06-22T04:00Z",
+    "endDate": "2026-07-12T04:00Z",
+    "calendar": [
+     "2026-06-22T04:00Z",
+     "2026-06-23T04:00Z",
+     "2026-06-24T04:00Z",
+     "2026-06-25T04:00Z",
+     "2026-06-29T04:00Z",
+     "2026-06-30T04:00Z",
+     "2026-07-01T04:00Z",
+     "2026-07-02T04:00Z",
+     "2026-07-03T04:00Z",
+     "2026-07-04T04:00Z",
+     "2026-07-05T04:00Z",
+     "2026-07-06T04:00Z",
+     "2026-07-07T04:00Z",
+     "2026-07-08T04:00Z",
+     "2026-07-09T04:00Z",
+     "2026-07-10T04:00Z",
+     "2026-07-11T04:00Z",
+     "2026-07-12T04:00Z"
+    ]
+   }
+  }
+ ]
+}
