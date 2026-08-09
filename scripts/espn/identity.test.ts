@@ -1,6 +1,12 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { buildIdentityMap, resolvePlayerId, playerIdForToday, type Rating } from "./identity.ts";
+import {
+  buildIdentityMap,
+  resolvePlayerId,
+  playerIdForToday,
+  createTodayResolver,
+  type Rating,
+} from "./identity.ts";
 import type { RankingEntry } from "./types.ts";
 
 const RATINGS: Rating[] = [
@@ -142,4 +148,33 @@ test("an unresolvable name gets an espn id and is recorded, never slugified", ()
   assert.equal(id, "espn_555");
   assert.notEqual(id, "teodora_kostovic");
   assert.deepEqual(unresolved, ["Teodora Kostovic"]);
+});
+
+test("createTodayResolver uses the existing player_id when the name resolves", () => {
+  const r = createTodayResolver([{ player_id: "206173", name: "Jannik Sinner", tour: "ATP" }]);
+  assert.equal(r.resolve("Jannik Sinner", "ATP", "3623"), "206173");
+  assert.deepEqual(r.unresolved, []);
+});
+
+test("createTodayResolver never emits a slug for an unresolved name", () => {
+  const r = createTodayResolver([{ player_id: "1", name: "Jannik Sinner", tour: "ATP" }]);
+  const id = r.resolve("Teodora Kostovic", "WTA", "555");
+  assert.equal(id, "espn_555");
+  assert.notEqual(id, "teodora_kostovic");
+  assert.deepEqual(r.unresolved, ["Teodora Kostovic"]);
+});
+
+test("createTodayResolver refuses a bare-surname match", () => {
+  const r = createTodayResolver([
+    { player_id: "100", name: "Alexander Zverev", tour: "ATP" },
+    { player_id: "200", name: "Mischa Zverev", tour: "ATP" },
+  ]);
+  const id = r.resolve("Zverev", "ATP", "777");
+  assert.equal(id, "espn_777", "a lone surname must not pick a player");
+  assert.deepEqual(r.unresolved, ["Zverev"]);
+});
+
+test("createTodayResolver still resolves a swapped name order", () => {
+  const r = createTodayResolver([{ player_id: "220000", name: "Qinwen Zheng", tour: "WTA" }]);
+  assert.equal(r.resolve("Zheng Qinwen", "WTA", "6048"), "220000");
 });

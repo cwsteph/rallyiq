@@ -11,7 +11,8 @@
 
 import fs from 'fs'
 import path from 'path'
-import https from 'https'
+import { createTodayResolver } from './espn/identity.ts'
+import { competitorId } from './espn/parse.ts'
 
 const DATA_DIR    = path.join(process.cwd(), 'data')
 const TODAY_PATH  = path.join(DATA_DIR, 'today.json')
@@ -35,57 +36,44 @@ export interface TodayMatch {
 
 // ── HTTP helper ───────────────────────────────────────────────────────────────
 
-function get(url: string, timeoutMs = 12000): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const req = https.get(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (compatible; RallyIQ/1.0)',
-        'Accept': 'application/json',
-      }
-    }, res => {
-      if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return get(res.headers.location, timeoutMs).then(resolve).catch(reject)
-      }
-      if (res.statusCode && res.statusCode >= 400) {
-        return reject(new Error(`HTTP ${res.statusCode}`))
-      }
-      const chunks: Buffer[] = []
-      res.on('data', c => chunks.push(c))
-      res.on('end',  () => resolve(Buffer.concat(chunks).toString('utf8')))
-      res.on('error', reject)
-    })
-    req.setTimeout(timeoutMs, () => { req.destroy(); reject(new Error('Timeout')) })
-    req.on('error', reject)
+/**
+ * Uses global fetch rather than https.get.
+ *
+ * ESPN 403s this endpoint for the old `https.get` path regardless of the
+ * User-Agent sent — a spoofed browser string, a custom one, and none at all
+ * all fail, while the same URL through fetch() returns 200. That 403 is the
+ * second reason today.json froze at 2026-03-26: the Vercel cron never ran on
+ * Netlify, and the script it would have run was failing on its own.
+ * scripts/espn/backfill.ts already fetches this host successfully.
+ */
+async function get(url: string, timeoutMs = 12000): Promise<string> {
+  const resp = await fetch(url, {
+    signal: AbortSignal.timeout(timeoutMs),
+    headers: { Accept: 'application/json' },
   })
+  if (!resp.ok) throw new Error(`HTTP ${resp.status}`)
+  return resp.text()
 }
 
 // ── Player ID resolution ──────────────────────────────────────────────────────
 
-function loadRatingsIndex(): Map<string, string> {
-  const idx = new Map<string, string>()
-  if (!fs.existsSync(RATINGS_PATH)) return idx
+/**
+ * Player ids come from the shared resolver, which matches on the full name
+ * (exact, then reordered, then token-subset) and requires a single candidate.
+ *
+ * The version this replaced fell back to a bare surname and then to a slug.
+ * The surname fallback resolved "Zverev" to whichever Zverev was indexed first
+ * — a silently wrong player. The slug produced ids like `polona_hercog` that
+ * look real, join to nothing, and reported no error; four of them were sitting
+ * in today.json with no rating attached.
+ */
+function loadRatings(): any[] {
+  if (!fs.existsSync(RATINGS_PATH)) return []
   try {
-    const ratings: any[] = JSON.parse(fs.readFileSync(RATINGS_PATH, 'utf8'))
-    for (const r of ratings) {
-      if (!r.name || !r.player_id) continue
-      idx.set(r.name.toLowerCase(), r.player_id)
-      const parts = r.name.split(' ')
-      const last = parts[parts.length - 1].toLowerCase()
-      if (!idx.has(last)) idx.set(last, r.player_id)
-    }
-  } catch {}
-  return idx
-}
-
-function slugify(s: string) {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '')
-}
-
-function resolveId(name: string, idx: Map<string, string>): string {
-  const exact = idx.get(name.toLowerCase())
-  if (exact) return exact
-  const last = name.split(' ').pop()?.toLowerCase() ?? ''
-  return idx.get(last) ?? slugify(name)
+    return JSON.parse(fs.readFileSync(RATINGS_PATH, 'utf8'))
+  } catch {
+    return []
+  }
 }
 
 // ── Surface inference from tournament name ────────────────────────────────────
@@ -137,7 +125,10 @@ function bestOf(round: string, isMasters: boolean, isWTA: boolean): 3 | 5 {
 
 // ── ESPN scraper ──────────────────────────────────────────────────────────────
 
-async function fetchESPN(tour: 'atp' | 'wta', idx: Map<string, string>): Promise<TodayMatch[]> {
+async function fetchESPN(
+  tour: 'atp' | 'wta',
+  resolver: ReturnType<typeof createTodayResolver>,
+): Promise<TodayMatch[]> {
   const url = `https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/scoreboard`
   console.log(`  Fetching ESPN ${tour.toUpperCase()}...`)
 
@@ -159,6 +150,15 @@ async function fetchESPN(tour: 'atp' | 'wta', idx: Map<string, string>): Promise
     const isMasters   = /masters|1000/i.test(tournament)
 
     for (const grouping of (event.groupings ?? [])) {
+      // Tour comes from the grouping, not the endpoint. ESPN's ATP scoreboard
+      // returns women's events too, so keying off the URL tagged Coco Gauff and
+      // Iga Swiatek as ATP and left them unresolvable against the roster.
+      const slug: string = grouping.grouping?.slug ?? ''
+      if (slug && !slug.endsWith('-singles')) continue
+      const TOUR: 'ATP' | 'WTA' = slug
+        ? (slug === 'mens-singles' ? 'ATP' : 'WTA')
+        : (isWTA ? 'WTA' : 'ATP')
+
       for (const comp of (grouping.competitions ?? [])) {
         const status = comp.status?.type?.name
 
@@ -188,8 +188,8 @@ async function fetchESPN(tour: 'atp' | 'wta', idx: Map<string, string>): Promise
           ? new Date(comp.date).toISOString().slice(11, 16)
           : undefined
 
-        const p1Id = resolveId(p1name, idx)
-        const p2Id = resolveId(p2name, idx)
+        const p1Id = resolver.resolve(p1name, TOUR, competitorId(p1data))
+        const p2Id = resolver.resolve(p2name, TOUR, competitorId(p2data))
         const matchId = `espn_${comp.id}`
 
         matches.push({
@@ -261,15 +261,15 @@ async function main() {
     return
   }
 
-  const idx = loadRatingsIndex()
+  const resolver = createTodayResolver(loadRatings())
   let all: TodayMatch[] = []
 
   // 2. ESPN ATP
-  try { all.push(...await fetchESPN('atp', idx)) }
+  try { all.push(...await fetchESPN('atp', resolver)) }
   catch (e: any) { console.warn('ESPN ATP error:', e.message) }
 
   // 3. ESPN WTA
-  try { all.push(...await fetchESPN('wta', idx)) }
+  try { all.push(...await fetchESPN('wta', resolver)) }
   catch (e: any) { console.warn('ESPN WTA error:', e.message) }
 
   const matches = dedup(all).sort((a, b) =>
@@ -286,19 +286,30 @@ async function main() {
 
   fs.writeFileSync(TODAY_PATH, JSON.stringify(matches, null, 2))
 
+  // Names the roster could not resolve. Recorded rather than slugged, so an
+  // unrated player in today.json is visible instead of silent.
+  const unresolved = resolver.unresolved
+  fs.writeFileSync(
+    path.join(path.dirname(TODAY_PATH), 'unmatched-today.json'),
+    JSON.stringify({ players: unresolved }, null, 1) + '\n',
+  )
+  if (unresolved.length) {
+    console.log(`  ${unresolved.length} unresolved player name(s): ${unresolved.join(', ')}`)
+  }
+
   const bySrc: Record<string, number> = {}
   matches.forEach(m => { bySrc[m.source] = (bySrc[m.source] ?? 0) + 1 })
   const srcStr = Object.entries(bySrc).map(([s, n]) => `${n} via ${s}`).join(', ')
   console.log(`\n✓ ${matches.length} matches (${srcStr}) → data/today.json`)
 
-  // Warn on unresolved player IDs
-  const unresolved = matches.filter(m =>
-    m.player1_id === slugify(m.player1_name) ||
-    m.player2_id === slugify(m.player2_name)
+  // Warn on players carrying an espn_ id — they are joinable but unrated, so
+  // the model falls back to default Elo for them.
+  const unrated = matches.filter(m =>
+    m.player1_id.startsWith('espn_') || m.player2_id.startsWith('espn_')
   )
-  if (unresolved.length > 0) {
-    console.log(`\n⚠ ${unresolved.length} matches have players not in ratings.json`)
-    console.log('  Run: npm run ratings:build  (after adding Sackmann CSVs)')
+  if (unrated.length > 0) {
+    console.log(`\n⚠ ${unrated.length} matches have players not in ratings.json`)
+    console.log('  Run: npm run ratings:build to pick up newly logged matches')
     console.log('  Model will still run — just using default Elo values for unknown players')
   }
 }

@@ -29,11 +29,11 @@ function sortedKey(name: string): string {
   return tokens(name).sort().join("");
 }
 
-export function buildIdentityMap(
-  ratings: Rating[],
-  rankings: RankingEntry[],
-  observed: Array<{ espn_id: string; name: string; tour: "ATP" | "WTA" }>,
-): { map: Record<string, string>; unmatched: string[] } {
+/**
+ * A reusable name matcher over a ratings roster. Returns the single matching
+ * player_id, or null when nothing or more than one thing matches.
+ */
+export function createMatcher(ratings: Rating[]): (name: string, tour: string) => string | null {
   const byName = new Map<string, string[]>();
   const bySorted = new Map<string, string[]>();
   const roster: Array<{ tour: string; tokens: string[]; player_id: string }> = [];
@@ -49,6 +49,37 @@ export function buildIdentityMap(
 
     roster.push({ tour: r.tour, tokens: tokens(r.name), player_id: r.player_id });
   }
+
+  return (name: string, tour: string): string | null => {
+    const exact = byName.get(`${tour}|${normalizeName(name)}`) || [];
+    if (exact.length === 1) return exact[0];
+    if (exact.length > 1) return null;
+
+    const sorted = bySorted.get(`${tour}|${sortedKey(name)}`) || [];
+    if (sorted.length === 1) return sorted[0];
+    if (sorted.length > 1) return null;
+
+    const mine = tokens(name);
+    if (mine.length >= 2) {
+      const subset = roster.filter(
+        (r) =>
+          r.tour === tour &&
+          r.tokens.length >= mine.length &&
+          mine.every((t) => r.tokens.includes(t)),
+      );
+      if (subset.length === 1) return subset[0].player_id;
+    }
+
+    return null;
+  };
+}
+
+export function buildIdentityMap(
+  ratings: Rating[],
+  rankings: RankingEntry[],
+  observed: Array<{ espn_id: string; name: string; tour: "ATP" | "WTA" }>,
+): { map: Record<string, string>; unmatched: string[] } {
+  const match = createMatcher(ratings);
 
   const map: Record<string, string> = {};
   const unmatched: string[] = [];
@@ -66,42 +97,9 @@ export function buildIdentityMap(
    */
   const consider = (espn_id: string, name: string, tour: string) => {
     if (map[espn_id]) return;
-
-    const exact = byName.get(`${tour}|${normalizeName(name)}`) || [];
-    if (exact.length === 1) {
-      map[espn_id] = exact[0];
-      return;
-    }
-    if (exact.length > 1) {
-      unmatched.push(name);
-      return;
-    }
-
-    const sorted = bySorted.get(`${tour}|${sortedKey(name)}`) || [];
-    if (sorted.length === 1) {
-      map[espn_id] = sorted[0];
-      return;
-    }
-    if (sorted.length > 1) {
-      unmatched.push(name);
-      return;
-    }
-
-    const mine = tokens(name);
-    if (mine.length >= 2) {
-      const subset = roster.filter(
-        (r) =>
-          r.tour === tour &&
-          r.tokens.length >= mine.length &&
-          mine.every((t) => r.tokens.includes(t)),
-      );
-      if (subset.length === 1) {
-        map[espn_id] = subset[0].player_id;
-        return;
-      }
-    }
-
-    unmatched.push(name);
+    const hit = match(name, tour);
+    if (hit) map[espn_id] = hit;
+    else unmatched.push(name);
   };
 
   for (const r of rankings) consider(r.espn_id, r.name, r.tour);
@@ -138,4 +136,29 @@ export function playerIdForToday(
   if (hit) return hit;
   unresolved.push(name);
   return `espn_${espn_id}`;
+}
+
+/**
+ * The resolver fetch-today.ts uses. Wraps createMatcher so an unresolved name
+ * becomes espn_<id> and is recorded, never a slug.
+ *
+ * The path this replaces also matched on bare surname, so "Zverev" resolved to
+ * whichever Zverev was indexed first — a silently wrong player, worse than the
+ * slug it fell back to.
+ */
+export function createTodayResolver(ratings: Rating[]) {
+  const match = createMatcher(ratings);
+  const unresolved: string[] = [];
+
+  return {
+    resolve(name: string, tour: string, espn_id: string | null): string {
+      const hit = match(name, tour);
+      if (hit) return hit;
+      unresolved.push(name);
+      return espn_id ? `espn_${espn_id}` : `unresolved_${normalizeName(name)}`;
+    },
+    get unresolved() {
+      return [...new Set(unresolved)];
+    },
+  };
 }
