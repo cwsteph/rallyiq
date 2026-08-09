@@ -44,6 +44,22 @@ export function appendMatches(
 }
 
 /**
+ * Last date covered by the committed CSVs, per tour. ESPN returns whole
+ * tournaments, so a fetch starting 2026-05-18 still hands back matches played
+ * on the 17th — which the CSVs already contain. Feeding both to the builder
+ * would count those matches twice in Elo.
+ */
+export const CSV_CUTOFF: Record<string, string> = {
+  ATP: "2026-05-17",
+  WTA: "2026-05-18",
+};
+
+/** Drop log rows the committed CSVs already cover. */
+export function afterBase(records: MatchRecord[]): MatchRecord[] {
+  return records.filter((m) => m.date > (CSV_CUTOFF[m.tour] ?? "0000-00-00"));
+}
+
+/**
  * Shape a MatchRecord like a Sackmann CSV row so build-ratings.mjs can consume
  * it unchanged. The four serve-stat columns are empty on purpose: ESPN returns
  * `statistics: []`, so hold_pct and break_pct stay frozen at 2026-05-17 rather

@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, writeFileSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
-import { readLog, appendMatches, toCsvRows } from "./log.ts";
+import { readLog, appendMatches, toCsvRows, afterBase, CSV_CUTOFF } from "./log.ts";
 import type { MatchRecord } from "./types.ts";
 
 const rec = (id: string, extra: Partial<MatchRecord> = {}): MatchRecord => ({
@@ -72,4 +72,23 @@ test("toCsvRows emits the columns build-ratings reads", () => {
 
 test("toCsvRows drops matches with no surface", () => {
   assert.equal(toCsvRows([rec("1", { surface: null })]).length, 0);
+});
+
+test("afterBase drops rows the committed csvs already cover", () => {
+  const kept = afterBase([
+    rec("a", { tour: "ATP", date: "2026-05-16" }),
+    rec("b", { tour: "ATP", date: "2026-05-17" }),
+    rec("c", { tour: "ATP", date: "2026-05-18" }),
+  ]);
+  assert.deepEqual(kept.map((m) => m.competition_id), ["c"]);
+});
+
+test("afterBase uses a per-tour cutoff — the wta csv runs a day longer", () => {
+  assert.equal(CSV_CUTOFF.ATP, "2026-05-17");
+  assert.equal(CSV_CUTOFF.WTA, "2026-05-18");
+  const kept = afterBase([
+    rec("atp", { tour: "ATP", date: "2026-05-18" }),
+    rec("wta", { tour: "WTA", date: "2026-05-18" }),
+  ]);
+  assert.deepEqual(kept.map((m) => m.competition_id), ["atp"]);
 });

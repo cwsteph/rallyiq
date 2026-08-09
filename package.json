@@ -13,7 +13,9 @@
     "db:studio": "prisma studio",
     "ratings:build": "node scripts/build-ratings.mjs",
     "fetch:today": "tsx scripts/fetch-today.ts",
-    "test": "node --test \"scripts/espn/*.test.ts\""
+    "test": "node --test \"scripts/espn/*.test.ts\"",
+    "espn:backfill": "node scripts/espn/backfill.ts",
+    "espn:backfill:apply": "node scripts/espn/backfill.ts --apply"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.9",
