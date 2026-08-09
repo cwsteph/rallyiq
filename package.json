@@ -12,7 +12,8 @@
     "db:migrate": "prisma migrate dev",
     "db:studio": "prisma studio",
     "ratings:build": "node scripts/build-ratings.mjs",
-    "fetch:today": "tsx scripts/fetch-today.ts"
+    "fetch:today": "tsx scripts/fetch-today.ts",
+    "test": "node --test \"scripts/espn/*.test.ts\""
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.9",
