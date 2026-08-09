@@ -13,25 +13,41 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import { readLog, afterBase, toCsvRows } from './espn/log.ts'
+import { buildIdentityMap, resolvePlayerId } from './espn/identity.ts'
+import { fetchRankings } from './espn/rankings.ts'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const OUT_PATH = path.join(__dirname, '../data/ratings.json')
+// --out lets the continuity check build to a scratch file instead of clobbering
+// the live ratings.
+const outIdx = process.argv.indexOf('--out')
+const OUT_PATH = outIdx > -1 && process.argv[outIdx + 1]
+  ? path.resolve(process.argv[outIdx + 1])
+  : path.join(__dirname, '../data/ratings.json')
+const RATINGS_PATH = path.join(__dirname, '../data/ratings.json')
 
 // ─── Sources ──────────────────────────────────────────────────────────────────
 // All Sackmann. (TML-Database was dropped 2026-06: its GitHub CSVs froze Jan 2026,
 // are ATP-only, and use an incompatible player-id scheme — it was making ATP 2025/26 STALE.)
+// The committed Sackmann snapshot: 2022-01-01 → 2026-05-17 (ATP) / 05-18 (WTA).
+// The upstream repos were deleted in June 2026, so these files are the archive
+// and are read from disk, never fetched.
+const DATA_DIR = path.join(__dirname, '../data')
+const BASE_ONLY = process.argv.includes('--base-only')
+
 const ATP_SOURCES = [2022, 2023, 2024, 2025, 2026].map(year => ({
-  url: `https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_${year}.csv`, tour: 'ATP', year,
+  file: path.join(DATA_DIR, `atp_matches_${year}.csv`), tour: 'ATP', year,
 }))
 
 const WTA_SOURCES = [2022, 2023, 2024, 2025, 2026].map(year => ({
-  url: `https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_matches_${year}.csv`, tour: 'WTA', year,
+  file: path.join(DATA_DIR, `wta_matches_${year}.csv`), tour: 'WTA', year,
 }))
 
-// Current official rankings (latest week) → current_rank + current_rank_points.
+// Ranking base: the committed CSVs (deep, but frozen at 2026-06-02). ESPN's
+// live top 150 per tour is overlaid on top unless --base-only is passed.
 const RANKING_SOURCES = [
-  { url: 'https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_rankings_current.csv', tour: 'ATP' },
-  { url: 'https://raw.githubusercontent.com/JeffSackmann/tennis_wta/master/wta_rankings_current.csv', tour: 'WTA' },
+  { file: path.join(DATA_DIR, 'atp_rankings_current.csv'), tour: 'ATP' },
+  { file: path.join(DATA_DIR, 'wta_rankings_current.csv'), tour: 'WTA' },
 ]
 
 // ─── Elo config ───────────────────────────────────────────────────────────────
@@ -78,26 +94,42 @@ function parseCSV(text) {
   // rankings CSVs (no winner/loser columns). The match loop drops incomplete rows.
 }
 
-// ─── Fetch with graceful 404 ──────────────────────────────────────────────────
-async function fetchCSV(src) {
-  try {
-    const res = await fetch(src.url, { headers: { 'User-Agent': 'RallyIQ-ratings-builder/1.0' } })
-    if (!res.ok) {
-      console.log(`  ⚠️  ${src.year} ${src.tour} — ${res.status} (skipping)`)
-      return []
-    }
-    const text = await res.text()
-    if (!text || text.trim().startsWith('404')) {
-      console.log(`  ⚠️  ${src.year} ${src.tour} — empty/404 (skipping)`)
-      return []
-    }
-    const rows = parseCSV(text)
-    console.log(`  ✅ ${src.year ?? 'rankings'} ${src.tour} — ${rows.length} rows`)
-    return rows.map(r => ({ ...r, _tour: src.tour }))
-  } catch (e) {
-    console.log(`  ❌ ${src.year} ${src.tour} — ${e.message} (skipping)`)
-    return []
+// ─── Local CSV load — a missing base file is fatal, never "skipped" ───────────
+// The previous version fetched these over HTTP and swallowed 404s with a warning
+// and exit 0. That is why six consecutive weekly workflow runs went green while
+// processing zero matches after the upstream repos were deleted.
+function loadCSV(src) {
+  if (!fs.existsSync(src.file)) {
+    console.error(`  ❌ MISSING: ${src.file}`)
+    process.exit(1)
   }
+  const rows = parseCSV(fs.readFileSync(src.file, 'utf8'))
+  if (!rows.length) {
+    console.error(`  ❌ EMPTY: ${src.file}`)
+    process.exit(1)
+  }
+  console.log(`  ✅ ${src.year ?? 'rankings'} ${src.tour} — ${rows.length} rows`)
+  return rows.map(r => ({ ...r, _tour: src.tour }))
+}
+
+/**
+ * Everything after the CSV cutoff comes from the ESPN log.
+ *
+ * ESPN ids and Sackmann ids are different id spaces, so the log's espn ids are
+ * translated to existing player_ids first. Without that, Sinner enters twice —
+ * ATP:206173 from the CSVs and ATP:3623 from ESPN — and his Elo splits in half.
+ */
+function loadEspnRows(tour, identityMap) {
+  if (BASE_ONLY) return []
+  const rows = toCsvRows(afterBase(readLog(path.join(DATA_DIR, 'results.ndjson')).filter(m => m.tour === tour)))
+  const mapped = rows.map(r => ({
+    ...r,
+    winner_id: resolvePlayerId(identityMap, r.winner_id),
+    loser_id: resolvePlayerId(identityMap, r.loser_id),
+    _tour: tour,
+  }))
+  console.log(`  ✅ ${tour} espn log — ${mapped.length} rows`)
+  return mapped
 }
 
 // ─── Slugify for player_id fallback ──────────────────────────────────────────
@@ -110,11 +142,31 @@ function expected(a, b) { return 1 / (1 + Math.pow(10, (b - a) / 400)) }
 async function main() {
   console.log('\n🎾 RallyIQ ratings builder\n')
 
-  // Fetch all sources in parallel
-  console.log('Fetching ATP sources...')
-  const atpRows = (await Promise.all(ATP_SOURCES.map(fetchCSV))).flat()
-  console.log('Fetching WTA sources...')
-  const wtaRows = (await Promise.all(WTA_SOURCES.map(fetchCSV))).flat()
+  // The identity map translates ESPN ids to the player_ids already in
+  // ratings.json. Built from the previous ratings file plus every player the
+  // log has observed — the only fuzzy name matching in the pipeline.
+  let identityMap = {}
+  if (!BASE_ONLY && fs.existsSync(RATINGS_PATH)) {
+    const prev = JSON.parse(fs.readFileSync(RATINGS_PATH, 'utf8'))
+    const log = readLog(path.join(DATA_DIR, 'results.ndjson'))
+    const observed = []
+    for (const m of log) {
+      observed.push({ espn_id: m.winner_espn_id, name: m.winner_name, tour: m.tour })
+      observed.push({ espn_id: m.loser_espn_id, name: m.loser_name, tour: m.tour })
+    }
+    const built = buildIdentityMap(prev, [], observed)
+    identityMap = built.map
+    console.log(`Identity: ${Object.keys(identityMap).length} espn ids mapped, ${built.unmatched.length} unmatched`)
+    fs.writeFileSync(
+      path.join(DATA_DIR, 'unmatched-players.json'),
+      JSON.stringify({ players: built.unmatched }, null, 1) + '\n',
+    )
+  }
+
+  console.log('Loading ATP sources...')
+  const atpRows = [...ATP_SOURCES.map(loadCSV).flat(), ...loadEspnRows('ATP', identityMap)]
+  console.log('Loading WTA sources...')
+  const wtaRows = [...WTA_SOURCES.map(loadCSV).flat(), ...loadEspnRows('WTA', identityMap)]
 
   const allRows = [...atpRows, ...wtaRows]
   console.log(`\nTotal matches loaded: ${allRows.length}`)
@@ -209,7 +261,7 @@ async function main() {
   // Official list only, so retired players don't leak a stale top rank.
   const rankMap = new Map()  // `${tour}:${player_id}` -> { rank, points }
   for (const src of RANKING_SOURCES) {
-    const rows = await fetchCSV(src)
+    const rows = loadCSV(src)
     if (!rows.length) continue
     const latest = rows.reduce((m, r) => (r.ranking_date > m ? r.ranking_date : m), '0')
     let n = 0
@@ -219,6 +271,27 @@ async function main() {
       n++
     }
     console.log(`  📊 ${src.tour} rankings — ${n} players (week ${latest})`)
+  }
+
+  // Overlay ESPN's live top 150 per tour. The committed ranking CSVs are deeper
+  // (~1,180 players) but frozen at 2026-06-02, so the overlay refreshes exactly
+  // the range where rank is worth showing. Rank is display-only and never
+  // reaches computeWinProbability, so a miss here cannot move a price.
+  if (!BASE_ONLY) {
+    for (const tour of ['ATP', 'WTA']) {
+      const live = await fetchRankings(tour)
+      if (!live.length) {
+        console.log(`  ⚠️  ${tour} live rankings unavailable — keeping the frozen csv ranks`)
+        continue
+      }
+      let n = 0
+      for (const r of live) {
+        const player_id = resolvePlayerId(identityMap, r.espn_id)
+        rankMap.set(`${tour}:${player_id}`, { rank: r.rank, points: r.points })
+        n++
+      }
+      console.log(`  📊 ${tour} live espn rankings — ${n} players overlaid`)
+    }
   }
 
   // ── Compute final stats ───────────────────────────────────────────────────

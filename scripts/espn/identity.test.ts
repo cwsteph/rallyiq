@@ -50,6 +50,58 @@ test("names that resolve to nobody are reported", () => {
   assert.deepEqual(unmatched, ["Some Newcomer"]);
 });
 
+test("matches across a swapped name order — ESPN writes chinese names surname-first", () => {
+  const { map } = buildIdentityMap(
+    [{ player_id: "220000", name: "Qinwen Zheng", tour: "WTA" }],
+    [],
+    [{ espn_id: "6048", name: "Zheng Qinwen", tour: "WTA" }],
+  );
+  assert.equal(map["6048"], "220000");
+});
+
+test("matches when one source carries an extra surname", () => {
+  const { map } = buildIdentityMap(
+    [{ player_id: "220001", name: "Daniel Merida Aguilar", tour: "ATP" }],
+    [],
+    [{ espn_id: "10239", name: "Daniel Merida", tour: "ATP" }],
+  );
+  assert.equal(map["10239"], "220001");
+});
+
+test("a token-subset match that fits two players is refused", () => {
+  const { map, unmatched } = buildIdentityMap(
+    [
+      { player_id: "1", name: "Daniel Merida Aguilar", tour: "ATP" },
+      { player_id: "2", name: "Daniel Merida Sanchez", tour: "ATP" },
+    ],
+    [],
+    [{ espn_id: "10239", name: "Daniel Merida", tour: "ATP" }],
+  );
+  assert.equal(map["10239"], undefined);
+  assert.deepEqual(unmatched, ["Daniel Merida"]);
+});
+
+test("a single shared token is not enough to match", () => {
+  const { map } = buildIdentityMap(
+    [{ player_id: "1", name: "Novak Djokovic", tour: "ATP" }],
+    [],
+    [{ espn_id: "999", name: "Novak", tour: "ATP" }],
+  );
+  assert.equal(map["999"], undefined);
+});
+
+test("an exact match wins over a looser one", () => {
+  const { map } = buildIdentityMap(
+    [
+      { player_id: "exact", name: "Daniel Merida", tour: "ATP" },
+      { player_id: "loose", name: "Daniel Merida Aguilar", tour: "ATP" },
+    ],
+    [],
+    [{ espn_id: "10239", name: "Daniel Merida", tour: "ATP" }],
+  );
+  assert.equal(map["10239"], "exact");
+});
+
 test("a name matching two different players is left unmatched rather than guessed", () => {
   const { map, unmatched } = buildIdentityMap(
     [
