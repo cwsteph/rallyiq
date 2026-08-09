@@ -36,7 +36,8 @@ Thumbs.db
 *.swo
 
 # Data CSVs — large files, download separately
-data/*.csv
+# data/*.csv is deliberately NOT ignored. The Sackmann repos these came from
+# were deleted upstream in June 2026 and no mirror exists — git is the archive.
 data/*.xlsx
 !data/README.md
 
