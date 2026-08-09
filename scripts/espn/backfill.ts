@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { buildSurfaceMap } from "./surface.ts";
 import { parseScoreboard } from "./parse.ts";
 import { appendMatches, readLog } from "./log.ts";
+import { writeHealth } from "./health.ts";
 import type { MatchRecord } from "./types.ts";
 
 const APPLY = process.argv.includes("--apply");
@@ -89,6 +90,12 @@ async function main() {
   const { added, skipped } = appendMatches(LOG, records);
   writeFileSync(UNMATCHED, JSON.stringify({ tournaments: [...unknownSurfaces] }, null, 1) + "\n");
   console.log(`\nappended: ${added}, already present: ${skipped}`);
+
+  // Health is stamped from the log's total size, not this run's delta — a day
+  // with no completed matches is still a healthy fetch.
+  const total = readLog(LOG).length;
+  writeHealth("data/health.json", "rallyiq", { results: { records: total, maxAgeHours: 36 } });
+  console.log(`health: results feed at ${total} records`);
 }
 
 main().catch((e) => {

@@ -16,6 +16,7 @@ import { fileURLToPath } from 'url'
 import { readLog, afterBase, toCsvRows } from './espn/log.ts'
 import { buildIdentityMap, resolvePlayerId } from './espn/identity.ts'
 import { fetchRankings } from './espn/rankings.ts'
+import { writeHealth } from './espn/health.ts'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // --out lets the continuity check build to a scratch file instead of clobbering
@@ -335,6 +336,14 @@ async function main() {
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(ratings, null, 2))
   console.log(`\n✅ Written to ${OUT_PATH}\n`)
+
+  // Only the real build publishes health; --base-only and --out are diagnostics.
+  if (!BASE_ONLY && outIdx === -1) {
+    writeHealth(path.join(DATA_DIR, 'health.json'), 'rallyiq', {
+      ratings: { records: ratings.length, maxAgeHours: 72 },
+    })
+    console.log(`health: ratings feed at ${ratings.length} records`)
+  }
 }
 
 main().catch(e => { console.error(e); process.exit(1) })

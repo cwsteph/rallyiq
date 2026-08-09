@@ -1,0 +1,24 @@
+{
+  "app": "rallyiq",
+  "generated": "2026-08-09T17:31:37.814Z",
+  "feeds": {
+    "slate": {
+      "lastSuccess": "2026-08-09T17:31:05.852Z",
+      "records": 12,
+      "maxAgeHours": 36,
+      "status": "ok"
+    },
+    "ratings": {
+      "lastSuccess": "2026-08-09T17:31:36.522Z",
+      "records": 1647,
+      "maxAgeHours": 72,
+      "status": "ok"
+    },
+    "results": {
+      "lastSuccess": "2026-08-09T17:31:37.814Z",
+      "records": 2006,
+      "maxAgeHours": 36,
+      "status": "ok"
+    }
+  }
+}

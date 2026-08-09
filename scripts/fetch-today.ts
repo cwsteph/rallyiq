@@ -13,6 +13,7 @@ import fs from 'fs'
 import path from 'path'
 import { createTodayResolver } from './espn/identity.ts'
 import { competitorId } from './espn/parse.ts'
+import { writeHealth } from './espn/health.ts'
 
 const DATA_DIR    = path.join(process.cwd(), 'data')
 const TODAY_PATH  = path.join(DATA_DIR, 'today.json')
@@ -296,6 +297,10 @@ async function main() {
   if (unresolved.length) {
     console.log(`  ${unresolved.length} unresolved player name(s): ${unresolved.join(', ')}`)
   }
+
+  writeHealth(path.join(DATA_DIR, 'health.json'), 'rallyiq', {
+    slate: { records: matches.length, maxAgeHours: 36 },
+  })
 
   const bySrc: Record<string, number> = {}
   matches.forEach(m => { bySrc[m.source] = (bySrc[m.source] ?? 0) + 1 })
