@@ -1,38 +1,68 @@
-name: Rebuild Ratings
+name: refresh ratings
+
+# Replaces the weekly Sackmann rebuild, which ran green six consecutive times
+# while processing zero matches after the upstream repos were deleted. Every
+# step here fails loudly instead of warning and exiting 0.
 
 on:
-  # Run every Monday at 6am UTC (midnight CST)
   schedule:
-    - cron: '0 6 * * 1'
-  # Also allow manual trigger from GitHub Actions tab
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 jobs:
-  rebuild:
+  refresh:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
 
-      - name: Run ratings builder
-        run: node scripts/build-ratings.mjs
+      - run: npm ci
 
-      - name: Commit updated ratings.json
+      - name: Run the test suite
+        run: npm test
+
+      # A 10-day lookback because ?dates= returns whole tournaments: a match
+      # played today is not marked completed until ESPN says so, and re-fetching
+      # the window costs ~4 requests while the log's dedupe absorbs the overlap.
+      # --min 1 because a normal day adds few matches; the backfill's own
+      # non-zero exit still catches a total outage.
+      - name: Append recent matches to the log
+        run: node scripts/espn/backfill.ts --apply --min 1 --from $(date -u -d '10 days ago' +%Y-%m-%d)
+
+      - name: Rebuild ratings
+        run: npm run ratings:build
+
+      - name: Refresh today's slate
+        run: npm run fetch:today
+
+      - name: Fail if anything came out empty
+        run: |
+          test -s data/ratings.json    || { echo "ratings.json is empty";    exit 1; }
+          test -s data/results.ndjson  || { echo "results.ndjson is empty";  exit 1; }
+          test -s data/today.json      || { echo "today.json is empty";      exit 1; }
+          node -e "
+            const r = require('./data/ratings.json');
+            if (r.length < 1500) { console.error('only ' + r.length + ' players'); process.exit(1); }
+            const slugs = require('./data/today.json')
+              .flatMap(m => [m.player1_id, m.player2_id])
+              .filter(id => /^[a-z]+_[a-z]+\$/.test(id) && !id.startsWith('espn_'));
+            if (slugs.length) { console.error('slug ids are back: ' + slugs.join(', ')); process.exit(1); }
+            console.log(r.length + ' players, no slug ids');
+          "
+
+      - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ratings.json
-          # Only commit if something changed
-          git diff --staged --quiet || git commit -m "Auto-rebuild ratings $(date -u +%Y-%m-%d)"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git add data/ratings.json data/results.ndjson data/today.json data/unmatched-players.json data/unmatched-today.json
+          if git diff --staged --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: daily ratings refresh"
+            git push
+          fi
