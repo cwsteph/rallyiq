@@ -25,6 +25,7 @@ export async function GET(req: NextRequest) {
       edge: b.edge,
       odds: b.odds,
       closingOdds: b.closingOdds ?? undefined,
+      stake: b.stake,
       status: b.status as 'OPEN' | 'SETTLED' | 'VOID',
     }))
 
