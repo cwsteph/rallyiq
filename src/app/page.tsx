@@ -9,6 +9,7 @@ import Link from 'next/link'
 import type { Surface } from '@/types'
 import { Container, Card, SectionLabel, Stat, SignalPill, EdgePill, SurfaceTag, ProbSplit, C, mono, serif } from '@/components/editorial/ui'
 import { SURFACE } from '@/lib/editorial/theme'
+import { TourGuide } from '@/components/TourGuide'
 
 export const dynamic = 'force-dynamic'
 
@@ -67,7 +68,7 @@ export default async function DashboardPage() {
       </div>
 
       {/* Metric row */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 26 }}>
+      <div data-tour="metrics" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, marginBottom: 26 }}>
         {metrics.map(mt => (
           <Card key={mt.label} style={{ padding: 18 }}>
             <Stat label={mt.label} value={mt.value} sub={mt.sub} valueColor={mt.color ?? C.ink} />
@@ -78,12 +79,12 @@ export default async function DashboardPage() {
       <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 28 }}>
         {/* Top edges */}
         <div>
-          <SectionLabel>Today&rsquo;s Top Edges</SectionLabel>
+          <div data-tour="top-edges"><SectionLabel>Today&rsquo;s Top Edges</SectionLabel></div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {topEdges.map(m => {
+            {topEdges.map((m, i) => {
               const acc = (SURFACE[m.surface as string] ?? SURFACE.Hard).accent
               return (
-                <Link key={m.match_id} href={`/matches/${m.match_id}`} style={{ textDecoration: 'none' }}>
+                <Link key={m.match_id} href={`/matches/${m.match_id}`} data-tour={i === 0 ? 'edge-card' : undefined} style={{ textDecoration: 'none' }}>
                   <Card accentRail={m.signal === 'PASS' ? undefined : acc} style={{ padding: 16 }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
                       <span style={{ ...mono, fontSize: 10, color: C.faint, textTransform: 'uppercase', letterSpacing: 0.5 }}>{m.tournament.slice(0, 22)}</span>
@@ -117,7 +118,7 @@ export default async function DashboardPage() {
         {/* Recent bets */}
         <div>
           <SectionLabel>Recent Bets</SectionLabel>
-          <Card style={{ padding: 4 }}>
+          <div data-tour="recent-bets"><Card style={{ padding: 4 }}>
             {bets.slice(0, 8).map((b: any, i: number) => {
               const dotColor = b.result === 'WIN' ? C.green : b.result === 'LOSS' ? C.red : C.gold
               return (
@@ -139,12 +140,13 @@ export default async function DashboardPage() {
             {bets.length === 0 && (
               <div style={{ ...mono, fontSize: 12, color: C.faint, textAlign: 'center', padding: '32px 0' }}>No bets logged yet</div>
             )}
-          </Card>
+          </Card></div>
           <Link href="/bankroll" style={{ ...mono, fontSize: 10, color: C.muted, textTransform: 'uppercase', letterSpacing: 1, display: 'block', textAlign: 'center', padding: '12px 0', textDecoration: 'none' }}>
             View bankroll →
           </Link>
         </div>
       </div>
+      <TourGuide />
     </Container>
   )
 }

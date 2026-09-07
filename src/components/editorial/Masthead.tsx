@@ -44,10 +44,10 @@ export function Masthead() {
   return (
     <div style={{ borderBottom: `2px solid ${C.ink}`, background: C.paper }}>
       <div style={{ maxWidth: 1080, margin: '0 auto', padding: '0 28px', height: 56, display: 'flex', alignItems: 'center', gap: 20 }}>
-        <Link href="/" style={{ ...serif, fontWeight: 700, fontSize: 24, color: C.ink, letterSpacing: -0.5, textDecoration: 'none' }}>
+        <Link href="/" data-tour="brand" style={{ ...serif, fontWeight: 700, fontSize: 24, color: C.ink, letterSpacing: -0.5, textDecoration: 'none' }}>
           Rally<span style={{ color: BRAND }}>IQ</span>
         </Link>
-        <div style={{ display: 'flex', gap: 20, marginLeft: 8 }}>
+        <div data-tour="nav" style={{ display: 'flex', gap: 20, marginLeft: 8 }}>
           {NAV.map(n => {
             const active = isActive(n.href)
             return (
@@ -64,7 +64,21 @@ export function Masthead() {
               {matchCount} matches{lastUpdated ? ` · ${lastUpdated}` : ''}
             </span>
           )}
-          <button onClick={refresh} disabled={refreshing} style={{ ...mono, fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: refreshing ? C.faint : C.ink, background: 'transparent', border: `1px solid ${C.line2}`, borderRadius: 3, padding: '5px 10px', cursor: refreshing ? 'wait' : 'pointer' }}>
+          <button
+            onClick={() => {
+              const w = window as unknown as { startRallyTour?: () => void }
+              if (pathname === '/' && typeof w.startRallyTour === 'function') w.startRallyTour()
+              else {
+                try { sessionStorage.setItem('rally_tour_pending', '1') } catch { /* ignore */ }
+                window.location.href = '/'
+              }
+            }}
+            title="Guided tour of RallyIQ"
+            style={{ ...mono, fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: BRAND, background: 'transparent', border: `1px solid ${BRAND}`, borderRadius: 3, padding: '5px 10px', cursor: 'pointer' }}
+          >
+            How it works
+          </button>
+          <button data-tour="refresh" onClick={refresh} disabled={refreshing} style={{ ...mono, fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: refreshing ? C.faint : C.ink, background: 'transparent', border: `1px solid ${C.line2}`, borderRadius: 3, padding: '5px 10px', cursor: refreshing ? 'wait' : 'pointer' }}>
             {refreshing ? 'Fetching…' : 'Refresh'}
           </button>
           <span style={{ ...mono, fontSize: 10, color: C.faint }}>{now}</span>
