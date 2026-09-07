@@ -8,27 +8,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model TodayMatch {
-  id             String   @id @default(cuid())
-  match_id       String   @unique
-  tournament     String
-  surface        String
-  round          String
-  best_of        Int
-  match_date     String
-  scheduled_time String?
-  player1_id     String
-  player1_name   String
-  player2_id     String
-  player2_name   String
-  source         String
-  odds1          Float?
-  odds2          Float?
-  odds_source    String?
-  fetchedAt      DateTime @default(now())
-
-  @@index([match_date])
-}
+// The slate lives in data/today.json, not here. The Neon TodayMatch table was
+// written only by POST /api/refresh, which could not reach ESPN and slugified
+// player ids; the daily workflow published today.json that nothing read. The
+// table is left in the database for now — dropping it is a manual step, not a
+// side effect of a schema edit.
 
 model Bet {
   id               String     @id @default(cuid())

@@ -34,8 +34,7 @@ const STEPS: Step[] = [
   {
     sel: '[data-tour="refresh"]',
     title: 'Live data',
-    body: 'Refresh pulls today’s schedule and re-rates the field. The green dot and count show how many matches are loaded and when they last updated.',
-    clickhere: 'Click to fetch today’s slate',
+    body: 'A scheduled job pulls the day’s schedule from ESPN, re-rates the field and publishes the result. The green dot and count show how many matches are loaded; the stamp shows when that last happened. If it goes stale, a banner says so above this page rather than letting you price bets off dead numbers.',
     pos: 'left',
   },
   {

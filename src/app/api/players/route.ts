@@ -8,9 +8,12 @@ export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url)
   const tour    = (searchParams.get('tour') || 'ATP') as 'ATP' | 'WTA'
   const surface = searchParams.get('surface') || 'overall'
+  // ratings.json holds 1,654 players; the rankings table has always shown the
+  // top 200 by Elo. Keep that default, but let a caller ask for more.
+  const limit   = Number(searchParams.get('limit') ?? 200)
 
   try {
-    const ratings = await getPlayers(tour)
+    const ratings = await getPlayers(tour, limit)
 
     const avgElo = ratings.length > 0
       ? ratings.reduce((s: number, p: any) => s + (p.elo_overall ?? 1500), 0) / ratings.length

@@ -1,7 +1,8 @@
 'use client'
 // src/components/editorial/Masthead.tsx
 // Global editorial chrome — replaces the dark sidebar + topbar. RallyIQ wordmark,
-// section nav (active underlined in the brand accent), live match count + refresh.
+// section nav (active underlined in the brand accent), live match count and the
+// timestamp of the last published refresh.
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -17,27 +18,18 @@ const NAV = [
 
 export function Masthead() {
   const pathname = usePathname() ?? '/'
-  const now = new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })
 
-  const [refreshing, setRefreshing] = useState(false)
   const [matchCount, setMatchCount] = useState<number | null>(null)
   const [lastUpdated, setLastUpdated] = useState<string | null>(null)
 
   useEffect(() => {
     fetch('/api/refresh').then(r => r.json()).then(d => {
       if (d.matchCount != null) setMatchCount(d.matchCount)
-      if (d.lastUpdated) setLastUpdated(new Date(d.lastUpdated).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }))
+      if (d.lastUpdated) setLastUpdated(new Date(d.lastUpdated).toLocaleString('en-US', {
+        month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit',
+      }))
     }).catch(() => {})
   }, [])
-
-  async function refresh() {
-    setRefreshing(true)
-    try {
-      const res = await fetch('/api/refresh', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ secret: 'rallyiq2026' }) })
-      const data = await res.json()
-      if (data.ok) { setMatchCount(data.matchCount); window.location.reload() }
-    } finally { setRefreshing(false) }
-  }
 
   const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
@@ -61,7 +53,7 @@ export function Masthead() {
           {matchCount !== null && (
             <span style={{ ...mono, fontSize: 10, color: C.muted, display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ width: 6, height: 6, borderRadius: 99, background: C.green }} />
-              {matchCount} matches{lastUpdated ? ` · ${lastUpdated}` : ''}
+              {matchCount} matches
             </span>
           )}
           <button
@@ -78,10 +70,17 @@ export function Masthead() {
           >
             How it works
           </button>
-          <button data-tour="refresh" onClick={refresh} disabled={refreshing} style={{ ...mono, fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: refreshing ? C.faint : C.ink, background: 'transparent', border: `1px solid ${C.line2}`, borderRadius: 3, padding: '5px 10px', cursor: refreshing ? 'wait' : 'pointer' }}>
-            {refreshing ? 'Fetching…' : 'Refresh'}
-          </button>
-          <span style={{ ...mono, fontSize: 10, color: C.faint }}>{now}</span>
+          {/* Was a Refresh button posting to /api/refresh. Nothing a browser
+              does can refresh this data — the daily GitHub Actions run commits
+              it and Netlify rebuilds — so the control now states when that last
+              happened instead of offering an action it cannot perform. */}
+          <span
+            data-tour="refresh"
+            title="Published by the daily refresh workflow"
+            style={{ ...mono, fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: C.muted, border: `1px solid ${C.line2}`, borderRadius: 3, padding: '5px 10px' }}
+          >
+            {lastUpdated ? `Updated ${lastUpdated}` : 'Updated —'}
+          </span>
         </div>
       </div>
     </div>
