@@ -495,21 +495,6 @@
     "source": "espn-wta"
   },
   {
-    "match_id": "espn_185893",
-    "tournament": "Kia Open",
-    "surface": "Hard",
-    "round": "QUALIFYINGFINAL",
-    "best_of": 3,
-    "tour": "WTA",
-    "match_date": "2026-09-07",
-    "scheduled_time": "15:10",
-    "player1_id": "espn_17801",
-    "player1_name": "Laura Valentina Villamil Arias",
-    "player2_id": "espn_14239",
-    "player2_name": "Ena Koike",
-    "source": "espn-wta"
-  },
-  {
     "match_id": "espn_185891",
     "tournament": "Kia Open",
     "surface": "Hard",
@@ -570,21 +555,6 @@
     "source": "espn-atp"
   },
   {
-    "match_id": "espn_183546",
-    "tournament": "ATIK Antalya Open",
-    "surface": "Hard",
-    "round": "ROUND1",
-    "best_of": 3,
-    "tour": "WTA",
-    "match_date": "2026-09-07",
-    "scheduled_time": "16:20",
-    "player1_id": "220742",
-    "player1_name": "Leyre Romero Gormaz",
-    "player2_id": "214507",
-    "player2_name": "Berfu Cengiz",
-    "source": "espn-wta"
-  },
-  {
     "match_id": "espn_183593",
     "tournament": "Montreux Nestlé Open",
     "surface": "Hard",
@@ -615,6 +585,21 @@
     "source": "espn-wta"
   },
   {
+    "match_id": "espn_183546",
+    "tournament": "ATIK Antalya Open",
+    "surface": "Hard",
+    "round": "ROUND1",
+    "best_of": 3,
+    "tour": "WTA",
+    "match_date": "2026-09-07",
+    "scheduled_time": "16:45",
+    "player1_id": "220742",
+    "player1_name": "Leyre Romero Gormaz",
+    "player2_id": "214507",
+    "player2_name": "Berfu Cengiz",
+    "source": "espn-wta"
+  },
+  {
     "match_id": "espn_183620",
     "tournament": "Kia Open",
     "surface": "Hard",
@@ -622,7 +607,7 @@
     "best_of": 3,
     "tour": "WTA",
     "match_date": "2026-09-07",
-    "scheduled_time": "16:30",
+    "scheduled_time": "16:50",
     "player1_id": "215480",
     "player1_name": "Suzan Lamens",
     "player2_id": "215037",
@@ -637,7 +622,7 @@
     "best_of": 3,
     "tour": "WTA",
     "match_date": "2026-09-07",
-    "scheduled_time": "16:30",
+    "scheduled_time": "16:50",
     "player1_id": "221985",
     "player1_name": "Darja Semenistaja",
     "player2_id": "221073",
