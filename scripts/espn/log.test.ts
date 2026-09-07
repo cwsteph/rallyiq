@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, writeFileSync, readFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
-import { readLog, appendMatches, toCsvRows, afterBase, CSV_CUTOFF } from "./log.ts";
+import { readLog, appendMatches, toCsvRows, afterBase, CSV_CUTOFF, unmatchedFromLog } from "./log.ts";
 import type { MatchRecord } from "./types.ts";
 
 const rec = (id: string, extra: Partial<MatchRecord> = {}): MatchRecord => ({
@@ -91,4 +91,58 @@ test("afterBase uses a per-tour cutoff — the wta csv runs a day longer", () =>
     rec("wta", { tour: "WTA", date: "2026-05-18" }),
   ]);
   assert.deepEqual(kept.map((m) => m.competition_id), ["atp"]);
+});
+
+// ── unmatched surfaces ───────────────────────────────────────────
+//
+// toCsvRows drops null-surface rows before the builder sees them. That drop is
+// correct — the committed CSVs are main-tour only, so the Challenger and 125
+// events ESPN returns have no surface to resolve against, and inventing one
+// would feed Elo a category its history never contained. What was wrong is the
+// record of it: the file was overwritten each run with only that window's
+// misses, so it listed 4 tournaments while the log was dropping 10.
+
+const nulled = (tournament: string, id: string): MatchRecord => ({
+  competition_id: id,
+  date: "2026-08-01",
+  tournament,
+  surface: null,
+  round: "Round 1",
+  best_of: 3,
+  tour: "ATP",
+  winner_espn_id: "1",
+  winner_name: "A",
+  loser_espn_id: "2",
+  loser_name: "B",
+  score: "6-0 6-0",
+});
+
+test("unmatchedFromLog reports every tournament the log actually drops", () => {
+  const log = [
+    nulled("Odlum Brown VanOpen", "1"),
+    nulled("Odlum Brown VanOpen", "2"),
+    nulled("The Memphis Classic", "3"),
+    { ...nulled("US Open", "4"), surface: "Hard" },
+  ];
+  assert.deepEqual(unmatchedFromLog(log, []), {
+    tournaments: ["Odlum Brown VanOpen", "The Memphis Classic"],
+    droppedRows: 3,
+  });
+});
+
+test("unmatchedFromLog folds in events seen this run but already logged", () => {
+  const log = [nulled("The Memphis Classic", "1")];
+  assert.deepEqual(unmatchedFromLog(log, ["Kia Open", "The Memphis Classic"]), {
+    tournaments: ["Kia Open", "The Memphis Classic"],
+    droppedRows: 1,
+  });
+});
+
+test("unmatchedFromLog is self-correcting once a surface resolves", () => {
+  // No prior-file union: a tournament that gains an override stops being listed
+  // instead of lingering as a permanent accusation.
+  assert.deepEqual(unmatchedFromLog([{ ...nulled("Kia Open", "1"), surface: "Hard" }], []), {
+    tournaments: [],
+    droppedRows: 0,
+  });
 });

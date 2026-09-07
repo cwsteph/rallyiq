@@ -85,3 +85,30 @@ export function toCsvRows(records: MatchRecord[]): object[] {
       l_svpt: "",
     }));
 }
+
+export interface UnmatchedRecord {
+  tournaments: string[];
+  droppedRows: number;
+}
+
+/**
+ * Every tournament the log currently loses to an unresolved surface, and how
+ * many rows that costs.
+ *
+ * Derived from the log rather than accumulated in the file. A backfill only
+ * fetches a window, so writing just that window's misses erased everything
+ * outside it — data/unmatched.json listed 4 tournaments while the log was
+ * dropping 10. Reading the log makes the list complete and self-correcting: add
+ * a surface override and the tournament stops being listed, rather than
+ * lingering as a permanent accusation.
+ *
+ * `seen` folds in events observed this run whose rows were already present.
+ */
+export function unmatchedFromLog(
+  log: MatchRecord[],
+  seen: string[] = [],
+): UnmatchedRecord {
+  const dropped = log.filter((m) => m.surface === null);
+  const names = new Set([...dropped.map((m) => m.tournament), ...seen]);
+  return { tournaments: [...names].sort(), droppedRows: dropped.length };
+}

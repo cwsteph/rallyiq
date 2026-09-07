@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { buildSurfaceMap } from "./surface.ts";
 import { parseScoreboard } from "./parse.ts";
-import { appendMatches, readLog } from "./log.ts";
+import { appendMatches, readLog, unmatchedFromLog } from "./log.ts";
 import { writeHealth } from "./health.ts";
 import type { MatchRecord } from "./types.ts";
 
@@ -88,12 +88,23 @@ async function main() {
   }
 
   const { added, skipped } = appendMatches(LOG, records);
-  writeFileSync(UNMATCHED, JSON.stringify({ tournaments: [...unknownSurfaces] }, null, 1) + "\n");
+
+  // Derived from the log, not this window's misses — see unmatchedFromLog.
+  const log = readLog(LOG);
+  const unmatched = unmatchedFromLog(log, [...unknownSurfaces]);
+  const dropped = unmatched.droppedRows;
+  writeFileSync(UNMATCHED, JSON.stringify(unmatched, null, 1) + "\n");
+  if (dropped) {
+    console.log(
+      `dropped from ratings: ${dropped} rows with no resolvable surface, ` +
+        `across ${unmatched.tournaments.length} tournaments (see ${UNMATCHED})`,
+    );
+  }
   console.log(`\nappended: ${added}, already present: ${skipped}`);
 
   // Health is stamped from the log's total size, not this run's delta — a day
   // with no completed matches is still a healthy fetch.
-  const total = readLog(LOG).length;
+  const total = log.length;
   writeHealth("data/health.json", "rallyiq", { results: { records: total, maxAgeHours: 36 } });
   console.log(`health: results feed at ${total} records`);
 }
