@@ -273,11 +273,16 @@ async function main() {
   )
 
   if (matches.length === 0) {
-    console.warn('\n⚠ No matches found.')
-    console.warn('  ESPN may not have today\'s schedule posted yet.')
-    console.warn('  Try again later, or create data/today-manual.json')
-    console.warn('  (see data/today-manual.json.example for format)')
-    return
+    // Exit non-zero, not warn-and-return. The workflow's guard is
+    // `test -s data/today.json`, which passes on the *previous* run's file, so
+    // returning 0 here let an empty fetch keep serving a stale slate under a
+    // green build — the same shape of failure that hid ten weeks of dead data.
+    console.error('\nFAIL: no matches found.')
+    console.error('  ESPN may not have today\'s schedule posted yet.')
+    console.error('  Try again later, or create data/today-manual.json')
+    console.error('  (see data/today-manual.json.example for format)')
+    console.error('  Leaving the existing today.json untouched.')
+    process.exit(1)
   }
 
   fs.writeFileSync(TODAY_PATH, JSON.stringify(matches, null, 2))

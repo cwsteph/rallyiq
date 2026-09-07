@@ -26,13 +26,14 @@ jobs:
       - name: Run the test suite
         run: npm test
 
-      # A 10-day lookback because ?dates= returns whole tournaments: a match
-      # played today is not marked completed until ESPN says so, and re-fetching
-      # the window costs ~4 requests while the log's dedupe absorbs the overlap.
-      # --min 1 because a normal day adds few matches; the backfill's own
-      # non-zero exit still catches a total outage.
+      # 21 days, not 10. ?dates= returns whole tournaments and weeks() strides
+      # seven days, so 10 days is two fetch points — enough while the job runs
+      # daily, useless after an outage. This job was disabled for inactivity on
+      # 2026-08-24 and a month of play had to be recovered by hand. Six points
+      # self-heals a two-week gap; it costs two extra requests and the log's
+      # competition-id dedupe absorbs the overlap.
       - name: Append recent matches to the log
-        run: node scripts/espn/backfill.ts --apply --min 1 --from $(date -u -d '10 days ago' +%Y-%m-%d)
+        run: node scripts/espn/backfill.ts --apply --min 1 --from $(date -u -d '21 days ago' +%Y-%m-%d)
 
       - name: Rebuild ratings
         run: npm run ratings:build
@@ -45,6 +46,7 @@ jobs:
           test -s data/ratings.json    || { echo "ratings.json is empty";    exit 1; }
           test -s data/results.ndjson  || { echo "results.ndjson is empty";  exit 1; }
           test -s data/today.json      || { echo "today.json is empty";      exit 1; }
+          test -s data/health.json     || { echo "health.json is empty";     exit 1; }
           node -e "
             const r = require('./data/ratings.json');
             if (r.length < 1500) { console.error('only ' + r.length + ' players'); process.exit(1); }
@@ -52,14 +54,28 @@ jobs:
               .flatMap(m => [m.player1_id, m.player2_id])
               .filter(id => /^[a-z]+_[a-z]+\$/.test(id) && !id.startsWith('espn_'));
             if (slugs.length) { console.error('slug ids are back: ' + slugs.join(', ')); process.exit(1); }
-            console.log(r.length + ' players, no slug ids');
+            // A non-empty file proves nothing — every one of these existed and
+            // was a month old. Assert the run actually stamped them today.
+            const h = require('./data/health.json');
+            const today = new Date().toISOString().slice(0, 10);
+            for (const [name, f] of Object.entries(h.feeds)) {
+              if (!f.lastSuccess.startsWith(today)) {
+                console.error(name + ' feed was not refreshed this run: ' + f.lastSuccess);
+                process.exit(1);
+              }
+            }
+            console.log(r.length + ' players, no slug ids, all feeds stamped ' + today);
           "
 
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ratings.json data/results.ndjson data/today.json data/unmatched-players.json data/unmatched-today.json
+          # health.json and unmatched.json were missing here, so the staleness
+          # banner read a file the pipeline published locally and never pushed.
+          git add data/ratings.json data/results.ndjson data/today.json \
+                  data/health.json data/unmatched.json \
+                  data/unmatched-players.json data/unmatched-today.json
           if git diff --staged --quiet; then
             echo "no changes"
           else
