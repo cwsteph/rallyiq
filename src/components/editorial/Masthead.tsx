@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { C, BRAND, serif, mono } from '@/lib/editorial/theme'
+import { SearchPalette } from './SearchPalette'
 
 const NAV = [
   { href: '/',         label: 'Dashboard' },
@@ -49,7 +50,8 @@ export function Masthead() {
             )
           })}
         </div>
-        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 14 }}>
+        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 12 }}>
+          <SearchPalette />
           {matchCount !== null && (
             <span style={{ ...mono, fontSize: 10, color: C.muted, display: 'flex', alignItems: 'center', gap: 6 }}>
               <span style={{ width: 6, height: 6, borderRadius: 99, background: C.green }} />
