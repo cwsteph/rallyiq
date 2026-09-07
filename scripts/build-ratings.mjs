@@ -155,7 +155,15 @@ async function main() {
       observed.push({ espn_id: m.winner_espn_id, name: m.winner_name, tour: m.tour })
       observed.push({ espn_id: m.loser_espn_id, name: m.loser_name, tour: m.tour })
     }
-    const built = buildIdentityMap(prev, [], observed)
+    // Names the matcher refuses because the base holds the same player twice.
+    // The leading "_comment" key is ignored: no rating row has that player_id,
+    // and buildIdentityMap drops overrides pointing at unknown ids.
+    const overridePath = path.join(DATA_DIR, 'identity-overrides.json')
+    const overrides = fs.existsSync(overridePath)
+      ? JSON.parse(fs.readFileSync(overridePath, 'utf8'))
+      : {}
+
+    const built = buildIdentityMap(prev, [], observed, overrides)
     identityMap = built.map
     console.log(`Identity: ${Object.keys(identityMap).length} espn ids mapped, ${built.unmatched.length} unmatched`)
     fs.writeFileSync(

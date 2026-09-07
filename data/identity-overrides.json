@@ -1,0 +1,4 @@
+{
+  "_comment": "espn_id -> player_id, for names buildIdentityMap cannot resolve. Only for ambiguity that is one player recorded twice, never for two different players.",
+  "11640": "212021"
+}

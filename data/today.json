@@ -540,21 +540,6 @@
     "source": "espn-atp"
   },
   {
-    "match_id": "espn_183578",
-    "tournament": "Montreux Nestlé Open",
-    "surface": "Hard",
-    "round": "ROUND1",
-    "best_of": 3,
-    "tour": "WTA",
-    "match_date": "2026-09-07",
-    "scheduled_time": "15:00",
-    "player1_id": "221014",
-    "player1_name": "Francesca Curmi",
-    "player2_id": "215572",
-    "player2_name": "Nuria Brancaccio",
-    "source": "espn-wta"
-  },
-  {
     "match_id": "espn_185893",
     "tournament": "Kia Open",
     "surface": "Hard",
@@ -597,6 +582,21 @@
     "player1_name": "Anna Rogers",
     "player2_id": "211878",
     "player2_name": "Lizette Cabrera",
+    "source": "espn-wta"
+  },
+  {
+    "match_id": "espn_183578",
+    "tournament": "Montreux Nestlé Open",
+    "surface": "Hard",
+    "round": "ROUND1",
+    "best_of": 3,
+    "tour": "WTA",
+    "match_date": "2026-09-07",
+    "scheduled_time": "15:15",
+    "player1_id": "221014",
+    "player1_name": "Francesca Curmi",
+    "player2_id": "215572",
+    "player2_name": "Nuria Brancaccio",
     "source": "espn-wta"
   },
   {

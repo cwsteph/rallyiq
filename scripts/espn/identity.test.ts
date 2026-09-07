@@ -178,3 +178,57 @@ test("createTodayResolver still resolves a swapped name order", () => {
   const r = createTodayResolver([{ player_id: "220000", name: "Qinwen Zheng", tour: "WTA" }]);
   assert.equal(r.resolve("Zheng Qinwen", "WTA", "6048"), "220000");
 });
+
+// ── manual overrides ───────────────────────────────────────────────────────
+//
+// Ambiguity is left unmatched on purpose: a wrong join merges two careers into
+// one Elo. But ambiguity is not always two players. Sackmann's base carries
+// Martin Landaluce twice (212021 and 211776), so his name resolves to no
+// candidate, and the 15 matches ESPN logged for him after the CSV cutoff
+// created a third entry, espn_11640, at a default rating. One player, three
+// rows, none of them his actual record.
+//
+// An override states by hand what the matcher cannot infer, the same way
+// data/surface-overrides.json does for tournaments the CSVs never saw.
+
+const AMBIGUOUS: Rating[] = [
+  { player_id: "212021", name: "Martin Landaluce", tour: "ATP" },
+  { player_id: "211776", name: "Martin Landaluce", tour: "ATP" },
+];
+
+test("a duplicated name stays unmatched without an override", () => {
+  const { map, unmatched } = buildIdentityMap(AMBIGUOUS, [], [
+    { espn_id: "11640", name: "Martin Landaluce", tour: "ATP" },
+  ]);
+  assert.equal(map["11640"], undefined);
+  assert.deepEqual(unmatched, ["Martin Landaluce"]);
+});
+
+test("an override resolves it and keeps it out of unmatched", () => {
+  const { map, unmatched } = buildIdentityMap(
+    AMBIGUOUS,
+    [],
+    [{ espn_id: "11640", name: "Martin Landaluce", tour: "ATP" }],
+    { "11640": "212021" },
+  );
+  assert.equal(map["11640"], "212021");
+  assert.deepEqual(unmatched, []);
+});
+
+test("an override naming a player who is not in the roster is ignored", () => {
+  // Better to fall back to the matcher than to point a match log at an id that
+  // does not exist — that loses the row silently instead of visibly.
+  const { map, unmatched } = buildIdentityMap(
+    AMBIGUOUS,
+    [],
+    [{ espn_id: "11640", name: "Martin Landaluce", tour: "ATP" }],
+    { "11640": "999999" },
+  );
+  assert.equal(map["11640"], undefined);
+  assert.deepEqual(unmatched, ["Martin Landaluce"]);
+});
+
+test("overrides do not shadow names the matcher already resolves", () => {
+  const { map } = buildIdentityMap(RATINGS, RANKINGS, [], { "3623": "206173" });
+  assert.equal(map["3623"], "206173");
+});

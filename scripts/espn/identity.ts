@@ -78,8 +78,23 @@ export function buildIdentityMap(
   ratings: Rating[],
   rankings: RankingEntry[],
   observed: Array<{ espn_id: string; name: string; tour: "ATP" | "WTA" }>,
+  /**
+   * espn_id -> player_id, stated by hand for names the matcher cannot resolve.
+   *
+   * Refusing ambiguous names is right when the ambiguity is two players. It is
+   * wrong when the base has one player twice: Sackmann carries Martin Landaluce
+   * as both 212021 and 211776, so his ESPN matches could not join and became a
+   * third entry at a default rating. An override is the same escape hatch
+   * data/surface-overrides.json gives tournaments the CSVs never saw.
+   *
+   * An override pointing at a player_id no rating row has is ignored, not
+   * trusted — a dangling id loses the match silently, which is worse than
+   * leaving the name in unmatched where it can be seen.
+   */
+  overrides: Record<string, string> = {},
 ): { map: Record<string, string>; unmatched: string[] } {
   const match = createMatcher(ratings);
+  const known = new Set(ratings.map((r) => r.player_id));
 
   const map: Record<string, string> = {};
   const unmatched: string[] = [];
@@ -97,6 +112,11 @@ export function buildIdentityMap(
    */
   const consider = (espn_id: string, name: string, tour: string) => {
     if (map[espn_id]) return;
+    const forced = overrides[espn_id];
+    if (forced && known.has(forced)) {
+      map[espn_id] = forced;
+      return;
+    }
     const hit = match(name, tour);
     if (hit) map[espn_id] = hit;
     else unmatched.push(name);
