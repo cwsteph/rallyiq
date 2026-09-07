@@ -99,15 +99,19 @@ test("one city hosting two tournaments does not merge them", () => {
     canonicalTournament("MSC Hamburg Ladies Open"),
   );
   assert.equal(canonicalTournament("Bitpanda Hamburg Open"), canonicalTournament("Hamburg"));
+
+  // Same shape in Stuttgart: ATP Boss Open is grass in June, WTA Porsche Grand
+  // Prix is indoor clay in April.
+  assert.notEqual(canonicalTournament("Boss Open"), canonicalTournament("Stuttgart"));
+  assert.equal(tournamentSlug("Boss Open"), "boss-open");
 });
 
-test("the five cutoff straddlers each resolve to their CSV name", () => {
+test("the four cutoff straddlers each resolve to their CSV name", () => {
   // These appear in both sources under different names. Anything that breaks
   // one of these silently doubles that tournament in the season index.
   const pairs: Array<[string, string]> = [
     ["Gonet Geneva Open", "Geneva"],
     ["Bitpanda Hamburg Open", "Hamburg"],
-    ["Boss Open", "Stuttgart"],
     ["Internationaux de Strasbourg presented by Mammotion", "Strasbourg"],
     ["Grand Prix Son Altesse Royale  La Princesse Lalla Meryem", "Rabat"],
   ];

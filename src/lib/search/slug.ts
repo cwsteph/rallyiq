@@ -71,7 +71,7 @@ const ALIASES: Record<string, string> = {
   hsbc: "Queen's Club",
   terrawortmann: 'Halle',
   libema: "'s-Hertogenbosch",
-  boss: 'Stuttgart',
+  boss: 'Boss Open',
   generali: 'Kitzbuhel',
   generalikitzbhel: 'Kitzbuhel',
   efgswissgstaad: 'Gstaad',
@@ -96,10 +96,11 @@ const ALIASES: Record<string, string> = {
   unicreditiasi: 'Iasi',
   warsawtmobilepolish: 'Warsaw',
   ennoblecarephilly: 'Philadelphia',
-  // Deliberately NOT mapped: "MSC Hamburg Ladies Open" is a July WTA event,
-  // distinct from the ATP Bitpanda Hamburg Open in May. One city, two
-  // tournaments — merging them on the city name would claim a single event ran
-  // for 70 days.
+  // Deliberately NOT mapped to their city: "MSC Hamburg Ladies Open" is a July
+  // WTA event distinct from May's ATP Bitpanda Hamburg Open, and the ATP Boss
+  // Open is grass in Stuttgart in June while the WTA Porsche Grand Prix is
+  // indoor clay there in April. One city, two tournaments — merging on the city
+  // claims a single event ran for two months on two surfaces.
 }
 
 /** Davis Cup and BJK Cup arrive one tie per row: "Davis Cup QLS R1: AUS vs ECU". */

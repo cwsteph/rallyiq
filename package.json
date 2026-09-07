@@ -15,7 +15,8 @@
     "fetch:today": "tsx scripts/fetch-today.ts",
     "test": "node --test \"scripts/espn/*.test.ts\"",
     "espn:backfill": "node scripts/espn/backfill.ts",
-    "espn:backfill:apply": "node scripts/espn/backfill.ts --apply"
+    "espn:backfill:apply": "node scripts/espn/backfill.ts --apply",
+    "index:build": "node scripts/season-index.ts"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^5.15.9",

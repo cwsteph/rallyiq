@@ -41,12 +41,16 @@ jobs:
       - name: Refresh today's slate
         run: npm run fetch:today
 
+      - name: Rebuild the season search index
+        run: node scripts/season-index.ts
+
       - name: Fail if anything came out empty
         run: |
           test -s data/ratings.json    || { echo "ratings.json is empty";    exit 1; }
           test -s data/results.ndjson  || { echo "results.ndjson is empty";  exit 1; }
           test -s data/today.json      || { echo "today.json is empty";      exit 1; }
           test -s data/health.json     || { echo "health.json is empty";     exit 1; }
+          test -s data/search-index.json || { echo "search-index.json is empty"; exit 1; }
           node -e "
             const r = require('./data/ratings.json');
             if (r.length < 1500) { console.error('only ' + r.length + ' players'); process.exit(1); }
@@ -64,7 +68,9 @@ jobs:
                 process.exit(1);
               }
             }
-            console.log(r.length + ' players, no slug ids, all feeds stamped ' + today);
+            const idx = require('./data/search-index.json');
+            if (idx.tournaments.length < 40) { console.error('only ' + idx.tournaments.length + ' tournaments'); process.exit(1); }
+            console.log(r.length + ' players, ' + idx.tournaments.length + ' tournaments, all feeds stamped ' + today);
           "
 
       - name: Commit
