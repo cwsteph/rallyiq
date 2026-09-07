@@ -1,7 +1,24 @@
-import { resolveSurface } from "./surface.ts";
+import { normalizeName, resolveSurface } from "./surface.ts";
 import type { MatchRecord } from "./types.ts";
 
 const SINGLES = new Set(["mens-singles", "womens-singles"]);
+
+/** The only events where men's singles is played over five sets. */
+const SLAMS = new Set(["australianopen", "rolandgarros", "frenchopen", "wimbledon", "usopen"]);
+
+/**
+ * `format.regulation.periods` describes the endpoint, not the match: /atp
+ * reports 5 for every competition it returns and /wta reports 3, including for
+ * the other tour's draw at a combined event. Pull the same US Open competition
+ * from both and the payloads differ only by the league uid and this field.
+ *
+ * Deriving from the grouping slug instead is exact — women's singles is always
+ * best-of-3, men's is best-of-5 only at a slam.
+ */
+export function bestOf(tour: "ATP" | "WTA", tournament: string): number {
+  if (tour === "WTA") return 3;
+  return SLAMS.has(normalizeName(tournament)) ? 5 : 3;
+}
 
 /**
  * ESPN bundles qualifying into the same event as the main draw — 112 of
@@ -95,7 +112,7 @@ export function parseScoreboard(
           tournament,
           surface,
           round,
-          best_of: comp.format?.regulation?.periods === 5 ? 5 : 3,
+          best_of: bestOf(tour, tournament),
           tour,
           winner_espn_id: wId,
           winner_name: winnerName,

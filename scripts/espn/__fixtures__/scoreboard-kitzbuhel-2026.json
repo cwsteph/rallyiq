@@ -1,0 +1,319 @@
+{
+ "events": [
+  {
+   "id": "304-2026",
+   "name": "Generali Open",
+   "date": "2026-07-18T04:00Z",
+   "venue": {
+    "displayName": "Kitzbühel, Austria"
+   },
+   "groupings": [
+    {
+     "grouping": {
+      "id": "1",
+      "slug": "mens-singles",
+      "displayName": "Men's Singles"
+     },
+     "competitions": [
+      {
+       "id": "178881",
+       "uid": "s:850~l:851~e:304-2026~c:178881",
+       "date": "2026-07-20T09:05Z",
+       "startDate": "2026-07-20T09:05Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Kitzbühel, Austria",
+        "court": "Center Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Mariano Navone (ARG) bt Alexandre Muller (FRA) 6-4 6-0",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "9992",
+         "uid": "s:850~l:851~a:9992",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 6,
+           "winner": true
+          },
+          {
+           "value": 6,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "89f3567e-c29b-34e3-bd89-92c33218565f",
+          "displayName": "Mariano Navone",
+          "shortName": "M. Navone",
+          "fullName": "Mariano Navone",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+           "alt": "Argentina",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/9992/mariano-navone",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "3308",
+         "uid": "s:850~l:851~a:3308",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 4,
+           "winner": false
+          },
+          {
+           "value": 0,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "ffd80595-8dc3-71a9-0c8e-abe37fb1169f",
+          "displayName": "Alexandre Muller",
+          "shortName": "A. Muller",
+          "fullName": "Alexandre Muller",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+           "alt": "France",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/3308/alexandre-muller",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 304,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      },
+      {
+       "id": "178865",
+       "uid": "s:850~l:851~e:304-2026~c:178865",
+       "date": "2026-07-20T10:45Z",
+       "startDate": "2026-07-20T10:45Z",
+       "timeValid": true,
+       "recent": false,
+       "status": {
+        "period": 2,
+        "type": {
+         "id": "3",
+         "name": "STATUS_FINAL",
+         "state": "post",
+         "completed": true,
+         "description": "Final",
+         "detail": "Final",
+         "shortDetail": "Final"
+        }
+       },
+       "venue": {
+        "fullName": "Kitzbühel, Austria",
+        "court": "Center Court"
+       },
+       "format": {
+        "regulation": {
+         "periods": 5
+        }
+       },
+       "notes": [
+        {
+         "text": "Yannick Hanfmann (GER) bt Lukas Neumayer (AUT) 7-6 (7-5) 6-4",
+         "type": "event"
+        }
+       ],
+       "geoBroadcasts": [],
+       "broadcasts": [],
+       "broadcast": "",
+       "competitors": [
+        {
+         "id": "3322",
+         "uid": "s:850~l:851~a:3322",
+         "type": "athlete",
+         "order": 2,
+         "homeAway": "away",
+         "winner": true,
+         "linescores": [
+          {
+           "value": 7,
+           "tiebreak": 7,
+           "winner": true
+          },
+          {
+           "value": 6,
+           "winner": true
+          }
+         ],
+         "athlete": {
+          "guid": "1b1186f6-c6f0-417c-26af-5280cf749499",
+          "displayName": "Yannick Hanfmann",
+          "shortName": "Y. Hanfmann",
+          "fullName": "Yannick Hanfmann",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+           "alt": "Germany",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/3322/yannick-hanfmann",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        },
+        {
+         "id": "7794",
+         "uid": "s:850~l:851~a:7794",
+         "type": "athlete",
+         "order": 1,
+         "homeAway": "home",
+         "winner": false,
+         "linescores": [
+          {
+           "value": 6,
+           "tiebreak": 5,
+           "winner": false
+          },
+          {
+           "value": 4,
+           "winner": false
+          }
+         ],
+         "athlete": {
+          "guid": "c6dfe82e-62f7-3bb5-ba68-f59753dc8808",
+          "displayName": "Lukas Neumayer",
+          "shortName": "L. Neumayer",
+          "fullName": "Lukas Neumayer",
+          "flag": {
+           "href": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+           "alt": "Austria",
+           "rel": [
+            "country-flag"
+           ]
+          },
+          "links": [
+           {
+            "language": "en-US",
+            "rel": [
+             "playercard",
+             "desktop",
+             "athlete"
+            ],
+            "href": "https://www.espn.com/tennis/player/_/id/7794/lukas-neumayer",
+            "text": "Player Card",
+            "shortText": "Player Card",
+            "isExternal": false,
+            "isPremium": false,
+            "isHidden": false
+           }
+          ]
+         },
+         "statistics": []
+        }
+       ],
+       "tournamentId": 304,
+       "type": {
+        "id": "1",
+        "text": "Men's Singles",
+        "slug": "mens-singles"
+       },
+       "round": {
+        "id": "1",
+        "displayName": "Round 1"
+       },
+       "wasSuspended": false
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

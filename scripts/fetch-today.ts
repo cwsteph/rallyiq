@@ -12,7 +12,7 @@
 import fs from 'fs'
 import path from 'path'
 import { createTodayResolver } from './espn/identity.ts'
-import { competitorId } from './espn/parse.ts'
+import { bestOf, competitorId } from './espn/parse.ts'
 import { writeHealth } from './espn/health.ts'
 
 const DATA_DIR    = path.join(process.cwd(), 'data')
@@ -26,6 +26,7 @@ export interface TodayMatch {
   surface:         string
   round:           string
   best_of:         number
+  tour:            'ATP' | 'WTA'
   match_date:      string
   scheduled_time?: string
   player1_id:      string
@@ -118,12 +119,6 @@ function normaliseRound(displayName: string): string {
   return ROUND_MAP[displayName.toLowerCase()] ?? displayName.toUpperCase().replace(/\s+/g, '')
 }
 
-function bestOf(round: string, isMasters: boolean, isWTA: boolean): 3 | 5 {
-  if (isWTA) return 3
-  if ((round === 'F' || round === 'SF') && isMasters) return 5
-  return 3
-}
-
 // ── ESPN scraper ──────────────────────────────────────────────────────────────
 
 async function fetchESPN(
@@ -148,7 +143,6 @@ async function fetchESPN(
   for (const event of (data.events ?? [])) {
     const tournament  = event.name ?? 'Unknown'
     const surface     = inferSurface(tournament)
-    const isMasters   = /masters|1000/i.test(tournament)
 
     for (const grouping of (event.groupings ?? [])) {
       // Tour comes from the grouping, not the endpoint. ESPN's ATP scoreboard
@@ -181,7 +175,7 @@ async function fetchESPN(
         // Parse round
         const roundDisplay = comp.round?.displayName ?? 'R32'
         const round        = normaliseRound(roundDisplay)
-        const bo           = bestOf(round, isMasters, isWTA)
+        const bo           = bestOf(TOUR, tournament)
 
         // Parse scheduled time (comp.date is ISO string)
         const matchDate    = comp.date ? comp.date.slice(0, 10) : today
@@ -199,6 +193,7 @@ async function fetchESPN(
           surface,
           round,
           best_of:        bo,
+          tour:           TOUR,
           match_date:     matchDate,
           scheduled_time: scheduledTime,
           player1_id:     p1Id,
