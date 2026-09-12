@@ -99,17 +99,17 @@
     "player_id": "100644",
     "name": "Alexander Zverev",
     "tour": "ATP",
-    "elo_overall": 1947.7,
-    "elo_hard": 1824.9,
+    "elo_overall": 1952.8,
+    "elo_hard": 1830.4,
     "elo_clay": 1807.6,
     "elo_grass": 1659.2,
     "hold_pct": 0.88,
     "break_pct": 0.223,
-    "form_score": 0.7,
-    "form_json": "[0,0,1,1,0,1,1,1,1,1]",
+    "form_score": 0.8,
+    "form_json": "[0,1,1,0,1,1,1,1,1,1]",
     "current_rank": 2,
     "current_rank_points": 7790,
-    "matches_played": 359
+    "matches_played": 360
   },
   {
     "player_id": "216347",
@@ -208,6 +208,22 @@
     "matches_played": 189
   },
   {
+    "player_id": "210097",
+    "name": "Ben Shelton",
+    "tour": "ATP",
+    "elo_overall": 1866.6,
+    "elo_hard": 1814,
+    "elo_clay": 1560.4,
+    "elo_grass": 1576.6,
+    "hold_pct": 0.882,
+    "break_pct": 0.135,
+    "form_score": 0.9,
+    "form_json": "[1,1,1,0,1,1,1,1,1,1]",
+    "current_rank": 9,
+    "current_rank_points": 3480,
+    "matches_played": 242
+  },
+  {
     "player_id": "209950",
     "name": "Arthur Fils",
     "tour": "ATP",
@@ -222,22 +238,6 @@
     "current_rank": 11,
     "current_rank_points": 3140,
     "matches_played": 186
-  },
-  {
-    "player_id": "210097",
-    "name": "Ben Shelton",
-    "tour": "ATP",
-    "elo_overall": 1851.3,
-    "elo_hard": 1804.3,
-    "elo_clay": 1560.4,
-    "elo_grass": 1576.6,
-    "hold_pct": 0.882,
-    "break_pct": 0.135,
-    "form_score": 0.9,
-    "form_json": "[1,1,1,1,0,1,1,1,1,1]",
-    "current_rank": 9,
-    "current_rank_points": 3480,
-    "matches_played": 241
   },
   {
     "player_id": "211768",
@@ -291,17 +291,17 @@
     "player_id": "126207",
     "name": "Frances Tiafoe",
     "tour": "ATP",
-    "elo_overall": 1836.2,
-    "elo_hard": 1738.1,
+    "elo_overall": 1820.9,
+    "elo_hard": 1728.4,
     "elo_clay": 1576.1,
     "elo_grass": 1602.1,
     "hold_pct": 0.838,
     "break_pct": 0.187,
-    "form_score": 0.9,
-    "form_json": "[1,1,1,1,0,1,1,1,1,1]",
+    "form_score": 0.8,
+    "form_json": "[1,1,1,0,1,1,1,1,1,0]",
     "current_rank": 12,
     "current_rank_points": 2680,
-    "matches_played": 287
+    "matches_played": 288
   },
   {
     "player_id": "239475",
@@ -1296,22 +1296,6 @@
     "matches_played": 179
   },
   {
-    "player_id": "111575",
-    "name": "Karen Khachanov",
-    "tour": "ATP",
-    "elo_overall": 1658.4,
-    "elo_hard": 1615.1,
-    "elo_clay": 1593.2,
-    "elo_grass": 1553.2,
-    "hold_pct": 0.848,
-    "break_pct": 0.203,
-    "form_score": 0.6,
-    "form_json": "[1,0,0,0,0,1,1,1,1,1]",
-    "current_rank": 50,
-    "current_rank_points": 1050,
-    "matches_played": 270
-  },
-  {
     "player_id": "128034",
     "name": "Hubert Hurkacz",
     "tour": "ATP",
@@ -1358,6 +1342,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 55
+  },
+  {
+    "player_id": "111575",
+    "name": "Karen Khachanov",
+    "tour": "ATP",
+    "elo_overall": 1653.3,
+    "elo_hard": 1609.6,
+    "elo_clay": 1593.2,
+    "elo_grass": 1553.2,
+    "hold_pct": 0.848,
+    "break_pct": 0.203,
+    "form_score": 0.5,
+    "form_json": "[0,0,0,0,1,1,1,1,1,0]",
+    "current_rank": 50,
+    "current_rank_points": 1050,
+    "matches_played": 271
   },
   {
     "player_id": "215983",
