@@ -416,6 +416,22 @@
     "matches_played": 205
   },
   {
+    "player_id": "260300",
+    "name": "Iva Jovic",
+    "tour": "WTA",
+    "elo_overall": 1786.7,
+    "elo_hard": 1676.6,
+    "elo_clay": 1542.4,
+    "elo_grass": 1550.6,
+    "hold_pct": 0.69,
+    "break_pct": 0.392,
+    "form_score": 0.8,
+    "form_json": "[1,0,1,1,1,0,1,1,1,1]",
+    "current_rank": 16,
+    "current_rank_points": 2390,
+    "matches_played": 84
+  },
+  {
     "player_id": "212588",
     "name": "Rafael Jodar",
     "tour": "ATP",
@@ -430,22 +446,6 @@
     "current_rank": 14,
     "current_rank_points": 2659,
     "matches_played": 54
-  },
-  {
-    "player_id": "260300",
-    "name": "Iva Jovic",
-    "tour": "WTA",
-    "elo_overall": 1777,
-    "elo_hard": 1668.3,
-    "elo_clay": 1542.4,
-    "elo_grass": 1550.6,
-    "hold_pct": 0.69,
-    "break_pct": 0.392,
-    "form_score": 0.7,
-    "form_json": "[0,1,0,1,1,1,0,1,1,1]",
-    "current_rank": 16,
-    "current_rank_points": 2390,
-    "matches_played": 83
   },
   {
     "player_id": "210530",
@@ -832,22 +832,6 @@
     "matches_played": 220
   },
   {
-    "player_id": "211651",
-    "name": "Paula Badosa",
-    "tour": "WTA",
-    "elo_overall": 1708.7,
-    "elo_hard": 1637.6,
-    "elo_clay": 1642.8,
-    "elo_grass": 1536.4,
-    "hold_pct": 0.716,
-    "break_pct": 0.357,
-    "form_score": 0.7,
-    "form_json": "[1,0,1,1,0,1,0,1,1,1]",
-    "current_rank": 70,
-    "current_rank_points": 955,
-    "matches_played": 210
-  },
-  {
     "player_id": "200221",
     "name": "Alejandro Davidovich Fokina",
     "tour": "ATP",
@@ -1070,6 +1054,22 @@
     "current_rank": 34,
     "current_rank_points": 1352,
     "matches_played": 47
+  },
+  {
+    "player_id": "211651",
+    "name": "Paula Badosa",
+    "tour": "WTA",
+    "elo_overall": 1683.8,
+    "elo_hard": 1621,
+    "elo_clay": 1642.8,
+    "elo_grass": 1536.4,
+    "hold_pct": 0.716,
+    "break_pct": 0.357,
+    "form_score": 0.6,
+    "form_json": "[0,1,1,0,1,0,1,1,1,0]",
+    "current_rank": 70,
+    "current_rank_points": 955,
+    "matches_played": 211
   },
   {
     "player_id": "126094",
@@ -1648,22 +1648,6 @@
     "matches_played": 238
   },
   {
-    "player_id": "220548",
-    "name": "Peyton Stearns",
-    "tour": "WTA",
-    "elo_overall": 1631.8,
-    "elo_hard": 1557.2,
-    "elo_clay": 1600.8,
-    "elo_grass": 1455.8,
-    "hold_pct": 0.653,
-    "break_pct": 0.352,
-    "form_score": 0.5,
-    "form_json": "[0,0,0,1,0,0,1,1,1,1]",
-    "current_rank": 60,
-    "current_rank_points": 1001,
-    "matches_played": 150
-  },
-  {
     "player_id": "201496",
     "name": "Caroline Wozniacki",
     "tour": "WTA",
@@ -1742,6 +1726,22 @@
     "current_rank": 61,
     "current_rank_points": 998,
     "matches_played": 24
+  },
+  {
+    "player_id": "220548",
+    "name": "Peyton Stearns",
+    "tour": "WTA",
+    "elo_overall": 1622.1,
+    "elo_hard": 1548.9,
+    "elo_clay": 1600.8,
+    "elo_grass": 1455.8,
+    "hold_pct": 0.653,
+    "break_pct": 0.352,
+    "form_score": 0.5,
+    "form_json": "[0,0,1,0,0,1,1,1,1,0]",
+    "current_rank": 60,
+    "current_rank_points": 1001,
+    "matches_played": 151
   },
   {
     "player_id": "211817",
@@ -2192,6 +2192,22 @@
     "matches_played": 173
   },
   {
+    "player_id": "259733",
+    "name": "Kaitlin Quevedo",
+    "tour": "WTA",
+    "elo_overall": 1592.9,
+    "elo_hard": 1530.2,
+    "elo_clay": 1520.4,
+    "elo_grass": 1500,
+    "hold_pct": 0.641,
+    "break_pct": 0.245,
+    "form_score": 0.6,
+    "form_json": "[1,0,1,0,0,0,1,1,1,1]",
+    "current_rank": 105,
+    "current_rank_points": 719,
+    "matches_played": 21
+  },
+  {
     "player_id": "111581",
     "name": "Michael Mmoh",
     "tour": "ATP",
@@ -2590,22 +2606,6 @@
     "current_rank": 106,
     "current_rank_points": 712,
     "matches_played": 59
-  },
-  {
-    "player_id": "259733",
-    "name": "Kaitlin Quevedo",
-    "tour": "WTA",
-    "elo_overall": 1577.5,
-    "elo_hard": 1518.2,
-    "elo_clay": 1520.4,
-    "elo_grass": 1500,
-    "hold_pct": 0.641,
-    "break_pct": 0.245,
-    "form_score": 0.6,
-    "form_json": "[1,1,0,1,0,0,0,1,1,1]",
-    "current_rank": 105,
-    "current_rank_points": 719,
-    "matches_played": 20
   },
   {
     "player_id": "263857",
@@ -4912,22 +4912,6 @@
     "matches_played": 267
   },
   {
-    "player_id": "215020",
-    "name": "Anna Blinkova",
-    "tour": "WTA",
-    "elo_overall": 1526.4,
-    "elo_hard": 1517.5,
-    "elo_clay": 1420.6,
-    "elo_grass": 1488.9,
-    "hold_pct": 0.59,
-    "break_pct": 0.346,
-    "form_score": 0.4,
-    "form_json": "[0,0,0,0,1,0,0,1,1,1]",
-    "current_rank": 94,
-    "current_rank_points": 795,
-    "matches_played": 172
-  },
-  {
     "player_id": "121411",
     "name": "Moez Echargui",
     "tour": "ATP",
@@ -6144,6 +6128,22 @@
     "matches_played": 1
   },
   {
+    "player_id": "206408",
+    "name": "Nadia Podoroska",
+    "tour": "WTA",
+    "elo_overall": 1518.4,
+    "elo_hard": 1512.6,
+    "elo_clay": 1414.8,
+    "elo_grass": 1458.9,
+    "hold_pct": 0.6,
+    "break_pct": 0.294,
+    "form_score": 0.5,
+    "form_json": "[0,0,0,0,1,0,1,1,1,1]",
+    "current_rank": 921,
+    "current_rank_points": 27,
+    "matches_played": 91
+  },
+  {
     "player_id": "espn_10645",
     "name": "Toby Samuel",
     "tour": "ATP",
@@ -6862,6 +6862,22 @@
     "current_rank": 1111,
     "current_rank_points": 12,
     "matches_played": 27
+  },
+  {
+    "player_id": "215020",
+    "name": "Anna Blinkova",
+    "tour": "WTA",
+    "elo_overall": 1511,
+    "elo_hard": 1505.5,
+    "elo_clay": 1420.6,
+    "elo_grass": 1488.9,
+    "hold_pct": 0.59,
+    "break_pct": 0.346,
+    "form_score": 0.4,
+    "form_json": "[0,0,0,1,0,0,1,1,1,0]",
+    "current_rank": 94,
+    "current_rank_points": 795,
+    "matches_played": 173
   },
   {
     "player_id": "221124",
@@ -9534,22 +9550,6 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 1
-  },
-  {
-    "player_id": "206408",
-    "name": "Nadia Podoroska",
-    "tour": "WTA",
-    "elo_overall": 1493.6,
-    "elo_hard": 1496,
-    "elo_clay": 1414.8,
-    "elo_grass": 1458.9,
-    "hold_pct": 0.6,
-    "break_pct": 0.294,
-    "form_score": 0.4,
-    "form_json": "[0,0,0,0,0,1,0,1,1,1]",
-    "current_rank": 921,
-    "current_rank_points": 27,
-    "matches_played": 90
   },
   {
     "player_id": "221031",
