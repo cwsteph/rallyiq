@@ -1,6 +1,7 @@
 {
  "tournaments": [
   "ATIK Antalya Open",
+  "Adana Open",
   "Axeria Open 2026 powered by Intaro Sport",
   "BBVA Open Internacional De Valencia",
   "Caldas da Rainha Ladies Open",
@@ -21,5 +22,5 @@
   "Turk Telekom Ankara Open",
   "Zavarovalnica Triglav Ljubljana"
  ],
- "droppedRows": 572
+ "droppedRows": 581
 }
