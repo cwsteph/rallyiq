@@ -496,6 +496,22 @@
     "matches_played": 191
   },
   {
+    "player_id": "106421",
+    "name": "Daniil Medvedev",
+    "tour": "ATP",
+    "elo_overall": 1769.9,
+    "elo_hard": 1767,
+    "elo_clay": 1641.9,
+    "elo_grass": 1625.1,
+    "hold_pct": 0.84,
+    "break_pct": 0.269,
+    "form_score": 0.7,
+    "form_json": "[0,0,1,1,1,0,1,1,1,1]",
+    "current_rank": 6,
+    "current_rank_points": 3770,
+    "matches_played": 338
+  },
+  {
     "player_id": "200000",
     "name": "Felix Auger Aliassime",
     "tour": "ATP",
@@ -526,22 +542,6 @@
     "current_rank": 24,
     "current_rank_points": 2024,
     "matches_played": 205
-  },
-  {
-    "player_id": "106421",
-    "name": "Daniil Medvedev",
-    "tour": "ATP",
-    "elo_overall": 1756,
-    "elo_hard": 1759.3,
-    "elo_clay": 1641.9,
-    "elo_grass": 1625.1,
-    "hold_pct": 0.84,
-    "break_pct": 0.269,
-    "form_score": 0.7,
-    "form_json": "[1,0,0,1,1,1,0,1,1,1]",
-    "current_rank": 6,
-    "current_rank_points": 3770,
-    "matches_played": 337
   },
   {
     "player_id": "207518",
@@ -592,6 +592,22 @@
     "matches_played": 353
   },
   {
+    "player_id": "200221",
+    "name": "Alejandro Davidovich Fokina",
+    "tour": "ATP",
+    "elo_overall": 1748.9,
+    "elo_hard": 1668.5,
+    "elo_clay": 1567,
+    "elo_grass": 1587.2,
+    "hold_pct": 0.788,
+    "break_pct": 0.232,
+    "form_score": 0.8,
+    "form_json": "[1,1,1,0,1,0,1,1,1,1]",
+    "current_rank": 29,
+    "current_rank_points": 1680,
+    "matches_played": 261
+  },
+  {
     "player_id": "221012",
     "name": "Qinwen Zheng",
     "tour": "WTA",
@@ -638,22 +654,6 @@
     "current_rank": 44,
     "current_rank_points": 1263,
     "matches_played": 134
-  },
-  {
-    "player_id": "200221",
-    "name": "Alejandro Davidovich Fokina",
-    "tour": "ATP",
-    "elo_overall": 1734.4,
-    "elo_hard": 1657.1,
-    "elo_clay": 1567,
-    "elo_grass": 1587.2,
-    "hold_pct": 0.788,
-    "break_pct": 0.232,
-    "form_score": 0.8,
-    "form_json": "[1,1,1,1,0,1,0,1,1,1]",
-    "current_rank": 29,
-    "current_rank_points": 1680,
-    "matches_played": 260
   },
   {
     "player_id": "208103",
@@ -864,22 +864,6 @@
     "matches_played": 243
   },
   {
-    "player_id": "126094",
-    "name": "Andrey Rublev",
-    "tour": "ATP",
-    "elo_overall": 1710.3,
-    "elo_hard": 1630,
-    "elo_clay": 1697.3,
-    "elo_grass": 1532,
-    "hold_pct": 0.857,
-    "break_pct": 0.221,
-    "form_score": 0.6,
-    "form_json": "[1,0,0,1,0,1,0,1,1,1]",
-    "current_rank": 25,
-    "current_rank_points": 1930,
-    "matches_played": 331
-  },
-  {
     "player_id": "126774",
     "name": "Stefanos Tsitsipas",
     "tour": "ATP",
@@ -926,22 +910,6 @@
     "current_rank": 21,
     "current_rank_points": 2185,
     "matches_played": 270
-  },
-  {
-    "player_id": "128034",
-    "name": "Hubert Hurkacz",
-    "tour": "ATP",
-    "elo_overall": 1702.7,
-    "elo_hard": 1638.7,
-    "elo_clay": 1617.6,
-    "elo_grass": 1579.9,
-    "hold_pct": 0.893,
-    "break_pct": 0.159,
-    "form_score": 0.7,
-    "form_json": "[1,0,1,0,1,0,1,1,1,1]",
-    "current_rank": 46,
-    "current_rank_points": 1120,
-    "matches_played": 254
   },
   {
     "player_id": "202103",
@@ -1006,6 +974,22 @@
     "current_rank": 44,
     "current_rank_points": 1060,
     "matches_played": 261
+  },
+  {
+    "player_id": "126094",
+    "name": "Andrey Rublev",
+    "tour": "ATP",
+    "elo_overall": 1696.4,
+    "elo_hard": 1622.3,
+    "elo_clay": 1697.3,
+    "elo_grass": 1532,
+    "hold_pct": 0.857,
+    "break_pct": 0.221,
+    "form_score": 0.5,
+    "form_json": "[0,0,1,0,1,0,1,1,1,0]",
+    "current_rank": 25,
+    "current_rank_points": 1930,
+    "matches_played": 332
   },
   {
     "player_id": "210017",
@@ -1102,6 +1086,22 @@
     "current_rank": 43,
     "current_rank_points": 1198,
     "matches_played": 191
+  },
+  {
+    "player_id": "128034",
+    "name": "Hubert Hurkacz",
+    "tour": "ATP",
+    "elo_overall": 1688.1,
+    "elo_hard": 1627.4,
+    "elo_clay": 1617.6,
+    "elo_grass": 1579.9,
+    "hold_pct": 0.893,
+    "break_pct": 0.159,
+    "form_score": 0.6,
+    "form_json": "[0,1,0,1,0,1,1,1,1,0]",
+    "current_rank": 46,
+    "current_rank_points": 1120,
+    "matches_played": 255
   },
   {
     "player_id": "211651",
