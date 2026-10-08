@@ -147,17 +147,17 @@
     "player_id": "214096",
     "name": "Karolina Muchova",
     "tour": "WTA",
-    "elo_overall": 1936.1,
-    "elo_hard": 1819.3,
+    "elo_overall": 1911.9,
+    "elo_hard": 1800.9,
     "elo_clay": 1627.6,
     "elo_grass": 1588.7,
     "hold_pct": 0.748,
     "break_pct": 0.335,
-    "form_score": 0.8,
-    "form_json": "[1,1,1,0,1,1,0,1,1,1]",
+    "form_score": 0.7,
+    "form_json": "[1,1,0,1,1,0,1,1,1,0]",
     "current_rank": 8,
     "current_rank_points": 4683,
-    "matches_played": 191
+    "matches_played": 192
   },
   {
     "player_id": "216146",
@@ -195,17 +195,33 @@
     "player_id": "259799",
     "name": "Mirra Andreeva",
     "tour": "WTA",
-    "elo_overall": 1867.2,
-    "elo_hard": 1745.6,
+    "elo_overall": 1877.1,
+    "elo_hard": 1754.6,
     "elo_clay": 1783.7,
     "elo_grass": 1521.6,
     "hold_pct": 0.726,
     "break_pct": 0.404,
     "form_score": 0.8,
-    "form_json": "[1,1,1,1,0,1,0,1,1,1]",
+    "form_json": "[1,1,1,0,1,0,1,1,1,1]",
     "current_rank": 5,
     "current_rank_points": 5841,
-    "matches_played": 194
+    "matches_played": 195
+  },
+  {
+    "player_id": "202494",
+    "name": "Elina Svitolina",
+    "tour": "WTA",
+    "elo_overall": 1865.9,
+    "elo_hard": 1773.9,
+    "elo_clay": 1751,
+    "elo_grass": 1560.3,
+    "hold_pct": 0.708,
+    "break_pct": 0.381,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,0,1,1,0,1,1,1]",
+    "current_rank": 7,
+    "current_rank_points": 4809,
+    "matches_played": 201
   },
   {
     "player_id": "209950",
@@ -222,22 +238,6 @@
     "current_rank": 11,
     "current_rank_points": 3275,
     "matches_played": 189
-  },
-  {
-    "player_id": "202494",
-    "name": "Elina Svitolina",
-    "tour": "WTA",
-    "elo_overall": 1857,
-    "elo_hard": 1767.2,
-    "elo_clay": 1751,
-    "elo_grass": 1560.3,
-    "hold_pct": 0.708,
-    "break_pct": 0.381,
-    "form_score": 0.7,
-    "form_json": "[1,1,0,1,0,1,1,0,1,1]",
-    "current_rank": 7,
-    "current_rank_points": 4809,
-    "matches_played": 200
   },
   {
     "player_id": "210097",
@@ -512,6 +512,22 @@
     "matches_played": 261
   },
   {
+    "player_id": "223360",
+    "name": "Nikola Bartunkova",
+    "tour": "WTA",
+    "elo_overall": 1762.1,
+    "elo_hard": 1633.2,
+    "elo_clay": 1504,
+    "elo_grass": 1550.4,
+    "hold_pct": 0.635,
+    "break_pct": 0.318,
+    "form_score": 0.8,
+    "form_json": "[1,1,0,1,1,0,1,1,1,1]",
+    "current_rank": 34,
+    "current_rank_points": 1352,
+    "matches_played": 51
+  },
+  {
     "player_id": "215613",
     "name": "Emma Navarro",
     "tour": "WTA",
@@ -640,22 +656,6 @@
     "matches_played": 134
   },
   {
-    "player_id": "223360",
-    "name": "Nikola Bartunkova",
-    "tour": "WTA",
-    "elo_overall": 1737.9,
-    "elo_hard": 1614.9,
-    "elo_clay": 1504,
-    "elo_grass": 1550.4,
-    "hold_pct": 0.635,
-    "break_pct": 0.318,
-    "form_score": 0.8,
-    "form_json": "[1,1,1,0,1,1,0,1,1,1]",
-    "current_rank": 34,
-    "current_rank_points": 1352,
-    "matches_played": 50
-  },
-  {
     "player_id": "214939",
     "name": "Anna Kalinskaya",
     "tour": "WTA",
@@ -752,22 +752,6 @@
     "matches_played": 96
   },
   {
-    "player_id": "206420",
-    "name": "Ekaterina Alexandrova",
-    "tour": "WTA",
-    "elo_overall": 1726.8,
-    "elo_hard": 1657.5,
-    "elo_clay": 1525.7,
-    "elo_grass": 1622.8,
-    "hold_pct": 0.725,
-    "break_pct": 0.342,
-    "form_score": 0.6,
-    "form_json": "[0,1,0,0,1,1,0,1,1,1]",
-    "current_rank": 28,
-    "current_rank_points": 1811,
-    "matches_played": 271
-  },
-  {
     "player_id": "213631",
     "name": "Marie Bouzkova",
     "tour": "WTA",
@@ -846,6 +830,22 @@
     "current_rank": 20,
     "current_rank_points": 2220,
     "matches_played": 290
+  },
+  {
+    "player_id": "206420",
+    "name": "Ekaterina Alexandrova",
+    "tour": "WTA",
+    "elo_overall": 1716.9,
+    "elo_hard": 1648.4,
+    "elo_clay": 1525.7,
+    "elo_grass": 1622.8,
+    "hold_pct": 0.725,
+    "break_pct": 0.342,
+    "form_score": 0.6,
+    "form_json": "[1,0,0,1,1,0,1,1,1,0]",
+    "current_rank": 28,
+    "current_rank_points": 1811,
+    "matches_played": 272
   },
   {
     "player_id": "210506",
@@ -1072,22 +1072,6 @@
     "matches_played": 244
   },
   {
-    "player_id": "215983",
-    "name": "Ann Li",
-    "tour": "WTA",
-    "elo_overall": 1689.8,
-    "elo_hard": 1601.8,
-    "elo_clay": 1572.4,
-    "elo_grass": 1475.2,
-    "hold_pct": 0.681,
-    "break_pct": 0.326,
-    "form_score": 0.7,
-    "form_json": "[0,1,1,1,0,1,1,0,1,1]",
-    "current_rank": 30,
-    "current_rank_points": 1573,
-    "matches_played": 151
-  },
-  {
     "player_id": "206252",
     "name": "Barbora Krejcikova",
     "tour": "WTA",
@@ -1118,6 +1102,22 @@
     "current_rank": 28,
     "current_rank_points": 1787,
     "matches_played": 50
+  },
+  {
+    "player_id": "215983",
+    "name": "Ann Li",
+    "tour": "WTA",
+    "elo_overall": 1680.9,
+    "elo_hard": 1595.1,
+    "elo_clay": 1572.4,
+    "elo_grass": 1475.2,
+    "hold_pct": 0.681,
+    "break_pct": 0.326,
+    "form_score": 0.7,
+    "form_json": "[1,1,1,0,1,1,0,1,1,0]",
+    "current_rank": 30,
+    "current_rank_points": 1573,
+    "matches_played": 152
   },
   {
     "player_id": "111575",
