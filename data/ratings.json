@@ -112,22 +112,6 @@
     "matches_played": 364
   },
   {
-    "player_id": "216347",
-    "name": "Iga Swiatek",
-    "tour": "WTA",
-    "elo_overall": 1950.7,
-    "elo_hard": 1881.9,
-    "elo_clay": 1805.5,
-    "elo_grass": 1650.4,
-    "hold_pct": 0.794,
-    "break_pct": 0.473,
-    "form_score": 0.8,
-    "form_json": "[1,1,0,1,1,1,0,1,1,1]",
-    "current_rank": 9,
-    "current_rank_points": 4119,
-    "matches_played": 365
-  },
-  {
     "player_id": "104925",
     "name": "Novak Djokovic",
     "tour": "ATP",
@@ -142,6 +126,22 @@
     "current_rank": 8,
     "current_rank_points": 3480,
     "matches_played": 238
+  },
+  {
+    "player_id": "216347",
+    "name": "Iga Swiatek",
+    "tour": "WTA",
+    "elo_overall": 1927.2,
+    "elo_hard": 1863.3,
+    "elo_clay": 1805.5,
+    "elo_grass": 1650.4,
+    "hold_pct": 0.794,
+    "break_pct": 0.473,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,1,1,0,1,1,1,0]",
+    "current_rank": 9,
+    "current_rank_points": 4119,
+    "matches_played": 366
   },
   {
     "player_id": "214096",
@@ -208,22 +208,6 @@
     "matches_played": 195
   },
   {
-    "player_id": "202494",
-    "name": "Elina Svitolina",
-    "tour": "WTA",
-    "elo_overall": 1865.9,
-    "elo_hard": 1773.9,
-    "elo_clay": 1751,
-    "elo_grass": 1560.3,
-    "hold_pct": 0.708,
-    "break_pct": 0.381,
-    "form_score": 0.7,
-    "form_json": "[1,0,1,0,1,1,0,1,1,1]",
-    "current_rank": 7,
-    "current_rank_points": 4809,
-    "matches_played": 201
-  },
-  {
     "player_id": "209950",
     "name": "Arthur Fils",
     "tour": "ATP",
@@ -288,6 +272,22 @@
     "matches_played": 185
   },
   {
+    "player_id": "202494",
+    "name": "Elina Svitolina",
+    "tour": "WTA",
+    "elo_overall": 1846.6,
+    "elo_hard": 1761.6,
+    "elo_clay": 1751,
+    "elo_grass": 1560.3,
+    "hold_pct": 0.708,
+    "break_pct": 0.381,
+    "form_score": 0.6,
+    "form_json": "[0,1,0,1,1,0,1,1,1,0]",
+    "current_rank": 7,
+    "current_rank_points": 4809,
+    "matches_played": 202
+  },
+  {
     "player_id": "239475",
     "name": "Victoria Mboko",
     "tour": "WTA",
@@ -318,6 +318,22 @@
     "current_rank": 10,
     "current_rank_points": 3380,
     "matches_played": 290
+  },
+  {
+    "player_id": "221012",
+    "name": "Qinwen Zheng",
+    "tour": "WTA",
+    "elo_overall": 1812.9,
+    "elo_hard": 1779.1,
+    "elo_clay": 1693.5,
+    "elo_grass": 1445.6,
+    "hold_pct": 0.75,
+    "break_pct": 0.335,
+    "form_score": 0.9,
+    "form_json": "[1,1,1,1,0,1,1,1,1,1]",
+    "current_rank": 54,
+    "current_rank_points": 1083,
+    "matches_played": 229
   },
   {
     "player_id": "201514",
@@ -352,20 +368,20 @@
     "matches_played": 234
   },
   {
-    "player_id": "221012",
-    "name": "Qinwen Zheng",
+    "player_id": "210722",
+    "name": "Elise Mertens",
     "tour": "WTA",
-    "elo_overall": 1793.6,
-    "elo_hard": 1766.9,
-    "elo_clay": 1693.5,
-    "elo_grass": 1445.6,
-    "hold_pct": 0.75,
-    "break_pct": 0.335,
-    "form_score": 0.8,
-    "form_json": "[0,1,1,1,1,0,1,1,1,1]",
-    "current_rank": 54,
-    "current_rank_points": 1083,
-    "matches_played": 228
+    "elo_overall": 1796.6,
+    "elo_hard": 1685.1,
+    "elo_clay": 1584,
+    "elo_grass": 1588.4,
+    "hold_pct": 0.702,
+    "break_pct": 0.378,
+    "form_score": 0.7,
+    "form_json": "[0,1,1,0,1,0,1,1,1,1]",
+    "current_rank": 19,
+    "current_rank_points": 2165,
+    "matches_played": 262
   },
   {
     "player_id": "200282",
@@ -494,22 +510,6 @@
     "current_rank": 16,
     "current_rank_points": 2440,
     "matches_played": 256
-  },
-  {
-    "player_id": "210722",
-    "name": "Elise Mertens",
-    "tour": "WTA",
-    "elo_overall": 1773.1,
-    "elo_hard": 1666.4,
-    "elo_clay": 1584,
-    "elo_grass": 1588.4,
-    "hold_pct": 0.702,
-    "break_pct": 0.378,
-    "form_score": 0.7,
-    "form_json": "[1,0,1,1,0,1,0,1,1,1]",
-    "current_rank": 19,
-    "current_rank_points": 2165,
-    "matches_played": 261
   },
   {
     "player_id": "223360",
