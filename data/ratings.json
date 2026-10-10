@@ -176,6 +176,22 @@
     "matches_played": 235
   },
   {
+    "player_id": "259799",
+    "name": "Mirra Andreeva",
+    "tour": "WTA",
+    "elo_overall": 1888,
+    "elo_hard": 1762.6,
+    "elo_clay": 1783.7,
+    "elo_grass": 1521.6,
+    "hold_pct": 0.726,
+    "break_pct": 0.404,
+    "form_score": 0.8,
+    "form_json": "[1,1,0,1,0,1,1,1,1,1]",
+    "current_rank": 5,
+    "current_rank_points": 5841,
+    "matches_played": 196
+  },
+  {
     "player_id": "222328",
     "name": "Linda Noskova",
     "tour": "WTA",
@@ -190,22 +206,6 @@
     "current_rank": 6,
     "current_rank_points": 5328,
     "matches_played": 211
-  },
-  {
-    "player_id": "259799",
-    "name": "Mirra Andreeva",
-    "tour": "WTA",
-    "elo_overall": 1877.1,
-    "elo_hard": 1754.6,
-    "elo_clay": 1783.7,
-    "elo_grass": 1521.6,
-    "hold_pct": 0.726,
-    "break_pct": 0.404,
-    "form_score": 0.8,
-    "form_json": "[1,1,1,0,1,0,1,1,1,1]",
-    "current_rank": 5,
-    "current_rank_points": 5841,
-    "matches_played": 195
   },
   {
     "player_id": "209950",
@@ -288,6 +288,22 @@
     "matches_played": 202
   },
   {
+    "player_id": "221012",
+    "name": "Qinwen Zheng",
+    "tour": "WTA",
+    "elo_overall": 1828.2,
+    "elo_hard": 1788,
+    "elo_clay": 1693.5,
+    "elo_grass": 1445.6,
+    "hold_pct": 0.75,
+    "break_pct": 0.335,
+    "form_score": 0.9,
+    "form_json": "[1,1,1,0,1,1,1,1,1,1]",
+    "current_rank": 54,
+    "current_rank_points": 1083,
+    "matches_played": 230
+  },
+  {
     "player_id": "239475",
     "name": "Victoria Mboko",
     "tour": "WTA",
@@ -320,22 +336,6 @@
     "matches_played": 290
   },
   {
-    "player_id": "221012",
-    "name": "Qinwen Zheng",
-    "tour": "WTA",
-    "elo_overall": 1812.9,
-    "elo_hard": 1779.1,
-    "elo_clay": 1693.5,
-    "elo_grass": 1445.6,
-    "hold_pct": 0.75,
-    "break_pct": 0.335,
-    "form_score": 0.9,
-    "form_json": "[1,1,1,1,0,1,1,1,1,1]",
-    "current_rank": 54,
-    "current_rank_points": 1083,
-    "matches_played": 229
-  },
-  {
     "player_id": "201514",
     "name": "Sorana Cirstea",
     "tour": "WTA",
@@ -366,22 +366,6 @@
     "current_rank": 23,
     "current_rank_points": 2029,
     "matches_played": 234
-  },
-  {
-    "player_id": "210722",
-    "name": "Elise Mertens",
-    "tour": "WTA",
-    "elo_overall": 1796.6,
-    "elo_hard": 1685.1,
-    "elo_clay": 1584,
-    "elo_grass": 1588.4,
-    "hold_pct": 0.702,
-    "break_pct": 0.378,
-    "form_score": 0.7,
-    "form_json": "[0,1,1,0,1,0,1,1,1,1]",
-    "current_rank": 19,
-    "current_rank_points": 2165,
-    "matches_played": 262
   },
   {
     "player_id": "200282",
@@ -448,6 +432,22 @@
     "matches_played": 348
   },
   {
+    "player_id": "210722",
+    "name": "Elise Mertens",
+    "tour": "WTA",
+    "elo_overall": 1781.3,
+    "elo_hard": 1676.2,
+    "elo_clay": 1584,
+    "elo_grass": 1588.4,
+    "hold_pct": 0.702,
+    "break_pct": 0.378,
+    "form_score": 0.7,
+    "form_json": "[1,1,0,1,0,1,1,1,1,0]",
+    "current_rank": 19,
+    "current_rank_points": 2165,
+    "matches_played": 263
+  },
+  {
     "player_id": "126205",
     "name": "Tommy Paul",
     "tour": "ATP",
@@ -510,22 +510,6 @@
     "current_rank": 16,
     "current_rank_points": 2440,
     "matches_played": 256
-  },
-  {
-    "player_id": "223360",
-    "name": "Nikola Bartunkova",
-    "tour": "WTA",
-    "elo_overall": 1762.1,
-    "elo_hard": 1633.2,
-    "elo_clay": 1504,
-    "elo_grass": 1550.4,
-    "hold_pct": 0.635,
-    "break_pct": 0.318,
-    "form_score": 0.8,
-    "form_json": "[1,1,0,1,1,0,1,1,1,1]",
-    "current_rank": 34,
-    "current_rank_points": 1352,
-    "matches_played": 51
   },
   {
     "player_id": "215613",
@@ -606,6 +590,22 @@
     "current_rank": 17,
     "current_rank_points": 2395,
     "matches_played": 122
+  },
+  {
+    "player_id": "223360",
+    "name": "Nikola Bartunkova",
+    "tour": "WTA",
+    "elo_overall": 1751.2,
+    "elo_hard": 1625.3,
+    "elo_clay": 1504,
+    "elo_grass": 1550.4,
+    "hold_pct": 0.635,
+    "break_pct": 0.318,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,1,0,1,1,1,1,0]",
+    "current_rank": 34,
+    "current_rank_points": 1352,
+    "matches_played": 52
   },
   {
     "player_id": "206909",
