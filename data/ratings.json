@@ -176,22 +176,6 @@
     "matches_played": 235
   },
   {
-    "player_id": "259799",
-    "name": "Mirra Andreeva",
-    "tour": "WTA",
-    "elo_overall": 1888,
-    "elo_hard": 1762.6,
-    "elo_clay": 1783.7,
-    "elo_grass": 1521.6,
-    "hold_pct": 0.726,
-    "break_pct": 0.404,
-    "form_score": 0.8,
-    "form_json": "[1,1,0,1,0,1,1,1,1,1]",
-    "current_rank": 5,
-    "current_rank_points": 5841,
-    "matches_played": 196
-  },
-  {
     "player_id": "222328",
     "name": "Linda Noskova",
     "tour": "WTA",
@@ -206,6 +190,22 @@
     "current_rank": 6,
     "current_rank_points": 5328,
     "matches_played": 211
+  },
+  {
+    "player_id": "259799",
+    "name": "Mirra Andreeva",
+    "tour": "WTA",
+    "elo_overall": 1869.2,
+    "elo_hard": 1751.4,
+    "elo_clay": 1783.7,
+    "elo_grass": 1521.6,
+    "hold_pct": 0.726,
+    "break_pct": 0.404,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,0,1,1,1,1,1,0]",
+    "current_rank": 5,
+    "current_rank_points": 5841,
+    "matches_played": 197
   },
   {
     "player_id": "209950",
@@ -272,6 +272,22 @@
     "matches_played": 185
   },
   {
+    "player_id": "221012",
+    "name": "Qinwen Zheng",
+    "tour": "WTA",
+    "elo_overall": 1846.9,
+    "elo_hard": 1799.1,
+    "elo_clay": 1693.5,
+    "elo_grass": 1445.6,
+    "hold_pct": 0.75,
+    "break_pct": 0.335,
+    "form_score": 0.9,
+    "form_json": "[1,1,0,1,1,1,1,1,1,1]",
+    "current_rank": 54,
+    "current_rank_points": 1083,
+    "matches_played": 231
+  },
+  {
     "player_id": "202494",
     "name": "Elina Svitolina",
     "tour": "WTA",
@@ -286,22 +302,6 @@
     "current_rank": 7,
     "current_rank_points": 4809,
     "matches_played": 202
-  },
-  {
-    "player_id": "221012",
-    "name": "Qinwen Zheng",
-    "tour": "WTA",
-    "elo_overall": 1828.2,
-    "elo_hard": 1788,
-    "elo_clay": 1693.5,
-    "elo_grass": 1445.6,
-    "hold_pct": 0.75,
-    "break_pct": 0.335,
-    "form_score": 0.9,
-    "form_json": "[1,1,1,0,1,1,1,1,1,1]",
-    "current_rank": 54,
-    "current_rank_points": 1083,
-    "matches_played": 230
   },
   {
     "player_id": "239475",
