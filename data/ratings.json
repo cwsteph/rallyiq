@@ -44,7 +44,7 @@
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,1,1,0,1,0]",
     "current_rank": 2,
-    "current_rank_points": 7810,
+    "current_rank_points": 7550,
     "matches_played": 329
   },
   {
@@ -60,7 +60,7 @@
     "form_score": 0.8,
     "form_json": "[1,0,1,1,1,1,1,1,1,0]",
     "current_rank": 1,
-    "current_rank_points": 9901,
+    "current_rank_points": 9696,
     "matches_played": 327
   },
   {
@@ -75,8 +75,8 @@
     "break_pct": 0.427,
     "form_score": 0.8,
     "form_json": "[1,1,1,1,1,1,0,1,1,0]",
-    "current_rank": 4,
-    "current_rank_points": 7244,
+    "current_rank": 5,
+    "current_rank_points": 5974,
     "matches_played": 328
   },
   {
@@ -91,8 +91,8 @@
     "break_pct": 0.391,
     "form_score": 0.8,
     "form_json": "[1,1,1,0,1,1,1,1,1,0]",
-    "current_rank": 3,
-    "current_rank_points": 7265,
+    "current_rank": 4,
+    "current_rank_points": 6225,
     "matches_played": 337
   },
   {
@@ -140,7 +140,7 @@
     "form_score": 0.7,
     "form_json": "[1,0,1,1,1,0,1,1,1,0]",
     "current_rank": 9,
-    "current_rank_points": 4119,
+    "current_rank_points": 3999,
     "matches_played": 366
   },
   {
@@ -155,8 +155,8 @@
     "break_pct": 0.335,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,0,1,1,1,0]",
-    "current_rank": 8,
-    "current_rank_points": 4683,
+    "current_rank": 7,
+    "current_rank_points": 4773,
     "matches_played": 192
   },
   {
@@ -172,7 +172,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,1,0,1,1,1,0,1,0]",
     "current_rank": 10,
-    "current_rank_points": 4040,
+    "current_rank_points": 3910,
     "matches_played": 235
   },
   {
@@ -187,8 +187,8 @@
     "break_pct": 0.284,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,1,1,0,1,1,0]",
-    "current_rank": 6,
-    "current_rank_points": 5328,
+    "current_rank": 8,
+    "current_rank_points": 4679,
     "matches_played": 211
   },
   {
@@ -203,8 +203,8 @@
     "break_pct": 0.404,
     "form_score": 0.7,
     "form_json": "[1,0,1,0,1,1,1,1,1,0]",
-    "current_rank": 5,
-    "current_rank_points": 5841,
+    "current_rank": 3,
+    "current_rank_points": 6371,
     "matches_played": 197
   },
   {
@@ -251,8 +251,8 @@
     "break_pct": 0.3,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,0,1,1,0]",
-    "current_rank": 17,
-    "current_rank_points": 2296,
+    "current_rank": 18,
+    "current_rank_points": 2351,
     "matches_played": 154
   },
   {
@@ -267,8 +267,8 @@
     "break_pct": 0.364,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,0,1,1,0]",
-    "current_rank": 11,
-    "current_rank_points": 3363,
+    "current_rank": 17,
+    "current_rank_points": 2363,
     "matches_played": 185
   },
   {
@@ -283,8 +283,8 @@
     "break_pct": 0.335,
     "form_score": 0.9,
     "form_json": "[1,1,0,1,1,1,1,1,1,1]",
-    "current_rank": 54,
-    "current_rank_points": 1083,
+    "current_rank": 23,
+    "current_rank_points": 2018,
     "matches_played": 231
   },
   {
@@ -299,8 +299,8 @@
     "break_pct": 0.381,
     "form_score": 0.6,
     "form_json": "[0,1,0,1,1,0,1,1,1,0]",
-    "current_rank": 7,
-    "current_rank_points": 4809,
+    "current_rank": 6,
+    "current_rank_points": 5024,
     "matches_played": 202
   },
   {
@@ -316,7 +316,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,1,1,1,0,1,1,0,0]",
     "current_rank": 15,
-    "current_rank_points": 2521,
+    "current_rank_points": 2502,
     "matches_played": 72
   },
   {
@@ -348,7 +348,7 @@
     "form_score": 0.6,
     "form_json": "[1,0,0,1,1,0,1,1,1,0]",
     "current_rank": 16,
-    "current_rank_points": 2464,
+    "current_rank_points": 2424,
     "matches_played": 213
   },
   {
@@ -363,8 +363,8 @@
     "break_pct": 0.355,
     "form_score": 0.6,
     "form_json": "[0,1,0,1,1,1,0,1,1,0]",
-    "current_rank": 23,
-    "current_rank_points": 2029,
+    "current_rank": 20,
+    "current_rank_points": 2110,
     "matches_played": 234
   },
   {
@@ -395,8 +395,8 @@
     "break_pct": 0.392,
     "form_score": 0.8,
     "form_json": "[1,1,0,1,1,1,1,1,1,0]",
-    "current_rank": 13,
-    "current_rank_points": 2841,
+    "current_rank": 11,
+    "current_rank_points": 2860,
     "matches_played": 87
   },
   {
@@ -443,8 +443,8 @@
     "break_pct": 0.378,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,0,1,1,1,1,0]",
-    "current_rank": 19,
-    "current_rank_points": 2165,
+    "current_rank": 14,
+    "current_rank_points": 2540,
     "matches_played": 263
   },
   {
@@ -476,24 +476,8 @@
     "form_score": 0.5,
     "form_json": "[1,0,1,1,1,0,0,0,1,0]",
     "current_rank": 12,
-    "current_rank_points": 2925,
+    "current_rank_points": 2760,
     "matches_played": 207
-  },
-  {
-    "player_id": "223253",
-    "name": "Alexandra Eala",
-    "tour": "WTA",
-    "elo_overall": 1777.6,
-    "elo_hard": 1646.6,
-    "elo_clay": 1473.5,
-    "elo_grass": 1600.3,
-    "hold_pct": 0.581,
-    "break_pct": 0.366,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,1,0,1,1,0,0]",
-    "current_rank": 18,
-    "current_rank_points": 2276,
-    "matches_played": 100
   },
   {
     "player_id": "208103",
@@ -523,8 +507,8 @@
     "break_pct": 0.383,
     "form_score": 0.6,
     "form_json": "[1,0,0,1,0,1,1,1,1,0]",
-    "current_rank": 24,
-    "current_rank_points": 2024,
+    "current_rank": 27,
+    "current_rank_points": 1809,
     "matches_played": 205
   },
   {
@@ -539,8 +523,8 @@
     "break_pct": 0.347,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 14,
-    "current_rank_points": 2588,
+    "current_rank": 13,
+    "current_rank_points": 2643,
     "matches_played": 193
   },
   {
@@ -603,8 +587,8 @@
     "break_pct": 0.318,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,0,1,1,1,1,0]",
-    "current_rank": 34,
-    "current_rank_points": 1352,
+    "current_rank": 29,
+    "current_rank_points": 1661,
     "matches_played": 52
   },
   {
@@ -640,6 +624,22 @@
     "matches_played": 314
   },
   {
+    "player_id": "223253",
+    "name": "Alexandra Eala",
+    "tour": "WTA",
+    "elo_overall": 1746.6,
+    "elo_hard": 1629,
+    "elo_clay": 1473.5,
+    "elo_grass": 1600.3,
+    "hold_pct": 0.581,
+    "break_pct": 0.366,
+    "form_score": 0.5,
+    "form_json": "[1,1,0,1,0,1,1,0,0,0]",
+    "current_rank": 19,
+    "current_rank_points": 2241,
+    "matches_played": 101
+  },
+  {
     "player_id": "214954",
     "name": "Marketa Vondrousova",
     "tour": "WTA",
@@ -667,9 +667,25 @@
     "break_pct": 0.332,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,0,1,1,1,0,0]",
-    "current_rank": 22,
+    "current_rank": 21,
     "current_rank_points": 2043,
     "matches_played": 205
+  },
+  {
+    "player_id": "213631",
+    "name": "Marie Bouzkova",
+    "tour": "WTA",
+    "elo_overall": 1734.9,
+    "elo_hard": 1623.1,
+    "elo_clay": 1598.4,
+    "elo_grass": 1588.5,
+    "hold_pct": 0.694,
+    "break_pct": 0.373,
+    "form_score": 0.6,
+    "form_json": "[0,1,1,0,1,1,0,1,0,1]",
+    "current_rank": 28,
+    "current_rank_points": 1763,
+    "matches_played": 239
   },
   {
     "player_id": "211663",
@@ -747,25 +763,9 @@
     "break_pct": 0.293,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,1,0,1,0]",
-    "current_rank": 92,
+    "current_rank": 89,
     "current_rank_points": 843,
     "matches_played": 96
-  },
-  {
-    "player_id": "213631",
-    "name": "Marie Bouzkova",
-    "tour": "WTA",
-    "elo_overall": 1726.2,
-    "elo_hard": 1613.2,
-    "elo_clay": 1598.4,
-    "elo_grass": 1588.5,
-    "hold_pct": 0.694,
-    "break_pct": 0.373,
-    "form_score": 0.5,
-    "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 27,
-    "current_rank_points": 1873,
-    "matches_played": 238
   },
   {
     "player_id": "210150",
@@ -832,20 +832,20 @@
     "matches_played": 290
   },
   {
-    "player_id": "206420",
-    "name": "Ekaterina Alexandrova",
+    "player_id": "211148",
+    "name": "Jasmine Paolini",
     "tour": "WTA",
-    "elo_overall": 1716.9,
-    "elo_hard": 1648.4,
-    "elo_clay": 1525.7,
-    "elo_grass": 1622.8,
-    "hold_pct": 0.725,
-    "break_pct": 0.342,
-    "form_score": 0.6,
-    "form_json": "[1,0,0,1,1,0,1,1,1,0]",
-    "current_rank": 28,
-    "current_rank_points": 1811,
-    "matches_played": 272
+    "elo_overall": 1718.1,
+    "elo_hard": 1673.2,
+    "elo_clay": 1650,
+    "elo_grass": 1573.3,
+    "hold_pct": 0.673,
+    "break_pct": 0.367,
+    "form_score": 0.7,
+    "form_json": "[1,1,1,1,0,1,1,0,0,1]",
+    "current_rank": 33,
+    "current_rank_points": 1528,
+    "matches_played": 262
   },
   {
     "player_id": "210506",
@@ -864,6 +864,22 @@
     "matches_played": 180
   },
   {
+    "player_id": "220367",
+    "name": "Leylah Fernandez",
+    "tour": "WTA",
+    "elo_overall": 1707.1,
+    "elo_hard": 1654.3,
+    "elo_clay": 1523.1,
+    "elo_grass": 1508.3,
+    "hold_pct": 0.714,
+    "break_pct": 0.325,
+    "form_score": 0.8,
+    "form_json": "[1,1,0,1,1,1,1,1,0,1]",
+    "current_rank": 25,
+    "current_rank_points": 1839,
+    "matches_played": 245
+  },
+  {
     "player_id": "201662",
     "name": "Karolina Pliskova",
     "tour": "WTA",
@@ -875,8 +891,8 @@
     "break_pct": 0.3,
     "form_score": 0.5,
     "form_json": "[1,1,0,1,0,1,0,0,1,0]",
-    "current_rank": 51,
-    "current_rank_points": 1106,
+    "current_rank": 49,
+    "current_rank_points": 1105,
     "matches_played": 149
   },
   {
@@ -894,22 +910,6 @@
     "current_rank": 24,
     "current_rank_points": 2145,
     "matches_played": 312
-  },
-  {
-    "player_id": "211148",
-    "name": "Jasmine Paolini",
-    "tour": "WTA",
-    "elo_overall": 1704.2,
-    "elo_hard": 1663.3,
-    "elo_clay": 1650,
-    "elo_grass": 1573.3,
-    "hold_pct": 0.673,
-    "break_pct": 0.367,
-    "form_score": 0.6,
-    "form_json": "[0,1,1,1,1,0,1,1,0,0]",
-    "current_rank": 20,
-    "current_rank_points": 2122,
-    "matches_played": 261
   },
   {
     "player_id": "126094",
@@ -939,9 +939,25 @@
     "break_pct": 0.282,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,1,1,0,1,1,0]",
-    "current_rank": 42,
-    "current_rank_points": 1230,
+    "current_rank": 45,
+    "current_rank_points": 1155,
     "matches_played": 107
+  },
+  {
+    "player_id": "206420",
+    "name": "Ekaterina Alexandrova",
+    "tour": "WTA",
+    "elo_overall": 1699.7,
+    "elo_hard": 1636.2,
+    "elo_clay": 1525.7,
+    "elo_grass": 1622.8,
+    "hold_pct": 0.725,
+    "break_pct": 0.342,
+    "form_score": 0.5,
+    "form_json": "[0,0,1,1,0,1,1,1,0,0]",
+    "current_rank": 24,
+    "current_rank_points": 1906,
+    "matches_played": 273
   },
   {
     "player_id": "126774",
@@ -1051,25 +1067,9 @@
     "break_pct": 0.385,
     "form_score": 0.5,
     "form_json": "[1,0,1,0,0,1,1,1,0,0]",
-    "current_rank": 25,
-    "current_rank_points": 1926,
-    "matches_played": 221
-  },
-  {
-    "player_id": "220367",
-    "name": "Leylah Fernandez",
-    "tour": "WTA",
-    "elo_overall": 1689.8,
-    "elo_hard": 1642,
-    "elo_clay": 1523.1,
-    "elo_grass": 1508.3,
-    "hold_pct": 0.714,
-    "break_pct": 0.325,
-    "form_score": 0.7,
-    "form_json": "[0,1,1,0,1,1,1,1,1,0]",
     "current_rank": 26,
-    "current_rank_points": 1894,
-    "matches_played": 244
+    "current_rank_points": 1816,
+    "matches_played": 221
   },
   {
     "player_id": "206252",
@@ -1083,8 +1083,8 @@
     "break_pct": 0.345,
     "form_score": 0.5,
     "form_json": "[1,1,1,1,0,0,0,0,1,0]",
-    "current_rank": 43,
-    "current_rank_points": 1198,
+    "current_rank": 46,
+    "current_rank_points": 1134,
     "matches_played": 191
   },
   {
@@ -1115,9 +1115,25 @@
     "break_pct": 0.326,
     "form_score": 0.7,
     "form_json": "[1,1,1,0,1,1,0,1,1,0]",
-    "current_rank": 30,
-    "current_rank_points": 1573,
+    "current_rank": 31,
+    "current_rank_points": 1648,
     "matches_played": 152
+  },
+  {
+    "player_id": "222661",
+    "name": "Sonay Kartal",
+    "tour": "WTA",
+    "elo_overall": 1680.4,
+    "elo_hard": 1610.6,
+    "elo_clay": 1496,
+    "elo_grass": 1498,
+    "hold_pct": 0.711,
+    "break_pct": 0.329,
+    "form_score": 0.7,
+    "form_json": "[1,0,0,1,1,1,1,1,0,1]",
+    "current_rank": 62,
+    "current_rank_points": 1019,
+    "matches_played": 63
   },
   {
     "player_id": "111575",
@@ -1163,8 +1179,8 @@
     "break_pct": 0.357,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,1,0,1,0]",
-    "current_rank": 59,
-    "current_rank_points": 1052,
+    "current_rank": 58,
+    "current_rank_points": 1023,
     "matches_played": 213
   },
   {
@@ -1200,22 +1216,6 @@
     "matches_played": 60
   },
   {
-    "player_id": "222661",
-    "name": "Sonay Kartal",
-    "tour": "WTA",
-    "elo_overall": 1670.9,
-    "elo_hard": 1603.8,
-    "elo_clay": 1496,
-    "elo_grass": 1498,
-    "hold_pct": 0.711,
-    "break_pct": 0.329,
-    "form_score": 0.7,
-    "form_json": "[1,1,0,0,1,1,1,1,1,0]",
-    "current_rank": 129,
-    "current_rank_points": 597,
-    "matches_played": 62
-  },
-  {
     "player_id": "211713",
     "name": "Jaqueline Cristian",
     "tour": "WTA",
@@ -1227,8 +1227,8 @@
     "break_pct": 0.318,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,0,1,0,0]",
-    "current_rank": 60,
-    "current_rank_points": 1051,
+    "current_rank": 61,
+    "current_rank_points": 1016,
     "matches_played": 158
   },
   {
@@ -1259,25 +1259,25 @@
     "break_pct": 0.314,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,1,1,1,0,1,0]",
-    "current_rank": 39,
-    "current_rank_points": 1284,
+    "current_rank": 43,
+    "current_rank_points": 1229,
     "matches_played": 251
   },
   {
-    "player_id": "239383",
-    "name": "Sara Bejlek",
+    "player_id": "206289",
+    "name": "Maria Sakkari",
     "tour": "WTA",
-    "elo_overall": 1659.8,
-    "elo_hard": 1601.9,
-    "elo_clay": 1521.9,
-    "elo_grass": 1468.8,
-    "hold_pct": 0.588,
-    "break_pct": 0.402,
+    "elo_overall": 1660,
+    "elo_hard": 1627.1,
+    "elo_clay": 1550.6,
+    "elo_grass": 1517.1,
+    "hold_pct": 0.712,
+    "break_pct": 0.331,
     "form_score": 0.6,
-    "form_json": "[1,1,1,1,0,0,1,0,1,0]",
-    "current_rank": 29,
-    "current_rank_points": 1710,
-    "matches_played": 62
+    "form_json": "[1,0,1,0,1,1,0,1,0,1]",
+    "current_rank": 35,
+    "current_rank_points": 1492,
+    "matches_played": 256
   },
   {
     "player_id": "132686",
@@ -1339,8 +1339,8 @@
     "break_pct": 0.362,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0,0,1,1,1,0]",
-    "current_rank": 46,
-    "current_rank_points": 1163,
+    "current_rank": 42,
+    "current_rank_points": 1254,
     "matches_played": 44
   },
   {
@@ -1371,25 +1371,9 @@
     "break_pct": 0.368,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,0,1,1,1,1,0]",
-    "current_rank": 100,
-    "current_rank_points": 785,
+    "current_rank": 107,
+    "current_rank_points": 710,
     "matches_played": 156
-  },
-  {
-    "player_id": "220348",
-    "name": "Diane Parry",
-    "tour": "WTA",
-    "elo_overall": 1650.3,
-    "elo_hard": 1570.5,
-    "elo_clay": 1527.1,
-    "elo_grass": 1521.1,
-    "hold_pct": 0.698,
-    "break_pct": 0.295,
-    "form_score": 0.6,
-    "form_json": "[0,1,1,1,1,1,1,0,0,0]",
-    "current_rank": 31,
-    "current_rank_points": 1551,
-    "matches_played": 144
   },
   {
     "player_id": "208363",
@@ -1408,20 +1392,20 @@
     "matches_played": 132
   },
   {
-    "player_id": "206289",
-    "name": "Maria Sakkari",
+    "player_id": "239383",
+    "name": "Sara Bejlek",
     "tour": "WTA",
-    "elo_overall": 1646.1,
-    "elo_hard": 1619.3,
-    "elo_clay": 1550.6,
-    "elo_grass": 1517.1,
-    "hold_pct": 0.712,
-    "break_pct": 0.331,
+    "elo_overall": 1645.8,
+    "elo_hard": 1592,
+    "elo_clay": 1521.9,
+    "elo_grass": 1468.8,
+    "hold_pct": 0.588,
+    "break_pct": 0.402,
     "form_score": 0.5,
-    "form_json": "[0,1,0,1,0,1,1,0,1,0]",
-    "current_rank": 33,
-    "current_rank_points": 1462,
-    "matches_played": 255
+    "form_json": "[1,1,1,0,0,1,0,1,0,0]",
+    "current_rank": 30,
+    "current_rank_points": 1650,
+    "matches_played": 63
   },
   {
     "player_id": "200005",
@@ -1627,7 +1611,7 @@
     "break_pct": 0.353,
     "form_score": 0.5,
     "form_json": "[1,0,1,0,0,1,1,0,1,0]",
-    "current_rank": 62,
+    "current_rank": 57,
     "current_rank_points": 1033,
     "matches_played": 121
   },
@@ -1675,8 +1659,8 @@
     "break_pct": 0.383,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,0,0,1,0,1,0]",
-    "current_rank": 32,
-    "current_rank_points": 1481,
+    "current_rank": 34,
+    "current_rank_points": 1527,
     "matches_played": 242
   },
   {
@@ -1691,9 +1675,25 @@
     "break_pct": 0.375,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,0,1,0,1,0]",
-    "current_rank": 55,
-    "current_rank_points": 1075,
+    "current_rank": 87,
+    "current_rank_points": 855,
     "matches_played": 199
+  },
+  {
+    "player_id": "220348",
+    "name": "Diane Parry",
+    "tour": "WTA",
+    "elo_overall": 1629.7,
+    "elo_hard": 1556.4,
+    "elo_clay": 1527.1,
+    "elo_grass": 1521.1,
+    "hold_pct": 0.698,
+    "break_pct": 0.295,
+    "form_score": 0.6,
+    "form_json": "[1,1,1,1,1,1,0,0,0,0]",
+    "current_rank": 32,
+    "current_rank_points": 1541,
+    "matches_played": 145
   },
   {
     "player_id": "209259",
@@ -1723,8 +1723,8 @@
     "break_pct": 0.312,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,0,1,0,1,0,0]",
-    "current_rank": 84,
-    "current_rank_points": 894,
+    "current_rank": 71,
+    "current_rank_points": 945,
     "matches_played": 205
   },
   {
@@ -1755,9 +1755,41 @@
     "break_pct": 0.321,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,0,0,1,1,0]",
-    "current_rank": 67,
-    "current_rank_points": 993,
+    "current_rank": 72,
+    "current_rank_points": 938,
     "matches_played": 137
+  },
+  {
+    "player_id": "espn_3223",
+    "name": "Catherine McNally",
+    "tour": "WTA",
+    "elo_overall": 1624,
+    "elo_hard": 1521.1,
+    "elo_clay": 1502,
+    "elo_grass": 1527.5,
+    "hold_pct": 0.75,
+    "break_pct": 0.2,
+    "form_score": 0.5,
+    "form_json": "[0,1,1,0,1,0,1,0,0,1]",
+    "current_rank": 70,
+    "current_rank_points": 958,
+    "matches_played": 21
+  },
+  {
+    "player_id": "222290",
+    "name": "Lanlana Tararudee",
+    "tour": "WTA",
+    "elo_overall": 1621.3,
+    "elo_hard": 1522.9,
+    "elo_clay": 1558.1,
+    "elo_grass": 1503.9,
+    "hold_pct": 0.615,
+    "break_pct": 0.38,
+    "form_score": 0.5,
+    "form_json": "[0,1,0,1,0,1,1,0,0,1]",
+    "current_rank": 60,
+    "current_rank_points": 1022,
+    "matches_played": 29
   },
   {
     "player_id": "211107",
@@ -1771,7 +1803,7 @@
     "break_pct": 0.329,
     "form_score": 0.3,
     "form_json": "[0,0,0,0,1,0,1,0,1,0]",
-    "current_rank": 56,
+    "current_rank": 54,
     "current_rank_points": 1062,
     "matches_played": 171
   },
@@ -1787,8 +1819,8 @@
     "break_pct": 0.347,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,0,1,1,1,0]",
-    "current_rank": 69,
-    "current_rank_points": 988,
+    "current_rank": 74,
+    "current_rank_points": 913,
     "matches_played": 28
   },
   {
@@ -1803,9 +1835,25 @@
     "break_pct": 0.395,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,1,0,0,1,0]",
-    "current_rank": 65,
-    "current_rank_points": 1014,
+    "current_rank": 62,
+    "current_rank_points": 1004,
     "matches_played": 43
+  },
+  {
+    "player_id": "260664",
+    "name": "Elizara Yaneva",
+    "tour": "WTA",
+    "elo_overall": 1616.7,
+    "elo_hard": 1522.8,
+    "elo_clay": 1518.4,
+    "elo_grass": 1512,
+    "hold_pct": 0.759,
+    "break_pct": 0.589,
+    "form_score": 0.6,
+    "form_json": "[0,1,1,0,0,1,1,1,0,1]",
+    "current_rank": 146,
+    "current_rank_points": 496,
+    "matches_played": 18
   },
   {
     "player_id": "210338",
@@ -1867,8 +1915,8 @@
     "break_pct": 0.298,
     "form_score": 0.5,
     "form_json": "[1,1,1,0,1,0,0,0,1,0]",
-    "current_rank": 73,
-    "current_rank_points": 945,
+    "current_rank": 68,
+    "current_rank_points": 962,
     "matches_played": 131
   },
   {
@@ -1883,25 +1931,9 @@
     "break_pct": 0.396,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,0,0,0,0,1,0]",
-    "current_rank": 66,
-    "current_rank_points": 993,
+    "current_rank": 67,
+    "current_rank_points": 963,
     "matches_played": 175
-  },
-  {
-    "player_id": "espn_3223",
-    "name": "Catherine McNally",
-    "tour": "WTA",
-    "elo_overall": 1608.8,
-    "elo_hard": 1510.4,
-    "elo_clay": 1502,
-    "elo_grass": 1527.5,
-    "hold_pct": 0.75,
-    "break_pct": 0.2,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,1,0,1,0,1,0,0]",
-    "current_rank": 72,
-    "current_rank_points": 983,
-    "matches_played": 20
   },
   {
     "player_id": "105526",
@@ -1979,8 +2011,8 @@
     "break_pct": 0.245,
     "form_score": 0.6,
     "form_json": "[0,1,0,0,0,1,1,1,1,1]",
-    "current_rank": 78,
-    "current_rank_points": 920,
+    "current_rank": 76,
+    "current_rank_points": 908,
     "matches_played": 22
   },
   {
@@ -1995,9 +2027,25 @@
     "break_pct": 0.352,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,1,1,1,1,0,0]",
-    "current_rank": 36,
+    "current_rank": 37,
     "current_rank_points": 1316,
     "matches_played": 152
+  },
+  {
+    "player_id": "216016",
+    "name": "Xiyu Wang",
+    "tour": "WTA",
+    "elo_overall": 1605.5,
+    "elo_hard": 1506.2,
+    "elo_clay": 1552.5,
+    "elo_grass": 1448.8,
+    "hold_pct": 0.716,
+    "break_pct": 0.295,
+    "form_score": 0.6,
+    "form_json": "[1,1,0,0,1,1,1,0,0,1]",
+    "current_rank": 91,
+    "current_rank_points": 835,
+    "matches_played": 133
   },
   {
     "player_id": "216083",
@@ -2027,8 +2075,8 @@
     "break_pct": 0.412,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,0,1,1,0]",
-    "current_rank": 91,
-    "current_rank_points": 848,
+    "current_rank": 86,
+    "current_rank_points": 858,
     "matches_played": 28
   },
   {
@@ -2043,57 +2091,9 @@
     "break_pct": 0.335,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,0,1,1,0]",
-    "current_rank": 76,
-    "current_rank_points": 929,
+    "current_rank": 69,
+    "current_rank_points": 959,
     "matches_played": 135
-  },
-  {
-    "player_id": "260664",
-    "name": "Elizara Yaneva",
-    "tour": "WTA",
-    "elo_overall": 1603,
-    "elo_hard": 1522.8,
-    "elo_clay": 1518.4,
-    "elo_grass": 1500,
-    "hold_pct": 0.759,
-    "break_pct": 0.589,
-    "form_score": 0.6,
-    "form_json": "[1,0,1,1,0,0,1,1,1,0]",
-    "current_rank": 149,
-    "current_rank_points": 510,
-    "matches_played": 17
-  },
-  {
-    "player_id": "216133",
-    "name": "Xin Yu Wang",
-    "tour": "WTA",
-    "elo_overall": 1601.1,
-    "elo_hard": 1538.8,
-    "elo_clay": 1437.8,
-    "elo_grass": 1543.9,
-    "hold_pct": 0.675,
-    "break_pct": 0.311,
-    "form_score": 0.5,
-    "form_json": "[0,1,1,0,1,0,1,1,0,0]",
-    "current_rank": 38,
-    "current_rank_points": 1288,
-    "matches_played": 212
-  },
-  {
-    "player_id": "222290",
-    "name": "Lanlana Tararudee",
-    "tour": "WTA",
-    "elo_overall": 1600.7,
-    "elo_hard": 1508.8,
-    "elo_clay": 1558.1,
-    "elo_grass": 1503.9,
-    "hold_pct": 0.615,
-    "break_pct": 0.38,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,0,1,0,1,1,0,0]",
-    "current_rank": 63,
-    "current_rank_points": 1032,
-    "matches_played": 28
   },
   {
     "player_id": "214040",
@@ -2107,25 +2107,9 @@
     "break_pct": 0.315,
     "form_score": 0.7,
     "form_json": "[0,1,0,1,1,1,1,1,1,0]",
-    "current_rank": 41,
-    "current_rank_points": 1255,
-    "matches_played": 111
-  },
-  {
-    "player_id": "202499",
-    "name": "Donna Vekic",
-    "tour": "WTA",
-    "elo_overall": 1600.4,
-    "elo_hard": 1490.7,
-    "elo_clay": 1568.7,
-    "elo_grass": 1593.5,
-    "hold_pct": 0.694,
-    "break_pct": 0.327,
-    "form_score": 0.2,
-    "form_json": "[0,0,0,0,0,1,0,0,1,0]",
     "current_rank": 40,
-    "current_rank_points": 1278,
-    "matches_played": 194
+    "current_rank_points": 1280,
+    "matches_played": 111
   },
   {
     "player_id": "105777",
@@ -2155,8 +2139,8 @@
     "break_pct": 0.337,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,1,0,1,0,0,0]",
-    "current_rank": 77,
-    "current_rank_points": 925,
+    "current_rank": 95,
+    "current_rank_points": 805,
     "matches_played": 104
   },
   {
@@ -2224,6 +2208,22 @@
     "matches_played": 21
   },
   {
+    "player_id": "211684",
+    "name": "Magdalena Frech",
+    "tour": "WTA",
+    "elo_overall": 1591.5,
+    "elo_hard": 1567.5,
+    "elo_clay": 1464.8,
+    "elo_grass": 1445.9,
+    "hold_pct": 0.65,
+    "break_pct": 0.325,
+    "form_score": 0.6,
+    "form_json": "[1,1,0,0,1,1,0,1,0,1]",
+    "current_rank": 56,
+    "current_rank_points": 1045,
+    "matches_played": 200
+  },
+  {
     "player_id": "111581",
     "name": "Michael Mmoh",
     "tour": "ATP",
@@ -2254,22 +2254,6 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 76
-  },
-  {
-    "player_id": "216016",
-    "name": "Xiyu Wang",
-    "tour": "WTA",
-    "elo_overall": 1588.9,
-    "elo_hard": 1492.6,
-    "elo_clay": 1552.5,
-    "elo_grass": 1448.8,
-    "hold_pct": 0.716,
-    "break_pct": 0.295,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,0,1,1,1,0,0]",
-    "current_rank": 85,
-    "current_rank_points": 889,
-    "matches_played": 132
   },
   {
     "player_id": "209976",
@@ -2304,6 +2288,22 @@
     "matches_played": 5
   },
   {
+    "player_id": "202499",
+    "name": "Donna Vekic",
+    "tour": "WTA",
+    "elo_overall": 1586.5,
+    "elo_hard": 1483,
+    "elo_clay": 1568.7,
+    "elo_grass": 1593.5,
+    "hold_pct": 0.694,
+    "break_pct": 0.327,
+    "form_score": 0.2,
+    "form_json": "[0,0,0,0,1,0,0,1,0,0]",
+    "current_rank": 36,
+    "current_rank_points": 1325,
+    "matches_played": 195
+  },
+  {
     "player_id": "233741",
     "name": "Maya Joint",
     "tour": "WTA",
@@ -2315,8 +2315,8 @@
     "break_pct": 0.359,
     "form_score": 0.5,
     "form_json": "[0,0,1,0,1,1,1,1,0,0]",
-    "current_rank": 75,
-    "current_rank_points": 934,
+    "current_rank": 92,
+    "current_rank_points": 824,
     "matches_played": 89
   },
   {
@@ -2347,8 +2347,8 @@
     "break_pct": 0.366,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,1,0,0,1,0,0]",
-    "current_rank": 58,
-    "current_rank_points": 1052,
+    "current_rank": 59,
+    "current_rank_points": 1022,
     "matches_played": 82
   },
   {
@@ -2363,8 +2363,8 @@
     "break_pct": 0.258,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,1,1,1,1,0,0]",
-    "current_rank": 37,
-    "current_rank_points": 1301,
+    "current_rank": 41,
+    "current_rank_points": 1273,
     "matches_played": 47
   },
   {
@@ -2400,6 +2400,38 @@
     "matches_played": 192
   },
   {
+    "player_id": "210622",
+    "name": "Andrea Lazaro Garcia",
+    "tour": "WTA",
+    "elo_overall": 1584.6,
+    "elo_hard": 1512.3,
+    "elo_clay": 1535.4,
+    "elo_grass": 1512,
+    "hold_pct": 0.705,
+    "break_pct": 0.543,
+    "form_score": 0.7,
+    "form_json": "[1,1,0,1,1,1,1,0,0,1]",
+    "current_rank": 143,
+    "current_rank_points": 500,
+    "matches_played": 11
+  },
+  {
+    "player_id": "216133",
+    "name": "Xin Yu Wang",
+    "tour": "WTA",
+    "elo_overall": 1584.5,
+    "elo_hard": 1525.2,
+    "elo_clay": 1437.8,
+    "elo_grass": 1543.9,
+    "hold_pct": 0.675,
+    "break_pct": 0.311,
+    "form_score": 0.5,
+    "form_json": "[1,1,0,1,0,1,1,0,0,0]",
+    "current_rank": 39,
+    "current_rank_points": 1288,
+    "matches_played": 213
+  },
+  {
     "player_id": "201709",
     "name": "Yulia Putintseva",
     "tour": "WTA",
@@ -2411,7 +2443,7 @@
     "break_pct": 0.353,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,1,0,0,0,1,0]",
-    "current_rank": 82,
+    "current_rank": 79,
     "current_rank_points": 904,
     "matches_played": 224
   },
@@ -2443,8 +2475,8 @@
     "break_pct": 0.331,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,0,1,1,1,0,0]",
-    "current_rank": 21,
-    "current_rank_points": 2082,
+    "current_rank": 22,
+    "current_rank_points": 2043,
     "matches_played": 33
   },
   {
@@ -2491,25 +2523,9 @@
     "break_pct": 0.353,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,1,0,1,0,0,0]",
-    "current_rank": 122,
-    "current_rank_points": 627,
+    "current_rank": 47,
+    "current_rank_points": 1230,
     "matches_played": 125
-  },
-  {
-    "player_id": "216566",
-    "name": "Mananchaya Sawangkaew",
-    "tour": "WTA",
-    "elo_overall": 1581,
-    "elo_hard": 1507.6,
-    "elo_clay": 1500,
-    "elo_grass": 1545.2,
-    "hold_pct": 0.597,
-    "break_pct": 0.439,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,1,1,0,0,1,0,0]",
-    "current_rank": 90,
-    "current_rank_points": 868,
-    "matches_played": 30
   },
   {
     "player_id": "111794",
@@ -2539,8 +2555,8 @@
     "break_pct": 0.36,
     "form_score": 0.6,
     "form_json": "[1,1,1,0,0,0,1,1,1,0]",
-    "current_rank": 95,
-    "current_rank_points": 817,
+    "current_rank": 75,
+    "current_rank_points": 910,
     "matches_played": 51
   },
   {
@@ -2603,7 +2619,7 @@
     "break_pct": 0.335,
     "form_score": 0.9,
     "form_json": "[1,1,1,1,1,1,1,1,1,0]",
-    "current_rank": 105,
+    "current_rank": 104,
     "current_rank_points": 726,
     "matches_played": 59
   },
@@ -2651,25 +2667,9 @@
     "break_pct": 0.395,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,1,0,1,0,0]",
-    "current_rank": 96,
-    "current_rank_points": 809,
+    "current_rank": 99,
+    "current_rank_points": 750,
     "matches_played": 116
-  },
-  {
-    "player_id": "211684",
-    "name": "Magdalena Frech",
-    "tour": "WTA",
-    "elo_overall": 1575.3,
-    "elo_hard": 1557.2,
-    "elo_clay": 1464.8,
-    "elo_grass": 1445.9,
-    "hold_pct": 0.65,
-    "break_pct": 0.325,
-    "form_score": 0.5,
-    "form_json": "[0,1,1,0,0,1,1,0,1,0]",
-    "current_rank": 48,
-    "current_rank_points": 1120,
-    "matches_played": 199
   },
   {
     "player_id": "105453",
@@ -2747,8 +2747,8 @@
     "break_pct": 0.321,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,0,1,0,0]",
-    "current_rank": 61,
-    "current_rank_points": 1045,
+    "current_rank": 55,
+    "current_rank_points": 1054,
     "matches_played": 28
   },
   {
@@ -2811,8 +2811,8 @@
     "break_pct": 0.212,
     "form_score": 0.6,
     "form_json": "[0,1,1,0,1,0,1,1,1,0]",
-    "current_rank": 118,
-    "current_rank_points": 648,
+    "current_rank": 98,
+    "current_rank_points": 759,
     "matches_played": 22
   },
   {
@@ -2830,22 +2830,6 @@
     "current_rank": 309,
     "current_rank_points": 219,
     "matches_played": 6
-  },
-  {
-    "player_id": "210622",
-    "name": "Andrea Lazaro Garcia",
-    "tour": "WTA",
-    "elo_overall": 1568.1,
-    "elo_hard": 1512.3,
-    "elo_clay": 1535.4,
-    "elo_grass": 1500,
-    "hold_pct": 0.705,
-    "break_pct": 0.543,
-    "form_score": 0.7,
-    "form_json": "[1,1,1,0,1,1,1,1,0,0]",
-    "current_rank": 137,
-    "current_rank_points": 550,
-    "matches_played": 10
   },
   {
     "player_id": "105227",
@@ -2896,20 +2880,20 @@
     "matches_played": 8
   },
   {
-    "player_id": "214388",
-    "name": "Anna Bondar",
+    "player_id": "216566",
+    "name": "Mananchaya Sawangkaew",
     "tour": "WTA",
-    "elo_overall": 1563.9,
-    "elo_hard": 1422.8,
-    "elo_clay": 1612.6,
-    "elo_grass": 1428,
-    "hold_pct": 0.685,
-    "break_pct": 0.293,
+    "elo_overall": 1564.7,
+    "elo_hard": 1497.3,
+    "elo_clay": 1500,
+    "elo_grass": 1545.2,
+    "hold_pct": 0.597,
+    "break_pct": 0.439,
     "form_score": 0.4,
-    "form_json": "[0,0,0,1,0,1,1,1,0,0]",
-    "current_rank": 64,
-    "current_rank_points": 1029,
-    "matches_played": 161
+    "form_json": "[0,1,1,1,0,0,1,0,0,0]",
+    "current_rank": 83,
+    "current_rank_points": 868,
+    "matches_played": 31
   },
   {
     "player_id": "201545",
@@ -3008,6 +2992,22 @@
     "matches_played": 96
   },
   {
+    "player_id": "266671",
+    "name": "Laura Samson",
+    "tour": "WTA",
+    "elo_overall": 1561.5,
+    "elo_hard": 1454.5,
+    "elo_clay": 1576.6,
+    "elo_grass": 1512,
+    "hold_pct": 0.597,
+    "break_pct": 0.542,
+    "form_score": 0.6,
+    "form_json": "[1,1,0,1,1,1,0,0,0,1]",
+    "current_rank": 128,
+    "current_rank_points": 578,
+    "matches_played": 19
+  },
+  {
     "player_id": "127157",
     "name": "Daniel Altmaier",
     "tour": "ATP",
@@ -3083,8 +3083,8 @@
     "break_pct": 0.35,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,1,1,0,0,0,0]",
-    "current_rank": 71,
-    "current_rank_points": 985,
+    "current_rank": 65,
+    "current_rank_points": 975,
     "matches_played": 166
   },
   {
@@ -3131,8 +3131,8 @@
     "break_pct": 0.346,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,1,1,0,0]",
-    "current_rank": 35,
-    "current_rank_points": 1349,
+    "current_rank": 38,
+    "current_rank_points": 1294,
     "matches_played": 148
   },
   {
@@ -3147,8 +3147,8 @@
     "break_pct": 0.349,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,0,0,1,0]",
-    "current_rank": 93,
-    "current_rank_points": 830,
+    "current_rank": 101,
+    "current_rank_points": 730,
     "matches_played": 50
   },
   {
@@ -3195,8 +3195,8 @@
     "break_pct": 0.34,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0,1,0,1,0,0]",
-    "current_rank": 47,
-    "current_rank_points": 1126,
+    "current_rank": 51,
+    "current_rank_points": 1082,
     "matches_played": 37
   },
   {
@@ -3211,8 +3211,8 @@
     "break_pct": 0.367,
     "form_score": 0.5,
     "form_json": "[0,0,1,0,1,1,1,1,0,0]",
-    "current_rank": 147,
-    "current_rank_points": 514,
+    "current_rank": 138,
+    "current_rank_points": 517,
     "matches_played": 40
   },
   {
@@ -3259,8 +3259,8 @@
     "break_pct": 0.301,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,1,0,1,0,0,0]",
-    "current_rank": 57,
-    "current_rank_points": 1055,
+    "current_rank": 81,
+    "current_rank_points": 895,
     "matches_played": 151
   },
   {
@@ -3339,8 +3339,8 @@
     "break_pct": 0.42,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 81,
-    "current_rank_points": 915,
+    "current_rank": 78,
+    "current_rank_points": 905,
     "matches_played": 46
   },
   {
@@ -3392,22 +3392,6 @@
     "matches_played": 3
   },
   {
-    "player_id": "263857",
-    "name": "Yuliia Starodubtseva",
-    "tour": "WTA",
-    "elo_overall": 1554.6,
-    "elo_hard": 1470.7,
-    "elo_clay": 1561.1,
-    "elo_grass": 1469.5,
-    "hold_pct": 0.617,
-    "break_pct": 0.365,
-    "form_score": 0.4,
-    "form_json": "[0,0,0,1,1,0,1,1,0,0]",
-    "current_rank": 45,
-    "current_rank_points": 1165,
-    "matches_played": 75
-  },
-  {
     "player_id": "105554",
     "name": "Daniel Evans",
     "tour": "ATP",
@@ -3456,20 +3440,20 @@
     "matches_played": 13
   },
   {
-    "player_id": "220704",
-    "name": "Clara Tauson",
+    "player_id": "221014",
+    "name": "Francesca Curmi",
     "tour": "WTA",
-    "elo_overall": 1552.7,
-    "elo_hard": 1552.7,
-    "elo_clay": 1502.1,
-    "elo_grass": 1491.7,
-    "hold_pct": 0.718,
-    "break_pct": 0.31,
-    "form_score": 0.3,
-    "form_json": "[0,0,0,1,0,1,1,0,0,0]",
-    "current_rank": 44,
-    "current_rank_points": 1184,
-    "matches_played": 169
+    "elo_overall": 1552.5,
+    "elo_hard": 1500,
+    "elo_clay": 1526.3,
+    "elo_grass": 1511.6,
+    "hold_pct": 0.546,
+    "break_pct": 0.591,
+    "form_score": 0.7,
+    "form_json": "[1,1,1,0,1,0,1,1,0,1]",
+    "current_rank": 348,
+    "current_rank_points": 182,
+    "matches_played": 10
   },
   {
     "player_id": "201610",
@@ -3515,8 +3499,8 @@
     "break_pct": 0.2,
     "form_score": 0.6,
     "form_json": "[0,1,0,1,1,1,1,1,0,0]",
-    "current_rank": 148,
-    "current_rank_points": 513,
+    "current_rank": 140,
+    "current_rank_points": 509,
     "matches_played": 10
   },
   {
@@ -3659,8 +3643,8 @@
     "break_pct": 0.405,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 321,
-    "current_rank_points": 212,
+    "current_rank": 145,
+    "current_rank_points": 498,
     "matches_played": 113
   },
   {
@@ -3691,8 +3675,8 @@
     "break_pct": 0.318,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,1,0,0,0,1,0]",
-    "current_rank": 110,
-    "current_rank_points": 699,
+    "current_rank": 111,
+    "current_rank_points": 704,
     "matches_played": 59
   },
   {
@@ -3760,20 +3744,20 @@
     "matches_played": 4
   },
   {
-    "player_id": "266671",
-    "name": "Laura Samson",
+    "player_id": "220704",
+    "name": "Clara Tauson",
     "tour": "WTA",
-    "elo_overall": 1544,
-    "elo_hard": 1454.5,
-    "elo_clay": 1576.6,
-    "elo_grass": 1500,
-    "hold_pct": 0.597,
-    "break_pct": 0.542,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,1,1,1,0,0,0]",
-    "current_rank": 113,
-    "current_rank_points": 676,
-    "matches_played": 18
+    "elo_overall": 1544.1,
+    "elo_hard": 1542.8,
+    "elo_clay": 1502.1,
+    "elo_grass": 1491.7,
+    "hold_pct": 0.718,
+    "break_pct": 0.31,
+    "form_score": 0.3,
+    "form_json": "[0,0,1,0,1,1,0,0,0,0]",
+    "current_rank": 53,
+    "current_rank_points": 1065,
+    "matches_played": 170
   },
   {
     "player_id": "222966",
@@ -3787,7 +3771,7 @@
     "break_pct": 0.427,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0,1,1,0,1,0]",
-    "current_rank": 126,
+    "current_rank": 120,
     "current_rank_points": 614,
     "matches_played": 20
   },
@@ -3806,6 +3790,22 @@
     "current_rank": 76,
     "current_rank_points": 758,
     "matches_played": 114
+  },
+  {
+    "player_id": "214388",
+    "name": "Anna Bondar",
+    "tour": "WTA",
+    "elo_overall": 1542.8,
+    "elo_hard": 1413.8,
+    "elo_clay": 1612.6,
+    "elo_grass": 1428,
+    "hold_pct": 0.685,
+    "break_pct": 0.293,
+    "form_score": 0.4,
+    "form_json": "[0,0,1,0,1,1,1,0,0,0]",
+    "current_rank": 66,
+    "current_rank_points": 974,
+    "matches_played": 162
   },
   {
     "player_id": "208021",
@@ -3867,8 +3867,8 @@
     "break_pct": 0.352,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,1,0,0,0]",
-    "current_rank": 53,
-    "current_rank_points": 1091,
+    "current_rank": 50,
+    "current_rank_points": 1086,
     "matches_played": 91
   },
   {
@@ -3968,6 +3968,22 @@
     "matches_played": 39
   },
   {
+    "player_id": "263857",
+    "name": "Yuliia Starodubtseva",
+    "tour": "WTA",
+    "elo_overall": 1539.4,
+    "elo_hard": 1460.1,
+    "elo_clay": 1561.1,
+    "elo_grass": 1469.5,
+    "hold_pct": 0.617,
+    "break_pct": 0.365,
+    "form_score": 0.4,
+    "form_json": "[0,0,1,1,0,1,1,0,0,0]",
+    "current_rank": 44,
+    "current_rank_points": 1165,
+    "matches_played": 76
+  },
+  {
     "player_id": "202663",
     "name": "Magda Linette",
     "tour": "WTA",
@@ -3979,8 +3995,8 @@
     "break_pct": 0.3,
     "form_score": 0.1,
     "form_json": "[0,0,0,0,1,0,0,0,0,0]",
-    "current_rank": 80,
-    "current_rank_points": 916,
+    "current_rank": 77,
+    "current_rank_points": 907,
     "matches_played": 246
   },
   {
@@ -4043,8 +4059,8 @@
     "break_pct": 0.387,
     "form_score": 0.2,
     "form_json": "[0,0,0,0,1,0,1,0,0,0]",
-    "current_rank": 102,
-    "current_rank_points": 747,
+    "current_rank": 136,
+    "current_rank_points": 542,
     "matches_played": 102
   },
   {
@@ -4171,8 +4187,8 @@
     "break_pct": 0.353,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,1,0,1,0]",
-    "current_rank": 121,
-    "current_rank_points": 631,
+    "current_rank": 118,
+    "current_rank_points": 626,
     "matches_played": 132
   },
   {
@@ -4267,8 +4283,8 @@
     "break_pct": 0.485,
     "form_score": 0.56,
     "form_json": "[0,0,1,1,1,1,0,1,0]",
-    "current_rank": 127,
-    "current_rank_points": 610,
+    "current_rank": 124,
+    "current_rank_points": 598,
     "matches_played": 9
   },
   {
@@ -4315,8 +4331,8 @@
     "break_pct": 0.379,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,1,1,0,1,0]",
-    "current_rank": 74,
-    "current_rank_points": 935,
+    "current_rank": 88,
+    "current_rank_points": 851,
     "matches_played": 122
   },
   {
@@ -4398,6 +4414,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 4
+  },
+  {
+    "player_id": "222145",
+    "name": "Janice Tjen",
+    "tour": "WTA",
+    "elo_overall": 1535.2,
+    "elo_hard": 1534,
+    "elo_clay": 1484,
+    "elo_grass": 1468.4,
+    "hold_pct": 0.723,
+    "break_pct": 0.282,
+    "form_score": 0.5,
+    "form_json": "[1,0,1,0,0,1,0,1,0,1]",
+    "current_rank": 47,
+    "current_rank_points": 1125,
+    "matches_played": 56
   },
   {
     "player_id": "105916",
@@ -4523,25 +4555,9 @@
     "break_pct": 0.318,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,0,0,1,1,0]",
-    "current_rank": 111,
-    "current_rank_points": 692,
+    "current_rank": 103,
+    "current_rank_points": 727,
     "matches_played": 177
-  },
-  {
-    "player_id": "221014",
-    "name": "Francesca Curmi",
-    "tour": "WTA",
-    "elo_overall": 1534.2,
-    "elo_hard": 1500,
-    "elo_clay": 1526.3,
-    "elo_grass": 1500,
-    "hold_pct": 0.546,
-    "break_pct": 0.591,
-    "form_score": 0.67,
-    "form_json": "[1,1,1,0,1,0,1,1,0]",
-    "current_rank": 348,
-    "current_rank_points": 182,
-    "matches_played": 9
   },
   {
     "player_id": "221000",
@@ -4651,8 +4667,8 @@
     "break_pct": 0.327,
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,0,1,1,1,0]",
-    "current_rank": 132,
-    "current_rank_points": 576,
+    "current_rank": 135,
+    "current_rank_points": 546,
     "matches_played": 171
   },
   {
@@ -4668,7 +4684,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,1,1,1,1,1,0,0,0]",
     "current_rank": 52,
-    "current_rank_points": 1105,
+    "current_rank_points": 1077,
     "matches_played": 118
   },
   {
@@ -4731,8 +4747,8 @@
     "break_pct": 0.447,
     "form_score": 0.3,
     "form_json": "[1,1,0,0,1,0,0,0,0,0]",
-    "current_rank": 87,
-    "current_rank_points": 883,
+    "current_rank": 82,
+    "current_rank_points": 884,
     "matches_played": 268
   },
   {
@@ -4923,7 +4939,7 @@
     "break_pct": 0.252,
     "form_score": 0.5,
     "form_json": "[1,0,1,1,0,0,0,1,1,0]",
-    "current_rank": 115,
+    "current_rank": 114,
     "current_rank_points": 666,
     "matches_played": 13
   },
@@ -4939,8 +4955,8 @@
     "break_pct": 0.323,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,0,1,0,0]",
-    "current_rank": 79,
-    "current_rank_points": 919,
+    "current_rank": 80,
+    "current_rank_points": 899,
     "matches_played": 81
   },
   {
@@ -5104,6 +5120,22 @@
     "matches_played": 5
   },
   {
+    "player_id": "266376",
+    "name": "Mia Pohankova",
+    "tour": "WTA",
+    "elo_overall": 1524.4,
+    "elo_hard": 1521.1,
+    "elo_clay": 1488.1,
+    "elo_grass": 1499.8,
+    "hold_pct": 0.606,
+    "break_pct": 0.37,
+    "form_score": 0.57,
+    "form_json": "[0,1,1,1,0,0,1]",
+    "current_rank": 279,
+    "current_rank_points": 253,
+    "matches_played": 7
+  },
+  {
     "player_id": "214826",
     "name": "Susan Bandecchi",
     "tour": "WTA",
@@ -5115,8 +5147,8 @@
     "break_pct": 0.295,
     "form_score": 0.6,
     "form_json": "[1,1,1,0,1,0,0,1,1,0]",
-    "current_rank": 141,
-    "current_rank_points": 534,
+    "current_rank": 137,
+    "current_rank_points": 530,
     "matches_played": 16
   },
   {
@@ -5339,8 +5371,8 @@
     "break_pct": 0.605,
     "form_score": 0.56,
     "form_json": "[1,1,0,0,1,1,0,1,0]",
-    "current_rank": 161,
-    "current_rank_points": 474,
+    "current_rank": 142,
+    "current_rank_points": 504,
     "matches_played": 9
   },
   {
@@ -5419,7 +5451,7 @@
     "break_pct": 0.336,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,0,1,1,0]",
-    "current_rank": 136,
+    "current_rank": 133,
     "current_rank_points": 551,
     "matches_played": 141
   },
@@ -5470,22 +5502,6 @@
     "current_rank": 62,
     "current_rank_points": 891,
     "matches_played": 38
-  },
-  {
-    "player_id": "222145",
-    "name": "Janice Tjen",
-    "tour": "WTA",
-    "elo_overall": 1520.9,
-    "elo_hard": 1523.9,
-    "elo_clay": 1484,
-    "elo_grass": 1468.4,
-    "hold_pct": 0.723,
-    "break_pct": 0.282,
-    "form_score": 0.4,
-    "form_json": "[0,1,0,1,0,0,1,0,1,0]",
-    "current_rank": 49,
-    "current_rank_points": 1120,
-    "matches_played": 55
   },
   {
     "player_id": "222017",
@@ -6000,22 +6016,6 @@
     "matches_played": 3
   },
   {
-    "player_id": "211843",
-    "name": "Anhelina Kalinina",
-    "tour": "WTA",
-    "elo_overall": 1519.2,
-    "elo_hard": 1442.7,
-    "elo_clay": 1576.2,
-    "elo_grass": 1487.2,
-    "hold_pct": 0.633,
-    "break_pct": 0.35,
-    "form_score": 0.3,
-    "form_json": "[0,0,1,1,0,0,1,0,0,0]",
-    "current_rank": 50,
-    "current_rank_points": 1112,
-    "matches_played": 188
-  },
-  {
     "player_id": "131934",
     "name": "Andrea Vavassori",
     "tour": "ATP",
@@ -6491,7 +6491,7 @@
     "break_pct": 0.2,
     "form_score": 0.67,
     "form_json": "[1,1,0]",
-    "current_rank": 128,
+    "current_rank": 123,
     "current_rank_points": 601,
     "matches_played": 3
   },
@@ -6526,6 +6526,22 @@
     "current_rank": 149,
     "current_rank_points": 379,
     "matches_played": 16
+  },
+  {
+    "player_id": "211814",
+    "name": "Julia Grabher",
+    "tour": "WTA",
+    "elo_overall": 1516.4,
+    "elo_hard": 1397.1,
+    "elo_clay": 1535.2,
+    "elo_grass": 1489.2,
+    "hold_pct": 0.606,
+    "break_pct": 0.29,
+    "form_score": 0.6,
+    "form_json": "[0,1,0,1,1,1,1,0,0,1]",
+    "current_rank": 97,
+    "current_rank_points": 760,
+    "matches_played": 72
   },
   {
     "player_id": "espn_15949",
@@ -6603,8 +6619,8 @@
     "break_pct": 0.208,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,1,0,0,0]",
-    "current_rank": 86,
-    "current_rank_points": 887,
+    "current_rank": 84,
+    "current_rank_points": 866,
     "matches_played": 20
   },
   {
@@ -6667,7 +6683,7 @@
     "break_pct": 0.26,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,0,1,0,1,0,0]",
-    "current_rank": 70,
+    "current_rank": 64,
     "current_rank_points": 985,
     "matches_played": 135
   },
@@ -6763,8 +6779,8 @@
     "break_pct": 0.322,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 135,
-    "current_rank_points": 570,
+    "current_rank": 141,
+    "current_rank_points": 507,
     "matches_played": 127
   },
   {
@@ -6827,8 +6843,8 @@
     "break_pct": 0.278,
     "form_score": 0.5,
     "form_json": "[0,0,0,1,1,0,1,1,1,0]",
-    "current_rank": 123,
-    "current_rank_points": 621,
+    "current_rank": 117,
+    "current_rank_points": 634,
     "matches_played": 16
   },
   {
@@ -6859,8 +6875,8 @@
     "break_pct": 0.332,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,1,0,0,0,0]",
-    "current_rank": 83,
-    "current_rank_points": 894,
+    "current_rank": 93,
+    "current_rank_points": 823,
     "matches_played": 57
   },
   {
@@ -6955,8 +6971,8 @@
     "break_pct": 0.346,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,0,0,1,1,1,0]",
-    "current_rank": 89,
-    "current_rank_points": 875,
+    "current_rank": 73,
+    "current_rank_points": 921,
     "matches_played": 173
   },
   {
@@ -7022,6 +7038,22 @@
     "current_rank": 211,
     "current_rank_points": 268,
     "matches_played": 4
+  },
+  {
+    "player_id": "211843",
+    "name": "Anhelina Kalinina",
+    "tour": "WTA",
+    "elo_overall": 1509.8,
+    "elo_hard": 1435.9,
+    "elo_clay": 1576.2,
+    "elo_grass": 1487.2,
+    "hold_pct": 0.633,
+    "break_pct": 0.35,
+    "form_score": 0.3,
+    "form_json": "[0,1,1,0,0,1,0,0,0,0]",
+    "current_rank": 48,
+    "current_rank_points": 1107,
+    "matches_played": 189
   },
   {
     "player_id": "207411",
@@ -7296,22 +7328,6 @@
     "matches_played": 5
   },
   {
-    "player_id": "236956",
-    "name": "Yasmine Kabbaj",
-    "tour": "WTA",
-    "elo_overall": 1506.5,
-    "elo_hard": 1500,
-    "elo_clay": 1502.2,
-    "elo_grass": 1500,
-    "hold_pct": 0.556,
-    "break_pct": 0.415,
-    "form_score": 0.6,
-    "form_json": "[0,1,1,1,1,0,0,1,1,0]",
-    "current_rank": 297,
-    "current_rank_points": 234,
-    "matches_played": 12
-  },
-  {
     "player_id": "202320",
     "name": "Beibit Zhukayev",
     "tour": "ATP",
@@ -7467,8 +7483,8 @@
     "break_pct": 0.404,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,1,0,0]",
-    "current_rank": 114,
-    "current_rank_points": 675,
+    "current_rank": 109,
+    "current_rank_points": 706,
     "matches_played": 8
   },
   {
@@ -7499,8 +7515,8 @@
     "break_pct": 0.272,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,1,0,0,0]",
-    "current_rank": 107,
-    "current_rank_points": 711,
+    "current_rank": 125,
+    "current_rank_points": 592,
     "matches_played": 172
   },
   {
@@ -7566,22 +7582,6 @@
     "current_rank": 286,
     "current_rank_points": 244,
     "matches_played": 4
-  },
-  {
-    "player_id": "220770",
-    "name": "Eva Vedder",
-    "tour": "WTA",
-    "elo_overall": 1504.8,
-    "elo_hard": 1522.8,
-    "elo_clay": 1478.6,
-    "elo_grass": 1489.6,
-    "hold_pct": 0.72,
-    "break_pct": 0.234,
-    "form_score": 0.5,
-    "form_json": "[0,0,1,1,1,1,0,0,1,0]",
-    "current_rank": 232,
-    "current_rank_points": 310,
-    "matches_played": 13
   },
   {
     "player_id": "104545",
@@ -7806,22 +7806,6 @@
     "current_rank": 313,
     "current_rank_points": 169,
     "matches_played": 7
-  },
-  {
-    "player_id": "266376",
-    "name": "Mia Pohankova",
-    "tour": "WTA",
-    "elo_overall": 1503.3,
-    "elo_hard": 1512.1,
-    "elo_clay": 1488.1,
-    "elo_grass": 1499.8,
-    "hold_pct": 0.606,
-    "break_pct": 0.37,
-    "form_score": 0.5,
-    "form_json": "[0,1,1,1,0,0]",
-    "current_rank": 279,
-    "current_rank_points": 253,
-    "matches_played": 6
   },
   {
     "player_id": "210683",
@@ -8315,8 +8299,8 @@
     "break_pct": 0.362,
     "form_score": 0.5,
     "form_json": "[1,1,1,1,0,0,0,1,0,0]",
-    "current_rank": 98,
-    "current_rank_points": 790,
+    "current_rank": 110,
+    "current_rank_points": 705,
     "matches_played": 41
   },
   {
@@ -8427,8 +8411,8 @@
     "break_pct": 0.302,
     "form_score": 0.5,
     "form_json": "[1,1,1,0,0,1,0,0,1,0]",
-    "current_rank": 193,
-    "current_rank_points": 382,
+    "current_rank": 150,
+    "current_rank_points": 492,
     "matches_played": 44
   },
   {
@@ -8587,8 +8571,8 @@
     "break_pct": 0.24,
     "form_score": 0.4,
     "form_json": "[0,0,0,0,1,1,1,0,1,0]",
-    "current_rank": 143,
-    "current_rank_points": 532,
+    "current_rank": 147,
+    "current_rank_points": 495,
     "matches_played": 11
   },
   {
@@ -8752,22 +8736,6 @@
     "matches_played": 2
   },
   {
-    "player_id": "211814",
-    "name": "Julia Grabher",
-    "tour": "WTA",
-    "elo_overall": 1498.6,
-    "elo_hard": 1397.1,
-    "elo_clay": 1535.2,
-    "elo_grass": 1476.4,
-    "hold_pct": 0.606,
-    "break_pct": 0.29,
-    "form_score": 0.6,
-    "form_json": "[1,0,1,0,1,1,1,1,0,0]",
-    "current_rank": 99,
-    "current_rank_points": 787,
-    "matches_played": 71
-  },
-  {
     "player_id": "221219",
     "name": "Lucie Petruzelova",
     "tour": "WTA",
@@ -8795,8 +8763,8 @@
     "break_pct": 0.2,
     "form_score": 0.5,
     "form_json": "[1,0]",
-    "current_rank": null,
-    "current_rank_points": null,
+    "current_rank": 132,
+    "current_rank_points": 561,
     "matches_played": 2
   },
   {
@@ -8971,8 +8939,8 @@
     "break_pct": 0.343,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,1,0,1,0,0]",
-    "current_rank": 103,
-    "current_rank_points": 742,
+    "current_rank": 108,
+    "current_rank_points": 707,
     "matches_played": 156
   },
   {
@@ -9440,22 +9408,6 @@
     "matches_played": 2
   },
   {
-    "player_id": "espn_2427",
-    "name": "Deborah Chiesa",
-    "tour": "WTA",
-    "elo_overall": 1495.3,
-    "elo_hard": 1500,
-    "elo_clay": 1497.3,
-    "elo_grass": 1500,
-    "hold_pct": 0.75,
-    "break_pct": 0.2,
-    "form_score": 0.5,
-    "form_json": "[1,1,0,0]",
-    "current_rank": null,
-    "current_rank_points": null,
-    "matches_played": 4
-  },
-  {
     "player_id": "211643",
     "name": "Kajsa Rinaldo Persson",
     "tour": "WTA",
@@ -9552,6 +9504,22 @@
     "matches_played": 7
   },
   {
+    "player_id": "222559",
+    "name": "Han Shi",
+    "tour": "WTA",
+    "elo_overall": 1494.8,
+    "elo_hard": 1489.3,
+    "elo_clay": 1500,
+    "elo_grass": 1500,
+    "hold_pct": 0.603,
+    "break_pct": 0.315,
+    "form_score": 0.38,
+    "form_json": "[0,0,1,0,1,0,0,1]",
+    "current_rank": 328,
+    "current_rank_points": 203,
+    "matches_played": 8
+  },
+  {
     "player_id": "208902",
     "name": "Johannus Monday",
     "tour": "ATP",
@@ -9643,8 +9611,8 @@
     "break_pct": 0.313,
     "form_score": 0.3,
     "form_json": "[0,0,1,1,0,0,0,1,0,0]",
-    "current_rank": 120,
-    "current_rank_points": 634,
+    "current_rank": 115,
+    "current_rank_points": 665,
     "matches_played": 19
   },
   {
@@ -10155,8 +10123,8 @@
     "break_pct": 0.385,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,0,1,0,1,0]",
-    "current_rank": 130,
-    "current_rank_points": 597,
+    "current_rank": 126,
+    "current_rank_points": 591,
     "matches_played": 23
   },
   {
@@ -10187,7 +10155,7 @@
     "break_pct": 0.2,
     "form_score": 0,
     "form_json": "[0]",
-    "current_rank": 119,
+    "current_rank": 116,
     "current_rank_points": 643,
     "matches_played": 1
   },
@@ -10288,6 +10256,22 @@
     "matches_played": 3
   },
   {
+    "player_id": "236956",
+    "name": "Yasmine Kabbaj",
+    "tour": "WTA",
+    "elo_overall": 1490,
+    "elo_hard": 1500,
+    "elo_clay": 1502.2,
+    "elo_grass": 1488,
+    "hold_pct": 0.556,
+    "break_pct": 0.415,
+    "form_score": 0.6,
+    "form_json": "[1,1,1,1,0,0,1,1,0,0]",
+    "current_rank": 297,
+    "current_rank_points": 234,
+    "matches_played": 13
+  },
+  {
     "player_id": "260006",
     "name": "Kristiana Sidorova",
     "tour": "WTA",
@@ -10334,22 +10318,6 @@
     "current_rank": 414,
     "current_rank_points": 147,
     "matches_played": 9
-  },
-  {
-    "player_id": "221411",
-    "name": "Jennifer Ruggeri",
-    "tour": "WTA",
-    "elo_overall": 1489.6,
-    "elo_hard": 1500,
-    "elo_clay": 1490.3,
-    "elo_grass": 1500,
-    "hold_pct": 0.485,
-    "break_pct": 0.269,
-    "form_score": 0.4,
-    "form_json": "[0,0,1,1,0]",
-    "current_rank": 267,
-    "current_rank_points": 266,
-    "matches_played": 5
   },
   {
     "player_id": "211533",
@@ -10523,8 +10491,8 @@
     "break_pct": 0.22,
     "form_score": 0.4,
     "form_json": "[1,1,1,1,0,0,0,0,0,0]",
-    "current_rank": 144,
-    "current_rank_points": 528,
+    "current_rank": 109,
+    "current_rank_points": 702,
     "matches_played": 67
   },
   {
@@ -10683,8 +10651,8 @@
     "break_pct": 0.329,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,0,1,0,1,0]",
-    "current_rank": 68,
-    "current_rank_points": 989,
+    "current_rank": 63,
+    "current_rank_points": 997,
     "matches_played": 36
   },
   {
@@ -11054,6 +11022,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 5
+  },
+  {
+    "player_id": "220770",
+    "name": "Eva Vedder",
+    "tour": "WTA",
+    "elo_overall": 1486.5,
+    "elo_hard": 1522.8,
+    "elo_clay": 1478.6,
+    "elo_grass": 1478,
+    "hold_pct": 0.72,
+    "break_pct": 0.234,
+    "form_score": 0.5,
+    "form_json": "[0,1,1,1,1,0,0,1,0,0]",
+    "current_rank": 232,
+    "current_rank_points": 310,
+    "matches_played": 14
   },
   {
     "player_id": "210107",
@@ -12576,6 +12560,22 @@
     "matches_played": 1
   },
   {
+    "player_id": "espn_17869",
+    "name": "Aran Teixido Garcia",
+    "tour": "WTA",
+    "elo_overall": 1482.5,
+    "elo_hard": 1500,
+    "elo_clay": 1500,
+    "elo_grass": 1488,
+    "hold_pct": 0.75,
+    "break_pct": 0.2,
+    "form_score": 0,
+    "form_json": "[0]",
+    "current_rank": null,
+    "current_rank_points": null,
+    "matches_played": 1
+  },
+  {
     "player_id": "211216",
     "name": "Cristiana Ferrando",
     "tour": "WTA",
@@ -12731,8 +12731,8 @@
     "break_pct": 0.376,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,0,1,0,0,1,0]",
-    "current_rank": 101,
-    "current_rank_points": 778,
+    "current_rank": 100,
+    "current_rank_points": 743,
     "matches_played": 32
   },
   {
@@ -15355,7 +15355,7 @@
     "break_pct": 0.425,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,1,0,0,1,0]",
-    "current_rank": 146,
+    "current_rank": 139,
     "current_rank_points": 516,
     "matches_played": 14
   },
@@ -15643,8 +15643,8 @@
     "break_pct": 0.405,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,0,1,0,1,0,0]",
-    "current_rank": 125,
-    "current_rank_points": 617,
+    "current_rank": 106,
+    "current_rank_points": 717,
     "matches_played": 49
   },
   {
@@ -15883,8 +15883,8 @@
     "break_pct": 0.317,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,0,1,1,0]",
-    "current_rank": 104,
-    "current_rank_points": 728,
+    "current_rank": 102,
+    "current_rank_points": 730,
     "matches_played": 63
   },
   {
@@ -16880,6 +16880,22 @@
     "matches_played": 1
   },
   {
+    "player_id": "espn_2427",
+    "name": "Deborah Chiesa",
+    "tour": "WTA",
+    "elo_overall": 1477.5,
+    "elo_hard": 1500,
+    "elo_clay": 1497.3,
+    "elo_grass": 1487.2,
+    "hold_pct": 0.75,
+    "break_pct": 0.2,
+    "form_score": 0.4,
+    "form_json": "[1,1,0,0,0]",
+    "current_rank": null,
+    "current_rank_points": null,
+    "matches_played": 5
+  },
+  {
     "player_id": "211432",
     "name": "Eden Silva",
     "tour": "WTA",
@@ -16971,8 +16987,8 @@
     "break_pct": 0.213,
     "form_score": 0.33,
     "form_json": "[0,0,0,1,0,0,1,1,0]",
-    "current_rank": 139,
-    "current_rank_points": 540,
+    "current_rank": 149,
+    "current_rank_points": 493,
     "matches_played": 9
   },
   {
@@ -17323,8 +17339,8 @@
     "break_pct": 0.389,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,1,0,0,1,0,0]",
-    "current_rank": 133,
-    "current_rank_points": 576,
+    "current_rank": 127,
+    "current_rank_points": 586,
     "matches_played": 37
   },
   {
@@ -17566,6 +17582,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 1
+  },
+  {
+    "player_id": "221411",
+    "name": "Jennifer Ruggeri",
+    "tour": "WTA",
+    "elo_overall": 1475.9,
+    "elo_hard": 1500,
+    "elo_clay": 1490.3,
+    "elo_grass": 1488,
+    "hold_pct": 0.485,
+    "break_pct": 0.269,
+    "form_score": 0.33,
+    "form_json": "[0,0,1,1,0,0]",
+    "current_rank": 267,
+    "current_rank_points": 266,
+    "matches_played": 6
   },
   {
     "player_id": "204355",
@@ -18315,8 +18347,8 @@
     "break_pct": 0.338,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,1,1,0,0,0,0]",
-    "current_rank": 134,
-    "current_rank_points": 573,
+    "current_rank": 122,
+    "current_rank_points": 602,
     "matches_played": 14
   },
   {
@@ -18603,8 +18635,8 @@
     "break_pct": 0.309,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,1,1,0,0,0,0]",
-    "current_rank": 97,
-    "current_rank_points": 790,
+    "current_rank": 96,
+    "current_rank_points": 789,
     "matches_played": 87
   },
   {
@@ -18971,8 +19003,8 @@
     "break_pct": 0.333,
     "form_score": 0.2,
     "form_json": "[0,1,0,0,0,0,0,1,0,0]",
-    "current_rank": 125,
-    "current_rank_points": 640,
+    "current_rank": 134,
+    "current_rank_points": 551,
     "matches_played": 102
   },
   {
@@ -19742,22 +19774,6 @@
     "current_rank": 1054,
     "current_rank_points": 17,
     "matches_played": 2
-  },
-  {
-    "player_id": "222559",
-    "name": "Han Shi",
-    "tour": "WTA",
-    "elo_overall": 1463.9,
-    "elo_hard": 1471.7,
-    "elo_clay": 1500,
-    "elo_grass": 1500,
-    "hold_pct": 0.603,
-    "break_pct": 0.315,
-    "form_score": 0.29,
-    "form_json": "[0,0,1,0,1,0,0]",
-    "current_rank": 328,
-    "current_rank_points": 203,
-    "matches_played": 7
   },
   {
     "player_id": "espn_4720",
@@ -20603,8 +20619,8 @@
     "break_pct": 0.339,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,1,0,1,0]",
-    "current_rank": 116,
-    "current_rank_points": 662,
+    "current_rank": 113,
+    "current_rank_points": 692,
     "matches_played": 103
   },
   {
@@ -21067,8 +21083,8 @@
     "break_pct": 0.345,
     "form_score": 0.5,
     "form_json": "[1,0,0,0,1,1,1,1,0,0]",
-    "current_rank": 108,
-    "current_rank_points": 708,
+    "current_rank": 105,
+    "current_rank_points": 722,
     "matches_played": 32
   },
   {
@@ -21787,8 +21803,8 @@
     "break_pct": 0.344,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,0,0,0,1,0]",
-    "current_rank": 94,
-    "current_rank_points": 819,
+    "current_rank": 85,
+    "current_rank_points": 862,
     "matches_played": 76
   },
   {
@@ -22427,8 +22443,8 @@
     "break_pct": 0.396,
     "form_score": 0.3,
     "form_json": "[1,0,0,1,0,0,1,0,0,0]",
-    "current_rank": 138,
-    "current_rank_points": 541,
+    "current_rank": 94,
+    "current_rank_points": 833,
     "matches_played": 85
   },
   {
@@ -22608,22 +22624,6 @@
     "matches_played": 24
   },
   {
-    "player_id": "256684",
-    "name": "Aoi Ito",
-    "tour": "WTA",
-    "elo_overall": 1447.9,
-    "elo_hard": 1466.4,
-    "elo_clay": 1500,
-    "elo_grass": 1477.7,
-    "hold_pct": 0.548,
-    "break_pct": 0.363,
-    "form_score": 0.4,
-    "form_json": "[1,1,0,1,1,0,0,0,0,0]",
-    "current_rank": 234,
-    "current_rank_points": 307,
-    "matches_played": 21
-  },
-  {
     "player_id": "213666",
     "name": "Maddison Inglis",
     "tour": "WTA",
@@ -22635,8 +22635,8 @@
     "break_pct": 0.239,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,1,0,0,0,1,0]",
-    "current_rank": 140,
-    "current_rank_points": 536,
+    "current_rank": 130,
+    "current_rank_points": 571,
     "matches_played": 24
   },
   {
@@ -23195,8 +23195,8 @@
     "break_pct": 0.352,
     "form_score": 0.29,
     "form_json": "[0,1,0,0,0,0,1]",
-    "current_rank": 145,
-    "current_rank_points": 527,
+    "current_rank": 148,
+    "current_rank_points": 493,
     "matches_played": 7
   },
   {
@@ -23691,8 +23691,8 @@
     "break_pct": 0.245,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,1,1,0,0,0]",
-    "current_rank": 84,
-    "current_rank_points": 873,
+    "current_rank": 144,
+    "current_rank_points": 498,
     "matches_played": 23
   },
   {
@@ -24096,6 +24096,22 @@
     "matches_played": 3
   },
   {
+    "player_id": "256684",
+    "name": "Aoi Ito",
+    "tour": "WTA",
+    "elo_overall": 1433.6,
+    "elo_hard": 1456.4,
+    "elo_clay": 1500,
+    "elo_grass": 1477.7,
+    "hold_pct": 0.548,
+    "break_pct": 0.363,
+    "form_score": 0.3,
+    "form_json": "[1,0,1,1,0,0,0,0,0,0]",
+    "current_rank": 234,
+    "current_rank_points": 307,
+    "matches_played": 22
+  },
+  {
     "player_id": "201366",
     "name": "Barbora Strycova",
     "tour": "WTA",
@@ -24171,8 +24187,8 @@
     "break_pct": 0.343,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,1,1,0,0,0,0]",
-    "current_rank": 142,
-    "current_rank_points": 532,
+    "current_rank": 134,
+    "current_rank_points": 565,
     "matches_played": 77
   },
   {
@@ -24651,8 +24667,8 @@
     "break_pct": 0.251,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 109,
-    "current_rank_points": 706,
+    "current_rank": 94,
+    "current_rank_points": 816,
     "matches_played": 55
   },
   {
@@ -24907,8 +24923,8 @@
     "break_pct": 0.31,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,0,0,0,0,1,0]",
-    "current_rank": 124,
-    "current_rank_points": 619,
+    "current_rank": 131,
+    "current_rank_points": 563,
     "matches_played": 21
   },
   {
@@ -24923,8 +24939,8 @@
     "break_pct": 0.245,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,1,0,0,0,0,0]",
-    "current_rank": 150,
-    "current_rank_points": 504,
+    "current_rank": 115,
+    "current_rank_points": 691,
     "matches_played": 82
   },
   {
@@ -24939,8 +24955,8 @@
     "break_pct": 0.287,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 88,
-    "current_rank_points": 877,
+    "current_rank": 90,
+    "current_rank_points": 838,
     "matches_played": 16
   },
   {
@@ -25099,8 +25115,8 @@
     "break_pct": 0.241,
     "form_score": 0.4,
     "form_json": "[0,0,1,0,0,1,1,1,0,0]",
-    "current_rank": 131,
-    "current_rank_points": 583,
+    "current_rank": 129,
+    "current_rank_points": 572,
     "matches_played": 23
   },
   {
@@ -25595,8 +25611,8 @@
     "break_pct": 0.234,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 112,
-    "current_rank_points": 677,
+    "current_rank": 119,
+    "current_rank_points": 614,
     "matches_played": 29
   },
   {
@@ -25963,8 +25979,8 @@
     "break_pct": 0.295,
     "form_score": 0.2,
     "form_json": "[0,0,0,1,0,0,0,1,0,0]",
-    "current_rank": 106,
-    "current_rank_points": 725,
+    "current_rank": 121,
+    "current_rank_points": 603,
     "matches_played": 99
   },
   {
@@ -26411,8 +26427,8 @@
     "break_pct": 0.197,
     "form_score": 0.1,
     "form_json": "[0,0,0,1,0,0,0,0,0,0]",
-    "current_rank": 117,
-    "current_rank_points": 661,
+    "current_rank": 112,
+    "current_rank_points": 697,
     "matches_played": 18
   },
   {
