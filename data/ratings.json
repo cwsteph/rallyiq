@@ -96,22 +96,6 @@
     "matches_played": 330
   },
   {
-    "player_id": "216347",
-    "name": "Iga Swiatek",
-    "tour": "WTA",
-    "elo_overall": 1943.8,
-    "elo_hard": 1875.3,
-    "elo_clay": 1805.5,
-    "elo_grass": 1650.4,
-    "hold_pct": 0.794,
-    "break_pct": 0.473,
-    "form_score": 0.8,
-    "form_json": "[1,1,0,1,1,1,0,1,1,1]",
-    "current_rank": 9,
-    "current_rank_points": 3999,
-    "matches_played": 369
-  },
-  {
     "player_id": "104925",
     "name": "Novak Djokovic",
     "tour": "ATP",
@@ -142,6 +126,22 @@
     "current_rank": 4,
     "current_rank_points": 6225,
     "matches_played": 338
+  },
+  {
+    "player_id": "216347",
+    "name": "Iga Swiatek",
+    "tour": "WTA",
+    "elo_overall": 1917,
+    "elo_hard": 1854.5,
+    "elo_clay": 1805.5,
+    "elo_grass": 1650.4,
+    "hold_pct": 0.794,
+    "break_pct": 0.473,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,1,1,0,1,1,1,0]",
+    "current_rank": 9,
+    "current_rank_points": 3999,
+    "matches_played": 370
   },
   {
     "player_id": "214096",
@@ -1136,6 +1136,22 @@
     "matches_played": 191
   },
   {
+    "player_id": "216081",
+    "name": "Maja Chwalinska",
+    "tour": "WTA",
+    "elo_overall": 1687.6,
+    "elo_hard": 1567.2,
+    "elo_clay": 1571.9,
+    "elo_grass": 1488,
+    "hold_pct": 0.587,
+    "break_pct": 0.331,
+    "form_score": 0.8,
+    "form_json": "[1,1,1,0,0,1,1,1,1,1]",
+    "current_rank": 22,
+    "current_rank_points": 2043,
+    "matches_played": 38
+  },
+  {
     "player_id": "210696",
     "name": "Alexander Blockx",
     "tour": "ATP",
@@ -1294,22 +1310,6 @@
     "current_rank": 21,
     "current_rank_points": 2200,
     "matches_played": 172
-  },
-  {
-    "player_id": "216081",
-    "name": "Maja Chwalinska",
-    "tour": "WTA",
-    "elo_overall": 1660.9,
-    "elo_hard": 1546.3,
-    "elo_clay": 1571.9,
-    "elo_grass": 1488,
-    "hold_pct": 0.587,
-    "break_pct": 0.331,
-    "form_score": 0.7,
-    "form_json": "[0,1,1,1,0,0,1,1,1,1]",
-    "current_rank": 22,
-    "current_rank_points": 2043,
-    "matches_played": 37
   },
   {
     "player_id": "132686",
@@ -2080,22 +2080,6 @@
     "matches_played": 30
   },
   {
-    "player_id": "266671",
-    "name": "Laura Samson",
-    "tour": "WTA",
-    "elo_overall": 1600.2,
-    "elo_hard": 1454.5,
-    "elo_clay": 1576.6,
-    "elo_grass": 1536,
-    "hold_pct": 0.597,
-    "break_pct": 0.542,
-    "form_score": 0.6,
-    "form_json": "[0,1,1,1,0,0,0,1,1,1]",
-    "current_rank": 128,
-    "current_rank_points": 578,
-    "matches_played": 21
-  },
-  {
     "player_id": "105777",
     "name": "Grigor Dimitrov",
     "tour": "ATP",
@@ -2254,6 +2238,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 76
+  },
+  {
+    "player_id": "266671",
+    "name": "Laura Samson",
+    "tour": "WTA",
+    "elo_overall": 1589.8,
+    "elo_hard": 1454.5,
+    "elo_clay": 1576.6,
+    "elo_grass": 1535.3,
+    "hold_pct": 0.597,
+    "break_pct": 0.542,
+    "form_score": 0.6,
+    "form_json": "[1,1,0,0,0,1,1,1,1,0]",
+    "current_rank": 128,
+    "current_rank_points": 578,
+    "matches_played": 23
   },
   {
     "player_id": "209976",
@@ -2462,6 +2462,22 @@
     "current_rank": 91,
     "current_rank_points": 835,
     "matches_played": 134
+  },
+  {
+    "player_id": "231639",
+    "name": "Ariana Geerlings",
+    "tour": "WTA",
+    "elo_overall": 1583.2,
+    "elo_hard": 1500,
+    "elo_clay": 1487.9,
+    "elo_grass": 1559.2,
+    "hold_pct": 0.593,
+    "break_pct": 0.35,
+    "form_score": 0.83,
+    "form_json": "[0,1,1,1,1,1]",
+    "current_rank": 437,
+    "current_rank_points": 132,
+    "matches_played": 6
   },
   {
     "player_id": "126128",
@@ -3086,22 +3102,6 @@
     "current_rank": 66,
     "current_rank_points": 874,
     "matches_played": 66
-  },
-  {
-    "player_id": "231639",
-    "name": "Ariana Geerlings",
-    "tour": "WTA",
-    "elo_overall": 1560.2,
-    "elo_hard": 1500,
-    "elo_clay": 1487.9,
-    "elo_grass": 1547.2,
-    "hold_pct": 0.593,
-    "break_pct": 0.35,
-    "form_score": 0.8,
-    "form_json": "[0,1,1,1,1]",
-    "current_rank": 437,
-    "current_rank_points": 132,
-    "matches_played": 5
   },
   {
     "player_id": "220714",
@@ -9968,22 +9968,6 @@
     "matches_played": 7
   },
   {
-    "player_id": "214461",
-    "name": "Tamara Zidansek",
-    "tour": "WTA",
-    "elo_overall": 1492.3,
-    "elo_hard": 1431.4,
-    "elo_clay": 1518.1,
-    "elo_grass": 1515.1,
-    "hold_pct": 0.578,
-    "break_pct": 0.343,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,0,0,0,1,1,1]",
-    "current_rank": 134,
-    "current_rank_points": 565,
-    "matches_played": 80
-  },
-  {
     "player_id": "131905",
     "name": "Manuel Guinard",
     "tour": "ATP",
@@ -15278,6 +15262,22 @@
     "current_rank": 649,
     "current_rank_points": 69,
     "matches_played": 1
+  },
+  {
+    "player_id": "214461",
+    "name": "Tamara Zidansek",
+    "tour": "WTA",
+    "elo_overall": 1479.7,
+    "elo_hard": 1431.4,
+    "elo_clay": 1518.1,
+    "elo_grass": 1503.8,
+    "hold_pct": 0.578,
+    "break_pct": 0.343,
+    "form_score": 0.5,
+    "form_json": "[1,1,0,0,0,0,1,1,1,0]",
+    "current_rank": 134,
+    "current_rank_points": 565,
+    "matches_played": 81
   },
   {
     "player_id": "105943",
