@@ -2,6 +2,7 @@
  "tournaments": [
   "ATIK Antalya Open",
   "Adana Open",
+  "American Tennis Open Miami",
   "Axeria Open 2026 powered by Intaro Sport",
   "BBVA Open Internacional De Valencia",
   "Caldas da Rainha Ladies Open",
@@ -22,6 +23,7 @@
   "Odlum Brown VanOpen",
   "Open delle Puglie Trofeo",
   "Queretaro Open",
+  "Rolex Paris Masters",
   "Rolex Shanghai Masters",
   "RoveretOpen Città della Pace",
   "Río Ladies Open by MundoTênis Tours",
@@ -32,5 +34,5 @@
   "Valle D'Aosta Ladies Open",
   "Zavarovalnica Triglav Ljubljana"
  ],
- "droppedRows": 942
+ "droppedRows": 954
 }
