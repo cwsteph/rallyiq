@@ -28,7 +28,7 @@
     "form_score": 1,
     "form_json": "[1,1,1,1,1,1,1,1,1,1]",
     "current_rank": 3,
-    "current_rank_points": 6100,
+    "current_rank_points": 7100,
     "matches_played": 335
   },
   {
@@ -123,8 +123,8 @@
     "break_pct": 0.278,
     "form_score": 0.6,
     "form_json": "[0,0,0,1,1,1,1,1,1,0]",
-    "current_rank": 11,
-    "current_rank_points": 3140,
+    "current_rank": 12,
+    "current_rank_points": 2940,
     "matches_played": 240
   },
   {
@@ -219,7 +219,7 @@
     "break_pct": 0.364,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,0,1,1,0]",
-    "current_rank": 22,
+    "current_rank": 23,
     "current_rank_points": 1963,
     "matches_played": 185
   },
@@ -235,7 +235,7 @@
     "break_pct": 0.335,
     "form_score": 0.9,
     "form_json": "[1,1,0,1,1,1,1,1,1,1]",
-    "current_rank": 21,
+    "current_rank": 22,
     "current_rank_points": 2017,
     "matches_played": 231
   },
@@ -252,7 +252,7 @@
     "form_score": 0.6,
     "form_json": "[0,1,1,0,1,1,0,1,1,0]",
     "current_rank": 7,
-    "current_rank_points": 3525,
+    "current_rank_points": 3625,
     "matches_played": 195
   },
   {
@@ -284,7 +284,7 @@
     "form_score": 0.8,
     "form_json": "[1,1,1,1,0,1,1,1,1,0]",
     "current_rank": 9,
-    "current_rank_points": 3410,
+    "current_rank_points": 3370,
     "matches_played": 363
   },
   {
@@ -316,7 +316,7 @@
     "form_score": 0.8,
     "form_json": "[1,0,1,1,1,1,1,1,1,0]",
     "current_rank": 5,
-    "current_rank_points": 3860,
+    "current_rank_points": 3820,
     "matches_played": 350
   },
   {
@@ -331,7 +331,7 @@
     "break_pct": 0.3,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,1,1,0,1,0]",
-    "current_rank": 16,
+    "current_rank": 17,
     "current_rank_points": 2315,
     "matches_played": 156
   },
@@ -348,7 +348,7 @@
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,1,1,0,1,0]",
     "current_rank": 4,
-    "current_rank_points": 4530,
+    "current_rank_points": 5170,
     "matches_played": 245
   },
   {
@@ -363,7 +363,7 @@
     "break_pct": 0.339,
     "form_score": 0.7,
     "form_json": "[1,1,1,1,1,0,1,1,0,0]",
-    "current_rank": 20,
+    "current_rank": 21,
     "current_rank_points": 2143,
     "matches_played": 72
   },
@@ -379,8 +379,8 @@
     "break_pct": 0.193,
     "form_score": 0.6,
     "form_json": "[0,0,1,1,1,0,1,1,1,0]",
-    "current_rank": 12,
-    "current_rank_points": 3095,
+    "current_rank": 10,
+    "current_rank_points": 3285,
     "matches_played": 356
   },
   {
@@ -395,8 +395,8 @@
     "break_pct": 0.355,
     "form_score": 0.6,
     "form_json": "[0,1,0,1,1,1,0,1,1,0]",
-    "current_rank": 24,
-    "current_rank_points": 1921,
+    "current_rank": 19,
+    "current_rank_points": 2175,
     "matches_played": 234
   },
   {
@@ -411,8 +411,8 @@
     "break_pct": 0.226,
     "form_score": 0.7,
     "form_json": "[0,1,0,1,1,1,1,1,1,0]",
-    "current_rank": 24,
-    "current_rank_points": 1960,
+    "current_rank": 25,
+    "current_rank_points": 1895,
     "matches_played": 300
   },
   {
@@ -428,7 +428,7 @@
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,1,0,1,0,0]",
     "current_rank": 8,
-    "current_rank_points": 3430,
+    "current_rank_points": 3390,
     "matches_played": 291
   },
   {
@@ -443,8 +443,8 @@
     "break_pct": 0.246,
     "form_score": 0.6,
     "form_json": "[1,1,0,0,1,1,0,1,1,0]",
-    "current_rank": 14,
-    "current_rank_points": 2775,
+    "current_rank": 13,
+    "current_rank_points": 2925,
     "matches_played": 308
   },
   {
@@ -476,7 +476,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,0,1,0,1,1,1,1,0]",
     "current_rank": 15,
-    "current_rank_points": 2580,
+    "current_rank_points": 2540,
     "matches_played": 263
   },
   {
@@ -508,7 +508,7 @@
     "form_score": 0.8,
     "form_json": "[1,1,1,0,0,1,1,1,1,1]",
     "current_rank": 27,
-    "current_rank_points": 1780,
+    "current_rank_points": 1790,
     "matches_played": 74
   },
   {
@@ -523,8 +523,8 @@
     "break_pct": 0.383,
     "form_score": 0.6,
     "form_json": "[1,0,0,1,0,1,1,1,1,0]",
-    "current_rank": 28,
-    "current_rank_points": 1794,
+    "current_rank": 27,
+    "current_rank_points": 1819,
     "matches_played": 205
   },
   {
@@ -539,8 +539,8 @@
     "break_pct": 0.366,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,0,1,1,1,1,0]",
-    "current_rank": 17,
-    "current_rank_points": 2289,
+    "current_rank": 15,
+    "current_rank_points": 2392,
     "matches_played": 111
   },
   {
@@ -555,8 +555,8 @@
     "break_pct": 0.196,
     "form_score": 0.6,
     "form_json": "[1,1,1,0,1,1,0,1,0,0]",
-    "current_rank": 13,
-    "current_rank_points": 2875,
+    "current_rank": 14,
+    "current_rank_points": 2865,
     "matches_played": 314
   },
   {
@@ -571,8 +571,8 @@
     "break_pct": 0.273,
     "form_score": 0.5,
     "form_json": "[1,1,0,1,1,0,0,0,1,0]",
-    "current_rank": 10,
-    "current_rank_points": 3209,
+    "current_rank": 11,
+    "current_rank_points": 3234,
     "matches_played": 57
   },
   {
@@ -587,8 +587,8 @@
     "break_pct": 0.213,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,1,0,0,1,0]",
-    "current_rank": 19,
-    "current_rank_points": 2345,
+    "current_rank": 22,
+    "current_rank_points": 2145,
     "matches_played": 124
   },
   {
@@ -619,7 +619,7 @@
     "break_pct": 0.346,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,0,1,0,0,1,0]",
-    "current_rank": 19,
+    "current_rank": 20,
     "current_rank_points": 2168,
     "matches_played": 210
   },
@@ -651,7 +651,7 @@
     "break_pct": 0.329,
     "form_score": 0.8,
     "form_json": "[1,1,1,0,1,1,1,1,1,0]",
-    "current_rank": 52,
+    "current_rank": 53,
     "current_rank_points": 1097,
     "matches_played": 68
   },
@@ -667,7 +667,7 @@
     "break_pct": 0.195,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 41,
+    "current_rank": 46,
     "current_rank_points": 1200,
     "matches_played": 97
   },
@@ -715,7 +715,7 @@
     "break_pct": 0.373,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,0,1,1,1,0]",
-    "current_rank": 23,
+    "current_rank": 24,
     "current_rank_points": 1959,
     "matches_played": 244
   },
@@ -736,6 +736,22 @@
     "matches_played": 267
   },
   {
+    "player_id": "210506",
+    "name": "Alex Michelsen",
+    "tour": "ATP",
+    "elo_overall": 1729,
+    "elo_hard": 1676.8,
+    "elo_clay": 1491.2,
+    "elo_grass": 1521.4,
+    "hold_pct": 0.806,
+    "break_pct": 0.195,
+    "form_score": 0.6,
+    "form_json": "[1,1,0,0,1,1,0,1,0,1]",
+    "current_rank": 35,
+    "current_rank_points": 1460,
+    "matches_played": 186
+  },
+  {
     "player_id": "200221",
     "name": "Alejandro Davidovich Fokina",
     "tour": "ATP",
@@ -748,7 +764,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,0,1,0,1,1,1,1,0]",
     "current_rank": 17,
-    "current_rank_points": 2510,
+    "current_rank_points": 2500,
     "matches_played": 262
   },
   {
@@ -763,7 +779,7 @@
     "break_pct": 0.293,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,1,0,1,0]",
-    "current_rank": 88,
+    "current_rank": 93,
     "current_rank_points": 831,
     "matches_played": 96
   },
@@ -779,8 +795,8 @@
     "break_pct": 0.165,
     "form_score": 0.5,
     "form_json": "[1,1,0,1,0,0,1,1,0,0]",
-    "current_rank": 18,
-    "current_rank_points": 2375,
+    "current_rank": 19,
+    "current_rank_points": 2360,
     "matches_played": 259
   },
   {
@@ -795,7 +811,7 @@
     "break_pct": 0.34,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,1,0,0,1,1,0]",
-    "current_rank": 15,
+    "current_rank": 16,
     "current_rank_points": 2386,
     "matches_played": 220
   },
@@ -812,7 +828,7 @@
     "form_score": 0.5,
     "form_json": "[0,1,1,0,0,1,1,0,1,0]",
     "current_rank": 6,
-    "current_rank_points": 3690,
+    "current_rank_points": 3680,
     "matches_played": 198
   },
   {
@@ -827,25 +843,9 @@
     "break_pct": 0.318,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,1,1,0,1,0,0]",
-    "current_rank": 29,
+    "current_rank": 30,
     "current_rank_points": 1711,
     "matches_played": 55
-  },
-  {
-    "player_id": "210506",
-    "name": "Alex Michelsen",
-    "tour": "ATP",
-    "elo_overall": 1718.3,
-    "elo_hard": 1669,
-    "elo_clay": 1491.2,
-    "elo_grass": 1521.4,
-    "hold_pct": 0.806,
-    "break_pct": 0.195,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,0,1,1,0,1,0]",
-    "current_rank": 35,
-    "current_rank_points": 1435,
-    "matches_played": 185
   },
   {
     "player_id": "128034",
@@ -859,7 +859,7 @@
     "break_pct": 0.159,
     "form_score": 0.7,
     "form_json": "[1,1,1,0,1,1,1,0,1,0]",
-    "current_rank": 29,
+    "current_rank": 30,
     "current_rank_points": 1625,
     "matches_played": 261
   },
@@ -892,7 +892,7 @@
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,0,1,0,1,0]",
     "current_rank": 16,
-    "current_rank_points": 2545,
+    "current_rank_points": 2500,
     "matches_played": 159
   },
   {
@@ -939,7 +939,7 @@
     "break_pct": 0.3,
     "form_score": 0.5,
     "form_json": "[1,1,0,1,0,1,0,0,1,0]",
-    "current_rank": 51,
+    "current_rank": 52,
     "current_rank_points": 1105,
     "matches_played": 149
   },
@@ -956,7 +956,7 @@
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,0,0,1,1,0]",
     "current_rank": 26,
-    "current_rank_points": 1895,
+    "current_rank_points": 1885,
     "matches_played": 274
   },
   {
@@ -987,7 +987,7 @@
     "break_pct": 0.282,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,1,1,0,1,1,0]",
-    "current_rank": 45,
+    "current_rank": 46,
     "current_rank_points": 1153,
     "matches_played": 107
   },
@@ -1003,8 +1003,8 @@
     "break_pct": 0.176,
     "form_score": 0.7,
     "form_json": "[1,1,1,0,1,0,1,1,1,0]",
-    "current_rank": 34,
-    "current_rank_points": 1440,
+    "current_rank": 36,
+    "current_rank_points": 1430,
     "matches_played": 322
   },
   {
@@ -1019,8 +1019,8 @@
     "break_pct": 0.174,
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,0,1,1,1,0]",
-    "current_rank": 39,
-    "current_rank_points": 1271,
+    "current_rank": 37,
+    "current_rank_points": 1358,
     "matches_played": 192
   },
   {
@@ -1035,8 +1035,8 @@
     "break_pct": 0.215,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,1,0,0,0,1,0]",
-    "current_rank": 23,
-    "current_rank_points": 2035,
+    "current_rank": 18,
+    "current_rank_points": 2435,
     "matches_played": 314
   },
   {
@@ -1052,7 +1052,7 @@
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,0,1,1,0,0]",
     "current_rank": 20,
-    "current_rank_points": 2260,
+    "current_rank_points": 2220,
     "matches_played": 294
   },
   {
@@ -1099,7 +1099,7 @@
     "break_pct": 0.385,
     "form_score": 0.5,
     "form_json": "[1,0,1,0,0,1,1,1,0,0]",
-    "current_rank": 27,
+    "current_rank": 28,
     "current_rank_points": 1814,
     "matches_played": 221
   },
@@ -1115,7 +1115,7 @@
     "break_pct": 0.345,
     "form_score": 0.5,
     "form_json": "[1,1,1,1,0,0,0,0,1,0]",
-    "current_rank": 48,
+    "current_rank": 49,
     "current_rank_points": 1133,
     "matches_played": 191
   },
@@ -1148,7 +1148,7 @@
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,0,1,1,0,0]",
     "current_rank": 42,
-    "current_rank_points": 1195,
+    "current_rank_points": 1237,
     "matches_played": 31
   },
   {
@@ -1164,7 +1164,7 @@
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,1,1,0,0]",
     "current_rank": 28,
-    "current_rank_points": 1665,
+    "current_rank_points": 1640,
     "matches_played": 50
   },
   {
@@ -1179,8 +1179,8 @@
     "break_pct": 0.331,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,0,1,1,1,0]",
-    "current_rank": 30,
-    "current_rank_points": 1682,
+    "current_rank": 29,
+    "current_rank_points": 1779,
     "matches_played": 264
   },
   {
@@ -1227,7 +1227,7 @@
     "break_pct": 0.375,
     "form_score": 0.7,
     "form_json": "[1,0,0,1,1,1,1,1,1,0]",
-    "current_rank": 47,
+    "current_rank": 48,
     "current_rank_points": 1143,
     "matches_played": 207
   },
@@ -1243,8 +1243,8 @@
     "break_pct": 0.203,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,1,0,1,1,0,0]",
-    "current_rank": 25,
-    "current_rank_points": 1940,
+    "current_rank": 24,
+    "current_rank_points": 1980,
     "matches_played": 278
   },
   {
@@ -1275,8 +1275,8 @@
     "break_pct": 0.181,
     "form_score": 0.5,
     "form_json": "[0,1,1,1,0,0,0,1,1,0]",
-    "current_rank": 49,
-    "current_rank_points": 1075,
+    "current_rank": 41,
+    "current_rank_points": 1241,
     "matches_played": 202
   },
   {
@@ -1291,7 +1291,7 @@
     "break_pct": 0.221,
     "form_score": 0.5,
     "form_json": "[0,1,1,1,0,1,1,0,0,0]",
-    "current_rank": 22,
+    "current_rank": 23,
     "current_rank_points": 2085,
     "matches_played": 337
   },
@@ -1307,7 +1307,7 @@
     "break_pct": 0.318,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,0,1,0,0]",
-    "current_rank": 79,
+    "current_rank": 81,
     "current_rank_points": 869,
     "matches_played": 158
   },
@@ -1355,7 +1355,7 @@
     "break_pct": 0.137,
     "form_score": 0.6,
     "form_json": "[0,0,0,1,1,1,1,1,1,0]",
-    "current_rank": 50,
+    "current_rank": 49,
     "current_rank_points": 1075,
     "matches_played": 262
   },
@@ -1372,8 +1372,24 @@
     "form_score": 0.5,
     "form_json": "[1,0,1,0,1,0,0,1,1,0]",
     "current_rank": 43,
-    "current_rank_points": 1173,
+    "current_rank_points": 1223,
     "matches_played": 187
+  },
+  {
+    "player_id": "202058",
+    "name": "Thiago Agustin Tirante",
+    "tour": "ATP",
+    "elo_overall": 1650.8,
+    "elo_hard": 1553.3,
+    "elo_clay": 1583.2,
+    "elo_grass": 1486.6,
+    "hold_pct": 0.822,
+    "break_pct": 0.186,
+    "form_score": 0.5,
+    "form_json": "[0,1,1,1,1,0,0,0,0,1]",
+    "current_rank": 51,
+    "current_rank_points": 1042,
+    "matches_played": 68
   },
   {
     "player_id": "221054",
@@ -1387,7 +1403,7 @@
     "break_pct": 0.368,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,0,1,1,1,1,0]",
-    "current_rank": 106,
+    "current_rank": 107,
     "current_rank_points": 709,
     "matches_played": 156
   },
@@ -1403,8 +1419,8 @@
     "break_pct": 0.199,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,1,1,0,0,0]",
-    "current_rank": 33,
-    "current_rank_points": 1445,
+    "current_rank": 32,
+    "current_rank_points": 1520,
     "matches_played": 61
   },
   {
@@ -1419,8 +1435,8 @@
     "break_pct": 0.179,
     "form_score": 0.7,
     "form_json": "[1,1,1,1,0,1,1,0,1,0]",
-    "current_rank": 95,
-    "current_rank_points": 630,
+    "current_rank": 91,
+    "current_rank_points": 657,
     "matches_played": 146
   },
   {
@@ -1435,7 +1451,7 @@
     "break_pct": 0.19,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,1,1,0,1,0]",
-    "current_rank": 51,
+    "current_rank": 50,
     "current_rank_points": 1055,
     "matches_played": 226
   },
@@ -1452,7 +1468,7 @@
     "form_score": 0.5,
     "form_json": "[0,1,1,1,0,1,0,0,1,0]",
     "current_rank": 21,
-    "current_rank_points": 2200,
+    "current_rank_points": 2160,
     "matches_played": 175
   },
   {
@@ -1470,6 +1486,22 @@
     "current_rank": 85,
     "current_rank_points": 868,
     "matches_played": 213
+  },
+  {
+    "player_id": "111815",
+    "name": "Cameron Norrie",
+    "tour": "ATP",
+    "elo_overall": 1643,
+    "elo_hard": 1620.5,
+    "elo_clay": 1589.3,
+    "elo_grass": 1523.4,
+    "hold_pct": 0.817,
+    "break_pct": 0.214,
+    "form_score": 0.4,
+    "form_json": "[1,0,1,0,0,0,0,1,0,1]",
+    "current_rank": 53,
+    "current_rank_points": 1030,
+    "matches_played": 283
   },
   {
     "player_id": "202460",
@@ -1504,22 +1536,6 @@
     "matches_played": 148
   },
   {
-    "player_id": "144719",
-    "name": "Jaume Munar",
-    "tour": "ATP",
-    "elo_overall": 1637.7,
-    "elo_hard": 1606.4,
-    "elo_clay": 1493,
-    "elo_grass": 1491.4,
-    "hold_pct": 0.772,
-    "break_pct": 0.247,
-    "form_score": 0.6,
-    "form_json": "[1,0,1,0,1,1,1,0,1,0]",
-    "current_rank": 65,
-    "current_rank_points": 825,
-    "matches_played": 209
-  },
-  {
     "player_id": "144684",
     "name": "Alex Molcan",
     "tour": "ATP",
@@ -1531,8 +1547,8 @@
     "break_pct": 0.219,
     "form_score": 0.6,
     "form_json": "[1,1,1,0,1,1,0,0,1,0]",
-    "current_rank": 78,
-    "current_rank_points": 747,
+    "current_rank": 72,
+    "current_rank_points": 820,
     "matches_played": 105
   },
   {
@@ -1547,25 +1563,9 @@
     "break_pct": 0.201,
     "form_score": 0.5,
     "form_json": "[1,1,1,0,0,0,0,1,1,0]",
-    "current_rank": 32,
-    "current_rank_points": 1503,
+    "current_rank": 33,
+    "current_rank_points": 1510,
     "matches_played": 33
-  },
-  {
-    "player_id": "202058",
-    "name": "Thiago Agustin Tirante",
-    "tour": "ATP",
-    "elo_overall": 1634.6,
-    "elo_hard": 1539,
-    "elo_clay": 1583.2,
-    "elo_grass": 1486.6,
-    "hold_pct": 0.822,
-    "break_pct": 0.186,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,1,1,1,0,0,0,0]",
-    "current_rank": 53,
-    "current_rank_points": 1023,
-    "matches_played": 67
   },
   {
     "player_id": "211817",
@@ -1579,9 +1579,25 @@
     "break_pct": 0.353,
     "form_score": 0.5,
     "form_json": "[1,0,1,0,0,1,1,0,1,0]",
-    "current_rank": 60,
+    "current_rank": 61,
     "current_rank_points": 1033,
     "matches_played": 121
+  },
+  {
+    "player_id": "200005",
+    "name": "Ugo Humbert",
+    "tour": "ATP",
+    "elo_overall": 1632.5,
+    "elo_hard": 1622.1,
+    "elo_clay": 1475.5,
+    "elo_grass": 1544.6,
+    "hold_pct": 0.837,
+    "break_pct": 0.187,
+    "form_score": 0.3,
+    "form_json": "[0,1,0,0,0,1,0,0,0,1]",
+    "current_rank": 39,
+    "current_rank_points": 1320,
+    "matches_played": 250
   },
   {
     "player_id": "126214",
@@ -1595,8 +1611,8 @@
     "break_pct": 0.189,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,1,0,0,1,0,0]",
-    "current_rank": 30,
-    "current_rank_points": 1565,
+    "current_rank": 31,
+    "current_rank_points": 1525,
     "matches_played": 183
   },
   {
@@ -1616,22 +1632,6 @@
     "matches_played": 36
   },
   {
-    "player_id": "111815",
-    "name": "Cameron Norrie",
-    "tour": "ATP",
-    "elo_overall": 1630.4,
-    "elo_hard": 1612.3,
-    "elo_clay": 1589.3,
-    "elo_grass": 1523.4,
-    "hold_pct": 0.817,
-    "break_pct": 0.214,
-    "form_score": 0.4,
-    "form_json": "[1,1,0,1,0,0,0,0,1,0]",
-    "current_rank": 45,
-    "current_rank_points": 1145,
-    "matches_played": 282
-  },
-  {
     "player_id": "211107",
     "name": "Katie Boulter",
     "tour": "WTA",
@@ -1643,8 +1643,8 @@
     "break_pct": 0.329,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,1,1,1,0,1,0]",
-    "current_rank": 49,
-    "current_rank_points": 1115,
+    "current_rank": 50,
+    "current_rank_points": 1125,
     "matches_played": 178
   },
   {
@@ -1659,7 +1659,7 @@
     "break_pct": 0.312,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,0,1,0,1,0,0]",
-    "current_rank": 66,
+    "current_rank": 68,
     "current_rank_points": 996,
     "matches_played": 205
   },
@@ -1707,9 +1707,25 @@
     "break_pct": 0.321,
     "form_score": 0.6,
     "form_json": "[0,0,1,1,0,1,1,1,1,0]",
-    "current_rank": 53,
+    "current_rank": 54,
     "current_rank_points": 1091,
     "matches_played": 37
+  },
+  {
+    "player_id": "144719",
+    "name": "Jaume Munar",
+    "tour": "ATP",
+    "elo_overall": 1621.6,
+    "elo_hard": 1592.1,
+    "elo_clay": 1493,
+    "elo_grass": 1491.4,
+    "hold_pct": 0.772,
+    "break_pct": 0.247,
+    "form_score": 0.5,
+    "form_json": "[0,1,0,1,1,1,0,1,0,0]",
+    "current_rank": 70,
+    "current_rank_points": 825,
+    "matches_played": 210
   },
   {
     "player_id": "215872",
@@ -1723,7 +1739,7 @@
     "break_pct": 0.335,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,0,0,1,1,0]",
-    "current_rank": 44,
+    "current_rank": 45,
     "current_rank_points": 1164,
     "matches_played": 139
   },
@@ -1739,7 +1755,7 @@
     "break_pct": 0.347,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,0,1,1,1,0]",
-    "current_rank": 76,
+    "current_rank": 78,
     "current_rank_points": 895,
     "matches_played": 28
   },
@@ -1771,25 +1787,9 @@
     "break_pct": 0.245,
     "form_score": 0.8,
     "form_json": "[1,1,1,1,1,0,1,1,1,0]",
-    "current_rank": 71,
+    "current_rank": 73,
     "current_rank_points": 937,
     "matches_played": 27
-  },
-  {
-    "player_id": "200005",
-    "name": "Ugo Humbert",
-    "tour": "ATP",
-    "elo_overall": 1616.8,
-    "elo_hard": 1613,
-    "elo_clay": 1475.5,
-    "elo_grass": 1544.6,
-    "hold_pct": 0.837,
-    "break_pct": 0.187,
-    "form_score": 0.2,
-    "form_json": "[0,0,1,0,0,0,1,0,0,0]",
-    "current_rank": 38,
-    "current_rank_points": 1295,
-    "matches_played": 249
   },
   {
     "player_id": "210338",
@@ -1803,7 +1803,7 @@
     "break_pct": 0.162,
     "form_score": 0.8,
     "form_json": "[1,1,1,1,1,1,1,0,1,0]",
-    "current_rank": 44,
+    "current_rank": 47,
     "current_rank_points": 1146,
     "matches_played": 20
   },
@@ -1835,8 +1835,8 @@
     "break_pct": 0.131,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,0,1,1,0,0]",
-    "current_rank": 68,
-    "current_rank_points": 820,
+    "current_rank": 58,
+    "current_rank_points": 920,
     "matches_played": 220
   },
   {
@@ -1851,8 +1851,8 @@
     "break_pct": 0.188,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,0,1,1,0,0]",
-    "current_rank": 40,
-    "current_rank_points": 1226,
+    "current_rank": 44,
+    "current_rank_points": 1220,
     "matches_played": 156
   },
   {
@@ -1867,8 +1867,8 @@
     "break_pct": 0.13,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,1,0,0,1,0,0]",
-    "current_rank": 46,
-    "current_rank_points": 1127,
+    "current_rank": 45,
+    "current_rank_points": 1214,
     "matches_played": 145
   },
   {
@@ -1886,6 +1886,22 @@
     "current_rank": 42,
     "current_rank_points": 1223,
     "matches_played": 48
+  },
+  {
+    "player_id": "202663",
+    "name": "Magda Linette",
+    "tour": "WTA",
+    "elo_overall": 1609.5,
+    "elo_hard": 1552,
+    "elo_clay": 1578.1,
+    "elo_grass": 1496.2,
+    "hold_pct": 0.687,
+    "break_pct": 0.3,
+    "form_score": 0.7,
+    "form_json": "[0,1,0,1,0,1,1,1,1,1]",
+    "current_rank": 43,
+    "current_rank_points": 1176,
+    "matches_played": 255
   },
   {
     "player_id": "106423",
@@ -1947,7 +1963,7 @@
     "break_pct": 0.589,
     "form_score": 0.6,
     "form_json": "[1,0,0,1,1,1,0,1,1,0]",
-    "current_rank": 138,
+    "current_rank": 139,
     "current_rank_points": 535,
     "matches_played": 20
   },
@@ -1963,8 +1979,8 @@
     "break_pct": 0.412,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,0,1,1,0]",
-    "current_rank": 83,
-    "current_rank_points": 858,
+    "current_rank": 91,
+    "current_rank_points": 836,
     "matches_played": 28
   },
   {
@@ -1979,8 +1995,8 @@
     "break_pct": 0.218,
     "form_score": 0.4,
     "form_json": "[0,1,1,1,1,0,0,0,0,0]",
-    "current_rank": 37,
-    "current_rank_points": 1295,
+    "current_rank": 40,
+    "current_rank_points": 1280,
     "matches_played": 244
   },
   {
@@ -1995,7 +2011,7 @@
     "break_pct": 0.321,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,1,0,1,0,0]",
-    "current_rank": 89,
+    "current_rank": 94,
     "current_rank_points": 831,
     "matches_played": 140
   },
@@ -2011,25 +2027,9 @@
     "break_pct": 0.353,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,1,0,0,1,0]",
-    "current_rank": 64,
+    "current_rank": 66,
     "current_rank_points": 1000,
     "matches_played": 229
-  },
-  {
-    "player_id": "105870",
-    "name": "Yannick Hanfmann",
-    "tour": "ATP",
-    "elo_overall": 1599.9,
-    "elo_hard": 1539.8,
-    "elo_clay": 1580,
-    "elo_grass": 1482.4,
-    "hold_pct": 0.81,
-    "break_pct": 0.194,
-    "form_score": 0.4,
-    "form_json": "[1,0,1,1,0,1,0,0,0,0]",
-    "current_rank": 58,
-    "current_rank_points": 923,
-    "matches_played": 171
   },
   {
     "player_id": "220520",
@@ -2043,8 +2043,8 @@
     "break_pct": 0.337,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,1,0,1,0,0,0]",
-    "current_rank": 110,
-    "current_rank_points": 689,
+    "current_rank": 109,
+    "current_rank_points": 699,
     "matches_played": 104
   },
   {
@@ -2075,7 +2075,7 @@
     "break_pct": 0.2,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,1,0,0,1,0,0]",
-    "current_rank": 65,
+    "current_rank": 67,
     "current_rank_points": 999,
     "matches_played": 23
   },
@@ -2091,8 +2091,8 @@
     "break_pct": 0.115,
     "form_score": 0.6,
     "form_json": "[1,1,0,0,1,1,0,1,1,0]",
-    "current_rank": 192,
-    "current_rank_points": 307,
+    "current_rank": 143,
+    "current_rank_points": 403,
     "matches_played": 16
   },
   {
@@ -2123,7 +2123,7 @@
     "break_pct": 0.396,
     "form_score": 0.3,
     "form_json": "[1,0,1,0,0,0,0,1,0,0]",
-    "current_rank": 69,
+    "current_rank": 71,
     "current_rank_points": 953,
     "matches_played": 176
   },
@@ -2140,7 +2140,7 @@
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,0,1,0,1,0]",
     "current_rank": 36,
-    "current_rank_points": 1341,
+    "current_rank_points": 1342,
     "matches_played": 54
   },
   {
@@ -2155,7 +2155,7 @@
     "break_pct": 0.37,
     "form_score": 0.6,
     "form_json": "[1,0,0,1,1,0,1,1,1,0]",
-    "current_rank": 119,
+    "current_rank": 124,
     "current_rank_points": 645,
     "matches_played": 13
   },
@@ -2208,38 +2208,6 @@
     "matches_played": 21
   },
   {
-    "player_id": "202663",
-    "name": "Magda Linette",
-    "tour": "WTA",
-    "elo_overall": 1593.5,
-    "elo_hard": 1539,
-    "elo_clay": 1578.1,
-    "elo_grass": 1496.2,
-    "hold_pct": 0.687,
-    "break_pct": 0.3,
-    "form_score": 0.6,
-    "form_json": "[0,0,1,0,1,0,1,1,1,1]",
-    "current_rank": 68,
-    "current_rank_points": 956,
-    "matches_played": 254
-  },
-  {
-    "player_id": "222145",
-    "name": "Janice Tjen",
-    "tour": "WTA",
-    "elo_overall": 1592.9,
-    "elo_hard": 1565.8,
-    "elo_clay": 1484,
-    "elo_grass": 1468.4,
-    "hold_pct": 0.723,
-    "break_pct": 0.282,
-    "form_score": 0.7,
-    "form_json": "[1,1,0,0,1,0,1,1,1,1]",
-    "current_rank": 75,
-    "current_rank_points": 900,
-    "matches_played": 65
-  },
-  {
     "player_id": "238184",
     "name": "Tereza Valentova",
     "tour": "WTA",
@@ -2267,8 +2235,8 @@
     "break_pct": 0.309,
     "form_score": 0.7,
     "form_json": "[0,0,1,1,0,1,1,1,1,1]",
-    "current_rank": 102,
-    "current_rank_points": 743,
+    "current_rank": 69,
+    "current_rank_points": 972,
     "matches_played": 96
   },
   {
@@ -2299,8 +2267,8 @@
     "break_pct": 0.159,
     "form_score": 0.5,
     "form_json": "[1,0,1,0,0,1,1,0,1,0]",
-    "current_rank": 63,
-    "current_rank_points": 837,
+    "current_rank": 73,
+    "current_rank_points": 812,
     "matches_played": 198
   },
   {
@@ -2331,8 +2299,8 @@
     "break_pct": 0.33,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,1,0,1,1,0,0]",
-    "current_rank": 147,
-    "current_rank_points": 506,
+    "current_rank": 150,
+    "current_rank_points": 507,
     "matches_played": 110
   },
   {
@@ -2352,22 +2320,6 @@
     "matches_played": 153
   },
   {
-    "player_id": "207830",
-    "name": "Tomas Machac",
-    "tour": "ATP",
-    "elo_overall": 1590,
-    "elo_hard": 1562.4,
-    "elo_clay": 1575,
-    "elo_grass": 1494.5,
-    "hold_pct": 0.802,
-    "break_pct": 0.203,
-    "form_score": 0.3,
-    "form_json": "[1,1,0,0,0,0,0,1,0,0]",
-    "current_rank": 69,
-    "current_rank_points": 819,
-    "matches_played": 158
-  },
-  {
     "player_id": "266671",
     "name": "Laura Samson",
     "tour": "WTA",
@@ -2379,8 +2331,8 @@
     "break_pct": 0.542,
     "form_score": 0.6,
     "form_json": "[1,1,0,0,0,1,1,1,1,0]",
-    "current_rank": 116,
-    "current_rank_points": 658,
+    "current_rank": 119,
+    "current_rank_points": 672,
     "matches_played": 23
   },
   {
@@ -2395,8 +2347,8 @@
     "break_pct": 0.359,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,1,1,0,1,0]",
-    "current_rank": 90,
-    "current_rank_points": 817,
+    "current_rank": 92,
+    "current_rank_points": 832,
     "matches_played": 95
   },
   {
@@ -2411,9 +2363,25 @@
     "break_pct": 0.207,
     "form_score": 0.4,
     "form_json": "[0,1,1,1,0,1,0,0,0,0]",
-    "current_rank": 134,
+    "current_rank": 135,
     "current_rank_points": 422,
     "matches_played": 228
+  },
+  {
+    "player_id": "105870",
+    "name": "Yannick Hanfmann",
+    "tour": "ATP",
+    "elo_overall": 1589.2,
+    "elo_hard": 1532.1,
+    "elo_clay": 1580,
+    "elo_grass": 1482.4,
+    "hold_pct": 0.81,
+    "break_pct": 0.194,
+    "form_score": 0.3,
+    "form_json": "[0,1,1,0,1,0,0,0,0,0]",
+    "current_rank": 67,
+    "current_rank_points": 835,
+    "matches_played": 172
   },
   {
     "player_id": "105173",
@@ -2427,7 +2395,7 @@
     "break_pct": 0.189,
     "form_score": 0.6,
     "form_json": "[0,1,1,0,1,1,0,1,1,0]",
-    "current_rank": 59,
+    "current_rank": 61,
     "current_rank_points": 898,
     "matches_played": 243
   },
@@ -2443,7 +2411,7 @@
     "break_pct": 0.325,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,0,1,0,1,0]",
-    "current_rank": 50,
+    "current_rank": 51,
     "current_rank_points": 1110,
     "matches_played": 201
   },
@@ -2507,7 +2475,7 @@
     "break_pct": 0.148,
     "form_score": 0.5,
     "form_json": "[1,0,1,1,0,0,0,1,1,0]",
-    "current_rank": 73,
+    "current_rank": 75,
     "current_rank_points": 787,
     "matches_played": 73
   },
@@ -2539,7 +2507,7 @@
     "break_pct": 0.152,
     "form_score": 0.3,
     "form_json": "[0,0,0,0,0,1,1,0,1,0]",
-    "current_rank": 126,
+    "current_rank": 125,
     "current_rank_points": 448,
     "matches_played": 192
   },
@@ -2555,7 +2523,7 @@
     "break_pct": 0.36,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,1,0,1,0,1,0]",
-    "current_rank": 92,
+    "current_rank": 95,
     "current_rank_points": 814,
     "matches_played": 55
   },
@@ -2587,8 +2555,8 @@
     "break_pct": 0.366,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,0,1,0,1,1,0]",
-    "current_rank": 67,
-    "current_rank_points": 987,
+    "current_rank": 64,
+    "current_rank_points": 1011,
     "matches_played": 90
   },
   {
@@ -2603,7 +2571,7 @@
     "break_pct": 0.295,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,0,0,1,0]",
-    "current_rank": 80,
+    "current_rank": 82,
     "current_rank_points": 868,
     "matches_played": 134
   },
@@ -2651,8 +2619,8 @@
     "break_pct": 0.353,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,0,1,0,1,1,0]",
-    "current_rank": 101,
-    "current_rank_points": 769,
+    "current_rank": 90,
+    "current_rank_points": 839,
     "matches_played": 139
   },
   {
@@ -2699,7 +2667,7 @@
     "break_pct": 0.152,
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,1,0,1,0]",
-    "current_rank": 87,
+    "current_rank": 86,
     "current_rank_points": 681,
     "matches_played": 90
   },
@@ -2731,7 +2699,7 @@
     "break_pct": 0.335,
     "form_score": 0.9,
     "form_json": "[1,1,1,1,1,1,1,1,1,0]",
-    "current_rank": 98,
+    "current_rank": 99,
     "current_rank_points": 778,
     "matches_played": 59
   },
@@ -2747,9 +2715,25 @@
     "break_pct": 0.543,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,0,0,1,1,0]",
-    "current_rank": 140,
+    "current_rank": 143,
     "current_rank_points": 525,
     "matches_played": 13
+  },
+  {
+    "player_id": "222145",
+    "name": "Janice Tjen",
+    "tour": "WTA",
+    "elo_overall": 1576.9,
+    "elo_hard": 1552.9,
+    "elo_clay": 1484,
+    "elo_grass": 1468.4,
+    "hold_pct": 0.723,
+    "break_pct": 0.282,
+    "form_score": 0.6,
+    "form_json": "[1,0,0,1,0,1,1,1,1,0]",
+    "current_rank": 60,
+    "current_rank_points": 1033,
+    "matches_played": 66
   },
   {
     "player_id": "126504",
@@ -2763,7 +2747,7 @@
     "break_pct": 0.246,
     "form_score": 0.6,
     "form_json": "[0,1,1,0,1,1,1,0,1,0]",
-    "current_rank": 140,
+    "current_rank": 141,
     "current_rank_points": 404,
     "matches_played": 14
   },
@@ -2795,7 +2779,7 @@
     "break_pct": 0.395,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,1,0,1,0,0]",
-    "current_rank": 100,
+    "current_rank": 104,
     "current_rank_points": 769,
     "matches_played": 116
   },
@@ -2896,20 +2880,20 @@
     "matches_played": 4
   },
   {
-    "player_id": "209226",
-    "name": "Adolfo Daniel Vallejo",
+    "player_id": "207830",
+    "name": "Tomas Machac",
     "tour": "ATP",
-    "elo_overall": 1571,
-    "elo_hard": 1526.6,
-    "elo_clay": 1536.4,
-    "elo_grass": 1475.7,
-    "hold_pct": 0.767,
-    "break_pct": 0.255,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,0,0,1,0,1,1,0]",
-    "current_rank": 56,
-    "current_rank_points": 947,
-    "matches_played": 28
+    "elo_overall": 1570.8,
+    "elo_hard": 1549.6,
+    "elo_clay": 1575,
+    "elo_grass": 1494.5,
+    "hold_pct": 0.802,
+    "break_pct": 0.203,
+    "form_score": 0.2,
+    "form_json": "[1,0,0,0,0,0,1,0,0,0]",
+    "current_rank": 60,
+    "current_rank_points": 899,
+    "matches_played": 159
   },
   {
     "player_id": "260765",
@@ -2939,7 +2923,7 @@
     "break_pct": 0.217,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,1,0,0,1,0,0]",
-    "current_rank": 92,
+    "current_rank": 89,
     "current_rank_points": 663,
     "matches_played": 49
   },
@@ -3003,7 +2987,7 @@
     "break_pct": 0.19,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,0,1,1,0,1,0]",
-    "current_rank": 61,
+    "current_rank": 63,
     "current_rank_points": 875,
     "matches_played": 169
   },
@@ -3051,7 +3035,7 @@
     "break_pct": 0.315,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,1,1,0,0,0]",
-    "current_rank": 46,
+    "current_rank": 47,
     "current_rank_points": 1146,
     "matches_played": 113
   },
@@ -3067,9 +3051,25 @@
     "break_pct": 0.227,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,0,0,1,1,0]",
-    "current_rank": 94,
+    "current_rank": 93,
     "current_rank_points": 638,
     "matches_played": 127
+  },
+  {
+    "player_id": "207678",
+    "name": "Juan Manuel Cerundolo",
+    "tour": "ATP",
+    "elo_overall": 1562.7,
+    "elo_hard": 1495.3,
+    "elo_clay": 1520.4,
+    "elo_grass": 1491.8,
+    "hold_pct": 0.718,
+    "break_pct": 0.2,
+    "form_score": 0.4,
+    "form_json": "[1,1,0,0,1,0,0,0,0,1]",
+    "current_rank": 54,
+    "current_rank_points": 1015,
+    "matches_played": 89
   },
   {
     "player_id": "105575",
@@ -3147,7 +3147,7 @@
     "break_pct": 0.162,
     "form_score": 0.6,
     "form_json": "[0,1,0,1,1,1,1,0,1,0]",
-    "current_rank": 64,
+    "current_rank": 68,
     "current_rank_points": 831,
     "matches_played": 66
   },
@@ -3179,7 +3179,7 @@
     "break_pct": 0.35,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,1,1,0,0,0,0]",
-    "current_rank": 72,
+    "current_rank": 74,
     "current_rank_points": 931,
     "matches_played": 166
   },
@@ -3227,7 +3227,7 @@
     "break_pct": 0.191,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,1,0,1,0,0]",
-    "current_rank": 71,
+    "current_rank": 74,
     "current_rank_points": 807,
     "matches_played": 137
   },
@@ -3243,8 +3243,8 @@
     "break_pct": 0.349,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,0,0,1,0]",
-    "current_rank": 104,
-    "current_rank_points": 732,
+    "current_rank": 106,
+    "current_rank_points": 730,
     "matches_played": 50
   },
   {
@@ -3292,7 +3292,7 @@
     "form_score": 0.5,
     "form_json": "[0,0,1,0,1,1,1,1,0,0]",
     "current_rank": 137,
-    "current_rank_points": 536,
+    "current_rank_points": 558,
     "matches_played": 40
   },
   {
@@ -3355,8 +3355,8 @@
     "break_pct": 0.162,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,1,1,0,1,0]",
-    "current_rank": 80,
-    "current_rank_points": 741,
+    "current_rank": 85,
+    "current_rank_points": 684,
     "matches_played": 23
   },
   {
@@ -3419,8 +3419,8 @@
     "break_pct": 0.42,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 87,
-    "current_rank_points": 835,
+    "current_rank": 88,
+    "current_rank_points": 845,
     "matches_played": 46
   },
   {
@@ -3435,8 +3435,8 @@
     "break_pct": 0.196,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,1,1,0,0]",
-    "current_rank": 47,
-    "current_rank_points": 1105,
+    "current_rank": 34,
+    "current_rank_points": 1492,
     "matches_played": 87
   },
   {
@@ -3456,20 +3456,20 @@
     "matches_played": 5
   },
   {
-    "player_id": "105902",
-    "name": "James Duckworth",
+    "player_id": "209226",
+    "name": "Adolfo Daniel Vallejo",
     "tour": "ATP",
-    "elo_overall": 1555.4,
-    "elo_hard": 1496.7,
-    "elo_clay": 1441.1,
-    "elo_grass": 1479.5,
-    "hold_pct": 0.804,
-    "break_pct": 0.129,
-    "form_score": 0.6,
-    "form_json": "[1,1,1,0,1,0,0,1,1,0]",
-    "current_rank": 70,
-    "current_rank_points": 814,
-    "matches_played": 107
+    "elo_overall": 1555.3,
+    "elo_hard": 1517.5,
+    "elo_clay": 1536.4,
+    "elo_grass": 1475.7,
+    "hold_pct": 0.767,
+    "break_pct": 0.255,
+    "form_score": 0.4,
+    "form_json": "[0,1,0,0,1,0,1,1,0,0]",
+    "current_rank": 56,
+    "current_rank_points": 959,
+    "matches_played": 29
   },
   {
     "player_id": "220435",
@@ -3483,8 +3483,8 @@
     "break_pct": 0.318,
     "form_score": 0.4,
     "form_json": "[0,0,1,0,0,0,1,1,1,0]",
-    "current_rank": 107,
-    "current_rank_points": 704,
+    "current_rank": 102,
+    "current_rank_points": 772,
     "matches_played": 65
   },
   {
@@ -3531,8 +3531,8 @@
     "break_pct": 0.233,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,0,1,1,1,0]",
-    "current_rank": 339,
-    "current_rank_points": 192,
+    "current_rank": 133,
+    "current_rank_points": 584,
     "matches_played": 50
   },
   {
@@ -3563,7 +3563,7 @@
     "break_pct": 0.168,
     "form_score": 0.3,
     "form_json": "[1,1,0,1,0,0,0,0,0,0]",
-    "current_rank": 77,
+    "current_rank": 80,
     "current_rank_points": 751,
     "matches_played": 97
   },
@@ -3632,22 +3632,6 @@
     "matches_played": 10
   },
   {
-    "player_id": "207678",
-    "name": "Juan Manuel Cerundolo",
-    "tour": "ATP",
-    "elo_overall": 1550.6,
-    "elo_hard": 1482.5,
-    "elo_clay": 1520.4,
-    "elo_grass": 1491.8,
-    "hold_pct": 0.718,
-    "break_pct": 0.2,
-    "form_score": 0.3,
-    "form_json": "[0,1,1,0,0,1,0,0,0,0]",
-    "current_rank": 54,
-    "current_rank_points": 1000,
-    "matches_played": 88
-  },
-  {
     "player_id": "105633",
     "name": "Mohamed Safwat",
     "tour": "ATP",
@@ -3691,8 +3675,8 @@
     "break_pct": 0.2,
     "form_score": 0.67,
     "form_json": "[1,0,1,1,1,0]",
-    "current_rank": 136,
-    "current_rank_points": 548,
+    "current_rank": 127,
+    "current_rank_points": 629,
     "matches_played": 6
   },
   {
@@ -3755,8 +3739,8 @@
     "break_pct": 0.405,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 149,
-    "current_rank_points": 498,
+    "current_rank": 321,
+    "current_rank_points": 212,
     "matches_played": 113
   },
   {
@@ -3771,8 +3755,8 @@
     "break_pct": 0.177,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,0,0,1,0,0,0]",
-    "current_rank": 96,
-    "current_rank_points": 629,
+    "current_rank": 97,
+    "current_rank_points": 613,
     "matches_played": 124
   },
   {
@@ -3787,7 +3771,7 @@
     "break_pct": 0.212,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0,1,1,1,0,0]",
-    "current_rank": 82,
+    "current_rank": 83,
     "current_rank_points": 859,
     "matches_played": 23
   },
@@ -3819,7 +3803,7 @@
     "break_pct": 0.293,
     "form_score": 0.5,
     "form_json": "[1,0,1,1,1,0,0,0,1,0]",
-    "current_rank": 74,
+    "current_rank": 76,
     "current_rank_points": 913,
     "matches_played": 164
   },
@@ -3835,8 +3819,8 @@
     "break_pct": 0.332,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,0,0,1,1,0]",
-    "current_rank": 81,
-    "current_rank_points": 862,
+    "current_rank": 77,
+    "current_rank_points": 898,
     "matches_played": 64
   },
   {
@@ -3915,7 +3899,7 @@
     "break_pct": 0.427,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0,1,1,0,1,0]",
-    "current_rank": 128,
+    "current_rank": 131,
     "current_rank_points": 597,
     "matches_played": 20
   },
@@ -3936,6 +3920,22 @@
     "matches_played": 114
   },
   {
+    "player_id": "105902",
+    "name": "James Duckworth",
+    "tour": "ATP",
+    "elo_overall": 1542.8,
+    "elo_hard": 1488.6,
+    "elo_clay": 1441.1,
+    "elo_grass": 1479.5,
+    "hold_pct": 0.804,
+    "break_pct": 0.129,
+    "form_score": 0.5,
+    "form_json": "[1,1,0,1,0,0,1,1,0,0]",
+    "current_rank": 76,
+    "current_rank_points": 774,
+    "matches_played": 108
+  },
+  {
     "player_id": "223168",
     "name": "Mary Stoiana",
     "tour": "WTA",
@@ -3947,8 +3947,8 @@
     "break_pct": 0.252,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 114,
-    "current_rank_points": 673,
+    "current_rank": 116,
+    "current_rank_points": 676,
     "matches_played": 18
   },
   {
@@ -3963,7 +3963,7 @@
     "break_pct": 0.394,
     "form_score": 0.5,
     "form_json": "[0,0,1,0,1,1,0,1,1,0]",
-    "current_rank": 144,
+    "current_rank": 149,
     "current_rank_points": 512,
     "matches_played": 95
   },
@@ -3979,7 +3979,7 @@
     "break_pct": 0.352,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,1,0,0,0]",
-    "current_rank": 61,
+    "current_rank": 62,
     "current_rank_points": 1032,
     "matches_played": 91
   },
@@ -4043,7 +4043,7 @@
     "break_pct": 0.365,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,1,1,0,0,0]",
-    "current_rank": 54,
+    "current_rank": 55,
     "current_rank_points": 1090,
     "matches_played": 76
   },
@@ -4224,6 +4224,22 @@
     "matches_played": 17
   },
   {
+    "player_id": "127339",
+    "name": "Borna Gojo",
+    "tour": "ATP",
+    "elo_overall": 1538.2,
+    "elo_hard": 1552.7,
+    "elo_clay": 1442.3,
+    "elo_grass": 1475.3,
+    "hold_pct": 0.849,
+    "break_pct": 0.156,
+    "form_score": 0.3,
+    "form_json": "[0,1,0,0,0,0,0,1,0,1]",
+    "current_rank": 134,
+    "current_rank_points": 423,
+    "matches_played": 40
+  },
+  {
     "player_id": "209284",
     "name": "Elmer Moller",
     "tour": "ATP",
@@ -4331,8 +4347,8 @@
     "break_pct": 0.192,
     "form_score": 0.3,
     "form_json": "[0,0,1,1,1,0,0,0,0,0]",
-    "current_rank": 31,
-    "current_rank_points": 1550,
+    "current_rank": 29,
+    "current_rank_points": 1625,
     "matches_played": 244
   },
   {
@@ -4347,8 +4363,8 @@
     "break_pct": 0.485,
     "form_score": 0.56,
     "form_json": "[0,0,1,1,1,1,0,1,0]",
-    "current_rank": 127,
-    "current_rank_points": 598,
+    "current_rank": 121,
+    "current_rank_points": 659,
     "matches_played": 9
   },
   {
@@ -4411,7 +4427,7 @@
     "break_pct": 0.083,
     "form_score": 0.5,
     "form_json": "[0,1,1,1,0,0,0,1,1,0]",
-    "current_rank": 85,
+    "current_rank": 84,
     "current_rank_points": 692,
     "matches_played": 11
   },
@@ -4443,7 +4459,7 @@
     "break_pct": 0.203,
     "form_score": 0.3,
     "form_json": "[1,0,1,0,0,1,0,0,0,0]",
-    "current_rank": 74,
+    "current_rank": 77,
     "current_rank_points": 773,
     "matches_played": 132
   },
@@ -4475,7 +4491,7 @@
     "break_pct": 0.211,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 144,
+    "current_rank": 145,
     "current_rank_points": 400,
     "matches_played": 168
   },
@@ -4635,7 +4651,7 @@
     "break_pct": 0.327,
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,0,1,1,1,0]",
-    "current_rank": 134,
+    "current_rank": 136,
     "current_rank_points": 560,
     "matches_played": 171
   },
@@ -4699,8 +4715,8 @@
     "break_pct": 0.16,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0,1,0,0,1,0]",
-    "current_rank": 66,
-    "current_rank_points": 824,
+    "current_rank": 62,
+    "current_rank_points": 879,
     "matches_played": 75
   },
   {
@@ -4747,8 +4763,8 @@
     "break_pct": 0.16,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,1,0,0,1,0,0]",
-    "current_rank": 106,
-    "current_rank_points": 571,
+    "current_rank": 115,
+    "current_rank_points": 511,
     "matches_played": 248
   },
   {
@@ -4779,7 +4795,7 @@
     "break_pct": 0.16,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,0,1,1,0,1,0]",
-    "current_rank": 93,
+    "current_rank": 92,
     "current_rank_points": 646,
     "matches_played": 67
   },
@@ -4795,8 +4811,8 @@
     "break_pct": 0.176,
     "form_score": 0.5,
     "form_json": "[1,1,0,1,0,1,1,0,0,0]",
-    "current_rank": 79,
-    "current_rank_points": 746,
+    "current_rank": 81,
+    "current_rank_points": 732,
     "matches_played": 27
   },
   {
@@ -4811,7 +4827,7 @@
     "break_pct": 0.301,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,1,0,0,0,0,0]",
-    "current_rank": 95,
+    "current_rank": 97,
     "current_rank_points": 802,
     "matches_played": 153
   },
@@ -4859,7 +4875,7 @@
     "break_pct": 0.346,
     "form_score": 0.4,
     "form_json": "[0,1,1,1,0,0,0,0,1,0]",
-    "current_rank": 43,
+    "current_rank": 44,
     "current_rank_points": 1176,
     "matches_played": 152
   },
@@ -4875,8 +4891,8 @@
     "break_pct": 0.184,
     "form_score": 0.4,
     "form_json": "[1,0,1,1,0,0,1,0,0,0]",
-    "current_rank": 83,
-    "current_rank_points": 693,
+    "current_rank": 59,
+    "current_rank_points": 909,
     "matches_played": 127
   },
   {
@@ -5003,8 +5019,8 @@
     "break_pct": 0.21,
     "form_score": 0.2,
     "form_json": "[0,0,0,0,1,0,0,0,1,0]",
-    "current_rank": 62,
-    "current_rank_points": 844,
+    "current_rank": 69,
+    "current_rank_points": 828,
     "matches_played": 75
   },
   {
@@ -5019,8 +5035,8 @@
     "break_pct": 0.34,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,0,1,0,0,0,0]",
-    "current_rank": 62,
-    "current_rank_points": 1022,
+    "current_rank": 70,
+    "current_rank_points": 957,
     "matches_played": 39
   },
   {
@@ -5067,7 +5083,7 @@
     "break_pct": 0.318,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,1,0,1,0,0]",
-    "current_rank": 99,
+    "current_rank": 103,
     "current_rank_points": 770,
     "matches_played": 182
   },
@@ -5115,8 +5131,8 @@
     "break_pct": 0.148,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,0,1,0,1,0,0]",
-    "current_rank": 142,
-    "current_rank_points": 403,
+    "current_rank": 118,
+    "current_rank_points": 496,
     "matches_played": 40
   },
   {
@@ -5131,7 +5147,7 @@
     "break_pct": 0.155,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,0,1,0,0,1,0]",
-    "current_rank": 75,
+    "current_rank": 78,
     "current_rank_points": 759,
     "matches_played": 47
   },
@@ -5163,7 +5179,7 @@
     "break_pct": 0.439,
     "form_score": 0.3,
     "form_json": "[1,1,0,0,1,0,0,0,0,0]",
-    "current_rank": 77,
+    "current_rank": 79,
     "current_rank_points": 886,
     "matches_played": 33
   },
@@ -5179,8 +5195,8 @@
     "break_pct": 0.191,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,0,1,0,0,0]",
-    "current_rank": 36,
-    "current_rank_points": 1311,
+    "current_rank": 38,
+    "current_rank_points": 1321,
     "matches_played": 163
   },
   {
@@ -5403,8 +5419,8 @@
     "break_pct": 0.185,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,1,0,1,0,0]",
-    "current_rank": 101,
-    "current_rank_points": 590,
+    "current_rank": 99,
+    "current_rank_points": 604,
     "matches_played": 14
   },
   {
@@ -5467,7 +5483,7 @@
     "break_pct": 0.231,
     "form_score": 0.3,
     "form_json": "[0,0,0,0,1,0,0,1,1,0]",
-    "current_rank": 111,
+    "current_rank": 108,
     "current_rank_points": 540,
     "matches_played": 171
   },
@@ -5483,7 +5499,7 @@
     "break_pct": 0.336,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,0,1,1,0]",
-    "current_rank": 113,
+    "current_rank": 117,
     "current_rank_points": 675,
     "matches_played": 141
   },
@@ -5531,8 +5547,8 @@
     "break_pct": 0.293,
     "form_score": 0.5,
     "form_json": "[1,1,1,0,1,1,0,0,0,0]",
-    "current_rank": 76,
-    "current_rank_points": 754,
+    "current_rank": 79,
+    "current_rank_points": 752,
     "matches_played": 38
   },
   {
@@ -5563,8 +5579,8 @@
     "break_pct": 0.255,
     "form_score": 0.4,
     "form_json": "[1,0,0,0,1,1,0,1,0,0]",
-    "current_rank": 119,
-    "current_rank_points": 494,
+    "current_rank": 112,
+    "current_rank_points": 519,
     "matches_played": 29
   },
   {
@@ -5947,8 +5963,8 @@
     "break_pct": 0.285,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,1,0,0,0,0]",
-    "current_rank": 56,
-    "current_rank_points": 1085,
+    "current_rank": 65,
+    "current_rank_points": 1006,
     "matches_played": 119
   },
   {
@@ -6078,22 +6094,6 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 74
-  },
-  {
-    "player_id": "127339",
-    "name": "Borna Gojo",
-    "tour": "ATP",
-    "elo_overall": 1519,
-    "elo_hard": 1540,
-    "elo_clay": 1442.3,
-    "elo_grass": 1475.3,
-    "hold_pct": 0.849,
-    "break_pct": 0.156,
-    "form_score": 0.2,
-    "form_json": "[0,0,1,0,0,0,0,0,1,0]",
-    "current_rank": 133,
-    "current_rank_points": 423,
-    "matches_played": 39
   },
   {
     "player_id": "126952",
@@ -6395,7 +6395,7 @@
     "break_pct": 0.224,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,0,1,1,0,0]",
-    "current_rank": 141,
+    "current_rank": 142,
     "current_rank_points": 403,
     "matches_played": 18
   },
@@ -6411,8 +6411,8 @@
     "break_pct": 0.29,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,0,0,1,1,0]",
-    "current_rank": 112,
-    "current_rank_points": 679,
+    "current_rank": 115,
+    "current_rank_points": 682,
     "matches_played": 74
   },
   {
@@ -6619,8 +6619,8 @@
     "break_pct": 0.208,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,1,0,0,0]",
-    "current_rank": 111,
-    "current_rank_points": 688,
+    "current_rank": 113,
+    "current_rank_points": 690,
     "matches_played": 20
   },
   {
@@ -6667,8 +6667,8 @@
     "break_pct": 0.2,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0]",
-    "current_rank": 126,
-    "current_rank_points": 601,
+    "current_rank": 128,
+    "current_rank_points": 622,
     "matches_played": 5
   },
   {
@@ -6843,8 +6843,8 @@
     "break_pct": 0.222,
     "form_score": 0.6,
     "form_json": "[1,1,1,0,1,1,1,0,0,0]",
-    "current_rank": 99,
-    "current_rank_points": 596,
+    "current_rank": 111,
+    "current_rank_points": 521,
     "matches_played": 14
   },
   {
@@ -6923,8 +6923,8 @@
     "break_pct": 0.346,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,0,0,1,1,1,0]",
-    "current_rank": 105,
-    "current_rank_points": 720,
+    "current_rank": 101,
+    "current_rank_points": 776,
     "matches_played": 173
   },
   {
@@ -7003,8 +7003,8 @@
     "break_pct": 0.315,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,0,0,1,1,0]",
-    "current_rank": 148,
-    "current_rank_points": 503,
+    "current_rank": 140,
+    "current_rank_points": 531,
     "matches_played": 13
   },
   {
@@ -7084,7 +7084,7 @@
     "form_score": 0.3,
     "form_json": "[1,0,1,0,1,0,0,0,0,0]",
     "current_rank": 52,
-    "current_rank_points": 1044,
+    "current_rank_points": 1040,
     "matches_played": 262
   },
   {
@@ -7275,7 +7275,7 @@
     "break_pct": 0.17,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,1,0,1,0,0]",
-    "current_rank": 135,
+    "current_rank": 138,
     "current_rank_points": 415,
     "matches_played": 77
   },
@@ -7323,7 +7323,7 @@
     "break_pct": 0.13,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,0,0,1,1,0,0]",
-    "current_rank": 122,
+    "current_rank": 121,
     "current_rank_points": 484,
     "matches_played": 45
   },
@@ -7404,7 +7404,7 @@
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,1,0,0]",
     "current_rank": 108,
-    "current_rank_points": 699,
+    "current_rank_points": 702,
     "matches_played": 8
   },
   {
@@ -7419,8 +7419,8 @@
     "break_pct": 0.2,
     "form_score": 0.33,
     "form_json": "[0,0,1,1,0,0,1,0,0]",
-    "current_rank": 97,
-    "current_rank_points": 625,
+    "current_rank": 95,
+    "current_rank_points": 624,
     "matches_played": 9
   },
   {
@@ -7563,8 +7563,8 @@
     "break_pct": 0.309,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,0,1,0,0,0,0]",
-    "current_rank": 109,
-    "current_rank_points": 697,
+    "current_rank": 100,
+    "current_rank_points": 777,
     "matches_played": 114
   },
   {
@@ -7691,7 +7691,7 @@
     "break_pct": 0.389,
     "form_score": 0.4,
     "form_json": "[1,0,0,1,0,0,1,1,0,0]",
-    "current_rank": 115,
+    "current_rank": 118,
     "current_rank_points": 672,
     "matches_played": 41
   },
@@ -7755,8 +7755,8 @@
     "break_pct": 0.235,
     "form_score": 0.5,
     "form_json": "[0,1,1,1,1,0,0,0,1,0]",
-    "current_rank": 88,
-    "current_rank_points": 679,
+    "current_rank": 90,
+    "current_rank_points": 661,
     "matches_played": 99
   },
   {
@@ -7771,7 +7771,7 @@
     "break_pct": 0.123,
     "form_score": 0.4,
     "form_json": "[1,0,1,1,1,0,0,0,0,0]",
-    "current_rank": 84,
+    "current_rank": 83,
     "current_rank_points": 693,
     "matches_played": 128
   },
@@ -7803,8 +7803,8 @@
     "break_pct": 0.144,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0]",
-    "current_rank": 131,
-    "current_rank_points": 428,
+    "current_rank": 129,
+    "current_rank_points": 444,
     "matches_played": 5
   },
   {
@@ -7835,7 +7835,7 @@
     "break_pct": 0.379,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,1,0,1,0,0,0]",
-    "current_rank": 78,
+    "current_rank": 80,
     "current_rank_points": 874,
     "matches_played": 126
   },
@@ -7899,7 +7899,7 @@
     "break_pct": 0.35,
     "form_score": 0.3,
     "form_json": "[1,1,0,0,1,0,0,0,0,0]",
-    "current_rank": 55,
+    "current_rank": 56,
     "current_rank_points": 1087,
     "matches_played": 190
   },
@@ -8059,8 +8059,8 @@
     "break_pct": 0.317,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,0,0,1,1,0]",
-    "current_rank": 93,
-    "current_rank_points": 813,
+    "current_rank": 86,
+    "current_rank_points": 852,
     "matches_played": 69
   },
   {
@@ -8283,8 +8283,8 @@
     "break_pct": 0.405,
     "form_score": 0.4,
     "form_json": "[0,0,1,0,1,0,0,1,1,0]",
-    "current_rank": 117,
-    "current_rank_points": 657,
+    "current_rank": 110,
+    "current_rank_points": 696,
     "matches_played": 52
   },
   {
@@ -8875,8 +8875,8 @@
     "break_pct": 0.188,
     "form_score": 0.2,
     "form_json": "[0,0,0,0,0,0,0,1,1,0]",
-    "current_rank": 146,
-    "current_rank_points": 397,
+    "current_rank": 127,
+    "current_rank_points": 494,
     "matches_played": 131
   },
   {
@@ -8971,7 +8971,7 @@
     "break_pct": 0.165,
     "form_score": 0.4,
     "form_json": "[0,0,1,0,1,0,1,0,1,0]",
-    "current_rank": 91,
+    "current_rank": 88,
     "current_rank_points": 670,
     "matches_played": 35
   },
@@ -8987,7 +8987,7 @@
     "break_pct": 0.343,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,1,0,1,0,0]",
-    "current_rank": 143,
+    "current_rank": 147,
     "current_rank_points": 516,
     "matches_played": 156
   },
@@ -9051,7 +9051,7 @@
     "break_pct": 0.323,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,1,0,0,0,0]",
-    "current_rank": 86,
+    "current_rank": 87,
     "current_rank_points": 848,
     "matches_played": 83
   },
@@ -9675,7 +9675,7 @@
     "break_pct": 0.447,
     "form_score": 0.1,
     "form_json": "[0,1,0,0,0,0,0,0,0,0]",
-    "current_rank": 73,
+    "current_rank": 75,
     "current_rank_points": 928,
     "matches_played": 271
   },
@@ -9995,7 +9995,7 @@
     "break_pct": 0.236,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,0,1,0,0,0,0]",
-    "current_rank": 147,
+    "current_rank": 146,
     "current_rank_points": 396,
     "matches_played": 26
   },
@@ -10027,8 +10027,8 @@
     "break_pct": 0.205,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,0,1,0,0,0,0]",
-    "current_rank": 60,
-    "current_rank_points": 893,
+    "current_rank": 64,
+    "current_rank_points": 859,
     "matches_played": 269
   },
   {
@@ -10043,8 +10043,8 @@
     "break_pct": 0.353,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,0,0,1,0,1,0]",
-    "current_rank": 203,
-    "current_rank_points": 366,
+    "current_rank": 148,
+    "current_rank_points": 512,
     "matches_played": 19
   },
   {
@@ -10107,7 +10107,7 @@
     "break_pct": 0.2,
     "form_score": 0,
     "form_json": "[0]",
-    "current_rank": 103,
+    "current_rank": 105,
     "current_rank_points": 733,
     "matches_played": 1
   },
@@ -10219,8 +10219,8 @@
     "break_pct": 0.362,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,1,0,0,0,1,0]",
-    "current_rank": 133,
-    "current_rank_points": 580,
+    "current_rank": 135,
+    "current_rank_points": 561,
     "matches_played": 44
   },
   {
@@ -10475,8 +10475,8 @@
     "break_pct": 0.344,
     "form_score": 0.33,
     "form_json": "[1,0,0]",
-    "current_rank": 226,
-    "current_rank_points": 317,
+    "current_rank": 146,
+    "current_rank_points": 518,
     "matches_played": 3
   },
   {
@@ -10875,8 +10875,8 @@
     "break_pct": 0.19,
     "form_score": 0.2,
     "form_json": "[0,0,1,1,0,0,0,0,0,0]",
-    "current_rank": 81,
-    "current_rank_points": 730,
+    "current_rank": 65,
+    "current_rank_points": 845,
     "matches_played": 95
   },
   {
@@ -11851,7 +11851,7 @@
     "break_pct": 0.329,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0,1,0,1,0,0]",
-    "current_rank": 70,
+    "current_rank": 72,
     "current_rank_points": 952,
     "matches_played": 39
   },
@@ -12187,8 +12187,8 @@
     "break_pct": 0.157,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,0,0,0,1,0,0]",
-    "current_rank": 116,
-    "current_rank_points": 502,
+    "current_rank": 127,
+    "current_rank_points": 445,
     "matches_played": 44
   },
   {
@@ -12267,7 +12267,7 @@
     "break_pct": 0.185,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0,1,0,1,0,0]",
-    "current_rank": 90,
+    "current_rank": 87,
     "current_rank_points": 671,
     "matches_played": 59
   },
@@ -12363,8 +12363,8 @@
     "break_pct": 0.109,
     "form_score": 0.4,
     "form_json": "[1,0,0,1,0,0,1,1,0,0]",
-    "current_rank": 114,
-    "current_rank_points": 528,
+    "current_rank": 116,
+    "current_rank_points": 503,
     "matches_played": 12
   },
   {
@@ -12412,7 +12412,7 @@
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,1,0,1,0]",
     "current_rank": 122,
-    "current_rank_points": 633,
+    "current_rank_points": 648,
     "matches_played": 34
   },
   {
@@ -15259,7 +15259,7 @@
     "break_pct": 0.343,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,0,1,1,1,0]",
-    "current_rank": 139,
+    "current_rank": 142,
     "current_rank_points": 527,
     "matches_played": 81
   },
@@ -15419,8 +15419,8 @@
     "break_pct": 0.425,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,1,0,0,1,0]",
-    "current_rank": 131,
-    "current_rank_points": 585,
+    "current_rank": 111,
+    "current_rank_points": 695,
     "matches_played": 14
   },
   {
@@ -15707,7 +15707,7 @@
     "break_pct": 0.2,
     "form_score": 0.3,
     "form_json": "[0,0,1,1,1,0,0,0,0,0]",
-    "current_rank": 108,
+    "current_rank": 107,
     "current_rank_points": 559,
     "matches_played": 10
   },
@@ -15771,8 +15771,8 @@
     "break_pct": 0.147,
     "form_score": 0.3,
     "form_json": "[1,0,0,1,0,0,1,0,0,0]",
-    "current_rank": 128,
-    "current_rank_points": 432,
+    "current_rank": 126,
+    "current_rank_points": 446,
     "matches_played": 38
   },
   {
@@ -16443,8 +16443,8 @@
     "break_pct": 0.181,
     "form_score": 0.2,
     "form_json": "[0,0,1,1,0,0,0,0,0,0]",
-    "current_rank": 89,
-    "current_rank_points": 676,
+    "current_rank": 94,
+    "current_rank_points": 638,
     "matches_played": 235
   },
   {
@@ -16923,8 +16923,8 @@
     "break_pct": 0.282,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0]",
-    "current_rank": 145,
-    "current_rank_points": 509,
+    "current_rank": 141,
+    "current_rank_points": 528,
     "matches_played": 5
   },
   {
@@ -17003,8 +17003,8 @@
     "break_pct": 0.385,
     "form_score": 0.4,
     "form_json": "[0,0,1,1,0,1,0,1,0,0]",
-    "current_rank": 118,
-    "current_rank_points": 654,
+    "current_rank": 112,
+    "current_rank_points": 694,
     "matches_played": 24
   },
   {
@@ -18155,8 +18155,8 @@
     "break_pct": 0.221,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 72,
-    "current_rank_points": 807,
+    "current_rank": 66,
+    "current_rank_points": 836,
     "matches_played": 56
   },
   {
@@ -18235,8 +18235,8 @@
     "break_pct": 0.278,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,1,1,0,0,0]",
-    "current_rank": 124,
-    "current_rank_points": 632,
+    "current_rank": 123,
+    "current_rank_points": 648,
     "matches_played": 18
   },
   {
@@ -18555,7 +18555,7 @@
     "break_pct": 0.166,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,1,0,1,0,0,0]",
-    "current_rank": 121,
+    "current_rank": 120,
     "current_rank_points": 491,
     "matches_played": 105
   },
@@ -18891,7 +18891,7 @@
     "break_pct": 0.149,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,1,0,1,0,0,0]",
-    "current_rank": 98,
+    "current_rank": 96,
     "current_rank_points": 619,
     "matches_played": 74
   },
@@ -18907,8 +18907,8 @@
     "break_pct": 0.251,
     "form_score": 0.25,
     "form_json": "[0,0,1,0]",
-    "current_rank": 150,
-    "current_rank_points": 494,
+    "current_rank": 278,
+    "current_rank_points": 256,
     "matches_played": 4
   },
   {
@@ -19195,8 +19195,8 @@
     "break_pct": 0.178,
     "form_score": 0.2,
     "form_json": "[0,0,0,0,0,0,1,1,0,0]",
-    "current_rank": 137,
-    "current_rank_points": 411,
+    "current_rank": 133,
+    "current_rank_points": 425,
     "matches_played": 170
   },
   {
@@ -19712,22 +19712,6 @@
     "matches_played": 7
   },
   {
-    "player_id": "111200",
-    "name": "Elias Ymer",
-    "tour": "ATP",
-    "elo_overall": 1463.9,
-    "elo_hard": 1504.5,
-    "elo_clay": 1448.9,
-    "elo_grass": 1467.2,
-    "hold_pct": 0.762,
-    "break_pct": 0.192,
-    "form_score": 0.3,
-    "form_json": "[0,0,0,1,0,1,1,0,0,0]",
-    "current_rank": 191,
-    "current_rank_points": 308,
-    "matches_played": 54
-  },
-  {
     "player_id": "246476",
     "name": "Mariana Isabel Higuita Barraza",
     "tour": "WTA",
@@ -19883,8 +19867,8 @@
     "break_pct": 0.313,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,1,0,0,0,0,0]",
-    "current_rank": 129,
-    "current_rank_points": 595,
+    "current_rank": 130,
+    "current_rank_points": 598,
     "matches_played": 22
   },
   {
@@ -20251,8 +20235,8 @@
     "break_pct": 0.07,
     "form_score": 0.2,
     "form_json": "[0,1,1,0,0,0,0,0,0,0]",
-    "current_rank": 145,
-    "current_rank_points": 400,
+    "current_rank": 140,
+    "current_rank_points": 411,
     "matches_played": 107
   },
   {
@@ -20827,7 +20811,7 @@
     "break_pct": 0.338,
     "form_score": 0.2,
     "form_json": "[0,0,1,1,0,0,0,0,0,0]",
-    "current_rank": 132,
+    "current_rank": 134,
     "current_rank_points": 581,
     "matches_played": 16
   },
@@ -20940,7 +20924,7 @@
     "form_score": 0.5,
     "form_json": "[0,1,1,1,0,0,1,1,0,0]",
     "current_rank": 109,
-    "current_rank_points": 548,
+    "current_rank_points": 530,
     "matches_played": 116
   },
   {
@@ -21115,7 +21099,7 @@
     "break_pct": 0.345,
     "form_score": 0.5,
     "form_json": "[1,0,0,0,1,1,1,1,0,0]",
-    "current_rank": 96,
+    "current_rank": 98,
     "current_rank_points": 795,
     "matches_played": 32
   },
@@ -21883,7 +21867,7 @@
     "break_pct": 0.095,
     "form_score": 0.4,
     "form_json": "[1,0,1,1,0,0,0,0,1,0]",
-    "current_rank": 129,
+    "current_rank": 130,
     "current_rank_points": 431,
     "matches_played": 12
   },
@@ -21915,8 +21899,8 @@
     "break_pct": 0.344,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,0,0,0,1,0]",
-    "current_rank": 97,
-    "current_rank_points": 783,
+    "current_rank": 114,
+    "current_rank_points": 685,
     "matches_played": 76
   },
   {
@@ -22203,7 +22187,7 @@
     "break_pct": 0.133,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,0,0,0,0,1,0]",
-    "current_rank": 143,
+    "current_rank": 144,
     "current_rank_points": 401,
     "matches_played": 25
   },
@@ -22286,6 +22270,22 @@
     "current_rank": 955,
     "current_rank_points": 23,
     "matches_played": 6
+  },
+  {
+    "player_id": "111200",
+    "name": "Elias Ymer",
+    "tour": "ATP",
+    "elo_overall": 1451.8,
+    "elo_hard": 1491.7,
+    "elo_clay": 1448.9,
+    "elo_grass": 1467.2,
+    "hold_pct": 0.762,
+    "break_pct": 0.192,
+    "form_score": 0.3,
+    "form_json": "[0,0,1,0,1,1,0,0,0,0]",
+    "current_rank": 191,
+    "current_rank_points": 308,
+    "matches_played": 55
   },
   {
     "player_id": "202410",
@@ -22427,7 +22427,7 @@
     "break_pct": 0.155,
     "form_score": 0.2,
     "form_json": "[0,0,0,1,1,0,0,0,0,0]",
-    "current_rank": 67,
+    "current_rank": 71,
     "current_rank_points": 822,
     "matches_played": 43
   },
@@ -22619,8 +22619,8 @@
     "break_pct": 0.333,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,0,0,1,0,0,0]",
-    "current_rank": 146,
-    "current_rank_points": 507,
+    "current_rank": 125,
+    "current_rank_points": 640,
     "matches_played": 103
   },
   {
@@ -22779,8 +22779,8 @@
     "break_pct": 0.184,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,1,0,1,0,0]",
-    "current_rank": 115,
-    "current_rank_points": 519,
+    "current_rank": 114,
+    "current_rank_points": 515,
     "matches_played": 24
   },
   {
@@ -23003,8 +23003,8 @@
     "break_pct": 0.081,
     "form_score": 0.2,
     "form_json": "[0,0,0,1,0,0,1,0,0,0]",
-    "current_rank": 139,
-    "current_rank_points": 405,
+    "current_rank": 149,
+    "current_rank_points": 386,
     "matches_played": 10
   },
   {
@@ -23051,8 +23051,8 @@
     "break_pct": 0.101,
     "form_score": 0.29,
     "form_json": "[0,1,1,0,0,0,0]",
-    "current_rank": 138,
-    "current_rank_points": 410,
+    "current_rank": 136,
+    "current_rank_points": 422,
     "matches_played": 7
   },
   {
@@ -23067,7 +23067,7 @@
     "break_pct": 0.147,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,0,0,1,0]",
-    "current_rank": 120,
+    "current_rank": 119,
     "current_rank_points": 493,
     "matches_played": 47
   },
@@ -23323,7 +23323,7 @@
     "break_pct": 0.352,
     "form_score": 0.29,
     "form_json": "[0,1,0,0,0,0,1]",
-    "current_rank": 142,
+    "current_rank": 145,
     "current_rank_points": 519,
     "matches_played": 7
   },
@@ -23339,7 +23339,7 @@
     "break_pct": 0.213,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,0,1,1,0,0,0]",
-    "current_rank": 141,
+    "current_rank": 144,
     "current_rank_points": 522,
     "matches_played": 11
   },
@@ -23899,7 +23899,7 @@
     "break_pct": 0.087,
     "form_score": 0.2,
     "form_json": "[0,0,0,0,0,1,1,0,0,0]",
-    "current_rank": 123,
+    "current_rank": 122,
     "current_rank_points": 477,
     "matches_played": 11
   },
@@ -23963,7 +23963,7 @@
     "break_pct": 0.239,
     "form_score": 0.4,
     "form_json": "[0,1,1,1,0,0,0,1,0,0]",
-    "current_rank": 135,
+    "current_rank": 138,
     "current_rank_points": 553,
     "matches_played": 25
   },
@@ -24011,7 +24011,7 @@
     "break_pct": 0.302,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,1,0,0,0,0,0]",
-    "current_rank": 130,
+    "current_rank": 132,
     "current_rank_points": 591,
     "matches_played": 53
   },
@@ -24699,8 +24699,8 @@
     "break_pct": 0.241,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,0,0,1,0]",
-    "current_rank": 125,
-    "current_rank_points": 608,
+    "current_rank": 129,
+    "current_rank_points": 617,
     "matches_played": 25
   },
   {
@@ -24779,8 +24779,8 @@
     "break_pct": 0.251,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 91,
-    "current_rank_points": 816,
+    "current_rank": 89,
+    "current_rank_points": 841,
     "matches_played": 55
   },
   {
@@ -24971,8 +24971,8 @@
     "break_pct": 0.123,
     "form_score": 0.1,
     "form_json": "[0,0,0,0,0,0,0,0,1,0]",
-    "current_rank": 118,
-    "current_rank_points": 496,
+    "current_rank": 123,
+    "current_rank_points": 462,
     "matches_played": 34
   },
   {
@@ -25003,8 +25003,8 @@
     "break_pct": 0.177,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,1,1,0,0,0,0]",
-    "current_rank": 125,
-    "current_rank_points": 451,
+    "current_rank": 128,
+    "current_rank_points": 444,
     "matches_played": 43
   },
   {
@@ -25115,7 +25115,7 @@
     "break_pct": 0.287,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 94,
+    "current_rank": 96,
     "current_rank_points": 812,
     "matches_played": 16
   },
@@ -25163,7 +25163,7 @@
     "break_pct": 0.116,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,0,0,1,0,0]",
-    "current_rank": 136,
+    "current_rank": 139,
     "current_rank_points": 415,
     "matches_played": 17
   },
@@ -25323,7 +25323,7 @@
     "break_pct": 0.234,
     "form_score": 0.4,
     "form_json": "[1,0,0,1,0,0,1,0,1,0]",
-    "current_rank": 121,
+    "current_rank": 126,
     "current_rank_points": 635,
     "matches_played": 31
   },
@@ -25435,8 +25435,8 @@
     "break_pct": 0.139,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,1,0,0,0,0,0]",
-    "current_rank": 113,
-    "current_rank_points": 533,
+    "current_rank": 110,
+    "current_rank_points": 527,
     "matches_played": 22
   },
   {
@@ -25499,8 +25499,8 @@
     "break_pct": 0.139,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,1,0,0,0,0,0]",
-    "current_rank": 127,
-    "current_rank_points": 435,
+    "current_rank": 137,
+    "current_rank_points": 418,
     "matches_played": 148
   },
   {
@@ -25675,8 +25675,8 @@
     "break_pct": 0.295,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 123,
-    "current_rank_points": 632,
+    "current_rank": 120,
+    "current_rank_points": 660,
     "matches_played": 104
   },
   {
@@ -26507,7 +26507,7 @@
     "break_pct": 0.173,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,0,0,0,0,1,0]",
-    "current_rank": 107,
+    "current_rank": 106,
     "current_rank_points": 566,
     "matches_played": 51
   },
@@ -26571,7 +26571,7 @@
     "break_pct": 0.197,
     "form_score": 0.1,
     "form_json": "[0,0,0,1,0,0,0,0,0,0]",
-    "current_rank": 120,
+    "current_rank": 125,
     "current_rank_points": 638,
     "matches_played": 18
   },
