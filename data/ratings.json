@@ -384,6 +384,22 @@
     "matches_played": 356
   },
   {
+    "player_id": "207518",
+    "name": "Lorenzo Musetti",
+    "tour": "ATP",
+    "elo_overall": 1805.1,
+    "elo_hard": 1700.8,
+    "elo_clay": 1731.6,
+    "elo_grass": 1594.4,
+    "hold_pct": 0.817,
+    "break_pct": 0.226,
+    "form_score": 0.8,
+    "form_json": "[1,0,1,1,1,1,1,1,0,1]",
+    "current_rank": 25,
+    "current_rank_points": 1895,
+    "matches_played": 301
+  },
+  {
     "player_id": "201619",
     "name": "Madison Keys",
     "tour": "WTA",
@@ -398,22 +414,6 @@
     "current_rank": 19,
     "current_rank_points": 2175,
     "matches_played": 234
-  },
-  {
-    "player_id": "207518",
-    "name": "Lorenzo Musetti",
-    "tour": "ATP",
-    "elo_overall": 1799,
-    "elo_hard": 1694.7,
-    "elo_clay": 1731.6,
-    "elo_grass": 1594.4,
-    "hold_pct": 0.817,
-    "break_pct": 0.226,
-    "form_score": 0.7,
-    "form_json": "[0,1,0,1,1,1,1,1,1,0]",
-    "current_rank": 25,
-    "current_rank_points": 1895,
-    "matches_played": 300
   },
   {
     "player_id": "126207",
@@ -976,6 +976,22 @@
     "matches_played": 267
   },
   {
+    "player_id": "208029",
+    "name": "Holger Rune",
+    "tour": "ATP",
+    "elo_overall": 1700.5,
+    "elo_hard": 1681.5,
+    "elo_clay": 1658.8,
+    "elo_grass": 1541.2,
+    "hold_pct": 0.838,
+    "break_pct": 0.198,
+    "form_score": 0.7,
+    "form_json": "[1,1,0,1,1,0,1,1,0,1]",
+    "current_rank": 44,
+    "current_rank_points": 1060,
+    "matches_played": 266
+  },
+  {
     "player_id": "221024",
     "name": "Hailey Baptiste",
     "tour": "WTA",
@@ -1118,22 +1134,6 @@
     "current_rank": 49,
     "current_rank_points": 1133,
     "matches_played": 191
-  },
-  {
-    "player_id": "208029",
-    "name": "Holger Rune",
-    "tour": "ATP",
-    "elo_overall": 1687.9,
-    "elo_hard": 1673.5,
-    "elo_clay": 1658.8,
-    "elo_grass": 1541.2,
-    "hold_pct": 0.838,
-    "break_pct": 0.198,
-    "form_score": 0.7,
-    "form_json": "[1,1,1,0,1,1,0,1,1,0]",
-    "current_rank": 44,
-    "current_rank_points": 1060,
-    "matches_played": 265
   },
   {
     "player_id": "210017",
@@ -1824,38 +1824,6 @@
     "matches_played": 62
   },
   {
-    "player_id": "126239",
-    "name": "Arthur Rinderknech",
-    "tour": "ATP",
-    "elo_overall": 1612.8,
-    "elo_hard": 1575.7,
-    "elo_clay": 1528,
-    "elo_grass": 1504.8,
-    "hold_pct": 0.848,
-    "break_pct": 0.131,
-    "form_score": 0.4,
-    "form_json": "[0,0,1,1,0,0,1,1,0,0]",
-    "current_rank": 58,
-    "current_rank_points": 920,
-    "matches_played": 220
-  },
-  {
-    "player_id": "200267",
-    "name": "Zizou Bergs",
-    "tour": "ATP",
-    "elo_overall": 1612,
-    "elo_hard": 1555.3,
-    "elo_clay": 1457.9,
-    "elo_grass": 1537.9,
-    "hold_pct": 0.811,
-    "break_pct": 0.188,
-    "form_score": 0.4,
-    "form_json": "[0,0,1,1,0,0,1,1,0,0]",
-    "current_rank": 44,
-    "current_rank_points": 1220,
-    "matches_played": 156
-  },
-  {
     "player_id": "220750",
     "name": "Daria Snigur",
     "tour": "WTA",
@@ -2014,6 +1982,22 @@
     "current_rank": 66,
     "current_rank_points": 1000,
     "matches_played": 229
+  },
+  {
+    "player_id": "200267",
+    "name": "Zizou Bergs",
+    "tour": "ATP",
+    "elo_overall": 1599.4,
+    "elo_hard": 1547.2,
+    "elo_clay": 1457.9,
+    "elo_grass": 1537.9,
+    "hold_pct": 0.811,
+    "break_pct": 0.188,
+    "form_score": 0.4,
+    "form_json": "[0,1,1,0,0,1,1,0,0,0]",
+    "current_rank": 44,
+    "current_rank_points": 1220,
+    "matches_played": 157
   },
   {
     "player_id": "220520",
@@ -2222,6 +2206,22 @@
     "current_rank": 69,
     "current_rank_points": 972,
     "matches_played": 96
+  },
+  {
+    "player_id": "126239",
+    "name": "Arthur Rinderknech",
+    "tour": "ATP",
+    "elo_overall": 1591.5,
+    "elo_hard": 1560.8,
+    "elo_clay": 1528,
+    "elo_grass": 1504.8,
+    "hold_pct": 0.848,
+    "break_pct": 0.131,
+    "form_score": 0.4,
+    "form_json": "[0,1,1,0,0,1,1,0,0,0]",
+    "current_rank": 58,
+    "current_rank_points": 920,
+    "matches_played": 221
   },
   {
     "player_id": "111460",
@@ -5280,22 +5280,6 @@
     "matches_played": 5
   },
   {
-    "player_id": "espn_10645",
-    "name": "Toby Samuel",
-    "tour": "ATP",
-    "elo_overall": 1523.1,
-    "elo_hard": 1509.1,
-    "elo_clay": 1493,
-    "elo_grass": 1487.8,
-    "hold_pct": 0.75,
-    "break_pct": 0.2,
-    "form_score": 0.4,
-    "form_json": "[0,0,1,1,0,0,1,0,0,1]",
-    "current_rank": 95,
-    "current_rank_points": 624,
-    "matches_played": 10
-  },
-  {
     "player_id": "215219",
     "name": "Kaja Juvan",
     "tour": "WTA",
@@ -6528,6 +6512,22 @@
     "matches_played": 6
   },
   {
+    "player_id": "espn_10645",
+    "name": "Toby Samuel",
+    "tour": "ATP",
+    "elo_overall": 1517,
+    "elo_hard": 1503,
+    "elo_clay": 1493,
+    "elo_grass": 1487.8,
+    "hold_pct": 0.75,
+    "break_pct": 0.2,
+    "form_score": 0.4,
+    "form_json": "[0,1,1,0,0,1,0,0,1,0]",
+    "current_rank": 95,
+    "current_rank_points": 624,
+    "matches_played": 11
+  },
+  {
     "player_id": "208144",
     "name": "Giles Hussey",
     "tour": "ATP",
@@ -6814,6 +6814,22 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 2
+  },
+  {
+    "player_id": "200175",
+    "name": "Miomir Kecmanovic",
+    "tour": "ATP",
+    "elo_overall": 1512.9,
+    "elo_hard": 1506.5,
+    "elo_clay": 1466.8,
+    "elo_grass": 1477.6,
+    "hold_pct": 0.812,
+    "break_pct": 0.205,
+    "form_score": 0.4,
+    "form_json": "[1,0,1,0,1,0,0,0,0,1]",
+    "current_rank": 64,
+    "current_rank_points": 859,
+    "matches_played": 270
   },
   {
     "player_id": "126646",
@@ -10030,22 +10046,6 @@
     "current_rank": 392,
     "current_rank_points": 160,
     "matches_played": 9
-  },
-  {
-    "player_id": "200175",
-    "name": "Miomir Kecmanovic",
-    "tour": "ATP",
-    "elo_overall": 1491.6,
-    "elo_hard": 1491.7,
-    "elo_clay": 1466.8,
-    "elo_grass": 1477.6,
-    "hold_pct": 0.812,
-    "break_pct": 0.205,
-    "form_score": 0.3,
-    "form_json": "[0,1,0,1,0,1,0,0,0,0]",
-    "current_rank": 64,
-    "current_rank_points": 859,
-    "matches_played": 269
   },
   {
     "player_id": "215042",
