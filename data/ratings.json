@@ -371,17 +371,17 @@
     "player_id": "126203",
     "name": "Taylor Fritz",
     "tour": "ATP",
-    "elo_overall": 1807.1,
-    "elo_hard": 1731.7,
+    "elo_overall": 1816.1,
+    "elo_hard": 1740,
     "elo_clay": 1561.4,
     "elo_grass": 1711.8,
     "hold_pct": 0.892,
     "break_pct": 0.193,
-    "form_score": 0.6,
-    "form_json": "[0,0,1,1,1,0,1,1,1,0]",
+    "form_score": 0.7,
+    "form_json": "[0,1,1,1,0,1,1,1,0,1]",
     "current_rank": 10,
     "current_rank_points": 3285,
-    "matches_played": 356
+    "matches_played": 357
   },
   {
     "player_id": "207518",
@@ -624,22 +624,6 @@
     "matches_played": 210
   },
   {
-    "player_id": "210506",
-    "name": "Alex Michelsen",
-    "tour": "ATP",
-    "elo_overall": 1737.9,
-    "elo_hard": 1683,
-    "elo_clay": 1491.2,
-    "elo_grass": 1521.4,
-    "hold_pct": 0.806,
-    "break_pct": 0.195,
-    "form_score": 0.6,
-    "form_json": "[1,0,0,1,1,0,1,0,1,1]",
-    "current_rank": 35,
-    "current_rank_points": 1460,
-    "matches_played": 187
-  },
-  {
     "player_id": "214939",
     "name": "Anna Kalinskaya",
     "tour": "WTA",
@@ -848,6 +832,22 @@
     "matches_played": 55
   },
   {
+    "player_id": "210506",
+    "name": "Alex Michelsen",
+    "tour": "ATP",
+    "elo_overall": 1717.7,
+    "elo_hard": 1667.1,
+    "elo_clay": 1491.2,
+    "elo_grass": 1521.4,
+    "hold_pct": 0.806,
+    "break_pct": 0.195,
+    "form_score": 0.5,
+    "form_json": "[0,0,1,1,0,1,0,1,1,0]",
+    "current_rank": 35,
+    "current_rank_points": 1460,
+    "matches_played": 188
+  },
+  {
     "player_id": "128034",
     "name": "Hubert Hurkacz",
     "tour": "ATP",
@@ -910,6 +910,22 @@
     "current_rank": 32,
     "current_rank_points": 1641,
     "matches_played": 278
+  },
+  {
+    "player_id": "208029",
+    "name": "Holger Rune",
+    "tour": "ATP",
+    "elo_overall": 1708.6,
+    "elo_hard": 1688,
+    "elo_clay": 1658.8,
+    "elo_grass": 1541.2,
+    "hold_pct": 0.838,
+    "break_pct": 0.198,
+    "form_score": 0.7,
+    "form_json": "[1,0,1,1,0,1,1,0,1,1]",
+    "current_rank": 44,
+    "current_rank_points": 1060,
+    "matches_played": 267
   },
   {
     "player_id": "216081",
@@ -976,22 +992,6 @@
     "matches_played": 267
   },
   {
-    "player_id": "208029",
-    "name": "Holger Rune",
-    "tour": "ATP",
-    "elo_overall": 1700.5,
-    "elo_hard": 1681.5,
-    "elo_clay": 1658.8,
-    "elo_grass": 1541.2,
-    "hold_pct": 0.838,
-    "break_pct": 0.198,
-    "form_score": 0.7,
-    "form_json": "[1,1,0,1,1,0,1,1,0,1]",
-    "current_rank": 44,
-    "current_rank_points": 1060,
-    "matches_played": 266
-  },
-  {
     "player_id": "221024",
     "name": "Hailey Baptiste",
     "tour": "WTA",
@@ -1038,22 +1038,6 @@
     "current_rank": 37,
     "current_rank_points": 1358,
     "matches_played": 192
-  },
-  {
-    "player_id": "134770",
-    "name": "Casper Ruud",
-    "tour": "ATP",
-    "elo_overall": 1695.2,
-    "elo_hard": 1591.3,
-    "elo_clay": 1749.1,
-    "elo_grass": 1478.2,
-    "hold_pct": 0.854,
-    "break_pct": 0.215,
-    "form_score": 0.3,
-    "form_json": "[0,0,1,0,1,0,0,0,1,0]",
-    "current_rank": 18,
-    "current_rank_points": 2435,
-    "matches_played": 314
   },
   {
     "player_id": "202103",
@@ -1296,6 +1280,22 @@
     "matches_played": 337
   },
   {
+    "player_id": "134770",
+    "name": "Casper Ruud",
+    "tour": "ATP",
+    "elo_overall": 1668.1,
+    "elo_hard": 1575.7,
+    "elo_clay": 1749.1,
+    "elo_grass": 1478.2,
+    "hold_pct": 0.854,
+    "break_pct": 0.215,
+    "form_score": 0.3,
+    "form_json": "[0,1,0,1,0,0,0,1,0,0]",
+    "current_rank": 18,
+    "current_rank_points": 2435,
+    "matches_played": 315
+  },
+  {
     "player_id": "211713",
     "name": "Jaqueline Cristian",
     "tour": "WTA",
@@ -1310,6 +1310,22 @@
     "current_rank": 81,
     "current_rank_points": 869,
     "matches_played": 158
+  },
+  {
+    "player_id": "126214",
+    "name": "Alejandro Tabilo",
+    "tour": "ATP",
+    "elo_overall": 1664.6,
+    "elo_hard": 1580.1,
+    "elo_clay": 1577.5,
+    "elo_grass": 1499.3,
+    "hold_pct": 0.816,
+    "break_pct": 0.189,
+    "form_score": 0.5,
+    "form_json": "[0,1,1,0,0,1,0,0,1,1]",
+    "current_rank": 31,
+    "current_rank_points": 1525,
+    "matches_played": 185
   },
   {
     "player_id": "239383",
@@ -1472,6 +1488,22 @@
     "matches_played": 175
   },
   {
+    "player_id": "200005",
+    "name": "Ugo Humbert",
+    "tour": "ATP",
+    "elo_overall": 1644.2,
+    "elo_hard": 1631.7,
+    "elo_clay": 1475.5,
+    "elo_grass": 1544.6,
+    "hold_pct": 0.837,
+    "break_pct": 0.187,
+    "form_score": 0.4,
+    "form_json": "[1,0,0,0,1,0,0,0,1,1]",
+    "current_rank": 39,
+    "current_rank_points": 1320,
+    "matches_played": 251
+  },
+  {
     "player_id": "206368",
     "name": "Veronika Kudermetova",
     "tour": "WTA",
@@ -1486,22 +1518,6 @@
     "current_rank": 85,
     "current_rank_points": 868,
     "matches_played": 213
-  },
-  {
-    "player_id": "111815",
-    "name": "Cameron Norrie",
-    "tour": "ATP",
-    "elo_overall": 1643,
-    "elo_hard": 1620.5,
-    "elo_clay": 1589.3,
-    "elo_grass": 1523.4,
-    "hold_pct": 0.817,
-    "break_pct": 0.214,
-    "form_score": 0.4,
-    "form_json": "[1,0,1,0,0,0,0,1,0,1]",
-    "current_rank": 53,
-    "current_rank_points": 1030,
-    "matches_played": 283
   },
   {
     "player_id": "202460",
@@ -1584,36 +1600,20 @@
     "matches_played": 121
   },
   {
-    "player_id": "200005",
-    "name": "Ugo Humbert",
+    "player_id": "111815",
+    "name": "Cameron Norrie",
     "tour": "ATP",
-    "elo_overall": 1632.5,
-    "elo_hard": 1622.1,
-    "elo_clay": 1475.5,
-    "elo_grass": 1544.6,
-    "hold_pct": 0.837,
-    "break_pct": 0.187,
+    "elo_overall": 1634.1,
+    "elo_hard": 1612.2,
+    "elo_clay": 1589.3,
+    "elo_grass": 1523.4,
+    "hold_pct": 0.817,
+    "break_pct": 0.214,
     "form_score": 0.3,
-    "form_json": "[0,1,0,0,0,1,0,0,0,1]",
-    "current_rank": 39,
-    "current_rank_points": 1320,
-    "matches_played": 250
-  },
-  {
-    "player_id": "126214",
-    "name": "Alejandro Tabilo",
-    "tour": "ATP",
-    "elo_overall": 1632.1,
-    "elo_hard": 1552.4,
-    "elo_clay": 1577.5,
-    "elo_grass": 1499.3,
-    "hold_pct": 0.816,
-    "break_pct": 0.189,
-    "form_score": 0.4,
-    "form_json": "[0,1,0,1,1,0,0,1,0,0]",
-    "current_rank": 31,
-    "current_rank_points": 1525,
-    "matches_played": 183
+    "form_json": "[0,1,0,0,0,0,1,0,1,0]",
+    "current_rank": 53,
+    "current_rank_points": 1030,
+    "matches_played": 284
   },
   {
     "player_id": "201496",
@@ -3632,22 +3632,6 @@
     "matches_played": 10
   },
   {
-    "player_id": "132283",
-    "name": "Lorenzo Sonego",
-    "tour": "ATP",
-    "elo_overall": 1550.8,
-    "elo_hard": 1544.9,
-    "elo_clay": 1436.7,
-    "elo_grass": 1519.3,
-    "hold_pct": 0.837,
-    "break_pct": 0.16,
-    "form_score": 0.5,
-    "form_json": "[1,0,1,1,0,0,1,0,0,1]",
-    "current_rank": 115,
-    "current_rank_points": 511,
-    "matches_played": 249
-  },
-  {
     "player_id": "105633",
     "name": "Mohamed Safwat",
     "tour": "ATP",
@@ -4224,6 +4208,22 @@
     "matches_played": 2
   },
   {
+    "player_id": "132283",
+    "name": "Lorenzo Sonego",
+    "tour": "ATP",
+    "elo_overall": 1538.4,
+    "elo_hard": 1533.1,
+    "elo_clay": 1436.7,
+    "elo_grass": 1519.3,
+    "hold_pct": 0.837,
+    "break_pct": 0.16,
+    "form_score": 0.4,
+    "form_json": "[0,1,1,0,0,1,0,0,1,0]",
+    "current_rank": 115,
+    "current_rank_points": 511,
+    "matches_played": 250
+  },
+  {
     "player_id": "221362",
     "name": "Hiromi Abe",
     "tour": "WTA",
@@ -4254,22 +4254,6 @@
     "current_rank": 120,
     "current_rank_points": 525,
     "matches_played": 17
-  },
-  {
-    "player_id": "127339",
-    "name": "Borna Gojo",
-    "tour": "ATP",
-    "elo_overall": 1538.2,
-    "elo_hard": 1552.7,
-    "elo_clay": 1442.3,
-    "elo_grass": 1475.3,
-    "hold_pct": 0.849,
-    "break_pct": 0.156,
-    "form_score": 0.3,
-    "form_json": "[0,1,0,0,0,0,0,1,0,1]",
-    "current_rank": 134,
-    "current_rank_points": 423,
-    "matches_played": 40
   },
   {
     "player_id": "209284",
@@ -4880,6 +4864,22 @@
     "matches_played": 152
   },
   {
+    "player_id": "espn_8710",
+    "name": "Aleksandr Shevchenko",
+    "tour": "ATP",
+    "elo_overall": 1529.6,
+    "elo_hard": 1501.2,
+    "elo_clay": 1506.9,
+    "elo_grass": 1488.5,
+    "hold_pct": 0.75,
+    "break_pct": 0.2,
+    "form_score": 0.5,
+    "form_json": "[1,1,1,0,0,0,0,0,1,1]",
+    "current_rank": 107,
+    "current_rank_points": 559,
+    "matches_played": 12
+  },
+  {
     "player_id": "208014",
     "name": "Rinky Hijikata",
     "tour": "ATP",
@@ -4942,6 +4942,22 @@
     "current_rank": 59,
     "current_rank_points": 1064,
     "matches_played": 139
+  },
+  {
+    "player_id": "127339",
+    "name": "Borna Gojo",
+    "tour": "ATP",
+    "elo_overall": 1526.5,
+    "elo_hard": 1543.1,
+    "elo_clay": 1442.3,
+    "elo_grass": 1475.3,
+    "hold_pct": 0.849,
+    "break_pct": 0.156,
+    "form_score": 0.3,
+    "form_json": "[1,0,0,0,0,0,1,0,1,0]",
+    "current_rank": 134,
+    "current_rank_points": 423,
+    "matches_played": 41
   },
   {
     "player_id": "espn_17105",
@@ -6816,22 +6832,6 @@
     "matches_played": 2
   },
   {
-    "player_id": "200175",
-    "name": "Miomir Kecmanovic",
-    "tour": "ATP",
-    "elo_overall": 1512.9,
-    "elo_hard": 1506.5,
-    "elo_clay": 1466.8,
-    "elo_grass": 1477.6,
-    "hold_pct": 0.812,
-    "break_pct": 0.205,
-    "form_score": 0.4,
-    "form_json": "[1,0,1,0,1,0,0,0,0,1]",
-    "current_rank": 64,
-    "current_rank_points": 859,
-    "matches_played": 270
-  },
-  {
     "player_id": "126646",
     "name": "Tim Van Rijthoven",
     "tour": "ATP",
@@ -7504,6 +7504,22 @@
     "matches_played": 98
   },
   {
+    "player_id": "200175",
+    "name": "Miomir Kecmanovic",
+    "tour": "ATP",
+    "elo_overall": 1504.8,
+    "elo_hard": 1500.1,
+    "elo_clay": 1466.8,
+    "elo_grass": 1477.6,
+    "hold_pct": 0.812,
+    "break_pct": 0.205,
+    "form_score": 0.3,
+    "form_json": "[0,1,0,1,0,0,0,0,1,0]",
+    "current_rank": 64,
+    "current_rank_points": 859,
+    "matches_played": 271
+  },
+  {
     "player_id": "216044",
     "name": "Yuki Naito",
     "tour": "WTA",
@@ -7902,22 +7918,6 @@
     "current_rank": 153,
     "current_rank_points": 494,
     "matches_played": 16
-  },
-  {
-    "player_id": "espn_8710",
-    "name": "Aleksandr Shevchenko",
-    "tour": "ATP",
-    "elo_overall": 1502.5,
-    "elo_hard": 1485.7,
-    "elo_clay": 1506.9,
-    "elo_grass": 1488.5,
-    "hold_pct": 0.75,
-    "break_pct": 0.2,
-    "form_score": 0.4,
-    "form_json": "[0,1,1,1,0,0,0,0,0,1]",
-    "current_rank": 107,
-    "current_rank_points": 559,
-    "matches_played": 11
   },
   {
     "player_id": "211843",
