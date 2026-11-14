@@ -272,6 +272,22 @@
     "matches_played": 237
   },
   {
+    "player_id": "126203",
+    "name": "Taylor Fritz",
+    "tour": "ATP",
+    "elo_overall": 1842.7,
+    "elo_hard": 1760.8,
+    "elo_clay": 1561.4,
+    "elo_grass": 1711.8,
+    "hold_pct": 0.892,
+    "break_pct": 0.193,
+    "form_score": 0.8,
+    "form_json": "[1,1,0,1,1,1,0,1,1,1]",
+    "current_rank": 10,
+    "current_rank_points": 3285,
+    "matches_played": 359
+  },
+  {
     "player_id": "200282",
     "name": "Alex De Minaur",
     "tour": "ATP",
@@ -352,22 +368,6 @@
     "matches_played": 245
   },
   {
-    "player_id": "126203",
-    "name": "Taylor Fritz",
-    "tour": "ATP",
-    "elo_overall": 1827.3,
-    "elo_hard": 1750.2,
-    "elo_clay": 1561.4,
-    "elo_grass": 1711.8,
-    "hold_pct": 0.892,
-    "break_pct": 0.193,
-    "form_score": 0.8,
-    "form_json": "[1,1,1,0,1,1,1,0,1,1]",
-    "current_rank": 10,
-    "current_rank_points": 3285,
-    "matches_played": 358
-  },
-  {
     "player_id": "239475",
     "name": "Victoria Mboko",
     "tour": "WTA",
@@ -384,22 +384,6 @@
     "matches_played": 72
   },
   {
-    "player_id": "207518",
-    "name": "Lorenzo Musetti",
-    "tour": "ATP",
-    "elo_overall": 1814.2,
-    "elo_hard": 1710.4,
-    "elo_clay": 1731.6,
-    "elo_grass": 1594.4,
-    "hold_pct": 0.817,
-    "break_pct": 0.226,
-    "form_score": 0.8,
-    "form_json": "[0,1,1,1,1,1,1,0,1,1]",
-    "current_rank": 25,
-    "current_rank_points": 1895,
-    "matches_played": 302
-  },
-  {
     "player_id": "201619",
     "name": "Madison Keys",
     "tour": "WTA",
@@ -414,6 +398,22 @@
     "current_rank": 19,
     "current_rank_points": 2175,
     "matches_played": 234
+  },
+  {
+    "player_id": "207518",
+    "name": "Lorenzo Musetti",
+    "tour": "ATP",
+    "elo_overall": 1798.8,
+    "elo_hard": 1699.8,
+    "elo_clay": 1731.6,
+    "elo_grass": 1594.4,
+    "hold_pct": 0.817,
+    "break_pct": 0.226,
+    "form_score": 0.8,
+    "form_json": "[1,1,1,1,1,1,0,1,1,0]",
+    "current_rank": 25,
+    "current_rank_points": 1895,
+    "matches_played": 303
   },
   {
     "player_id": "126207",
