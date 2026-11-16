@@ -60,7 +60,7 @@
     "form_score": 0.8,
     "form_json": "[1,1,1,1,1,1,0,1,1,0]",
     "current_rank": 4,
-    "current_rank_points": 5763,
+    "current_rank_points": 6163,
     "matches_played": 328
   },
   {
@@ -75,8 +75,8 @@
     "break_pct": 0.379,
     "form_score": 0.7,
     "form_json": "[1,1,1,1,1,1,0,1,0,0]",
-    "current_rank": 2,
-    "current_rank_points": 6485,
+    "current_rank": 3,
+    "current_rank_points": 6685,
     "matches_played": 330
   },
   {
@@ -108,7 +108,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,1,1,0,0]",
     "current_rank": 5,
-    "current_rank_points": 5760,
+    "current_rank_points": 6160,
     "matches_played": 338
   },
   {
@@ -155,7 +155,7 @@
     "break_pct": 0.335,
     "form_score": 0.6,
     "form_json": "[0,1,1,0,1,1,1,0,1,0]",
-    "current_rank": 7,
+    "current_rank": 8,
     "current_rank_points": 4665,
     "matches_played": 194
   },
@@ -171,8 +171,8 @@
     "break_pct": 0.284,
     "form_score": 0.7,
     "form_json": "[1,0,1,1,1,1,0,1,1,0]",
-    "current_rank": 8,
-    "current_rank_points": 4343,
+    "current_rank": 7,
+    "current_rank_points": 4743,
     "matches_played": 211
   },
   {
@@ -187,8 +187,8 @@
     "break_pct": 0.404,
     "form_score": 0.7,
     "form_json": "[1,0,1,0,1,1,1,1,1,0]",
-    "current_rank": 3,
-    "current_rank_points": 6306,
+    "current_rank": 2,
+    "current_rank_points": 7806,
     "matches_played": 197
   },
   {
@@ -316,7 +316,7 @@
     "form_score": 0.7,
     "form_json": "[1,1,0,1,1,1,0,1,1,0]",
     "current_rank": 6,
-    "current_rank_points": 5121,
+    "current_rank_points": 5921,
     "matches_played": 205
   },
   {
@@ -1323,7 +1323,7 @@
     "break_pct": 0.318,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,0,1,0,0]",
-    "current_rank": 81,
+    "current_rank": 82,
     "current_rank_points": 869,
     "matches_played": 158
   },
@@ -1403,7 +1403,7 @@
     "break_pct": 0.368,
     "form_score": 0.5,
     "form_json": "[0,1,0,0,0,1,1,1,1,0]",
-    "current_rank": 107,
+    "current_rank": 108,
     "current_rank_points": 709,
     "matches_played": 156
   },
@@ -1755,7 +1755,7 @@
     "break_pct": 0.347,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,0,0,1,1,1,0]",
-    "current_rank": 78,
+    "current_rank": 79,
     "current_rank_points": 895,
     "matches_played": 28
   },
@@ -1915,7 +1915,7 @@
     "break_pct": 0.589,
     "form_score": 0.6,
     "form_json": "[1,0,0,1,1,1,0,1,1,0]",
-    "current_rank": 139,
+    "current_rank": 142,
     "current_rank_points": 535,
     "matches_played": 20
   },
@@ -1931,8 +1931,8 @@
     "break_pct": 0.412,
     "form_score": 0.6,
     "form_json": "[1,0,1,0,1,1,0,1,1,0]",
-    "current_rank": 91,
-    "current_rank_points": 836,
+    "current_rank": 95,
+    "current_rank_points": 828,
     "matches_played": 28
   },
   {
@@ -1979,7 +1979,7 @@
     "break_pct": 0.353,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,1,0,0,1,0]",
-    "current_rank": 66,
+    "current_rank": 65,
     "current_rank_points": 1000,
     "matches_played": 229
   },
@@ -2043,7 +2043,7 @@
     "break_pct": 0.2,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,1,0,0,1,0,0]",
-    "current_rank": 67,
+    "current_rank": 66,
     "current_rank_points": 999,
     "matches_played": 23
   },
@@ -2155,7 +2155,7 @@
     "break_pct": 0.38,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,0,1,0,1,0,0]",
-    "current_rank": 63,
+    "current_rank": 62,
     "current_rank_points": 1012,
     "matches_played": 33
   },
@@ -2187,7 +2187,7 @@
     "break_pct": 0.395,
     "form_score": 0.4,
     "form_json": "[1,0,0,1,0,1,0,0,1,0]",
-    "current_rank": 85,
+    "current_rank": 86,
     "current_rank_points": 853,
     "matches_played": 48
   },
@@ -2299,7 +2299,7 @@
     "break_pct": 0.33,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,1,0,1,1,0,0]",
-    "current_rank": 150,
+    "current_rank": 149,
     "current_rank_points": 507,
     "matches_played": 110
   },
@@ -2331,8 +2331,8 @@
     "break_pct": 0.542,
     "form_score": 0.6,
     "form_json": "[1,1,0,0,0,1,1,1,1,0]",
-    "current_rank": 119,
-    "current_rank_points": 672,
+    "current_rank": 107,
+    "current_rank_points": 719,
     "matches_played": 23
   },
   {
@@ -2507,7 +2507,7 @@
     "break_pct": 0.36,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,1,0,1,0,1,0]",
-    "current_rank": 95,
+    "current_rank": 96,
     "current_rank_points": 814,
     "matches_played": 55
   },
@@ -2539,7 +2539,7 @@
     "break_pct": 0.366,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,0,1,0,1,1,0]",
-    "current_rank": 64,
+    "current_rank": 63,
     "current_rank_points": 1011,
     "matches_played": 90
   },
@@ -2555,7 +2555,7 @@
     "break_pct": 0.295,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,0,0,1,0]",
-    "current_rank": 82,
+    "current_rank": 83,
     "current_rank_points": 868,
     "matches_played": 134
   },
@@ -2603,7 +2603,7 @@
     "break_pct": 0.353,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,0,1,0,1,1,0]",
-    "current_rank": 90,
+    "current_rank": 91,
     "current_rank_points": 839,
     "matches_played": 139
   },
@@ -2683,7 +2683,7 @@
     "break_pct": 0.335,
     "form_score": 0.9,
     "form_json": "[1,1,1,1,1,1,1,1,1,0]",
-    "current_rank": 99,
+    "current_rank": 100,
     "current_rank_points": 778,
     "matches_played": 59
   },
@@ -2699,8 +2699,8 @@
     "break_pct": 0.543,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,0,0,1,1,0]",
-    "current_rank": 143,
-    "current_rank_points": 525,
+    "current_rank": 140,
+    "current_rank_points": 541,
     "matches_played": 13
   },
   {
@@ -3227,7 +3227,7 @@
     "break_pct": 0.349,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,0,0,0,1,0]",
-    "current_rank": 106,
+    "current_rank": 105,
     "current_rank_points": 730,
     "matches_played": 50
   },
@@ -3323,7 +3323,7 @@
     "break_pct": 0.339,
     "form_score": 0.7,
     "form_json": "[1,0,1,0,0,1,1,1,1,1]",
-    "current_rank": 84,
+    "current_rank": 85,
     "current_rank_points": 854,
     "matches_played": 109
   },
@@ -3403,7 +3403,7 @@
     "break_pct": 0.42,
     "form_score": 0.4,
     "form_json": "[1,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 88,
+    "current_rank": 89,
     "current_rank_points": 845,
     "matches_played": 46
   },
@@ -3515,7 +3515,7 @@
     "break_pct": 0.233,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,0,1,1,1,0]",
-    "current_rank": 133,
+    "current_rank": 134,
     "current_rank_points": 584,
     "matches_played": 50
   },
@@ -3771,7 +3771,7 @@
     "break_pct": 0.212,
     "form_score": 0.6,
     "form_json": "[1,1,0,1,0,1,1,1,0,0]",
-    "current_rank": 83,
+    "current_rank": 84,
     "current_rank_points": 859,
     "matches_played": 23
   },
@@ -3819,7 +3819,7 @@
     "break_pct": 0.332,
     "form_score": 0.4,
     "form_json": "[0,0,0,1,1,0,0,1,1,0]",
-    "current_rank": 77,
+    "current_rank": 78,
     "current_rank_points": 898,
     "matches_played": 64
   },
@@ -3947,8 +3947,8 @@
     "break_pct": 0.252,
     "form_score": 0.5,
     "form_json": "[0,0,1,1,0,1,1,0,1,0]",
-    "current_rank": 116,
-    "current_rank_points": 676,
+    "current_rank": 123,
+    "current_rank_points": 646,
     "matches_played": 18
   },
   {
@@ -3963,7 +3963,7 @@
     "break_pct": 0.394,
     "form_score": 0.5,
     "form_json": "[0,0,1,0,1,1,0,1,1,0]",
-    "current_rank": 149,
+    "current_rank": 148,
     "current_rank_points": 512,
     "matches_played": 95
   },
@@ -3979,8 +3979,8 @@
     "break_pct": 0.352,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,0,1,0,0,0]",
-    "current_rank": 62,
-    "current_rank_points": 1032,
+    "current_rank": 67,
+    "current_rank_points": 997,
     "matches_played": 91
   },
   {
@@ -4363,8 +4363,8 @@
     "break_pct": 0.485,
     "form_score": 0.56,
     "form_json": "[0,0,1,1,1,1,0,1,0]",
-    "current_rank": 121,
-    "current_rank_points": 659,
+    "current_rank": 120,
+    "current_rank_points": 654,
     "matches_played": 9
   },
   {
@@ -4651,8 +4651,8 @@
     "break_pct": 0.327,
     "form_score": 0.7,
     "form_json": "[0,1,1,1,1,0,1,1,1,0]",
-    "current_rank": 136,
-    "current_rank_points": 560,
+    "current_rank": 135,
+    "current_rank_points": 566,
     "matches_played": 171
   },
   {
@@ -4811,7 +4811,7 @@
     "break_pct": 0.301,
     "form_score": 0.3,
     "form_json": "[0,1,1,0,1,0,0,0,0,0]",
-    "current_rank": 97,
+    "current_rank": 98,
     "current_rank_points": 802,
     "matches_played": 153
   },
@@ -4955,8 +4955,8 @@
     "break_pct": 0.2,
     "form_score": 0.5,
     "form_json": "[0,1,1,1,1,1,0,0,0,0]",
-    "current_rank": null,
-    "current_rank_points": null,
+    "current_rank": 141,
+    "current_rank_points": 539,
     "matches_played": 12
   },
   {
@@ -5179,7 +5179,7 @@
     "break_pct": 0.439,
     "form_score": 0.3,
     "form_json": "[1,1,0,0,1,0,0,0,0,0]",
-    "current_rank": 79,
+    "current_rank": 80,
     "current_rank_points": 886,
     "matches_played": 33
   },
@@ -5499,8 +5499,8 @@
     "break_pct": 0.336,
     "form_score": 0.6,
     "form_json": "[1,0,1,1,0,1,0,1,1,0]",
-    "current_rank": 117,
-    "current_rank_points": 675,
+    "current_rank": 116,
+    "current_rank_points": 678,
     "matches_played": 141
   },
   {
@@ -5963,7 +5963,7 @@
     "break_pct": 0.285,
     "form_score": 0.6,
     "form_json": "[1,1,1,1,1,1,0,0,0,0]",
-    "current_rank": 65,
+    "current_rank": 64,
     "current_rank_points": 1006,
     "matches_played": 119
   },
@@ -6427,8 +6427,8 @@
     "break_pct": 0.29,
     "form_score": 0.6,
     "form_json": "[0,1,1,1,1,0,0,1,1,0]",
-    "current_rank": 115,
-    "current_rank_points": 682,
+    "current_rank": 114,
+    "current_rank_points": 685,
     "matches_played": 74
   },
   {
@@ -7035,7 +7035,7 @@
     "break_pct": 0.315,
     "form_score": 0.4,
     "form_json": "[0,1,0,0,1,0,0,1,1,0]",
-    "current_rank": 140,
+    "current_rank": 143,
     "current_rank_points": 531,
     "matches_played": 13
   },
@@ -7435,8 +7435,8 @@
     "break_pct": 0.404,
     "form_score": 0.5,
     "form_json": "[0,1,0,1,1,1,0,0]",
-    "current_rank": 108,
-    "current_rank_points": 702,
+    "current_rank": 117,
+    "current_rank_points": 675,
     "matches_played": 8
   },
   {
@@ -7595,8 +7595,8 @@
     "break_pct": 0.309,
     "form_score": 0.3,
     "form_json": "[0,1,0,1,0,1,0,0,0,0]",
-    "current_rank": 100,
-    "current_rank_points": 777,
+    "current_rank": 77,
+    "current_rank_points": 900,
     "matches_played": 114
   },
   {
@@ -7867,7 +7867,7 @@
     "break_pct": 0.379,
     "form_score": 0.4,
     "form_json": "[0,1,1,0,1,0,1,0,0,0]",
-    "current_rank": 80,
+    "current_rank": 81,
     "current_rank_points": 874,
     "matches_played": 126
   },
@@ -8091,7 +8091,7 @@
     "break_pct": 0.317,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,0,0,1,1,0]",
-    "current_rank": 86,
+    "current_rank": 87,
     "current_rank_points": 852,
     "matches_played": 69
   },
@@ -9083,7 +9083,7 @@
     "break_pct": 0.323,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,1,0,0,0,0]",
-    "current_rank": 87,
+    "current_rank": 88,
     "current_rank_points": 848,
     "matches_played": 83
   },
@@ -10059,8 +10059,8 @@
     "break_pct": 0.353,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,0,0,1,0,1,0]",
-    "current_rank": 148,
-    "current_rank_points": 512,
+    "current_rank": 203,
+    "current_rank_points": 366,
     "matches_played": 19
   },
   {
@@ -10123,8 +10123,8 @@
     "break_pct": 0.2,
     "form_score": 0,
     "form_json": "[0]",
-    "current_rank": 105,
-    "current_rank_points": 733,
+    "current_rank": 106,
+    "current_rank_points": 725,
     "matches_played": 1
   },
   {
@@ -10235,7 +10235,7 @@
     "break_pct": 0.362,
     "form_score": 0.3,
     "form_json": "[1,0,0,0,1,0,0,0,1,0]",
-    "current_rank": 135,
+    "current_rank": 136,
     "current_rank_points": 561,
     "matches_played": 44
   },
@@ -10491,8 +10491,8 @@
     "break_pct": 0.344,
     "form_score": 0.33,
     "form_json": "[1,0,0]",
-    "current_rank": 146,
-    "current_rank_points": 518,
+    "current_rank": 139,
+    "current_rank_points": 543,
     "matches_played": 3
   },
   {
@@ -12427,7 +12427,7 @@
     "break_pct": 0.376,
     "form_score": 0.3,
     "form_json": "[0,0,0,1,0,0,1,0,1,0]",
-    "current_rank": 122,
+    "current_rank": 121,
     "current_rank_points": 648,
     "matches_played": 34
   },
@@ -15259,7 +15259,7 @@
     "break_pct": 0.343,
     "form_score": 0.5,
     "form_json": "[1,1,0,0,0,0,1,1,1,0]",
-    "current_rank": 142,
+    "current_rank": 145,
     "current_rank_points": 527,
     "matches_played": 81
   },
@@ -16907,7 +16907,7 @@
     "break_pct": 0.282,
     "form_score": 0.4,
     "form_json": "[0,1,0,1,0]",
-    "current_rank": 141,
+    "current_rank": 144,
     "current_rank_points": 528,
     "matches_played": 5
   },
@@ -18219,7 +18219,7 @@
     "break_pct": 0.278,
     "form_score": 0.5,
     "form_json": "[0,1,1,0,1,1,1,0,0,0]",
-    "current_rank": 123,
+    "current_rank": 122,
     "current_rank_points": 648,
     "matches_played": 18
   },
@@ -19851,8 +19851,8 @@
     "break_pct": 0.313,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,1,0,0,0,0,0]",
-    "current_rank": 130,
-    "current_rank_points": 598,
+    "current_rank": 129,
+    "current_rank_points": 612,
     "matches_played": 22
   },
   {
@@ -20795,8 +20795,8 @@
     "break_pct": 0.338,
     "form_score": 0.2,
     "form_json": "[0,0,1,1,0,0,0,0,0,0]",
-    "current_rank": 134,
-    "current_rank_points": 581,
+    "current_rank": 133,
+    "current_rank_points": 590,
     "matches_played": 16
   },
   {
@@ -21083,7 +21083,7 @@
     "break_pct": 0.345,
     "form_score": 0.5,
     "form_json": "[1,0,0,0,1,1,1,1,0,0]",
-    "current_rank": 98,
+    "current_rank": 99,
     "current_rank_points": 795,
     "matches_played": 32
   },
@@ -21883,7 +21883,7 @@
     "break_pct": 0.344,
     "form_score": 0.2,
     "form_json": "[0,0,1,0,0,0,0,0,1,0]",
-    "current_rank": 114,
+    "current_rank": 115,
     "current_rank_points": 685,
     "matches_played": 76
   },
@@ -22619,8 +22619,8 @@
     "break_pct": 0.333,
     "form_score": 0.2,
     "form_json": "[1,0,0,0,0,0,1,0,0,0]",
-    "current_rank": 125,
-    "current_rank_points": 640,
+    "current_rank": 150,
+    "current_rank_points": 507,
     "matches_played": 103
   },
   {
@@ -23323,8 +23323,8 @@
     "break_pct": 0.352,
     "form_score": 0.29,
     "form_json": "[0,1,0,0,0,0,1]",
-    "current_rank": 145,
-    "current_rank_points": 519,
+    "current_rank": 191,
+    "current_rank_points": 389,
     "matches_played": 7
   },
   {
@@ -23339,7 +23339,7 @@
     "break_pct": 0.213,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,0,1,1,0,0,0]",
-    "current_rank": 144,
+    "current_rank": 146,
     "current_rank_points": 522,
     "matches_played": 11
   },
@@ -23964,7 +23964,7 @@
     "form_score": 0.4,
     "form_json": "[0,1,1,1,0,0,0,1,0,0]",
     "current_rank": 138,
-    "current_rank_points": 553,
+    "current_rank_points": 548,
     "matches_played": 25
   },
   {
@@ -24699,8 +24699,8 @@
     "break_pct": 0.241,
     "form_score": 0.5,
     "form_json": "[1,0,0,1,1,1,0,0,1,0]",
-    "current_rank": 129,
-    "current_rank_points": 617,
+    "current_rank": 130,
+    "current_rank_points": 609,
     "matches_played": 25
   },
   {
@@ -24779,7 +24779,7 @@
     "break_pct": 0.251,
     "form_score": 0.4,
     "form_json": "[1,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 89,
+    "current_rank": 90,
     "current_rank_points": 841,
     "matches_played": 55
   },
@@ -25115,7 +25115,7 @@
     "break_pct": 0.287,
     "form_score": 0.3,
     "form_json": "[0,1,0,0,1,1,0,0,0,0]",
-    "current_rank": 96,
+    "current_rank": 97,
     "current_rank_points": 812,
     "matches_played": 16
   },
@@ -25675,7 +25675,7 @@
     "break_pct": 0.295,
     "form_score": 0.3,
     "form_json": "[0,0,1,0,0,1,0,0,1,0]",
-    "current_rank": 120,
+    "current_rank": 119,
     "current_rank_points": 660,
     "matches_played": 104
   },
