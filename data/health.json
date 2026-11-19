@@ -1,22 +1,22 @@
 {
   "app": "rallyiq",
-  "generated": "2026-11-18T16:18:22.355Z",
+  "generated": "2026-11-19T16:26:59.541Z",
   "feeds": {
     "slate": {
-      "lastSuccess": "2026-11-18T16:18:22.355Z",
-      "records": 13,
+      "lastSuccess": "2026-11-19T16:26:59.541Z",
+      "records": 8,
       "maxAgeHours": 36,
       "status": "ok"
     },
     "ratings": {
-      "lastSuccess": "2026-11-18T16:18:21.411Z",
+      "lastSuccess": "2026-11-19T16:26:58.842Z",
       "records": 1669,
       "maxAgeHours": 72,
       "status": "ok"
     },
     "results": {
-      "lastSuccess": "2026-11-18T16:18:20.284Z",
-      "records": 4177,
+      "lastSuccess": "2026-11-19T16:26:57.936Z",
+      "records": 4183,
       "maxAgeHours": 36,
       "status": "ok"
     }
