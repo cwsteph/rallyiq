@@ -1808,6 +1808,22 @@
     "matches_played": 20
   },
   {
+    "player_id": "266671",
+    "name": "Laura Samson",
+    "tour": "WTA",
+    "elo_overall": 1615.7,
+    "elo_hard": 1454.5,
+    "elo_clay": 1594,
+    "elo_grass": 1535.3,
+    "hold_pct": 0.597,
+    "break_pct": 0.542,
+    "form_score": 0.6,
+    "form_json": "[0,0,0,1,1,1,1,0,1,1]",
+    "current_rank": 110,
+    "current_rank_points": 697,
+    "matches_played": 25
+  },
+  {
     "player_id": "106401",
     "name": "Nick Kyrgios",
     "tour": "ATP",
@@ -1950,22 +1966,6 @@
     "current_rank": 40,
     "current_rank_points": 1280,
     "matches_played": 244
-  },
-  {
-    "player_id": "266671",
-    "name": "Laura Samson",
-    "tour": "WTA",
-    "elo_overall": 1602.4,
-    "elo_hard": 1454.5,
-    "elo_clay": 1585.2,
-    "elo_grass": 1535.3,
-    "hold_pct": 0.597,
-    "break_pct": 0.542,
-    "form_score": 0.6,
-    "form_json": "[1,0,0,0,1,1,1,1,0,1]",
-    "current_rank": 110,
-    "current_rank_points": 697,
-    "matches_played": 24
   },
   {
     "player_id": "203530",
@@ -5520,22 +5520,6 @@
     "matches_played": 83
   },
   {
-    "player_id": "206408",
-    "name": "Nadia Podoroska",
-    "tour": "WTA",
-    "elo_overall": 1520.9,
-    "elo_hard": 1501.2,
-    "elo_clay": 1429.9,
-    "elo_grass": 1458.9,
-    "hold_pct": 0.6,
-    "break_pct": 0.294,
-    "form_score": 0.6,
-    "form_json": "[0,0,1,0,1,1,1,1,0,1]",
-    "current_rank": 921,
-    "current_rank_points": 27,
-    "matches_played": 93
-  },
-  {
     "player_id": "221911",
     "name": "Selena Janicijevic",
     "tour": "WTA",
@@ -6590,6 +6574,22 @@
     "current_rank": 157,
     "current_rank_points": 386,
     "matches_played": 16
+  },
+  {
+    "player_id": "214604",
+    "name": "Maria Lourdes Carle",
+    "tour": "WTA",
+    "elo_overall": 1516.6,
+    "elo_hard": 1442.4,
+    "elo_clay": 1517.4,
+    "elo_grass": 1486.5,
+    "hold_pct": 0.507,
+    "break_pct": 0.408,
+    "form_score": 0.7,
+    "form_json": "[1,1,0,1,1,0,1,0,1,1]",
+    "current_rank": 209,
+    "current_rank_points": 343,
+    "matches_played": 52
   },
   {
     "player_id": "espn_15949",
@@ -7712,6 +7712,22 @@
     "matches_played": 4
   },
   {
+    "player_id": "206408",
+    "name": "Nadia Podoroska",
+    "tour": "WTA",
+    "elo_overall": 1503.9,
+    "elo_hard": 1501.2,
+    "elo_clay": 1420.6,
+    "elo_grass": 1458.9,
+    "hold_pct": 0.6,
+    "break_pct": 0.294,
+    "form_score": 0.6,
+    "form_json": "[0,1,0,1,1,1,1,0,1,0]",
+    "current_rank": 921,
+    "current_rank_points": 27,
+    "matches_played": 94
+  },
+  {
     "player_id": "211809",
     "name": "Daria Lodikova",
     "tour": "WTA",
@@ -8510,22 +8526,6 @@
     "current_rank": 567,
     "current_rank_points": 90,
     "matches_played": 2
-  },
-  {
-    "player_id": "214604",
-    "name": "Maria Lourdes Carle",
-    "tour": "WTA",
-    "elo_overall": 1499.6,
-    "elo_hard": 1442.4,
-    "elo_clay": 1508,
-    "elo_grass": 1486.5,
-    "hold_pct": 0.507,
-    "break_pct": 0.408,
-    "form_score": 0.6,
-    "form_json": "[0,1,1,0,1,1,0,1,0,1]",
-    "current_rank": 209,
-    "current_rank_points": 343,
-    "matches_played": 51
   },
   {
     "player_id": "111202",
@@ -9520,6 +9520,22 @@
     "matches_played": 2
   },
   {
+    "player_id": "201478",
+    "name": "Varvara Lepchenko",
+    "tour": "WTA",
+    "elo_overall": 1495.4,
+    "elo_hard": 1455.2,
+    "elo_clay": 1517.4,
+    "elo_grass": 1500,
+    "hold_pct": 0.612,
+    "break_pct": 0.297,
+    "form_score": 0.6,
+    "form_json": "[0,1,1,1,1,0,0,0,1,1]",
+    "current_rank": 169,
+    "current_rank_points": 450,
+    "matches_played": 22
+  },
+  {
     "player_id": "111455",
     "name": "Wayne Montgomery",
     "tour": "ATP",
@@ -9566,22 +9582,6 @@
     "current_rank": 497,
     "current_rank_points": 87,
     "matches_played": 1
-  },
-  {
-    "player_id": "215572",
-    "name": "Nuria Brancaccio",
-    "tour": "WTA",
-    "elo_overall": 1494.9,
-    "elo_hard": 1500,
-    "elo_clay": 1476.2,
-    "elo_grass": 1499.6,
-    "hold_pct": 0.506,
-    "break_pct": 0.344,
-    "form_score": 0.5,
-    "form_json": "[0,0,0,1,1,1,0,1,0,1]",
-    "current_rank": 163,
-    "current_rank_points": 463,
-    "matches_played": 20
   },
   {
     "player_id": "207799",
@@ -10670,6 +10670,22 @@
     "current_rank": 642,
     "current_rank_points": 70,
     "matches_played": 6
+  },
+  {
+    "player_id": "215571",
+    "name": "Guiomar Maristany Zuleta De Reales",
+    "tour": "WTA",
+    "elo_overall": 1488,
+    "elo_hard": 1473.4,
+    "elo_clay": 1512.2,
+    "elo_grass": 1500,
+    "hold_pct": 0.552,
+    "break_pct": 0.352,
+    "form_score": 0.44,
+    "form_json": "[0,1,0,0,0,0,1,1,1]",
+    "current_rank": 147,
+    "current_rank_points": 518,
+    "matches_played": 9
   },
   {
     "player_id": "261038",
@@ -14030,22 +14046,6 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 1
-  },
-  {
-    "player_id": "213706",
-    "name": "Irene Burillo Escorihuela",
-    "tour": "WTA",
-    "elo_overall": 1480.2,
-    "elo_hard": 1500,
-    "elo_clay": 1489.3,
-    "elo_grass": 1500,
-    "hold_pct": 0.482,
-    "break_pct": 0.313,
-    "form_score": 0.5,
-    "form_json": "[1,0,0,0,1,0,1,1,0,1]",
-    "current_rank": 243,
-    "current_rank_points": 294,
-    "matches_played": 12
   },
   {
     "player_id": "214420",
@@ -17584,22 +17584,6 @@
     "matches_played": 10
   },
   {
-    "player_id": "201478",
-    "name": "Varvara Lepchenko",
-    "tour": "WTA",
-    "elo_overall": 1476.3,
-    "elo_hard": 1455.2,
-    "elo_clay": 1505.6,
-    "elo_grass": 1500,
-    "hold_pct": 0.612,
-    "break_pct": 0.297,
-    "form_score": 0.5,
-    "form_json": "[0,0,1,1,1,1,0,0,0,1]",
-    "current_rank": 169,
-    "current_rank_points": 450,
-    "matches_played": 21
-  },
-  {
     "player_id": "201672",
     "name": "Nigina Abduraimova",
     "tour": "WTA",
@@ -18414,6 +18398,22 @@
     "current_rank": 121,
     "current_rank_points": 648,
     "matches_played": 18
+  },
+  {
+    "player_id": "215572",
+    "name": "Nuria Brancaccio",
+    "tour": "WTA",
+    "elo_overall": 1473.2,
+    "elo_hard": 1500,
+    "elo_clay": 1465.1,
+    "elo_grass": 1499.6,
+    "hold_pct": 0.506,
+    "break_pct": 0.344,
+    "form_score": 0.5,
+    "form_json": "[0,0,1,1,1,0,1,0,1,0]",
+    "current_rank": 163,
+    "current_rank_points": 463,
+    "matches_played": 21
   },
   {
     "player_id": "106210",
@@ -19328,6 +19328,22 @@
     "matches_played": 4
   },
   {
+    "player_id": "213706",
+    "name": "Irene Burillo Escorihuela",
+    "tour": "WTA",
+    "elo_overall": 1466.9,
+    "elo_hard": 1500,
+    "elo_clay": 1480.5,
+    "elo_grass": 1500,
+    "hold_pct": 0.482,
+    "break_pct": 0.313,
+    "form_score": 0.4,
+    "form_json": "[0,0,0,1,0,1,1,0,1,0]",
+    "current_rank": 243,
+    "current_rank_points": 294,
+    "matches_played": 13
+  },
+  {
     "player_id": "111513",
     "name": "Laslo Djere",
     "tour": "ATP",
@@ -19390,22 +19406,6 @@
     "current_rank": null,
     "current_rank_points": null,
     "matches_played": 6
-  },
-  {
-    "player_id": "215571",
-    "name": "Guiomar Maristany Zuleta De Reales",
-    "tour": "WTA",
-    "elo_overall": 1466.4,
-    "elo_hard": 1473.4,
-    "elo_clay": 1501.1,
-    "elo_grass": 1500,
-    "hold_pct": 0.552,
-    "break_pct": 0.352,
-    "form_score": 0.38,
-    "form_json": "[0,1,0,0,0,0,1,1]",
-    "current_rank": 147,
-    "current_rank_points": 518,
-    "matches_played": 8
   },
   {
     "player_id": "269753",
@@ -20718,22 +20718,6 @@
     "current_rank": 540,
     "current_rank_points": 76,
     "matches_played": 8
-  },
-  {
-    "player_id": "223321",
-    "name": "Sofia Costoulas",
-    "tour": "WTA",
-    "elo_overall": 1460.7,
-    "elo_hard": 1465.2,
-    "elo_clay": 1499.9,
-    "elo_grass": 1500,
-    "hold_pct": 0.619,
-    "break_pct": 0.379,
-    "form_score": 0.4,
-    "form_json": "[1,0,1,1,0,0,0,0,0,1]",
-    "current_rank": 144,
-    "current_rank_points": 527,
-    "matches_played": 11
   },
   {
     "player_id": "263872",
@@ -23646,6 +23630,22 @@
     "current_rank": 1498,
     "current_rank_points": 3,
     "matches_played": 3
+  },
+  {
+    "player_id": "223321",
+    "name": "Sofia Costoulas",
+    "tour": "WTA",
+    "elo_overall": 1441.6,
+    "elo_hard": 1465.2,
+    "elo_clay": 1488.1,
+    "elo_grass": 1500,
+    "hold_pct": 0.619,
+    "break_pct": 0.379,
+    "form_score": 0.3,
+    "form_json": "[0,1,1,0,0,0,0,0,1,0]",
+    "current_rank": 144,
+    "current_rank_points": 527,
+    "matches_played": 12
   },
   {
     "player_id": "202120",
